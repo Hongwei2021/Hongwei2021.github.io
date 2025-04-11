@@ -90,6 +90,27 @@
         font-size: 40px;
         cursor: pointer;
        }
+         /* 图片样式页脚引用 */
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        /* 新增页脚样式 */
+        .site-footer {
+            margin-top: 50px;
+            border-top: 1px solid #eee;
+            padding: 30px 0;
+            background: #f9f9f9;
+        }
+        .content-license a {
+            color: #2c82c9;
+            border-bottom: 1px dotted currentColor;
+        }
     </style>
 </head>
 <body>
@@ -152,6 +173,31 @@
             <li><a href="https://stratigraphy.org/chart">International Commission on Stratigraphy</a></li>
         </ul>
     </div>
+      // 新增页脚结构
+     <footer class="site-footer">
+        <div class="section">
+            <p id="lastModified" class="footer-info"></p>
+            
+            <div class="citation">
+                <h3>内容引用 | Citation</h3>
+                <p>基于<a href="https://example.com/kg-source">OpenKG数据集</a></p>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2018-2023 Knowledge Graph Hub</p>
+                <div class="content-license">
+                    <p class="cn-version">使用授权请联系 
+                        <a id="emailLink" href="#"></a>
+                    </p>
+                    <p class="en-version" style="display:none">Contact 
+                        <a id="emailLinkEn" href="#"></a>
+                    </p>
+                </div>
+                <p>Powered by GitHub Pages</p>
+            </div>
+        </div>
+    </footer>
+    
     <script>
         // 知识图谱可视化代码（使用D3.js）
         const data = {
@@ -168,9 +214,15 @@
 
         // 语言切换功能
         function toggleLanguage(lang) {
+           // 原始切换逻辑
             document.getElementById('intro-cn').style.display = 
                 lang === 'cn' ? 'block' : 'none';
             document.getElementById('intro-en').style.display = 
+                lang === 'en' ? 'block' : 'none';
+            // 控制邮箱显示
+            document.querySelector('.content-license .cn-version').style.display = 
+                lang === 'cn' ? 'block' : 'none';
+            document.querySelector('.content-license .en-version').style.display = 
                 lang === 'en' ? 'block' : 'none';
         }
 
@@ -236,33 +288,48 @@
             });
         };
         // 灯箱功能
-function openLightbox(imgElement) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+          function openLightbox(imgElement) {
+           const lightbox = document.getElementById('lightbox');
+           const lightboxImg = document.getElementById('lightbox-img');
     
-    lightbox.style.display = 'block';
-    lightboxImg.src = imgElement.src;
-    document.body.style.overflow = 'hidden';
-}
+                lightbox.style.display = 'block';
+                lightboxImg.src = imgElement.src;
+                document.body.style.overflow = 'hidden';
+         }
 
-function closeLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
+          function closeLightbox() {
+               document.getElementById('lightbox').style.display = 'none';
+               document.body.style.overflow = 'auto';
+         }
 
-// 点击背景关闭
-document.getElementById('lightbox').onclick = function(e) {
-    if(e.target !== document.getElementById('lightbox-img')) {
-        closeLightbox();
-    }
-}
+        // 点击背景关闭
+        document.getElementById('lightbox').onclick = function(e) {
+              if(e.target !== document.getElementById('lightbox-img')) {
+                closeLightbox();
+          }
+        }
 
-// ESC键关闭
-document.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape') {
-        closeLightbox();
-    }
-});
+       // ESC键关闭
+        document.addEventListener('keydown', (e) => {
+             if(e.key === 'Escape') {
+               closeLightbox();
+         }
+        });
+        // 新增邮箱防爬虫代码
+         window.onload = function() {
+            const email = 'contact' + '@' + 'example.com';
+            document.querySelectorAll('#emailLink, #emailLinkEn').forEach(el => {
+                el.href = 'mailto:' + email;
+                el.textContent = email;
+            });
+        }
+        // 新增时间功能
+         document.getElementById('lastModified').textContent = 
+            "最后更新：" + new Date(document.lastModified).toLocaleDateString('zh-CN', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
     </script>
 </body>
 </html>
