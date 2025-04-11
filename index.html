@@ -46,6 +46,50 @@
             text-align: right;
             margin-bottom: 20px;
         }
+        /* 图片容器样式 */
+     .gallery img {
+         width: 100%;
+         height: 200px;
+         object-fit: cover;
+         border-radius: 8px;
+         cursor: zoom-in;
+         transition: transform 0.3s ease;
+         box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+       }
+
+     .gallery img:hover {
+        transform: scale(1.05);
+       }
+
+       /* 灯箱样式 */
+     .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 999;
+       }
+
+      .lightbox-content {
+         max-width: 90%;
+         max-height: 90%;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+        }
+
+    .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        cursor: pointer;
+       }
     </style>
 </head>
 <body>
@@ -87,11 +131,17 @@
 
     <!-- 图片展示区 -->
     <div class="section">
-        <h2>地质年代表多版本对比 | Comparison of multiple versions of GTS</h2>
+        <h2>数据示例 | Data Samples</h2>
         <div class="gallery">
-            <img src="EvolutionOfGTS.png" alt="The Evolution of GTS">
-            <img src="35VersionsGTS.gif" alt="Cognitive comparison of the length of time experienced by different periods in the 35 versions of the Phaneozoic geological chronology data from the geological chronology published by ICS and GSA.">
+            <img src="EvolutionOfGTS.png" alt="The Evolution of GTS" onclick="openLightbox(this)">
+            <img src="data-sample2.gif" alt="Cognitive comparison of the length of time experienced by different periods in the 35 versions of the Phaneozoic geological chronology data from the geological chronology published by ICS and GSA." onclick="openLightbox(this)">
+            <img src="data-sample3.png" alt="示例3" onclick="openLightbox(this)">
         </div>
+     </div>
+    <!-- 灯箱结构 -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
     </div>
 
     <!-- 资源链接 -->
@@ -185,6 +235,34 @@
                     .attr("y", d => d.y + 3);
             });
         };
+        // 灯箱功能
+function openLightbox(imgElement) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    
+    lightbox.style.display = 'block';
+    lightboxImg.src = imgElement.src;
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// 点击背景关闭
+document.getElementById('lightbox').onclick = function(e) {
+    if(e.target !== document.getElementById('lightbox-img')) {
+        closeLightbox();
+    }
+}
+
+// ESC键关闭
+document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        closeLightbox();
+    }
+});
     </script>
 </body>
 </html>
