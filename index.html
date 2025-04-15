@@ -173,7 +173,7 @@
             <li><a href="https://stratigraphy.org/chart">International Commission on Stratigraphy</a></li>
         </ul>
     </div>
-      // 新增页脚结构
+      
      <footer class="site-footer">
         <div class="section">
             <p id="lastModified" class="footer-info"></p>
@@ -202,13 +202,13 @@
         // 知识图谱可视化代码（使用D3.js）
         const data = {
             nodes: [
-                { id: "实体识别", group: 1 },
-                { id: "关系抽取", group: 2 },
-                { id: "图计算", group: 3 }
+                { id: "Jurassic", group: 1 },
+                { id: "Cretaceous", group: 2 },
+                { id: "GTS2020", group: 3 }
             ],
             links: [
-                { source: "实体识别", target: "关系抽取" },
-                { source: "关系抽取", target: "图计算" }
+                { source: "Jurassic", target: "GTS2020" },
+                { source: "Cretaceous", target: "GTS2020" }
             ]
         };
 
