@@ -180,13 +180,10 @@
             
             <div class="citation">
                 <h3>内容引用 | Citation</h3>
-                <p>基于<a href="https://example.com/kg-source">OpenKG数据集</a></p>
             </div>
 
             <div class="copyright">
-                <p>&copy; 2018-2023 Knowledge Graph Hub</p>
-                <div class="content-license">
-                    <p class="cn-version">使用授权请联系 
+                    <p class="cn-version">Use authorization please contact 
                         <a id="wanghw2021@126.com" href="#"></a>
                     </p>
                     <p class="en-version" style="display:none">Contact 
@@ -317,7 +314,7 @@
         });
         // 新增邮箱防爬虫代码
          window.onload = function() {
-            const email = 'contact' + '@' + 'example.com';
+            const email = 'wanghw2021' + '@' + '126.com';
             document.querySelectorAll('#emailLink, #emailLinkEn').forEach(el => {
                 el.href = 'mailto:' + email;
                 el.textContent = email;
@@ -325,7 +322,7 @@
         }
         // 新增时间功能
          document.getElementById('lastModified').textContent = 
-            "最后更新：" + new Date(document.lastModified).toLocaleDateString('zh-CN', {
+            "Last updated time：" + new Date(document.lastModified).toLocaleDateString('zh-CN', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
