@@ -9,12 +9,12 @@ Aggregates GTS versions from academic publications and extracts boundary ages fo
 整合学术文献中的地质年代表版本，提取各地质时期的边界年龄数据。
 
 Knowledge Graph Storage
-Stores data in a structured knowledge graph (RDF/OWL format) to enable semantic queries and analysis.
+Stores data in a structured knowledge graph (RDF format) to enable semantic queries and analysis.
 知识图谱存储
 以结构化知识图谱（RDF/OWL格式）存储数据，支持语义查询与分析。
 
 Open Data Sharing
-Publishes boundary age datasets as JSON files on GitHub for community use.
+Publishes boundary age datasets as RDF files on GitHub for community use.
 开放数据共享
 在GitHub以JSON文件共享边界年龄数据集，供社区使用。
 
@@ -24,7 +24,7 @@ Provides a static website showcasing version comparisons, timeline charts, and s
 静态网站提供版本对比、时间线图表与统计概览。
 
 📊 Data & Resources / 数据与资源
-Dataset: Boundary ages in JSON format (GitHub Link)
+Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei2021/Hongwei2021.github.io/edit/main))
 
 Static Website: Version summaries and visualizations (Website Link)
 
