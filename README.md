@@ -90,7 +90,3 @@ Share missing GTS versions or datasets.
 
 分享缺失的地质年代表版本或数据集。
 
-📜 License / 许可
-This project is licensed under the MIT License.
-
-本项目采用 MIT 许可证
