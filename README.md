@@ -26,13 +26,13 @@ Provides a static website showcasing version comparisons, timeline charts, and s
 📊 Data & Resources / 数据与资源
 Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei2021/Hongwei2021.github.io/edit/main))
 
-Static Website: Version summaries and visualizations (Website Link)
+Static Website: Version summaries and visualizations ([Website Link](https://hongwei2021.github.io/))
 
 Knowledge Graph: RDF/OWL files available upon request.
 
-数据集: turtle格式边界年龄数据（GitHub链接）
+数据集: turtle格式边界年龄数据（[GitHub链接](https://github.com/Hongwei2021/Hongwei2021.github.io/edit/main)）
 
-静态网站: 版本概览与可视化（网站链接）
+静态网站: 版本概览与可视化（[网站链接](https://hongwei2021.github.io/)）
 
 🛠️ Technical Implementation / 技术实现
 Python Application Example
