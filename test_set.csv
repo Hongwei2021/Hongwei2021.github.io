@@ -1,0 +1,2480 @@
+﻿LithologyCode,LithologyIDNumber,OldIDNumber,LAT,LONG,Continent,Country,LMU,Period,Stage,Lithology,Year
+T,126,812,-32,-69,South America,Argentina,Middle,Mississippian,Visean,Tillites,1993
+T,124,810,19,8,Africa,Niger,Lower,Mississippian,Tournaisian,Tillites,1987
+T,83,652,-6,-46,South America,Brazil,Upper,Devonian,Famennian,Tillites,1957
+T,82,651,-3,-57,South America,Brazil,Upper,Devonian,Famennian,Tillites,1981
+T,81,650,-11,-67,South America,Bolivia,Upper,Devonian,,Tillites,1995
+T,78,648,19,8,Africa,Niger,Upper,Devonian,,Tillites,1981
+T,62,446.2,-15,-52,South America,Brazil,Lower,Silurian,,Calcretes,2002
+T,61,446.1,-26,-50,South America,Brazil,Lower,Silurian,,Calcretes,1992
+T,60,446,-10,-38,South America,Brazil,Lower,Silurian,,Calcretes,1992
+T,59,445,-5,-40,South America,Brazil,Lower,Silurian,,Calcretes,1992
+T,58,444,-2,-55,South America,Brazil,Lower,Silurian,,Calcretes,1992
+T,169,386.1,-16,-50,South America,Brazil,Upper,Ordovician,,Tillites,2002
+T,168,386,-3,-55,South America,Brazil,Upper,Ordovician,Hirnantian,Tillites,1981
+T,167,385,-14,-68,South America,Bolivia,Upper,Ordovician,Ashgillian,Tillites,1981
+T,166,384,-18,-64,South America,Bolivia,Upper,Ordovician,Ashgillian,Tillites,1981
+T,165,383,-24,-64,South America,Argentina,Upper,Ordovician,Ashgillian,Tillites,1981
+T,164,382,45,-65,North America,Canada,Upper,Ordovician,Ashgillian,Tillites,1981
+T,163,381,39.6,-3,Europe,PortugalSpain,Upper,Ordovician,,Tillites,1981
+T,162,380,49.5,8,Europe,Germany,Upper,Ordovician,Ashgillian,Tillites,1981
+T,161,379,49,1,Europe,France,Upper,Ordovician,Ashgillian,Tillites,1981
+T,160,378.1,50,14.5,Europe,Czech Republic,Upper,Ordovician,,Tillites,1982
+T,158,378,27,43,Asia,Saudi Arabia,Upper,Ordovician,Ashgillian,Tillites,1978
+T,157,377,29.5,36,Asia,Jordan,Upper,Ordovician,Ashgillian,Tillites,1993
+T,156,376,10,-12,Africa,Sierra Leone,Upper,Ordovician,,Tillites,1981
+T,155,375,-32,19,Africa,South Africa,Upper,Ordovician,,Tillites,1981
+T,154,374,30,-6,Africa,Morocco,Upper,Ordovician,,Tillites,1981
+T,153,373,15,-8,Africa,Mauritania Rio de OroSenegal,Upper,Ordovician,,Tillites,1981
+T,151,372,5,-2,Africa,Ghana,Upper,Ordovician,,Tillites,1981
+T,150,371,14,39,Africa,Ethiopia,Upper,Ordovician,,Tillites,1981
+T,149,370,22,16,Africa,Chad,Upper,Ordovician,Ashgillian,Tillites,1981
+T,148,369,21,12,Africa,NigerMali  Libya,Upper,Ordovician,Ashgillian,Tillites,1981
+T,147,368.1,26,5,Africa,Algeria,Upper,Ordovician,Ashgillian,Tillites,1981
+T,146,368,20,5,Africa,Algeria,Upper,Ordovician,Ashgillian,Tillites,1981
+T,125,2324,-52,-59,South America,Falkland Islands,Lower,Permian,,Tillites,1981
+T,124,2323,-23,-53,South America,Brazil,Lower,Permian,,Tillites,1981
+T,123,2322,-16,-59,South America,Brazil,Lower,Permian,,Tillites,1981
+T,122,2321,-11,-62,South America,Brazil,Lower,Permian,,Tillites,1981
+T,121,2320,-10,-37,South America,Brazil,Lower,Permian,,Tillites,1981
+T,120,2319,-38,-62,South America,Argentina,Lower,Permian,,Tillites,1981
+T,119,2318,-32,-65,South America,Argentina,Lower,Permian,,Tillites,1981
+T,118,2317,-27,-62,South America,Argentina,Lower,Permian,,Tillites,1981
+T,133,2316,46,4,Europe,France,Lower,Permian,,Tillites,1996
+T,117,2315,-26,128,Australia,,Lower,Permian,,Tillites,1981
+T,116,2314,-28,115,Australia,,Lower,Permian,,Tillites,1981
+T,115,2313,-25,115,Australia,,Lower,Permian,,Tillites,1981
+T,114,2312,-20,123,Australia,,Lower,Permian,,Tillites,1981
+T,113,2311,-14,129,Australia,,Lower,Permian,,Tillites,1981
+T,112,2310,-38,144,Australia,,,Permian,,Tillites,1981
+T,111,2309,-43,146,Australia,,Lower,Permian,Asselian,Tillites,1981
+T,106,2307,-22,148,Australia,,,Permian,,Tillites,1981
+T,105,2306,-24,147,Australia,,,Permian,,Tillites,1981
+T,104,2305.1,-30,150,Australia,,,Permian,,Tillites,1981
+T,103,2305,33,72,Asia,Pakistan,,Permian,,Tillites,1981
+T,102,2304,29,84,Asia,Nepal and Sikkim,Lower,Permian,,Tillites,1998
+T,101,2303.1,27,86,Asia,Nepal and Sikkim,Lower,Permian,,Tillites,1998
+T,100,2303,27,90,Asia,Nepal and Sikkim,Lower,Permian,,Tillites,1981
+T,99,2302.1,34,75,Asia,India,Lower,Permian,Asselian,Tillites,1997
+T,98,2302,34,78,Asia,India,,Permian,,Tillites,1979
+T,97,2301,27,95.5,Asia,India,,Permian,,Tillites,1981
+T,96,2300,27,93.5,Asia,India,,Permian,,Tillites,1981
+T,95,2299,27,92,Asia,India,,Permian,,Tillites,1981
+T,94,2298,24,88,Asia,India,,Permian,,Tillites,1981
+T,93,2297,17,81,Asia,India,,Permian,,Tillites,1981
+T,92,2296,26,73,Asia,India,,Permian,,Tillites,1981
+T,90,2295.1,15,44,Asia,Arabia,,Permian,,Tillites,1983
+T,91,2295,19.5,45.5,Asia,Arabia,Lower,Permian,Sakmarian,Tillites,1988
+T,88,2294,54,57,Asia,Arabia,,Permian,,Tillites,1981
+T,89,2293,20,58,Asia,Arabia,,Permian,,Tillites,1988
+T,87,2292,20,57,Asia,Arabia,,Permian,,Tillites,1981
+T,86,2291,18,44,Asia,Arabia,,Permian,,Tillites,1981
+T,85,2290,-78,-90,Antarctica,,,Permian,,Tillites,1981
+T,84,2289,-72,163,Antarctica,,,Permian,,Tillites,1981
+T,83,2288,-77,160,Antarctica,,,Permian,,Tillites,1981
+T,82,2287,-84,167,Antarctica,,,Permian,,Tillites,1981
+T,81,2286,-84,-57,Antarctica,,,Permian,,Tillites,1981
+T,80,2285,-22,30,Africa,Zimbabwe,Lower,Permian,,Tillites,1981
+T,79,2284,-19,27,Africa,Zimbabwe,Lower,Permian,,Tillites,1981
+T,63,2283,-5,27,Africa,Dem Rep of Congo(frm Zaire),Lower,Permian,,Tillites,1981
+T,78,2282.2,-11,38,Africa,Tanzania,,Permian,,Tillites,1997
+T,77,2282.1,18,26,Africa,Sudan,Lower,Permian,,Tillites,1989
+T,76,2282,-26,30,Africa,South Africa,,Permian,,Tillites,1981
+T,75,2281,-27,32,Africa,South Africa,,Permian,,Tillites,1981
+T,74,2280,-33,27,Africa,South Africa,,Permian,,Tillites,1981
+T,73,2279,-30,19,Africa,South Africa,,Permian,,Tillites,1981
+T,72,2278,-33,20,Africa,South Africa,,Permian,,Tillites,1981
+T,71,2277,-21,14,Africa,Namibia,,Permian,,Tillites,1990
+T,70,2276,-28,18,Africa,Namibia,,Permian,,Tillites,1981
+T,69,2275,-17,13,Africa,Namibia,Lower,Permian,,Tillites,1981
+T,68,2274,-24,23,Africa,Namibia,Lower,Permian,,Tillites,1981
+T,67,2273,-15,32,Africa,Mozambique,,Permian,,Tillites,1981
+T,66,2272,-23,43.75,Africa,Madagascar,Lower,Permian,,Tillites,1981
+T,65,2271,0,10,Africa,Gabon,Lower,Permian,,Tillites,1981
+T,64,2270,23,26,Africa,Egypt,Lower,Permian,,Tillites,1987
+T,62,2269,-9,21,Africa,Angola,Lower,Permian,,Tillites,1981
+T,61,2268,-9,18,Africa,Angola,Lower,Permian,,Tillites,1981
+T,65,1898.1,-51,-75,South America,Brazil,Upper,Pennsylvanian,,Tillites,2000
+T,63,1897.1,27,86,Asia,Tethys Himalaya,Upper,Pennsylvanian,,Tillites,1998
+T,93,1381,-29,-68,South America,Argentina adj.S.Bolivia,,Pennsylvanian,,Tillites,1990
+T,91,1379,-32,-69,South America,Argentina adj.S.Bolivia,Middle,Pennsylvanian,Westphalian,Tillites,1981
+O,74,455.3,36,-84,North America,United States,Lower,Silurian,,Oolitic limestone,1986
+O,73,455.2,43,-74.9,North America,United States,Lower,Silurian,,Oolitic limestone,1986
+O,72,455.1,43,-75.6,North America,United States,Lower,Silurian,,Oolitic limestone,1986
+O,105,227.2,32.5,-107.5,North America,United States,Lower,Ordovician,,Oolites,1975
+O,104,227.1,47,-53,North America,Canada,Lower,Ordovician,,Oolites,1986
+O,65,132.3,32.5,107.5,North America,United States,Upper,Cambrian,,Oolites,1975
+O,67,132.2,31,97.5,North America,United States,Upper,Cambrian,,Oolites,1977
+O,66,132.1,35,99,North America,United States,Upper,Cambrian,,Oolites,1933
+L,123,683.3,68,49,Europe,CIS(USSR),Upper,Devonian,Frasnian,Lateritic Materials,1995
+L,121,683.2,34.5,71.3,Asia,Pakistan,Upper,Devonian,,Lateritic Materials,1997
+L,120,683.1,33.5,57,Asia,Iran,Upper,Devonian,,Lateritic Materials,1997
+L,598,3230.3,36.9,55.1,Asia,Iran,MU,Permian,,Lateritic Materials,1978
+L,597,3230.2,36.9,55.3,Asia,Iran,MU,Permian,,Lateritic Materials,1978
+L,596,3230.1,36.9,55.5,Asia,Iran,MU,Permian,,Lateritic Materials,1978
+K,569,1842,54,-2,United Kingdom,England ,Middle,Pennsylvanian,Westphalian,Lateritic Soil,1988
+L,458,1119.2,68,49,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Kaolinites,1995
+K,91,76,32,6,Africa,Algeria,Lower,Cambrian,,Sandstones,1964
+K,137,695,-6,-47,South America,Brazil,Upper,Devonian,Frasnian,Kaolinites,1995
+K,136,694,-1,-51,South America,Brazil,Upper,Devonian,,Kaolinites,1985
+K,135,693,-2,-58,South America,Brazil,Upper,Devonian,,Kaolinites,1985
+K,134,692.1,39,-82,North America,United States,Upper,Devonian,,Kaolinites,1983
+K,133,692,76,-112,North America,Canada,Upper,Devonian,,Kaolinites,1973
+K,132,691,58.5,-3.5,United Kingdom,Scotland,Upper,Devonian,,Kaolinites,1971
+K,131,690,75,19,Europe,Svalbard,Upper,Devonian,,Kaolinites,1964
+K,128,688,56,40,Europe,CIS(USSR),Upper,Devonian,,Kaolinites,1964
+K,126,686,31.3,119.8,Asia,China,Upper,Devonian,,Kaolinites,1995
+K,125,685,28,-6,Africa,Algeria,Upper,Devonian,,Kaolinites,1969
+K,124,684,29,8,Africa,Algeria,Upper,Devonian,,Kaolinites,1969
+K,74,580,-6,-47,South America,Brazil,Middle,Devonian,Givetian,Kaolinites,1995
+K,63,579,-2,-58,South America,Brazil,Middle,Devonian,,Kaolinites,1985
+K,73,579,-2,-58,South America,Brazil,Middle,Devonian,,Kaolinites,1985
+K,72,578,42,-75,North America,United States,Middle,Devonian,Givetian,Kaolinites,1966
+K,62,577,58.5,-3.5,United Kingdom,Scotland,Middle,Devonian,,Kaolinites,1971
+K,71,577,59,-3,United Kingdom,Scotland,Middle,Devonian,,Kaolinites,1971
+K,61,573,65,61,Europe,CIS(USSR),Middle,Devonian,,Kaolinites,1976
+K,67,573,65,61,Europe,CIS(USSR),Middle,Devonian,,Kaolinites,1976
+K,59,571,29,8,Africa,Algeria,Middle,Devonian,,Kaolinites,1969
+K,66,571,29,8,Africa,Algeria,Middle,Devonian,,Kaolinites,1969
+K,76,509,-2,-58,South America,Brazil,Lower,Devonian,,Kaolinites,1985
+K,75,508,-24,-53,South America,Brazil,Lower,Devonian,,Kaolinites,1976
+K,74,507,48.5,-65.5,North America,Canada,Lower,Devonian,Emsian,Kaolinites,1995
+K,73,506,42,-2,Europe,Spain,Lower,Devonian,Gedinnian,Kaolinites,1995
+K,71,504.1,24.5,11,Africa,Libya,Lower,Devonian,Emsian,Kaolinites,1984
+K,70,504,29,8,Africa,Algeria,Lower,Devonian,,Kaolinites,1969
+K,71,455,-2,-58,South America,Brazil,Lower,Silurian,,Kaolinites,1985
+K,70,454,-35,-58,South America,Argentina,Lower,Silurian,,Kaolinites,1990
+K,69,453,39,-79,North America,Virginia W.Virginia,Lower,Silurian,Llandovery,Kaolinites,1989
+K,68,452,39,-84,North America,Ohio,Lower,Silurian,,Kaolinites,1961
+K,67,451,38,-84,North America,Kentucky,Lower,Silurian,,Kaolinites,1973
+K,65,449,58,25,Europe,Baltic States,Lower,Silurian,,Kaolinites,1970
+K,64,448,29,8,Africa,Algeria,Lower,Silurian,,Kaolinites,1969
+K,180,396,-2,-58,South America,Brazil,Upper,Ordovician,,Kaolinites,1985
+K,179,395,34,-97,North America,United States,Middle,Ordovician,,Kaolinites,1996
+K,178,394,45,-93,North America,United States,Middle,Ordovician,,Kaolinites,1996
+K,177,393.1,42,-91,North America,United States,Middle,Ordovician,,Kaolinites,2000
+K,176,393,50,-103,North America,Canada,Middle,Ordovician,,Kaolinites,1971
+K,173,390,18,-9,Africa,Mauritania,Upper,Ordovician,,Kaolinites,1981
+K,592,3229,-28.5,-49.5,South America,Brazil,MU,Permian,,Kaolinites,1980
+K,591,3228,-31.5,-54,South America,Brazil,MU,Permian,,Kaolinites,1980
+K,588,3227,-32.5,149.5,Australia,,MU,Permian,,Kaolinites,1978
+K,589,3225,-32,149,Australia,,MU,Permian,,Kaolinites,1970
+K,587,3224,-34.5,151,Australia,,Upper,Permian,,Kaolinites,1971
+K,585,3222.1,31.8,35.7,Asia,Jordan,Upper,Permian,,Kaolinites,1991
+K,584,3222,56,84,Asia,CIS(USSR),MU,Permian,,Kaolinites,1964
+K,583,3221,65,95,Asia,CIS(USSR),MU,Permian,,Kaolinites,1964
+K,582,3220,24,108,Asia,China,Upper,Permian,,Kaolinites,1982
+K,581,3219,31,119.9,Asia,China,Upper,Permian,,Kaolinites,1994
+K,580,3218,39.9,111.6,Asia,China,Upper,Permian,,Kaolinites,1984
+K,579,3217,-18,28,Africa,Zimbabwe,MU,Permian,,Kaolinites,1980
+K,578,3216,-26,28,Africa,South Africa,MU,Permian,,Kaolinites,1965
+K,594,2693,-30,-51,South America,Brazil,MU,Permian,,Kaolinites,1981
+K,593,2692,-31.5,-53.5,South America,Brazil,MU,Permian,,Kaolinites,1973
+K,513,2691,34,-100,North America,United States,Lower,Permian,,Kaolinites,1994
+K,512,2690,49,7,Europe,Germany,Lower,Permian,,Kaolinites,1960
+K,511,2689,51,13,Europe,Germany,Lower,Permian,,Kaolinites,1964
+K,508,2686,24,86,Asia,India,Lower,Permian,,Kaolinites,1980
+K,507,2685,56,84,Asia,CIS(USSR),Lower,Permian,,Kaolinites,1964
+K,506,2684,65,95,Asia,CIS(USSR),Lower,Permian,,Kaolinites,1964
+K,505,2683,39.8,113.3,Asia,China,Lower,Permian,,Kaolinites,1989
+K,504,2682,39.5,112.2,Asia,China,Lower,Permian,,Kaolinites,1989
+K,503,2681,41.3,124,Asia,China,Lower,Permian,,Kaolinites,1984
+K,502,2680,34,110.1,Asia,China,Lower,Permian,,Kaolinites,1984
+K,501,2679,35,109.1,Asia,China,Lower,Permian,,Kaolinites,1984
+K,500,2678,35.1,113,Asia,China,Lower,Permian,,Kaolinites,1984
+K,499,2677,34.5,113.3,Asia,China,Lower,Permian,,Kaolinites,1984
+K,498,2676,34.9,109.6,Asia,China,Lower,Permian,,Kaolinites,1984
+K,497,2675,35.1,109.5,Asia,China,Lower,Permian,,Kaolinites,1984
+K,496,2674,36.7,117.5,Asia,China,Lower,Permian,,Kaolinites,1984
+K,495,2673,32.8,116.5,Asia,China,Lower,Permian,,Kaolinites,1984
+K,494,2672,33,113.2,Asia,China,Lower,Permian,,Kaolinites,1984
+K,493,2671,35.2,113.2,Asia,China,Lower,Permian,,Kaolinites,1984
+K,492,2670,30.3,111.4,Asia,China,Lower,Permian,,Kaolinites,1984
+K,109,231,50,-103,North America,Canada,Lower,Ordovician,,Kaolinites,1971
+K,106,228,31,36,Asia,Jordan,Lower,Ordovician,,Kaolinites,1994
+K,395,2217.1,-30,-68,South America,Argentinia,Upper,Pennsylvanian,Stephanian,Bauxites,1998
+K,394,2217,39,-81,North America,United States,,Pennsylvanian,,Bauxites,1979
+K,393,2216,33.5,-98,North America,United States,Upper,Pennsylvanian,Gzelian,Bauxites,1995
+K,392,2215,37,-92,North America,United States,,Pennsylvanian,,Bauxites,1975
+K,391,2214,39,-91,North America,United States,,Pennsylvanian,,Bauxites,1975
+K,390,2213.1,39.5,-79,North America,United States,,Pennsylvanian,,Bauxites,1922
+K,389,2213,53,-1,United Kingdom,England Wales,,Pennsylvanian,,Bauxites,1971
+K,388,2212,53,-3,United Kingdom,England Wales,,Pennsylvanian,,Bauxites,1971
+K,387,2211.1,43,-5,Europe,Spain,,Pennsylvanian,,Bauxites,2000
+K,384,2209.1,49,7,Europe,Germany,Upper,Pennsylvanian,Stephanian,Bauxites,1989
+K,381,2207,51,13,Europe,Germany,,Pennsylvanian,,Bauxites,1975
+K,379,2205,49,7,Europe,France,,Pennsylvanian,,Bauxites,1969
+K,378,2204,49,13,Europe,Czech Republic,Middle,Pennsylvanian,Westphalian,Bauxites,1968
+K,375,2202,42,48,Asia,CIS(USSR),,Pennsylvanian,,Bauxites,1985
+K,374,2201,56,84,Asia,CIS(USSR),Upper,Pennsylvanian,Stephanian,Bauxites,1980
+K,372,2199,38.9,106.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,371,2198,36.5,104.6,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,370,2197,38.8,101.1,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,369,2196,35.2,106.8,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,368,2195,39.9,111.6,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,367,2194,41,111.6,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,366,2193,41.3,124.1,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,365,2192,32.6,116.9,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,364,2191,35.8,117.6,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,363,2190,34.8,117.4,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,362,2189,36.8,118,Asia,China,,Pennsylvanian,,Bauxites,1984
+K,361,2188,38.6,114.6,Asia,China,,Pennsylvanian,,Bauxites,1988
+K,360,2187,39.9,117,Asia,China,,Pennsylvanian,,Bauxites,1988
+K,359,2186,37.8,112.3,Asia,China,,Pennsylvanian,,Bauxites,1988
+K,568,1841,-30,-67,South America,Argentina,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,567,1840,39,-81,North America,United States,Middle,Pennsylvanian,,Kaolinites,1989
+K,564,1837,41,-80,North America,United States,Middle,Pennsylvanian,,Kaolinites,1975
+K,563,1836,41,-80,North America,United States,,Pennsylvanian,,Kaolinites,1975
+K,560,1833,41,-81,North America,United States,Middle,Pennsylvanian,,Kaolinites,1975
+K,559,1832,37,-92,North America,United States,,Pennsylvanian,,Kaolinites,1975
+K,558,1831,39,-91,North America,United States,,Pennsylvanian,,Kaolinites,1975
+K,557,1830,39.5,-79,North America,United States,,Pennsylvanian,,Kaolinites,1922
+K,556,1829,38,-83,North America,United States,Lower,Pennsylvanian,,Kaolinites,1975
+K,555,1828,41,-94,North America,United States,Middle,Pennsylvanian,Westphalian,Kaolinites,1977
+K,554,1827,39,-86,North America,United States,Lower,Pennsylvanian,,Kaolinites,1948
+K,552,1825,46,-60,North America,Canada,Middle,Pennsylvanian,Westphalian,Kaolinites,1985
+K,551,1824,53.5,-4,United Kingdom,Scotland,,Pennsylvanian,,Kaolinites,1972
+K,550,1823,53,-2,United Kingdom,Scotland,Middle,Pennsylvanian,Westphalian,Kaolinites,1969
+K,549,1822,56,-4,United Kingdom,Scotland,Middle,Pennsylvanian,Westphalian,Kaolinites,1969
+K,548,1821,53.5,-1.5,United Kingdom,England Wales,Middle,Pennsylvanian,Westphalian,Kaolinites,1970
+K,547,1820,53,-3,United Kingdom,England Wales,,Pennsylvanian,,Kaolinites,1971
+K,546,1819,53,-1,United Kingdom,England Wales,,Pennsylvanian,,Kaolinites,1971
+K,545,1818,38,-6,Europe,Spain,Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,544,1817,43,-6,Europe,Spain,Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,543,1816,50,19,Europe,Poland,Middle,Pennsylvanian,Westphalian,Kaolinites,1973
+K,540,1814.1,49,7,Europe,Germany,Middle,Pennsylvanian,Westphalian,Kaolinites,1989
+K,538,1813,51,7,Europe,Germany,Middle,Pennsylvanian,Westphalian,Kaolinites,1979
+K,537,1812,51,13,Europe,Germany,,Pennsylvanian,,Kaolinites,1975
+K,535,1810,54,-8,Europe,Ireland,Lower,Pennsylvanian,Namurian,Kaolinites,1971
+K,533,1808,49,7,Europe,France,,Pennsylvanian,,Kaolinites,1979
+K,531,1806.3,57,86,Europe,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,530,1806.2,50,75,Europe,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,529,1806.1,44,43,Europe,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,527,1805,42,48,Europe,CIS(USSR),,Pennsylvanian,,Kaolinites,1985
+K,526,1804,43,26,Europe,Bulgaria,Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,524,1802,41.5,41.5,Asia,Turkey,Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,523,1801,35.5,136.75,Asia,Japan,,Pennsylvanian,,Kaolinites,1961
+K,522,1800,55,88,Asia,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,521,1799,50,73,Asia,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,520,1798,43,44,Asia,CIS(USSR),Middle,Pennsylvanian,Westphalian,Kaolinites,1980
+K,517,1795,37.8,113.5,Asia,China,Middle,Pennsylvanian,Moscovian,Kaolinites,1992
+K,516,1794,38.6,114.6,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,515,1793,35.8,117.6,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,514,1792,32.6,116.9,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,513,1791,36.5,104.6,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,512,1790,41.3,124.1,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1984
+K,508,1786,37,112.5,Asia,China,Middle,Pennsylvanian,Westphalian,Kaolinites,1992
+K,68,133,-24,132,Australia,Amadeus Basin,Upper,Cambrian,,Kaolinites,1991
+K,209,1305,46,-112,Asia,,,Mississippian,,Bauxites,
+K,208,1304,38,-89,Asia,,,Mississippian,,Bauxites,
+K,207,1303,39,-104,North America,United States,Upper,Mississippian,,Bauxites,1969
+K,206,1302,40,-107,North America,United States,Upper,Mississippian,,Bauxites,1969
+K,205,1301,38,-108,North America,United States,Upper,Mississippian,,Bauxites,1969
+K,199,1295,58,34,Europe,CIS(USSR),Upper,Mississippian,,Bauxites,1970
+K,198,1294,57,34,Europe,CIS(USSR),Upper,Mississippian,,Bauxites,1964
+K,197,1293,51,5,Europe,Belgium,Upper,Mississippian,,Bauxites,1980
+K,195,1291,50,73,Asia,CIS(USSR),Upper,Mississippian,,Bauxites,1971
+K,194,1290,31,119.9,Asia,China,Upper,Mississippian,,Bauxites,1994
+K,193,1289,29.8,119.6,Asia,China,Upper,Mississippian,,Bauxites,1994
+K,192,1288,31.3,119.8,Asia,China,Upper,Mississippian,,Kaolinites,1994
+K,457,1119.1,41,-92,North America,United States,Middle,Mississippian,Visean,Kaolinites,1963
+K,456,1119,56,-3,United Kingdom,Scotland,Middle,Mississippian,,Kaolinites,1971
+K,455,1118.1,54,-2,United Kingdom,England Wales,Middle,Mississippian,,Kaolinites,1954
+K,454,1118,53,-4,United Kingdom,England Wales,Middle,Mississippian,,Kaolinites,1954
+K,453,1117,75,19,Europe,Svalbard Bear Ise.,Lower,Mississippian,Tournaisian,Kaolinites,1964
+K,452,1116,78,12,Europe,Svalbard Bear Ise.,Middle,Mississippian,Visean,Kaolinites,1964
+K,451,1115,71,29.5,Europe,Norway,Middle,Mississippian,,Kaolinites,1995
+K,450,1114,52,13,Europe,Germany,Middle,Mississippian,Visean,Kaolinites,1964
+K,449,1113,52,13,Europe,Germany,Middle,Mississippian,Visean,Kaolinites,1975
+K,448,1112,54,37.5,Europe,CIS(USSR),Middle,Mississippian,Visean,Kaolinites,1964
+K,447,1111,58,34,Europe,CIS(USSR),Middle,Mississippian,,Kaolinites,1970
+K,446,1110,57,34,Europe,CIS(USSR),Middle,Mississippian,,Kaolinites,1964
+K,443,1107,65,95,Asia,CIS(USSR),Upper,Mississippian,,Kaolinites,1989
+K,442,1106,50,73,Asia,CIS(USSR),Middle,Mississippian,,Kaolinites,1971
+K,441,1105,27.7,106.9,Asia,China,Middle,Mississippian,Visean,Kaolinites,1992
+K,440,1104,26.5,106.4,Asia,China,Middle,Mississippian,Visean,Kaolinites,1992
+K,439,1103,27,106.9,Asia,China,Middle,Mississippian,Visean,Kaolinites,1992
+K,438,1102,24.4,112.6,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,437,1101,22.5,114.1,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,436,1100,23,114.3,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,435,1099,24.3,114.1,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,434,1098,23.3,113.1,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,433,1097,24.6,113.5,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,432,1096,31.5,117.8,Asia,China,Middle,Mississippian,Visean,Kaolinites,1993
+K,431,1095,31.7,118.1,Asia,China,Middle,Mississippian,Visean,Kaolinites,1993
+K,430,1094,30.6,118.4,Asia,China,Middle,Mississippian,Visean,Kaolinites,1993
+K,429,1093,30.9,118.7,Asia,China,Middle,Mississippian,Visean,Kaolinites,1993
+K,428,1092,25.8,116,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,427,1091,25.9,115.3,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,426,1090,26.4,115.9,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,425,1089,27.3,115.4,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,424,1088,27,114.9,Asia,China,Middle,Mississippian,,Kaolinites,1993
+K,423,1087,31.3,118.8,Asia,China,Middle,Mississippian,Visean,Kaolinites,1988
+K,422,1086,28.2,112.5,Asia,China,Middle,Mississippian,Visean,Kaolinites,1984
+K,421,1085,27.2,111.7,Asia,China,Middle,Mississippian,Visean,Kaolinites,1984
+K,420,1084,31,119.9,Asia,China,Middle,Mississippian,Visean,Kaolinites,1994
+K,419,1083,29.8,119.6,Asia,China,Middle,Mississippian,,Kaolinites,1994
+K,418,1082,31.3,119.8,Asia,China,Middle,Mississippian,Visean,Kaolinites,1994
+I,151,2814,-34,150,Australia,,Middle,Permian,Artinskian,Ice Crystals,1992
+G,128,813,51,-115,North America,Canada,Middle,Mississippian,Visean,Glendonites,1994
+G,148,2812,-34,151,Australia,,,Permian,,Glendonites,1985
+G,131,2329,-25,150,Australia,,,Permian,,Glendonites,1965
+G,130,2328,-34,151,Australia,,,Permian,,Glendonites,1985
+G,129,2327.1,-28.5,24,Africa,South Africa,,Permian,,Glendonites,1973
+E,24,99.2,63.5,90,Asia,CIS(USSR),Middle,Cambrian,,Evaporites,1984
+E,23,99.1,55,102,Asia,CIS(USSR),Middle,Cambrian,,Evaporites,1984
+E,22,99,63,112,Asia,CIS(USSR),Middle,Cambrian,,Evaporites,1984
+E,21,98,28,107.3,Asia,South China,Middle,Cambrian,,Halites,1980
+E,20,97,28,107.7,Asia,South China,Middle,Cambrian,,Halites,1980
+E,19,96,27.8,107,Asia,South China,Middle,Cambrian,,Halites,1980
+E,18,95,27.8,107.5,Asia,South China,Middle,Cambrian,,Gypsum,1980
+E,17,94,27.8,103.2,Asia,South China,Middle,Cambrian,,Gypsum,1980
+E,16,93,28.2,103.6,Asia,South China,Middle,Cambrian,,Gypsum,1980
+E,15,91,29,108,Asia,South China,Middle,Cambrian,,Evaporites,1988
+E,14,90,31.5,109.5,Asia,South China,Middle,Cambrian,,Evaporites,1989
+E,11,9,35,112.5,Asia,North China,Lower,Cambrian,,Halites,1981
+E,13,89,28,105,Asia,South China,Middle,Cambrian,,Evaporites,1989
+E,12,88,28,103.5,Asia,South China,MU,Cambrian,,Evaporites,1989
+E,11,87,29,108,Asia,South China,Middle,Cambrian,,Halites,1981
+E,10,86,27,105,Asia,South China,Middle,Cambrian,,Halites,1981
+E,9,85,28,106,Asia,South China,Middle,Cambrian,,Halites,1981
+E,8,84,27,105.5,Asia,South China,Middle,Cambrian,,Gypsum,1981
+E,7,83,27,106.5,Asia,South China,Middle,Cambrian,,Evaporites,1991
+E,6,82,28,105,Asia,South China,Middle,Cambrian,,Evaporites,1991
+E,5,81,27.2,108,Asia,South China,Middle,Cambrian,,Halites,1979
+E,4,80,32,108,Asia,South China,Middle,Cambrian,,Halites,1985
+E,10,8,33.8,113,Asia,North China,Lower,Cambrian,,Halites,1981
+E,105,795.1,47,-104,North America,United States,Lower,Mississippian,,Evaporites,1989
+E,104,795,37,-80,North America,United States,,Mississippian,,Evaporites,1966
+E,103,794,36,-87,North America,United States,Middle,Mississippian,,Evaporites,1974
+E,100,791,46,-112,North America,United States,Middle,Mississippian,,Evaporites,1961
+E,3,79,33.5,117,Asia,North China,Middle,Cambrian,,Halites,1995
+E,98,789,37,-87,North America,United States,Middle,Mississippian,,Anhydrites,1979
+E,97,788,38,-96,North America,United States,Middle,Mississippian,,Anhydrites,1968
+E,96,787,42,-93,North America,United States,Middle,Mississippian,,Evaporites,1987
+E,91,783,49,-57,North America,Canada,Middle,Mississippian,,Evaporites,1989
+E,90,782,45,-52,North America,Canada,Middle,Mississippian,,Evaporites,1989
+E,89,781,48,-58,North America,Canada,Middle,Mississippian,Visean,Gypsum,1970
+E,88,780,47,-67,North America,Canada,Middle,Mississippian,Visean,Evaporites,1998
+E,2,78,37,98.5,Asia,China,Middle,Cambrian,,Gypsum,1991
+E,87,779,45,-64,North America,Canada,Middle,Mississippian,Visean,Evaporites,1963
+E,86,778,51,-114,North America,Canada,Middle,Mississippian,Visean,Evaporites,1993
+E,80,772,56,3,United Kingdom,England,Middle,Mississippian,Visean,Evaporites,1988
+E,79,771,53,-1,United Kingdom,England,Middle,Mississippian,Visean,Evaporites,1974
+E,1,77,41,81,Asia,China,LM,Cambrian,,Gypsum,1990
+E,77,769.1,54.5,20,Europe,Poland,Middle,Mississippian,Visean,Evaporites,1988
+E,75,768,54.5,-8,Europe,Ireland,Lower,Mississippian,Tournaisian,Evaporites,1992
+E,74,767,53,-8,Europe,Ireland,Middle,Mississippian,Visean,Evaporites,1968
+E,71,764,67,55,Europe,CIS(USSR),Middle,Mississippian,Visean,Evaporites,1981
+E,64,759.1,17,105,Asia,Iran,Lower,Mississippian,Tournaisian,Gypsum,1999
+E,63,759,32.5,77.75,Asia,India,Lower,Mississippian,Tournaisian,Gypsum,1996
+E,62,758,32,78,Asia,India,Lower,Mississippian,Tournaisian,Gypsum,1983
+E,61,757,32.5,77.5,Asia,India,Lower,Mississippian,Tournaisian,Gypsum,1983
+E,60,756,33,78,Asia,India,Lower,Mississippian,Tournaisian,Gypsum,1991
+E,59,755,52,95,Asia,CIS(USSR),Middle,Mississippian,,Evaporites,1960
+E,55,744,23.9,109.7,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1985
+E,54,743,27.1,113.9,Asia,China,Middle,Mississippian,Visean,Evaporites,1984
+E,53,742,33.2,118.8,Asia,China,Middle,Mississippian,Visean,Evaporites,1984
+E,52,741,34,119.9,Asia,China,Middle,Mississippian,Visean,Anhydrites,1984
+E,51,740,26.9,114.2,Asia,China,Middle,Mississippian,Visean,Anhydrites,1984
+E,50,739,27.7,111.4,Asia,China,Middle,Mississippian,Visean,Anhydrites,1993
+E,49,738,26.7,110.6,Asia,China,Middle,Mississippian,Visean,Anhydrites,1988
+E,48,737,27.4,112.2,Asia,China,Middle,Mississippian,Visean,Anhydrites,1988
+E,47,736,27,111.3,Asia,China,Middle,Mississippian,Visean,Anhydrites,1988
+E,46,735,27.3,111.8,Asia,China,Middle,Mississippian,Visean,Anhydrites,1988
+E,45,734,27,111.7,Asia,China,Middle,Mississippian,Visean,Anhydrites,1993
+E,44,733,27.1,111,Asia,China,Middle,Mississippian,Visean,Evaporites,1993
+E,43,732,22.1,111.9,Asia,China,Middle,Mississippian,,Gypsum,1988
+E,42,731,38.8,105.7,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1991
+E,41,730,39,96.8,Asia,China,Middle,Mississippian,Visean,Gypsum,1980
+E,40,729,37.4,103.8,Asia,China,Lower,Mississippian,Tournaisian,Anhydrites,1987
+E,39,728,37.1,103,Asia,China,Lower,Mississippian,Tournaisian,Anhydrites,1987
+E,38,727,39.1,95.8,Asia,China,Lower,Mississippian,Tournaisian,Anhydrites,1987
+E,37,726,38,96,Asia,China,Lower,Mississippian,,Evaporites,1958
+E,36,725,37,105,Asia,China,Lower,Mississippian,,Evaporites,1990
+E,35,724,37.5,105,Asia,China,Lower,Mississippian,,Evaporites,1985
+E,34,723.1,41,79,Asia,China,Lower,Mississippian,,Gypsum,2000
+E,33,723,36.4,95,Asia,China,Middle,Mississippian,Visean,Gypsum,1991
+E,32,722,39,97.1,Asia,China,Middle,Mississippian,Visean,Gypsum,1991
+E,30,720.1,37.5,76.25,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1999
+E,29,720,41.6,88.3,Asia,China,Middle,Mississippian,Visean,Gypsum,1981
+E,28,719,41.7,88.5,Asia,China,Middle,Mississippian,Visean,Gypsum,1991
+E,27,718,42.1,87.5,Asia,China,Middle,Mississippian,Visean,Gypsum,1991
+E,25,716,38,76.3,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1991
+E,24,715,40.6,79.9,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1991
+E,23,714,41,84,Asia,China,Lower,Mississippian,Tournaisian,Evaporites,1992
+E,22,713,41.3,83.3,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,1992
+E,21,712,40.5,84.7,Asia,China,Middle,Mississippian,Visean,Gypsum,
+E,20,711,38.5,83.5,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,
+E,19,710,40.5,83.3,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,
+E,86,71.1,-34,-55,South America,Uruguay,Lower,Cambrian,,Halites,2002
+E,85,71,-17,-66,South America,Bolivia,Lower,Cambrian,,Evaporites,1968
+E,18,709,41.4,83.2,Asia,China,Lower,Mississippian,Tournaisian,Gypsum,
+E,17,708,40.5,84.7,Asia,China,Lower,Mississippian,,Halites,
+E,16,707,40.5,83.3,Asia,China,Lower,Mississippian,Tournaisian,Halites,
+E,15,706,41.5,80,Asia,China,Lower,Mississippian,,Evaporites,1990
+E,14,705,41,89,Asia,China,Lower,Mississippian,,Evaporites,1984
+E,13,704,40,78,Asia,China,Lower,Mississippian,,Evaporites,1984
+E,12,703.1,25,15,Africa,Niger,Middle,Mississippian,Visean,Evaporites,2002
+E,11,703,17,8,Africa,Niger,Middle,Mississippian,Visean,Evaporites,1966
+E,10,702,18,7,Africa,Niger,Lower,Mississippian,,Evaporites,1966
+E,8,701,31,-5,Africa,Morocco,Middle,Mississippian,Visean,Evaporites,1970
+E,84,70,-30,-68.5,South America,Argentina,Lower,Cambrian,,Evaporites,1996
+E,9,7,41.9,123.4,Asia,North China,Lower,Cambrian,,Halites,1981
+E,6,699.1,25.75,10.75,Africa,Libya,Lower,Mississippian,Tournaisian,Gypsum,2000
+E,3,698,28,-7,Africa,Algeria,Middle,Mississippian,Visean,Evaporites,1979
+E,1,696,32,-4,Africa,Algeria,Middle,Mississippian,,Evaporites,1976
+E,83,69.2,36.5,-82.5,North America,United States,Lower,Cambrian,,Evaporites,2001
+E,82,69.1,36,-84,North America,United States,Lower,Cambrian,,Halites,1994
+E,81,69,36.5,-86.5,North America,United States,Lower,Cambrian,,Halites,1955
+E,80,68,40,-78.5,North America,United States,LM,Cambrian,,Evaporites,1992
+E,78,67,37,-117,North America,United States,LM,Cambrian,,Halites,1975
+E,77,66,34.5,-87,North America,United States,Lower,Cambrian,,Anhydrites,1991
+E,74,64,43,-7,Europe,Spain,Lower,Cambrian,,Evaporites,1988
+E,73,63,41,-1.5,Europe,Spain,Lower,Cambrian,,Evaporites,1995
+E,49,622,48,-103,North America,United States,Upper,Devonian,,Evaporites,1963
+E,47,621,44,-112,North America,United States,Upper,Devonian,,Evaporites,1988
+E,46,620,48,-112,North America,United States,Upper,Devonian,,Evaporites,1988
+E,72,62,43,-6,Europe,Spain,Lower,Cambrian,,Calcedony,1975
+E,45,619,46,-113,North America,United States,Upper,Devonian,,Evaporites,1961
+E,44,618.1,43,-93.5,North America,United States,Upper,Devonian,,Evaporites,1995
+E,43,618,50,-103,North America,Canada,Upper,Devonian,,Evaporites,1969
+E,42,617,53,-80,North America,Canada,Upper,Devonian,,Evaporites,1975
+E,41,616,60,-85,North America,Canada,Upper,Devonian,,Evaporites,1975
+E,37,612,44,25,Europe,Rumania,Upper,Devonian,,Evaporites,1970
+E,35,610,52,27,United Kingdom,CIS(USSR),Upper,Devonian,,Evaporites,1984
+E,71,61,40,9,Europe,Italy,Lower,Cambrian,,Evaporites,1990
+E,34,609,58,55,United Kingdom,CIS(USSR),Upper,Devonian,,Evaporites,1984
+E,33,608,57,20,United Kingdom,CIS(USSR),Upper,Devonian,,Evaporites,1984
+E,32,607,48,45,United Kingdom,CIS(USSR),Upper,Devonian,,Evaporites,1984
+E,30,605,58,-4,United Kingdom,Scotland,Upper,Devonian,,Evaporites,1990
+E,28,603,-26,113,Australia,,Upper,Devonian,,Evaporites,1980
+E,27,602,-18,124,Australia,,Upper,Devonian,,Evaporites,1980
+E,26,601,-15,129,Australia,,Upper,Devonian,,Evaporites,1980
+E,25,600,-28,135,Australia,,Upper,Devonian,,Evaporites,1980
+E,70,60.2,52,14,Europe,Germany,Lower,Cambrian,,Evaporites,2002
+E,69,60.1,44,3.5,Europe,France,Lower,Cambrian,,Evaporites,1997
+E,68,60,49.5,-1.5,Europe,France,Lower,Cambrian,,Halites,1994
+E,8,6,41,123,Asia,North China,Lower,Cambrian,,Halites,1981
+E,24,599,-30,142,Australia,Queensland,Upper,Devonian,,Evaporites,1980
+E,22,597,32,58,Asia,,Upper,Devonian,,Evaporites,1968
+E,21,596,34,57,Asia,Iran,Upper,Devonian,Famennian,Gypsum,1994
+E,20,595.1,44,68,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,2002
+E,19,595,49,63,Asia,CIS(USSR),Upper,Devonian,,Evaporites,1981
+E,18,594,50,64,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,17,593,49,72,Asia,CIS(USSR),Upper,Devonian,,Evaporites,1981
+E,16,592,76,180,Asia,CIS(USSR),Upper,Devonian,,Evaporites,1981
+E,15,591,57,86,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,14,590,62,118,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,75,59,57,-5,Europe,United Kingdom,Lower,Cambrian,,Chert,1985
+E,13,589,74,112,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,12,588,69,87,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,11,587,65,147,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,10,586,62,138,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,9,585.4,65,130,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,8,585.3,73,115,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,7,585.2,68,100,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,6,585.1,72,90,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,5,585,80,101,Asia,CIS(USSR),Upper,Devonian,Famennian,Evaporites,1981
+E,4,584,25.9,111,Asia,China,Upper,Devonian,Famennian,Gypsum,1985
+E,3,583,40.9,78.4,Asia,China,Upper,Devonian,,Gypsum,1991
+E,2,582,41.2,79.2,Asia,China,Upper,Devonian,,Gypsum,1991
+E,1,581,32,-5,Africa,Morocco,Upper,Devonian,,Evaporites,1967
+E,66,58,-35,138, Australia,south,Lower,Cambrian,,Evaporites,1990
+E,65,57,-20,138,Australia,Queensland,Lower,Cambrian,,Dolomite,1995
+E,67,56,-28,132,Australia,south,Lower,Cambrian,,Evaporites,1994
+E,44,550,31,-104,North America,United States,Middle,Devonian,,Evaporites,1977
+E,42,550,31,-104,North America,United States,Middle,Devonian,,Evaporites,1977
+E,64,55,-24,133,Australia,Northern Territory,Lower,Cambrian,,Dolomite,1991
+E,43,549,48,-115,North America,United States,LM,Devonian,,Evaporites,1963
+E,41,549,48,-103,North America,United States,LM,Devonian,,Evaporites,1963
+E,41,547.1,43,-85,North America,United States,Middle,Devonian,Eifelian,Evaporites,1998
+E,40,547,42,-85,North America,United States,Middle,Devonian,Eifelian,Evaporites,1945
+E,39,546.1,42,-94,North America,United States,Middle,Devonian,,Evaporites,1997
+E,39,546,42,-93,North America,United States,Middle,Devonian,,Evaporites,1967
+E,38,546,42,-93,North America,United States,Middle,Devonian,,Evaporites,1967
+E,38,545,50,-103,North America,Canada,Middle,Devonian,,Evaporites,1963
+E,37,545,50,-103,North America,Canada,Middle,Devonian,,Evaporites,1963
+E,36,544,53,-80,North America,Canada,Middle,Devonian,,Evaporites,1975
+E,35,543,60,-85,North America,Canada,Middle,Devonian,,Evaporites,1987
+E,61,54,31,58,SW Asia,Arabia IraqIran,Lower,Cambrian,,Evaporites,1990
+E,32,539.1,77.5,-86.5,North America,Canada,Middle,Devonian,,Evaporites,1989
+E,31,539,78,-80,North America,Canada,Middle,Devonian,,Evaporites,1973
+E,30,538,44,25,Europe,Rumania,Middle,Devonian,,Evaporites,1981
+E,31,538,44,25,Europe,Rumania,Middle,Devonian,,Evaporites,1981
+E,27,535,54,17,Europe,Poland,Middle,Devonian,Eifelian,Anhydrites,1978
+E,28,534,55,3,Europe,,Middle,Devonian,Givetian,Evaporites,1982
+E,27,533.1,49,17,Europe,Czech Republic,Middle,Devonian,Givetian,Evaporites,1981
+E,25,532,56,35,Asia,Rumania,Middle,Devonian,Eifelian,Evaporites,1981
+E,23,530,59,-3,United Kingdom,Scotland,Middle,Devonian,Givetian,Evaporites,1990
+E,60,53,32,51,SW Asia,Arabia IraqIran,Lower,Cambrian,,Evaporites,1990
+E,23,529,58.5,-3.75,United Kingdom,Scotland,Middle,Devonian,,Evaporites,1978
+E,22,529,58.5,-3.5,United Kingdom,Scotland,Middle,Devonian,,Evaporites,1978
+E,21,528,51,5,Europe,Belgium N.France,Middle,Devonian,Givetian,Evaporites,1994
+E,21,527,-26,113,Australia,,Middle,Devonian,,Evaporites,1980
+E,20,527,-26,113,Australia,,Middle,Devonian,,Evaporites,1980
+E,20,526,-18,124,Australia,,Middle,Devonian,,Evaporites,1980
+E,19,526,-18,124,Australia,,Middle,Devonian,,Evaporites,1980
+E,19,525,-15,129,Australia,,Middle,Devonian,,Evaporites,1980
+E,18,525,-15,129,Australia,,Middle,Devonian,,Evaporites,1980
+E,18,524,-30,142,Australia,,Middle,Devonian,,Evaporites,1980
+E,17,524,-30,142,Australia,,Middle,Devonian,,Evaporites,1980
+E,17,523,-25,144,Australia,Queensland,Middle,Devonian,,Evaporites,1967
+E,16,523,-25,144,Australia,Queensland,Middle,Devonian,,Evaporites,1980
+E,15,521,52,95,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,15,521,52,95,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,14,520,67,135,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,14,520,67,135,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,59,52.2,30,50,SW Asia,Arabia IraqIran,Lower,Cambrian,,Evaporites,1990
+E,58,52.1,25,55,SW Asia,Arabia IraqIran,Lower,Cambrian,,Evaporites,1990
+E,57,52,18,56,SW Asia,Arabia IraqIran,Lower,Cambrian,,Evaporites,1990
+E,13,519,54,92,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,12,518,62,118,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,12,518,62,188,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,11,517,74,112,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,11,517,74,112,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,10,516,69,87,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,10,516,69,87,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,9,515,65,147,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,9,515,65,147,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,8,514,62,138,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,8,514,62,138,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,7,513.4,65,130,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,7,513.4,65,130,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,6,513.3,73,115,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,6,513.3,73,115,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,5,513.2,68,100,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,5,513.2,68,100,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,4,513.1,72,90,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,4,513.1,72,90,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,3,513,80,101,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,3,513,80,101,Asia,CIS(USSR),Middle,Devonian,,Evaporites,1981
+E,2,512,30,102,Asia,China,Middle,Devonian,,Gypsum,1985
+E,2,512,30,102,Asia,China,Middle,Devonian,,Evaporites,1985
+E,1,511,35,69,Asia,Afghanistan,Middle,Devonian,,Evaporites,1964
+E,56,51,32.8,72.5,SW Asia,,Lower,Cambrian,,Halites,1968
+E,55,50,23,57.5,SW Asia,Arabia,Lower,Cambrian,,Halites,1968
+E,7,5,33.8,113,Asia,North China,Lower,Cambrian,,Gypsum,1981
+E,54,49,26,57,SW Asia,Arabia,Lower,Cambrian,,Halites,1988
+E,45,484,42,-85,North America,United States,Lower,Devonian,Gedinnian,Evaporites,1945
+E,44,483,53,-80,North America,Canada,Lower,Devonian,Gedinnian,Evaporites,1987
+E,43,482,60,-85,North America,Canada,Lower,Devonian,Gedinnian,Evaporites,1987
+E,38,481.6,78,-88,North America,Canada,Lower,Devonian,,Evaporites,1989
+E,39,481.5,64,-124.5,North America,Canada,Lower,Devonian,,Evaporites,1980
+E,42,481.4,60,-122,North America,Canada,Lower,Devonian,,Evaporites,1993
+E,41,481.3,60.5,-124,North America,Canada,Lower,Devonian,,Evaporites,1993
+E,40,481.2,68,-132,North America,Canada,Lower,Devonian,,Evaporites,1993
+E,37,481.1,78,-88,North America,Canada,Lower,Devonian,Emsian,Gypsum,1980
+E,36,481,75,-92,North America,Canada,Lower,Devonian,Lochkovian,Gypsum,1980
+E,35,480,73,-97,North America,Canada,Lower,Devonian,Lochkovian,Evaporites,1970
+E,53,48.1,29.5,72.25,Middle East,Pakistan,Lower,Cambrian,,Halites,1986
+E,52,48,30,35,Middle East,Israel,Lower,Cambrian,,Halites,1974
+E,34,479,78,-80,North America,Canada,Lower,Devonian,,Evaporites,1973
+E,32,477,43.5,-6,Europe,Spain,Lower,Devonian,Pragian,Evaporites,1995
+E,31,476,48,-3,Europe,France,Lower,Devonian,Lochkovian,Evaporites,1982
+E,29,475.1,68,60,Asia,CIS(USSR),Lower,Devonian,Lochkovian,Evaporites,1982
+E,28,475,59,-3,United Kingdom,Britain,Lower,Devonian,,Evaporites,1986
+E,27,474,47,11,Europe,Austria,Lower,Devonian,,Evaporites,1990
+E,26,473,-18,124,Australia,,Lower,Devonian,,Evaporites,1980
+E,25,472,-36,145,Australia,Victoria,Lower,Devonian,Pragian,Evaporites,1995
+E,24,471,30,39,Asia,Saudi Arabia,Lower,Devonian,,Evaporites,1994
+E,1,470.2,26,11,Africa,Libya,Lower,Devonian,,Gypsum,2002
+E,23,470.1,37,55,Asia,Iran,Lower,Devonian,,Evaporites,1978
+E,51,47,31,56,Middle East,Iran,Lower,Cambrian,,Halites,1995
+E,21,469,34,57,Asia,Iran,Lower,Devonian,,Gypsum,1968
+E,20,468.1,75,95,Asia,CIS(USSR),Lower,Devonian,Lochkovian,Evaporites,1999
+E,18,468,62,118,Asia,CIS(USSR),Lower,Devonian,,Evaporites,1981
+E,17,467,74,112,Asia,CIS(USSR),Lower,Devonian,,Evaporites,1981
+E,16,466,69,87,Asia,CIS(USSR),Lower,Devonian,,Evaporites,1981
+E,15,465,65,147,Asia,CIS(USSR),Lower,Devonian,,Evaporites,1981
+E,14,464,62,138,Asia,CIS(USSR),Lower,Devonian,,Evaporites,1981
+E,19,461.1,74,90,Asia,CIS(USSR),Lower,Devonian,Lochkovian,Gypsum,1988
+E,7,461,29.7,98.8,Asia,China,Lower,Devonian,,Gypsum,
+E,6,460,30.7,102.7,Asia,China,Lower,Devonian,,Gypsum,1990
+E,50,46,34,57,Middle East,Iran,Lower,Cambrian,,Evaporites,1995
+E,5,459,33.4,104.9,Asia,China,Lower,Devonian,,Gypsum,1987
+E,4,458,42.2,82,Asia,China,Lower,Devonian,,Halites,1981
+E,3,457,40,80,Asia,China,Lower,Devonian,,Gypsum,1984
+E,2,456,41,80,Asia,China,LM,Devonian,,Gypsum,1990
+E,49,45.2,63.5,90,Asia,CIS(USSR),Lower,Cambrian,,Evaporites,1981
+E,48,45.1,55,102,Asia,CIS(USSR),Lower,Cambrian,,Evaporites,1981
+E,47,45,63,112,Asia,CIS(USSR),Lower,Cambrian,,Evaporites,1981
+E,46,44,28.4,107.3,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,45,43,28.1,106.8,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,38,424,48,-100,North America,United States,Lower,Silurian,,Evaporites,1967
+E,33,421,41,-92,North America,United States,Lower,Silurian,,Anydrite,1943
+E,44,42,27.8,107.5,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,31,419,41,-85.5,North America,United States,Lower,Silurian,,Evaporites,1995
+E,27,416,52,-83,North America,Canada,Lower,Silurian,,Gypsum,1964
+E,21,411,75,-95,North America,Canada,Lower,Silurian,,Anydrite,1978
+E,43,41,29.6,103.8,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,18,408,73,-100,North America,Canada,Lower,Silurian,,Evaporites,1973
+E,17,407,73,-87.5,North America,Canada,Lower,Silurian,,Evaporites,1973
+E,16,406,60,11,Europe,Norway,Lower,Silurian,Wenlock,Evaporites,1981
+E,9,402,-35,149,Australia,New South Wales,Upper,Silurian,Ludlovian,Gypsum,1987
+E,7,400,31,56,Asia,Iran,Lower,Silurian,,Halites,1995
+E,42,40,21.8,102.2,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,6,4,42,126.5,Asia,North China,Lower,Cambrian,,Gypsum,1981
+E,6,399,31,77.5,Asia,India,Lower,Silurian,,Gypsum,1983
+E,5,398,78,100,Asia,CIS(USSR),Upper,Silurian,Pridoli,Evaporites,1981
+E,4,397.3,60,123,Asia,CIS(USSR),Lower,Silurian,,Evaporites,1981
+E,3,397.2,65,125,Asia,CIS(USSR),Lower,Silurian,,Evaporites,1981
+E,2,397.1,70,105,Asia,CIS(USSR),Lower,Silurian,,Evaporites,1981
+E,1,397,65,100,Asia,CIS(USSR),Lower,Silurian,,Evaporites,1981
+E,41,39,28.2,103.6,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,40,38,28.2,105,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,39,37,27.8,103.2,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,142,364,44,-107,North America,United States,Upper,Ordovician,,Evaporites,1970
+E,141,363,45,-87.5,North America,United States,Upper,Ordovician,,Gypsum,1995
+E,140,362,40,-79,North America,United States,Middle,Ordovician,,Evaporites,1992
+E,139,361,38,-85,North America,United States,Upper,Ordovician,,Evaporites,1968
+E,138,360,48,-103,North America,United States,Upper,Ordovician,,Evaporites,1989
+E,38,36,29.5,104.6,Asia,South China,Lower,Cambrian,,Gypsum,1980
+E,137,359,43,-79,North America,United States,Upper,Ordovician,,Gypsum,1996
+E,136,358,33,-107,North America,United States,Upper,Ordovician,,Evaporites,1991
+E,135,357,32,-104,North America,United States,Upper,Ordovician,Ashgillian,Anhydrites,1982
+E,134,356.1,46,-86.6,North America,United States,Upper,Ordovician,,Gypsum,1957
+E,133,356,37,-90,North America,United States,Middle,Ordovician,,Evaporites,1983
+E,132,355,36,-93,North America,United States,Middle,Ordovician,,Evaporites,1972
+E,131,354,35,-93,North America,United States,Middle,Ordovician,,Evaporites,1976
+E,129,352,50,-103,North America,Canada,MU,Ordovician,,Evaporites,1996
+E,128,351,45,-74,North America,Canada,LM,Ordovician,,Evaporites,1992
+E,37,35,29,109,Asia,South China,Lower,Cambrian,,Gypsum,1988
+E,125,348,49,-58,North America,Canada,Middle,Ordovician,,Evaporites,1977
+E,124,347,65,-85,North America,Canada,Upper,Ordovician,Ashgillian,Evaporites,1991
+E,123,346,60,-85,North America,Canada,Upper,Ordovician,,Evaporites,1969
+E,122,345,53,-80,North America,Canada,Upper,Ordovician,,Evaporites,1969
+E,121,344.1,75,-84,North America,Canada,Middle,Ordovician,,Anhydrites,1998
+E,120,344,75,-92,North America,Canada,LM,Ordovician,,Anhydrites,1978
+E,119,343,75,-92,North America,Canada,Middle,Ordovician,,Anhydrites,1978
+E,118,342,72.5,-95,North America,Canada,Upper,Ordovician,,Anhydrites,1978
+E,36,34,28,103.5,Asia,South China,Lower,Cambrian,,Gypsum,1978
+E,115,339,62,-115,North America,Canada,Middle,Ordovician,,Evaporites,1980
+E,114,338,65,-125,North America,Canada,Upper,Ordovician,,Evaporites,1970
+E,113,337,75,-95,North America,Canada,LM,Ordovician,,Evaporites,1973
+E,112,336,66,60,Europe,CIS(USSR),Upper,Ordovician,Ashgillian,Evaporites,1992
+E,111,335,57,40,Europe,CIS(USSR),Upper,Ordovician,Caradoc,Evaporites,1994
+E,109,333,57,25,Europe,CIS(USSR),MU,Ordovician,,Evaporites,1984
+E,107,331,-20,124,Australia,,Lower,Ordovician,,Evaporites,1991
+E,106,330,-20,122,Australia,,Middle,Ordovician,,Evaporites,1981
+E,35,33,27,105.5,Asia,South China,Lower,Cambrian,,Gypsum,1981
+E,104,329.1,-20,138,Australia,Queensland,LM,Ordovician,,Evaporites,1968
+E,103,329,-24,133,Australia,Northern Territory,Middle,Ordovician,Llanvirn,Evaporites,1986
+E,102,328.1,37,128,Asia,Korea,Lower,Ordovician,Arenig,Gypsum,2001
+E,101,328,39.5,125.9,Asia,Korea,Upper,Ordovician,Caradoc,Gypsum,1996
+E,100,327,39,125.8,Asia,Korea,Upper,Ordovician,Caradoc,Gypsum,1996
+E,99,326,37,128.5,Asia,Korea,Middle,Ordovician,Llanvirn,Evaporites,1996
+E,97,325,79,101,Asia,CIS(USSR),,Ordovician,,Evaporites,1981
+E,96,324.3,60,123,Asia,CIS(USSR),Middle,Ordovician,,Evaporites,1981
+E,95,324.2,65,125,Asia,CIS(USSR),Middle,Ordovician,,Evaporites,1981
+E,94,324.1,70,105,Asia,CIS(USSR),Middle,Ordovician,,Evaporites,1981
+E,93,324,70,110,Asia,CIS(USSR),Middle,Ordovician,,Evaporites,1981
+E,91,322,36.2,117.6,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,90,321,36.7,117.5,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,89,320,39,114.5,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,34,32,34.8,116.9,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,88,319,35.6,113.3,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,87,318,37.2,112.2,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,86,317,36.2,111.6,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,85,316,36.4,111.1,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,84,315,36.8,111.8,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,83,314,37.4,110.2,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,82,313,37.8,110.1,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,81,312,38.2,109.7,Asia,China,Middle,Ordovician,Llanvirn,Evaporites,1990
+E,33,31,33.6,115.1,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,32,30,33.6,113.3,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,5,3,41,124,Asia,North China,Lower,Cambrian,,Gypsum,1981
+E,31,29,33.2,113,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,30,28,33.8,113,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,102,2776,-15,-73,South America,Peru,Upper,Permian,,Evaporites,1968
+E,36,2775.1,-2,-43,South America,Brazil,Lower,Permian,,Evaporites,1994
+E,101,2775.1,-12,-38,South America,Brazil,Middle,Permian,Kungurian,Evaporites,1994
+E,97,2772,-30,-68,North America,Argentina,Upper,Permian,,Evaporites,1969
+E,93,2768,35,-98,North America,United States,Upper,Permian,,Evaporites,1962
+E,91,2766,34,-106,North America,United States,Middle,Permian,,Evaporites,1976
+E,90,2765,35,-107,North America,United States,Middle,Permian,,Evaporites,1991
+E,85,2761,37,-100,North America,United States,Middle,Permian,,Evaporites,1968
+E,83,2759,34,-115,North America,United States,Middle,Permian,,Evaporites,1983
+E,82,2758,34,-116,North America,United States,Middle,Permian,,Gypsum,1952
+E,81,2757,37,-110,North America,United States,Middle,Permian,,Evaporites,1938
+E,80,2756,25,-100,North America,Mexico,MU,Permian,,Evaporites,1981
+E,79,2755.1,72,-24,North America,Canada,Upper,Permian,,Evaporites,1997
+E,78,2755,71,-22,North America,Canada,Upper,Permian,,Evaporites,1984
+E,77,2754,75,-20,North America,Canada,Middle,Permian,Kungurian,Evaporites,1988
+E,76,2753,78,-80,North America,Canada,Middle,Permian,Artinskian,Gypsum,1993
+E,75,2752,47.5,7.5,Europe,Switzerland,MU,Permian,,Evaporites,1972
+E,69,2746,44.5,24,Europe,Rumania,Upper,Permian,,Evaporites,1987
+E,68,2745,42,27,Europe,Rumania,MU,Permian,,Evaporites,1981
+E,63,2741,55,3,Europe,,MU,Permian,,Evaporites,1982
+E,62,2740,53,6.5,Europe,Netherlands,MU,Permian,,Evaporites,1972
+E,57,2738,53,-7,Europe,Ireland,MU,Permian,,Evaporites,1981
+E,60,2737.1,55.3,20.5,Europe,Lithuania,Upper,Permian,,Evaporites,1999
+E,58,2737,47.5,12,Europe,Italy,Upper,Permian,,Evaporites,1973
+E,56,2736,47,17,Europe,Hungary,MU,Permian,,Evaporites,1992
+E,51,2731.1,46,50,Europe,CIS(USSR),Middle,Permian,Kungurian,Evaporites,2001
+E,42,2726,54,-1,Europe,Britain,Upper,Permian,,Evaporites,1988
+E,38,2722,74.5,19,Europe,,MU,Permian,,Evaporites,1974
+E,34,2718,55,3,Europe,,MU,Permian,,Halites,1982
+E,33,2717.2,-28,140.5,Australia,,Upper,Permian,,Evaporites,1995
+E,29,2716,20,58,Asia,Oman,Upper,Permian,,Gypsum,1990
+E,27,2714,28,51,Asia,Middle East,Middle,Permian,,Evaporites,1980
+E,26,2713,33,50,Asia,Middle East,MU,Permian,,Evaporites,1978
+E,23,2712.2,29,54,Asia,Iran,Upper,Permian,,Evaporites,1982
+E,22,2712.1,31,57,Asia,Iran,Upper,Permian,,Evaporites,1991
+E,21,2712,39,45.5,Asia,Iran,MU,Permian,,Evaporites,1996
+E,20,2711,52,55,Asia,CIS(USSR),LM,Permian,Artinskian,Evaporites,1996
+E,19,2710,48.6,42,Asia,CIS(USSR),LM,Permian,Artinskian,Evaporites,1996
+E,14,2705,41.9,126.4,Asia,China,Upper,Permian,,Evaporites,1988
+E,13,2704,35.9,110.8,Asia,China,Upper,Permian,,Evaporites,1989
+E,12,2703,38.1,100.2,Asia,China,Upper,Permian,,Evaporites,1991
+E,11,2702,38.8,99.6,Asia,China,Upper,Permian,,Gypsum,1991
+E,29,27,34.7,110.7,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,6,2698.2,20,10.9,Africa,Tunisia,Upper,Permian,,Evaporites,1990
+E,28,26,35.5,112.8,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,20,251,37,114,Asia,China,Middle,Ordovician,,Gypsum,1989
+E,19,250,36.75,114.5,Asia,China,Lower,Ordovician,,Evaporites,1989
+E,27,25,35.9,115.4,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,18,249,37.5,111,Asia,China,Lower,Ordovician,,Halites,1991
+E,17,248,37.4,111.2,Asia,China,Lower,Ordovician,,Halites,1991
+E,16,247,38,111,Asia,China,Lower,Ordovician,,Halites,1991
+E,15,246,38.5,111,Asia,China,Lower,Ordovician,,Halites,1991
+E,14,245,36,111.5,Asia,China,Lower,Ordovician,,Gypsum,1991
+E,13,244,38,110,Asia,China,Lower,Ordovician,,Gypsum,1991
+E,12,243,38,110,Asia,China,Lower,Ordovician,,Evaporites,1991
+E,11,242,36.5,109.5,Asia,China,Lower,Ordovician,,Evaporites,1991
+E,10,241,37.6,108.8,Asia,China,Lower,Ordovician,,Evaporites,1991
+E,9,240,39,111,Asia,China,Lower,Ordovician,,Halites,1991
+E,26,24,36.3,116.4,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,8,239,37,112,Asia,China,Lower,Ordovician,,Gypsum,1983
+E,7,238,36,115.5,Asia,China,Lower,Ordovician,,Gypsum,1983
+E,6,237,36,110.5,Asia,China,Lower,Ordovician,,Gypsum,1983
+E,1,232,39,92,Asia,China,Upper,Ordovician,Caradoc,Gypsum,1987
+E,25,23,36.5,116.7,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,103,227,47,-71,North America,Canada,Lower,Ordovician,,Evaporites,1993
+E,102,226.1,-31,-69,South America,Argentina,Lower,Ordovician,Tremadoc,Gypsum,1997
+E,101,226,43,-90,North America,United States,Lower,Ordovician,,Evaporites,1971
+E,100,225,38,-81,North America,United States,Lower,Ordovician,,Evaporites,1992
+E,35,2246,-5,-45,South America,Brazil,,Permian,,Evaporites,1994
+E,33,2244,-3,-58,South America,Brazil,Lower,Permian,,Evaporites,1979
+E,31,2242,33.5,-98,North America,United States,,Permian,,Evaporites,1958
+E,30,2241,48,-104,North America,United States,,Permian,,Evaporites,1957
+E,29,2240.1,30.5,-114.5,North America,United States,,Permian,,Evaporites,1928
+E,28,2240,36.25,-114.6,North America,United States,,Permian,,Evaporites,1983
+E,99,224,37,-80,North America,United States,Lower,Ordovician,,Evaporites,1971
+E,26,2238,42,-104,North America,United States,,Permian,,Evaporites,1966
+E,25,2237,38,-97,North America,United States,,Permian,,Evaporites,1996
+E,24,2236.1,45,-114,North America,United States,,Permian,,Evaporites,1977
+E,23,2236,41,-104,North America,United States,,Permian,,Evaporites,1966
+E,22,2235,35,-110,North America,United States,,Permian,,Evaporites,1966
+E,21,2234,80,-80,North America,Canada,Lower,Permian,,Evaporites,1973
+E,20,2233.2,57.8,-0.5,United Kingdom,Scotland,,Permian,,Evaporites,1990
+E,19,2233.1,54,2,United Kingdom,England,Lower,Permian,,Evaporites,1992
+E,17,2232,71,30,Europe,Norway,Lower,Permian,Asselian,Evaporites,1995
+E,16,2231,72,25,Europe,Norway,Lower,Permian,Sakmarian,Evaporites,1989
+E,98,223.1,37.5,-79.8,North America,United States,Lower,Ordovician,,Evaporites,1989
+E,97,223,31,-105,North America,United States,Lower,Ordovician,,Evaporites,1993
+E,14,2229,49,12.5,Europe,Germany,,Permian,,Evaporites,1987
+E,13,2228.1,51,15,Europe,Czech Republic,Lower,Permian,,Evaporites,1977
+E,12,2228,48,50,Europe,CIS(USSR),Lower,Permian,,Evaporites,1984
+E,11,2227,50,35,Europe,CIS(USSR),Lower,Permian,,Evaporites,1984
+E,10,2226,65,45,Europe,CIS(USSR),Lower,Permian,,Evaporites,1984
+E,9,2225,77,67,Europe,CIS(USSR),Lower,Permian,Asselian,Evaporites,1993
+E,7,2223,-29,134,Australia,,Lower,Permian,,Evaporites,1980
+E,5,2222,39.7,76.1,Asia,China,Lower,Permian,,Evaporites,1991
+E,4,2221,41.2,79.2,Asia,China,Lower,Permian,,Evaporites,1991
+E,3,2220,42.7,88.6,Asia,China,Lower,Permian,,Evaporites,1991
+E,96,222,31,-99,North America,United States,Lower,Ordovician,,Evaporites,1985
+E,1,2219.1,26,11,Africa,Libya,Lower,Permian,Asselian,Evaporites,2002
+E,2,2219,38.1,85.5,Asia,China,,Permian,,Evaporites,1991
+E,95,221,30,-104,North America,United States,Lower,Ordovician,,Evaporites,1971
+E,94,220,36,-83,North America,United States,Lower,Ordovician,,Evaporites,1992
+E,24,22,39.9,116.4,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,93,219,41,-75,North America,United States,Lower,Ordovician,,Halites,1937
+E,92,218,40,-79,North America,United States,Lower,Ordovician,,Anhydrites,1992
+E,91,217,41,-77,North America,United States,Lower,Ordovician,,Evaporites,1971
+E,90,216,35,-98,North America,United States,Lower,Ordovician,,Evaporites,1968
+E,89,215,43,-74,North America,United States,Lower,Ordovician,,Evaporites,1977
+E,88,214,32,-104,North America,United States,Lower,Ordovician,,Anhydrites,1989
+E,87,213,38,-92,North America,United States,Lower,Ordovician,,Evaporites,1971
+E,86,212,43,-85,North America,United States,Lower,Ordovician,,Evaporites,1990
+E,84,210,40,-78,North America,United States,Lower,Ordovician,,Evaporites,1992
+E,23,21,38.9,121.8,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,83,209,36,-93,North America,United States,Lower,Ordovician,,Evaporites,1972
+E,82,208,34,-87,North America,United States,Lower,Ordovician,,Evaporites,1993
+E,78,204.1,46,-78,North America,Canada,Lower,Ordovician,,Evaporites,1992
+E,76,203,45,-75,North America,Canada,Lower,Ordovician,,Gypsum,1964
+E,75,202.1,75.5,-94,North America,Canada,Lower,Ordovician,,Evaporites,1978
+E,74,202,75,-92,North America,Canada,LM,Ordovician,,Evaporites,1978
+E,72,200,75,-95,North America,Canada,Lower,Ordovician,,Evaporites,1980
+E,22,20,41.2,123,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,4,2,38,95.3,Asia,China,Lower,Cambrian,,Halites,1984
+E,71,199,77,-80,North America,Canada,Lower,Ordovician,,Evaporites,1973
+E,70,198,57,-5,Europe,Britain,Lower,Ordovician,Tremadoc,Anhydrites,1979
+E,68,196.1,-42,145.5,Australia,Tasmania,Lower,Ordovician,,Evaporites,1977
+E,67,196,-20,138,Australia,Queensland,Lower,Ordovician,,Evaporites,1979
+E,65,195,30.75,80,Asia,India,Lower,Ordovician,,Gypsum,1992
+E,64,194,79,101,Asia,CIS(USSR),,Ordovician,,Evaporites,1981
+E,63,193.3,60,123,Asia,CIS(USSR),Lower,Ordovician,,Evaporites,1981
+E,62,193.2,65,125,Asia,CIS(USSR),Lower,Ordovician,,Evaporites,1981
+E,61,193.1,70,105,Asia,CIS(USSR),Lower,Ordovician,,Evaporites,1981
+E,60,193,70,110,Asia,CIS(USSR),Lower,Ordovician,,Evaporites,1981
+E,21,19,36.5,118.2,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,24,1862,-4,-68,South America,Brazil,,Pennsylvanian,,Evaporites,1991
+E,23,1861,-3,-60,South America,Brazil,Upper,Pennsylvanian,,Evaporites,1968
+E,22,1860,-30,-68,South America,Argentina,Upper,Pennsylvanian,Stephanian,Evaporites,1992
+E,19,1857,33,-103,North America,United States,Upper,Pennsylvanian,,Evaporites,1975
+E,18,1856.1,30.5,-114.5,North America,United States,,Pennsylvanian,,Evaporites,1928
+E,15,1855.1,37,-109,North America,United States,Upper,Pennsylvanian,Kasimovian,Evaporites,1989
+E,11,1853,55,38,Europe,CIS(USSR),Middle,Pennsylvanian,Moscovian,Evaporites,1981
+E,10,1852,68,60,Europe,CIS(USSR),Upper,Pennsylvanian,Stephanian,Evaporites,1988
+E,8,1850,37.2,106.4,Asia,China,,Pennsylvanian,,Evaporites,1987
+E,7,1849,36,105,Asia,China,,Pennsylvanian,,Evaporites,1990
+E,6,1848,39,95,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,5,1847,37,85,Asia,China,,Pennsylvanian,,Evaporites,1981
+E,4,1846,43,93.5,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,3,1845,43,89,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,2,1844.1,26,11,Africa,Libya,Upper,Pennsylvanian,,Evaporites,2002
+E,1,1844,32,-2,Africa,Algeria,Upper,Pennsylvanian,Stephanian,Evaporites,1979
+E,20,18,36.4,118,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,19,17,41.3,124.1,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,18,16,41.7,125.7,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,17,15,42.2,125.7,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,16,14,41.9,126.4,Asia,North China,Lower,Cambrian,,Gypsum,1994
+E,5,138,36.7,114.2,Asia,China,Lower,Ordovician,,Evaporites,1989
+E,62,1355,-15,-72,South America,Peru,,Pennsylvanian,,Evaporites,1968
+E,60,1353,-4,-68,South America,Brazil,Lower,Pennsylvanian,,Evaporites,1991
+E,58,1351,47,-104,North America,United States,Middle,Pennsylvanian,,Evaporites,1963
+E,2,135,37,111,Asia,China,Lower,Ordovician,,Evaporites,1983
+E,56,1349,44,-85,North America,United States,Middle,Pennsylvanian,,Evaporites,1975
+E,55,1348.1,38.5,-105.6,North America,United States,Middle,Pennsylvanian,,Evaporites,1975
+E,54,1348,42,-108,North America,United States,Middle,Pennsylvanian,,Evaporites,1992
+E,48,1345,77,-83,North America,Canada,Middle,Pennsylvanian,Moscovian,Evaporites,1980
+E,47,1344,80,-90,North America,Canada,Lower,Pennsylvanian,,Evaporites,1973
+E,46,1343,57,-117,North America,Canada,,Pennsylvanian,,Evaporites,1970
+E,42,1340,78,15,Europe,Svalbard,,Pennsylvanian,,Evaporites,1966
+E,41,1339,60,11,Europe,Norway,,Pennsylvanian,,Anhydrites,1981
+E,39,1337.1,68,49,Europe,CIS(USSR),Lower,Pennsylvanian,,Anhydrites,1995
+E,38,1337,48,57,Europe,CIS(USSR),,Pennsylvanian,,Evaporites,1996
+E,37,1336,53,59,Europe,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Evaporites,1981
+E,35,1334,67,57,Europe,CIS(USSR),Lower,Pennsylvanian,,Evaporites,1981
+E,33,1332,-20,122,Australia,,,Pennsylvanian,,Evaporites,1980
+E,32,1331,-18,125,Australia,,,Pennsylvanian,,Evaporites,1981
+E,31,1330.2,17.5,101.5,Asia,Thailand,Middle,Pennsylvanian,Moscovian,Gypsum,1997
+E,30,1330.1,37.5,55.2,Asia,Iran,Middle,Pennsylvanian,Moscovian,Evaporites,1978
+E,28,1330,44,77,Asia,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Evaporites,1981
+E,27,1329,51,69,Asia,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Evaporites,1981
+E,26,1328,42,75,Asia,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Evaporites,1981
+E,25,1327,46,68,Asia,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Evaporites,1981
+E,24,1326,30.3,107.4,Asia,China,Lower,Pennsylvanian,,Gypsum,1981
+E,23,1325,39.6,110.6,Asia,China,Lower,Pennsylvanian,,Gypsum,1991
+E,22,1324,38.5,99.6,Asia,China,Lower,Pennsylvanian,,Anhydrites,1980
+E,21,1323,36.6,102.4,Asia,China,Lower,Pennsylvanian,Bashkirian,Anhydrites,1987
+E,20,1322,36,105,Asia,China,,Pennsylvanian,,Evaporites,1990
+E,19,1321,39,95,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,18,1320,41.5,83.3,Asia,China,Lower,Pennsylvanian,,Evaporites,
+E,17,1319,39.1,80.7,Asia,China,Lower,Pennsylvanian,,Evaporites,
+E,16,1318,40.5,84.7,Asia,China,Lower,Pennsylvanian,,Evaporites,
+E,15,1317,40.5,83.3,Asia,China,Lower,Pennsylvanian,,Evaporites,
+E,14,1316,39.3,77.8,Asia,China,Lower,Pennsylvanian,,Evaporites,1981
+E,13,1315,30.1,80.1,Asia,China,Lower,Pennsylvanian,,Evaporites,1981
+E,12,1314.1,43.8,82.5,Asia,China,Lower,Pennsylvanian,,Gypsum,1991
+E,11,1314,41.3,79.9,Asia,China,Lower,Pennsylvanian,,Gypsum,1991
+E,10,1313,39.8,78.6,Asia,China,Lower,Pennsylvanian,Bashkirian,Gypsum,1991
+E,9,1312,38.8,80.8,Asia,China,Lower,Pennsylvanian,Bashkirian,Gypsum,1991
+E,8,1311,43,93.5,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,7,1310,43,89,Asia,China,,Pennsylvanian,,Gypsum,1990
+E,63,131,-31,-69,South America,Argentina,Upper,Cambrian,,Evaporites,1989
+E,5,1309.2,25.9,10.8,Africa,Libya,Lower,Pennsylvanian,Moscovian,Evaporites,2000
+E,6,1309.1,25,15,Africa,Niger,Lower,Pennsylvanian,,Evaporites,2000
+E,62,130,37,-81,North America,United States,Middle,Cambrian,,Anhydrites,1970
+E,15,13,33.5,117,Asia,North China,Lower,Cambrian,,Halites,
+E,61,129,36.5,-82,North America,United States,Upper,Cambrian,,Evaporites,1986
+E,60,128,37,-80,North America,United States,LM,Cambrian,,Evaporites,1970
+E,59,127,36,-83,North America,United States,Middle,Cambrian,,Evaporites,1995
+E,58,126,40.5,-77,North America,United States,Upper,Cambrian,,Evaporites,1993
+E,57,125,41,-77,North America,United States,Upper,Cambrian,,Dolomite,1971
+E,56,124,43,-74,North America,United States,Upper,Cambrian,,Evaporites,1977
+E,55,123,38,-92,North America,United States,Upper,Cambrian,,Evaporites,1971
+E,54,122.1,43,-85,North America,United States,Upper,Cambrian,,Evaporites,1998
+E,53,122,44,-85,North America,United States,Upper,Cambrian,,Anhydrites,1973
+E,52,121,39.5,-79,North America,United States,Upper,Cambrian,,Evaporites,1986
+E,51,120,34.5,-115.5,North America,United States ,Middle,Cambrian,,Halites,1994
+E,14,12,34.5,113,Asia,North China,Lower,Cambrian,,Halites,1991
+E,50,119,36,-117,North America,United States,MU,Cambrian,,Evaporites,1993
+E,49,118,51,-57,North America,Newfoundland,Middle,Cambrian,,Evaporites,1993
+E,48,117.2,62.5,-127,North America,Arctic,Middle,Cambrian,,Halites,1973
+E,47,117.1,63.5,-127,North America,Arctic,Middle,Cambrian,,Halites,1973
+E,46,117,65,-125,North America,Arctic,Middle,Cambrian,,Evaporites,1970
+E,45,116,77,-80,North America,Arctic,Middle,Cambrian,,Evaporites,1973
+E,44,115,75,-90,North America,Arctic,Middle,Cambrian,,Evaporites,1973
+E,43,114,53,-118,North America,Canada,Upper,Cambrian,,Halites,1929
+E,30,1137.7,47,-104,North America,United States,Upper,Mississippian,,Evaporites,1989
+E,29,1137.6,36,-87,North America,United States,Upper,Mississippian,,Gypsum,1992
+E,26,1137.3,78,-100,North America,Canada,Upper,Mississippian,,Evaporites,1973
+E,25,1137.2,76,-112,North America,Canada,Upper,Mississippian,,Evaporites,1973
+E,24,1137.1,80,-90,North America,Canada,Upper,Mississippian,,Evaporites,1973
+E,23,1137,80,-85,North America,Canada,Upper,Mississippian,,Evaporites,1973
+E,17,1132.1,68,49,Europe,CIS(USSR),,Mississippian,,Anhydrites,1995
+E,15,1131.1,16,100.75,Asia,Thailand,,Mississippian,,Evaporites,1997
+E,14,1131,52,95,Asia,CIS(USSR),,Mississippian,,Evaporites,1960
+E,42,113.1,52,-118,North America,Canada,MU,Cambrian,,Halites,1989
+E,41,113,52,-116,North America,Canada,MU,Cambrian,,Halites,1989
+E,1,1120,32,-4,Africa,Algeria,Upper,Mississippian,,Evaporites,1976
+E,40,112,39.25,8.75,Europe,Italy,Middle,Cambrian,,Dolomite,1973
+E,39,111.1,-35,137,Australia,South Australia,Middle,Cambrian,,Halites,2001
+E,35,111,-15,132,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1980
+E,38,110,-30,133,Australia,South Australia,Middle,Cambrian,,Evaporites,1980
+E,13,11,33.8,113,Asia,North China,Lower,Cambrian,,Gypsum,1991
+E,37,109,-27,135,Australia,South Australia,Middle,Cambrian,,Evaporites,1980
+E,34,108,-21,137,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1981
+E,33,107,-20,138,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1995
+E,32,106,-28,132,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1994
+E,31,105,-24,133,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1985
+E,30,104,-20,133,Australia,Northern Territory  ,Middle,Cambrian,,Evaporites,1985
+E,36,103,-20,138,Australia,Queensland ,Middle,Cambrian,,Halites,1994
+E,28,102,21,57.5,Middle East,Oman,Upper,Cambrian,,Gypsum Halite,1996
+E,29,101.2,32.8,72.5,Middle East,Pakistan,Middle,Cambrian,,Halites,1997
+E,27,101.1,31,51.5,Middle East,Iran,MU,Cambrian,,Halites,1975
+E,26,101,36,49,Middle East,Iran,MU,Cambrian,,Evaporites,1964
+E,25,100,34,57,Middle East,Iran,MU,Cambrian,,Evaporites,1968
+E,12,10,41.3,126,Asia,North China,Lower,Cambrian,,Evaporites,1991
+E,3,1.2,30,-8,Africa,Morocco,Lower,Cambrian,,Evaporites,2001
+E,2,1.1,31,-7,Africa,Morocco,Lower,Cambrian,,Halites,1989
+E,1,1,34,-5,Africa,Morocco,Lower,Cambrian,,,1981
+D,63,447,15,30,Africa,Chad Sudan,Lower,Silurian,,Dropstones,1994
+D,146,2810,-20,123,Australia,,Middle,Permian,Artinskian,Calcretes,1994
+D,139,2803.1,-70.5,68,Antarctica,,Upper,Permian,,Calcretes,1997
+D,138,2803,-77,160,Antarctica,,Upper,Permian,,Calcretes,1993
+D,128,2327,-24,148,Australia,,,Permian,,Dropstones,1994
+D,96,1384,66.3,158.5,Asia,CIS(USSR),,Pennsylvanian,,Dropstones,1981
+D,95,1383,66,150,Asia,CIS(USSR),,Pennsylvanian,,Dropstones,1981
+CA,120,807,37,-101,North America,United States,Middle,Mississippian,,Calcretes,1990
+CA,118,805.2,48.75,-64,North America,Quebec,Middle,Mississippian,Visean,Calcretes,2001
+CA,117,805.1,47.5,-66,North America,Quebec,Middle,Mississippian,Visean,Calcretes,2001
+CA,116,805,46,-61,North America,Nova Scotia,Lower,Mississippian,Tournaisian,Calcretes,1992
+CA,115,804,46,-62,North America,Nova Scotia,Middle,Mississippian,Visean,Calcretes,1987
+CA,114,803,49,-57,North America,Canada,Middle,Mississippian,Visean,Calcretes,1989
+CA,113,802,48,-58,North America,Canada,Middle,Mississippian,Visean,Calcretes,1983
+CA,112,801,53,-3,United Kingdom,Wales,,Mississippian,,Calcretes,1989
+CA,111,800,56,-4,United Kingdom,Scotland,Lower,Mississippian,,Calcretes,1985
+CA,110,799,53,-2,United Kingdom,England,Lower,Mississippian,,Calcretes,1990
+CA,108,797,52.5,-8,Europe,Ireland,Lower,Mississippian,Tournaisian,Calcretes,1982
+CA,107,796,51,5,Europe,Belgium Germany,,Mississippian,,Calcretes,1989
+C,87,72,-35,138.5,Australia,South Australia,Lower,Cambrian,,Calcretes,1990
+CA,77,647,40,-79,North America,United States,Upper,Devonian,,Calcretes,1995
+CA,75,645,41,-76,North America,United States,Upper,Devonian,,Calcretes,1991
+CA,74,644,42,-75,North America,United States,Upper,Devonian,,Calcretes,1973
+CA,73,643,45,-67,North America,United States,Upper,Devonian,,Calcretes,1976
+CA,71,641.1,48,-66,North America,Canada,Upper,Devonian,,Calcretes,2002
+CA,69,640,51.5,-3,United Kingdom,Wales,Upper,Devonian,,Calcretes,1991
+CA,68,639,53,-3,United Kingdom,Wales,Upper,Devonian,,Calcretes,1986
+CA,67,638,56,-3,United Kingdom,Scotland,Upper,Devonian,,Calcretes,1977
+CA,66,637,56,-5,United Kingdom,Scotland,Upper,Devonian,,Calcretes,1989
+CA,65,636,56,-4,United Kingdom,Scotland,Upper,Devonian,,Calcretes,1983
+CA,64,635,58,-4,United Kingdom,Scotland,Upper,Devonian,,Calcretes,1983
+CA,63,634,51,-3,United Kingdom,England,Upper,Devonian,,Calcretes,1964
+CA,61,633,52,-10,Europe,Ireland,Upper,Devonian,,Calcretes,1995
+CA,60,632.1,54.5,-7.5,Europe,Ireland,Upper,Devonian,,Calcretes,1970
+CA,59,632,52,-9,Europe,Ireland,Upper,Devonian,,Calcretes,1982
+CA,58,631,51,5,Europe,Belgium,Upper,Devonian,,Calcretes,1994
+CA,57,630,-37,146,Australia,Victoria,Upper,Devonian,,Calcretes,1988
+CA,55,628,-19.5,144.5,Australia,Queensland,Upper,Devonian,,Calcretes,1993
+CA,53,626,-37,150,Australia,New South Wales,Upper,Devonian,,Calcretes,1990
+CA,52,625,-32,145,Australia,New South Wales,Upper,Devonian,,Calcretes,1993
+CA,51,624,-33,148.5,Australia,New South Wales,Upper,Devonian,,Calcretes,1965
+CA,49,555,73,-24,North America,Greenland,Middle,Devonian,,Calcretes,1976
+CA,48,554.1,58,-118,North America,Canada,Middle,Devonian,Givetian,Calcretes,1998
+CA,46,554,59,-3,United Kingdom,Scotland,Middle,Devonian,,Calcretes,1978
+CA,47,554,58.5,-3.5,United Kingdom,Scotland,Middle,Devonian,,Calcretes,1978
+CA,45,553.1,61,5.5,Europe,Norway,Middle,Devonian,,Calcretes,2001
+CA,46,553.1,61.5,5.5,Europe,Norway,Middle,Devonian,,Calcretes,2001
+CA,43,551,-75,160,Antarctica,,Upper,Devonian,,Calcretes,1980
+CA,64,500.2,49,-64.5,North America,Canada,Lower,Devonian,,Calcretes,1999
+CA,63,500,56,-4,United Kingdom,Scotland,Lower,Devonian,,Calcretes,1983
+CA,62,499,57,-3,United Kingdom,Scotland,Lower,Devonian,,Calcretes,1978
+CA,61,498,56,-5,United Kingdom,Scotland,Lower,Devonian,,Calcretes,1986
+CA,60,497,51,-3,United Kingdom,England Wales,Lower,Devonian,,Calcretes,1964
+CA,59,496,52,-4,United Kingdom,England Wales,Lower,Devonian,,Calcretes,1995
+CA,57,494,51,-2,United Kingdom,England Wales,Lower,Devonian,,Calcretes,1977
+CA,54,491,53,-3,United Kingdom,England Wales,Lower,Devonian,,Calcretes,1986
+CA,53,490,78,16,Europe,Svalbard,Lower,Devonian,,Calcretes,1991
+CA,52,489,77.5,22.5,Europe,Svalbard,Lower,Devonian,,Calcretes,1982
+CA,51,488,52.2,10.25,Europe,Ireland,Lower,Devonian,,Calcretes,1991
+CA,50,487,50,2,Europe,France,Lower,Devonian,Gedinnian,Calcretes,1991
+CA,48,485.2,-34.8,149.9,Australia,New South Wales,Lower,Devonian,Emsian,Calcretes,2000
+CA,47,485.1,56,86,Asia,CIS(USSR),Lower,Devonian,,Calcretes,1985
+CA,46,485,24,102,Asia,China,Lower,Devonian,,Calcretes,1982
+CA,52,438,52,-4.9,Europe,United Kingdom,Upper,Silurian,Pridoli,Calcretes,1986
+CA,51,437,53,-3,Europe,United Kingdom,Upper,Silurian,Pridoli,Calcretes,1986
+CA,49,435,62,5.5,Europe,Norway,Lower,Silurian,,Calcretes,1978
+CA,47,433,52,-10,Europe,Ireland,Lower,Silurian,Wenlock,Calcretes,1991
+CA,46,432,31,56,Asia,Iran,Lower,Silurian,,Calcretes,1995
+CA,144,366,41,-77,North America,United States,Upper,Ordovician,,Calcretes,1988
+CA,143,365,45,-79,North America,United States,Upper,Ordovician,,Calcretes,1996
+CA,137,2802,-16,-69,South America,Bolivia,Middle,Permian,,Calcretes,1993
+CA,131,2797,36,-112,North America,United States,Middle,Permian,Artinskian,Calcretes,1992
+CA,130,2796,78,-80,North America,Canada,Middle,Permian,Artinskian,Calcretes,1995
+CA,129,2795.2,78,18,Europe,Svalbard,Middle,Permian,Artinskian,Calcretes,1997
+CA,128,2795.1,43,4,Europe,Spain,Middle,Permian,,Calcretes,1997
+CA,127,2795,42.5,1,Europe,Spain,Middle,Permian,,Calcretes,1969
+CA,124,2792,43,0,Europe,Spain,MU,Permian,,Calcretes,1969
+CA,123,2791,51,20,Europe,Poland,MU,Permian,,Calcretes,1977
+CA,122,2790,46.5,11.5,Europe,Italy,Upper,Permian,,Calcretes,1993
+CA,120,2788,43,-1,Europe,France,Middle,Permian,,Calcretes,1976
+CA,116,2784.1,51,56,Europe,CIS(USSR),Upper,Permian,Tartarian,Calcretes,1999
+CA,114,2783,51,-4,Europe,Britain,Upper,Permian,,Calcretes,1992
+CA,112,2782,47,14,Europe,Austria ,Middle,Permian,,Calcretes,1981
+CA,109,2780.3,28.6,85.7,Asia,China,Upper,Permian,,Calcretes,1999
+CA,107,2780,-10.5,35,Africa,Tanzania,Middle,Permian,Kungurian,Calcretes,1994
+CA,105,2778,-30,25,Africa,South Africa,Upper,Permian,,Calcretes,1995
+CA,103,2777,6,44,Africa,Ethiopia,Middle,Permian,,Calcretes,1992
+CA,59,2266,38,-81.5,North America,United States,,Permian,,Calcretes,1987
+CA,55,2263,34,-100,North America,United States,,Permian,,Calcretes,1994
+CA,54,2262,36,-107,North America,United States,,Permian,,Calcretes,1991
+CA,53,2261,33,-107,North America,United States,Lower,Permian,,Calcretes,1991
+CA,52,2260,41,-97,North America,United States,Lower,Permian,,Calcretes,1991
+CA,49,2258,38.5,-5,Europe,Spain,Lower,Permian,,Calcretes,1992
+CA,48,2257,43,0,Europe,Spain,Lower,Permian,,Calcretes,1992
+CA,47,2256,60,11,Europe,Norway,Lower,Permian,,Calcretes,1994
+CA,46,2255,52,5,Europe,Germany,Lower,Permian,,Calcretes,1995
+CA,45,2254,51.3,8.3,Europe,Germany,Lower,Permian,,Calcretes,1996
+CA,44,2253,51,12,Europe,Germany,,Permian,,Calcretes,1996
+CA,43,2252,49.5,7,Europe,Germany,,Permian,,Calcretes,1996
+CA,42,2251,51,13,Europe,Germany,Lower,Permian,Asselian,Calcretes,1996
+CA,41,2250,49,12.5,Europe,Germany,Lower,Permian,Asselian,Calcretes,1987
+CA,40,2249,50,14,Europe,Czech Republic,Lower,Permian,,Calcretes,1974
+CA,39,2248.1,46.5,13,Europe,Austria Italy,Lower,Permian,Asselian,Calcretes,2001
+CA,38,2248,33,-3,Africa,Morocco,,Permian,,Calcretes,1988
+CA,60,1896,-16,-68,South America,Bolivia,Upper,Pennsylvanian,,Calcretes,1993
+CA,59,1895,39,-81,North America,United States,Upper,Pennsylvanian,,Calcretes,1995
+CA,57,1893,33,-100,North America,United States,Upper,Pennsylvanian,,Calcretes,1990
+CA,56,1892,41,-80,North America,United States,Upper,Pennsylvanian,,Calcretes,1995
+CA,55,1891.1,34.75,-96.6,North America,United States,Upper,Pennsylvanian,,Calcretes,2002
+CA,54,1891,35,-98,North America,United States,Upper,Pennsylvanian,,Calcretes,1978
+CA,53,1890,40,-81,North America,United States,Upper,Pennsylvanian,,Calcretes,1995
+CA,52,1889,33,-106,North America,United States,Upper,Pennsylvanian,,Calcretes,1988
+CA,51,1888,42,-97,North America,United States,Upper,Pennsylvanian,Kasimovian,Calcretes,1985
+CA,49,1886,38,-88,North America,United States,Upper,Pennsylvanian,Kasimovian,Calcretes,1985
+CA,48,1885,38,-98,North America,United States,Upper,Pennsylvanian,Kasimovian,Calcretes,1985
+CA,47,1884,42,-93,North America,United States,Upper,Pennsylvanian,Kasimovian,Calcretes,1985
+CA,46,1883,39,-79,North America,United States,Upper,Pennsylvanian,,Calcretes,1950
+CA,45,1882,38,-83,North America,United States,Upper,Pennsylvanian,,Calcretes,1995
+CA,44,1881,40,-78,North America,United States,Upper,Pennsylvanian,,Calcretes,1985
+CA,43,1880,46,-60,North America,Nova Scotia,Upper,Pennsylvanian,Stephanian,Calcretes,1994
+CA,42,1879.1,47.8,-65,North America,New Brunswick,,Pennsylvanian,,Calcretes,1982
+CA,41,1879,78,-85,North America,Canada,Lower,Pennsylvanian,Bashkirian,Calcretes,1994
+CA,40,1878,53,-2,United Kingdom,England,Upper,Pennsylvanian,Stephanian,Calcretes,1966
+CA,39,1877,54,-2,United Kingdom,England,Upper,Pennsylvanian,Stephanian,Calcretes,1988
+CA,38,1876,43,0,Europe,Spain,Upper,Pennsylvanian,Stephanian,Calcretes,1969
+CA,33,1871,54.5,13.6,Europe,Germany,Upper,Pennsylvanian,Stephanian,Calcretes,1996
+CA,32,1870,51.3,8.3,Europe,Germany,Upper,Pennsylvanian,Stephanian,Calcretes,1996
+CA,31,1869,51,12,Europe,Germany,Upper,Pennsylvanian,,Calcretes,1996
+CA,30,1868,49.5,7,Europe,Germany,Upper,Pennsylvanian,,Calcretes,1996
+CA,28,1866,50,14,Europe,Czech Republic,Upper,Pennsylvanian,Stephanian,Calcretes,1974
+CA,27,1865,28,-10,Africa,Algeria,Upper,Pennsylvanian,Stephanian,Evaporites,1985
+CA,86,1375,39,-105,North America,United States,,Pennsylvanian,,Calcretes,1984
+CA,85,1374,42,-106,North America,United States,,Pennsylvanian,,Calcretes,1980
+CA,84,1373,39,-81,North America,United States,Lower,Pennsylvanian,,Calcretes,1989
+CA,83,1372,38,-110,North America,United States,Middle,Pennsylvanian,,Calcretes,1988
+CA,82,1371,38,-96,North America,United States,,Pennsylvanian,,Calcretes,1989
+CA,80,1369,33,-112,North America,United States,Lower,Pennsylvanian,,Calcretes,1984
+CA,79,1368.1,48.5,-64.25,North America,Canada,Lower,Pennsylvanian,Namurian,Calcretes,1979
+CA,76,1366.1,76.5,-94,North America,Canada,Lower,Pennsylvanian,,Calcretes,1998
+CA,75,1366,78.5,-84,North America,Canada,Lower,Pennsylvanian,Bashkirian,Calcretes,1994
+CA,70,1362,74,19,Europe,Svalbard Bear Ise.,Lower,Pennsylvanian,Bashkirian,Calcretes,1981
+CA,69,1361,78,15,Europe,Svalbard Bear Ise.,Lower,Pennsylvanian,Bashkirian,Calcretes,1990
+CA,68,1360,60,11,Europe,Norway,Middle,Pennsylvanian,Moscovian,Calcretes,1994
+CA,64,132,-31,-69,South America,Argentina,Upper,Cambrian,,Calcretes,1989
+CA,35,1142,37.5,-81,North America,United States,Upper,Mississippian,,Calcretes,1992
+CA,31,1138,37,-83,North America,United States,,Mississippian,,Calcretes,1975
+C,320,999,52,22,Europe,Poland,Middle,Mississippian,Visean,Coals,1988
+C,319,997.1,71.5,28.5,Europe,Norway,Middle,Mississippian,Visean,Coals,1998
+C,318,997,51,13,Europe,Germany,Middle,Mississippian,Visean,Coals,1977
+C,317,996,52,13,Europe,Germany,Middle,Mississippian,Visean,Coals,1964
+C,310,989,47,4,Europe,CIS(USSR),,Mississippian,,Coals,1964
+C,308,988.3,52,57,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1997
+C,307,988.2,57,65,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1997
+C,309,988.1,61,62,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1997
+C,306,988,53,61,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Coals,1982
+C,305,987,54,61,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Coals,1982
+C,304,986,54,61,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Coals,1982
+C,303,985,54,61,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Coals,1982
+C,302,984,61,62,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,301,983,51,59.8,Europe,CIS(USSR),Lower,Mississippian,Tournaisian,Coals,1982
+C,300,982,56,54,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,299,981,59,58,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,298,980,55,33,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,297,979,54,38,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,296,978,54.5,38,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,295,977,54.5,37,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,294,976,54,40,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,293,975,54.5,36,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,292,974,54,35,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,291,973,54.5,34,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,290,972,56,36,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,285,967,51,24,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,255,966,52,75,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,253,964,50,72,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,252,963,50,72,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,284,962,48,39,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1967
+C,283,961,49,34,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1967
+C,282,960,58,62,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1967
+C,281,959,48,58,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,280,958,51,60,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,279,957,52,60,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,278,956,53,61,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,277,955,57,62,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,276,954,58,62,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,275,953,58,58,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,274,952,59,58,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,273,951,63,58,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1977
+C,272,950,81,50,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1988
+C,271,949,51,23,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1967
+C,270,948,52,22,Europe,CIS(USSR),Middle,Mississippian,Visean,Coals,1967
+C,269,947,50,24,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,268,946,54,41,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,267,945,54,34,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,266,944,58,34,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,265,943,55,33,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,264,942,54,49,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,263,941,57,55,Europe,CIS(USSR),Middle,Mississippian,,Coals,1967
+C,262,940,43.5,28.5,Europe,Bulgaria,Middle,Mississippian,Visean,Coals,1982
+C,261,939,-13,143,Australia,Queensland,Middle,Mississippian,,Coals,1983
+C,260,938,-33,152,Australia,New South Wales,Middle,Mississippian,Visean,Coals,1964
+C,258,936,47,92,Asia,Mongolia,,Mississippian,,Coals,1969
+C,257,935,31,77,Asia,India,Middle,Mississippian,Visean,Coals,1998
+C,247,929,7,72,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,246,928,50,72,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,244,926,52.5,71.5,Asia,CIS(USSR),Middle,Mississippian,Visean,Coals,1982
+C,241,923,53,91,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,240,922,50,74,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,239,921,50,73,Asia,CIS(USSR),Upper,Mississippian,Namurian,Coals,1977
+C,238,920,51,73,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,237,919,52,76,Asia,CIS(USSR),Upper,Mississippian,Namurian,Coals,1977
+C,236,918,52,74,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,235,917,22.8,112.8,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,234,916,23,112.4,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,233,915,24.7,112.3,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,232,914,24.7,113.2,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,231,913,23,113.1,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,230,912,24.1,113.3,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,229,911,24.8,113.6,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,228,910,22.2,112.2,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,227,909,25.1,113.7,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,226,908,24.6,113.5,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,225,907,24.6,115.8,Asia,China,Middle,Mississippian,,Coals,1988
+C,224,906,23.9,115.7,Asia,China,Middle,Mississippian,,Coals,1994
+C,223,905,23.7,114.6,Asia,China,Middle,Mississippian,,Coals,1994
+C,222,904,24.4,114.9,Asia,China,Middle,Mississippian,,Coals,1994
+C,221,903,24.4,112.6,Asia,China,Middle,Mississippian,,Coals,1993
+C,220,902,23.7,114.1,Asia,China,Middle,Mississippian,,Coals,1993
+C,219,901,22.5,114.1,Asia,China,Middle,Mississippian,,Coals,1993
+C,218,900,22.1,111.7,Asia,China,Middle,Mississippian,,Coals,1993
+C,217,899,24.3,114.4,Asia,China,Middle,Mississippian,,Coals,1993
+C,216,898,24.8,110.8,Asia,China,Middle,Mississippian,,Coals,
+C,215,897,24.5,111.3,Asia,China,Middle,Mississippian,,Coals,
+C,214,896,24.6,110.7,Asia,China,Middle,Mississippian,,Coals,
+C,213,895,25,111.1,Asia,China,Middle,Mississippian,,Coals,
+C,212,894,25.6,110.7,Asia,China,Middle,Mississippian,,Coals,
+C,211,893,24.5,109.7,Asia,China,Middle,Mississippian,,Coals,1985
+C,210,892,24.9,109.9,Asia,China,Middle,Mississippian,,Coals,1985
+C,209,891,25.8,116.3,Asia,China,Middle,Mississippian,,Coals,1994
+C,208,890,25.9,115.5,Asia,China,Middle,Mississippian,Visean,Coals,1984
+C,207,889,26.4,115.9,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,206,888,28.2,116.6,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,205,887,28.2,116.8,Asia,China,Middle,Mississippian,Visean,Coals,1984
+C,204,886,26.9,114.2,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,203,885,30.3,116.6,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,202,884,31.2,117.9,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,201,883,31.5,117.8,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,200,882,31.7,118.1,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,199,881,31.7,118.3,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,198,880,30.9,119.4,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,197,879,31,119.9,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,196,878,30.5,114,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,195,877,30.3,111.4,Asia,China,Middle,Mississippian,Visean,Coals,1984
+C,194,876,30.1,111.7,Asia,China,Middle,Mississippian,Visean,Coals,1984
+C,193,875,27,113.3,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,192,874,27.6,111.4,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,191,873,26.8,104.2,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,190,872,27.3,103.7,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,189,871,25.3,103,Asia,China,Middle,Mississippian,Visean,Coals,1990
+C,188,870,25.6,103.8,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,187,869,25.5,103.2,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,186,868,24.7,103.2,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,185,867,25,103,Asia,China,Middle,Mississippian,,Coals,1959
+C,184,866,25.25,108,Asia,China,Lower,Mississippian,,Coals,1991
+C,183,865,32,119,Asia,China,Lower,Mississippian,,Coals,1989
+C,182,864,23,114,Asia,China,Lower,Mississippian,,Coals,1974
+C,181,863,23,113,Asia,China,Lower,Mississippian,,Coals,1974
+C,180,862,24,114,Asia,China,Lower,Mississippian,,Coals,1974
+C,179,861,22,110,Asia,China,Lower,Mississippian,,Coals,1974
+C,178,860,23,111.5,Asia,China,Lower,Mississippian,,Coals,1974
+C,177,859,25.5,113,Asia,China,Lower,Mississippian,,Coals,1974
+C,175,858,24,108,Asia,China,Middle,Mississippian,,Coals,1974
+C,174,857.1,26,112,Asia,China,Middle,Mississippian,,Coals,1974
+C,173,857,25,11,Asia,China,Middle,Mississippian,,Coals,1974
+C,172,856,28,113.5,Asia,China,Lower,Mississippian,,Coals,1974
+C,171,855,30.5,114.5,Asia,China,Lower,Mississippian,,Coals,1974
+C,170,854,29,117,Asia,China,Middle,Mississippian,,Coals,1990
+C,169,853,26,107,Asia,China,Middle,Mississippian,,Coals,1990
+C,168,852,30,102,Asia,China,Middle,Mississippian,,Coals,1990
+C,167,851,33.5,110,Asia,China,Middle,Mississippian,,Coals,1990
+C,166,850,26,117,Asia,China,Middle,Mississippian,,Coals,1979
+C,165,849,29,116.5,Asia,China,Middle,Mississippian,,Coals,1979
+C,164,848,25,103,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,163,847,25,109,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,162,846,25,114,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,161,845,30,120,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,160,844.1,28,112,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,159,844,27,111,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,158,843,37.3,101.6,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,157,842,38.9,100.4,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,156,841,38.4,100.8,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,155,840,37.1,104,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,154,839,36.7,104.8,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,153,838,42.9,126,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,152,837,46.3,132.2,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,151,836,32,115.7,Asia,China,Middle,Mississippian,Visean,Coals,1984
+C,150,835,46,128,Asia,China,Lower,Mississippian,,Coals,1985
+C,149,834,36,105,Asia,China,Middle,Mississippian,Visean,Coals,1982
+C,148,833,32,96,Asia,China,Middle,Mississippian,Visean,Coals,1988
+C,147,832,34,92,Asia,China,Middle,Mississippian,Visean,Coals,1985
+C,146,831,33,95,Asia,China,Lower,Mississippian,Visean,Coals,1990
+C,145,830,30,98,Asia,China,Lower,Mississippian,,Coals,1990
+C,144,829,32,96,Asia,China,Middle,Mississippian,Visean,Coals,1987
+C,143,828,30,90,Asia,China,,Mississippian,,Coals,1990
+C,142,827,31.8,97,Asia,China,Middle,Mississippian,,Coals,1984
+C,141,826,31.3,96.6,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,140,825,39,109,Asia,China,Middle,Mississippian,,Coals,1958
+C,139,824,41,95,Asia,China,Middle,Mississippian,,Coals,1958
+C,138,823,37,96,Asia,China,Middle,Mississippian,,Coals,1958
+C,137,822,44.6,82.9,Asia,China,Middle,Mississippian,Visean,Coals,1994
+C,136,821,47.1,82.9,Asia,China,Middle,Mississippian,Visean,Coals,1991
+C,135,820,47.5,87.5,Asia,China,Middle,Mississippian,Visean,Coals,1991
+C,134,819,46.5,83.5,Asia,China,Middle,Mississippian,Visean,Coals,1991
+C,132,817,17,8,Africa,Niger,Middle,Mississippian,Visean,Coals,1966
+C,131,816,17,8,Africa,Niger,Middle,Mississippian,Visean,Coals,1990
+C,130,815,30,33,Africa,Egypt,,Mississippian,,Coals,1966
+C,129,814,36,1,Africa,Algeria,Middle,Mississippian,Visean,Coals,1977
+C,108,674,41,-78,North America,United States,Upper,Devonian,,Coals,1963
+C,107,671.2,66,-138,North America,Canada,Upper,Devonian,,Coals,1997
+C,106,671.1,75,-94,North America,Canada,Upper,Devonian,,Coals,1960
+C,105,671,75,-100,North America,Canada,Upper,Devonian,,Coals,1991
+C,104,670,75,-120,North America,Canada,Upper,Devonian,,Coals,1991
+C,103,669,75,-108,North America,Canada,Upper,Devonian,Frasnian,Coals,1989
+C,102,668,78,-95,North America,Canada,Upper,Devonian,,Coals,1984
+C,101,667.1,78,18,Europe,Svalbard,Upper,Devonian,,Coals,1997
+C,98,666,32,119,Asia,China,Upper,Devonian,Famennian,Coals,1989
+C,97,665,27.6,111.7,Asia,China,Upper,Devonian,Famennian,Coals,1989
+C,96,664,31,110.3,Asia,China,Upper,Devonian,Famennian,Coals,1989
+C,95,663,30.5,111.7,Asia,China,Upper,Devonian,Famennian,Coals,1989
+C,94,662,30.6,111.3,Asia,China,Upper,Devonian,Famennian,Coals,1989
+C,93,661,22,112,Asia,China,Upper,Devonian,,Coals,
+C,92,660,28,113,Asia,China,Upper,Devonian,,Coals,
+C,91,659,27.5,110,Asia,China,Upper,Devonian,,Coals,
+C,90,658,30.5,117.5,Asia,China,Upper,Devonian,,Coals,1989
+C,89,657,30,116.5,Asia,China,Upper,Devonian,,Coals,1989
+C,88,656,31.5,118,Asia,China,Upper,Devonian,,Coals,1989
+C,87,655,30,111,Asia,China,Upper,Devonian,,Coals,
+C,85,653,31,119,Asia,China,Upper,Devonian,Famennian,Coals,1982
+C,84,652.1,23,23,Africa,Libya,MU,Devonian,,Coals,1991
+C,60,563.2,42,-91.5,North America,United States,Middle,Devonian,Givetian,Coals,1966
+C,59,563.1,40,-89,North America,United States,Middle,Devonian,Givetian,Coals,1969
+C,58,563,75,-108,North America,Artic Canada,Middle,Devonian,Givetian,Coals,1989
+C,57,562,78,-95,North America,Artic Canada,Middle,Devonian,Givetian,Coals,1984
+C,48,560,56,86,Asia,CIS(USSR),Middle,Devonian,,Coals,1977
+C,55,560,56,86,Asia,CIS(USSR),Middle,Devonian,,Coals,1977
+C,54,559,23,110.5,Asia,China,Middle,Devonian,,Coals,1989
+C,53,558,24,108,Asia,China,Middle,Devonian,,Coals,1989
+C,52,557,27,102,Asia,China,Middle,Devonian,,Coals,1989
+C,51,556,26,103,Asia,China,Middle,Devonian,,Coals,1989
+C,47,555.1,23,23,Africa,Libya,LM,Devonian,,Coals,1991
+C,50,555.1,23,23,Africa,Libya,MU,Devonian,,Coals,1991
+C,67,502,49,-64.5,North America,Canada,Lower,Devonian,Emsian,Coals,1871
+C,65,501,56,86,Asia,CIS(USSR),Lower,Devonian,,Coals,1977
+C,488,3133.3,-28,-49.25,South America,Brazil,Middle,Permian,,Coals,1989
+C,487,3133.2,-31.5,-54,South America,Brazil,Middle,Permian,Kungurian,Coals,2002
+C,486,3133.1,-47.5,-67.5,South America,Argentina,Middle,Permian,Kungurian,Coals,1997
+C,483,3132,67.5,58.5,Europe,CIS(USSR),Middle,Permian,Kungurian,Coals,1982
+C,478,3127,66.5,63,Europe,CIS(USSR),Middle,Permian,Kungurian,Coals,1982
+C,476,3125,69,63,Europe,CIS(USSR),Middle,Permian,Kungurian,Coals,1982
+C,475,3124,69,63.5,Europe,CIS(USSR),Middle,Permian,Kungurian,Coals,1982
+C,473,3122,68,63,Europe,CIS(USSR),MU,Permian,,Coals,1967
+C,472,3121,66,60,Europe,CIS(USSR),MU,Permian,,Coals,1967
+C,471,3120,67,64,Europe,CIS(USSR),MU,Permian,,Coals,1967
+C,466,3115,-20,125,Australia,,MU,Permian,,Coals,1980
+C,465,3114,-14,130,Australia,,MU,Permian,,Coals,1977
+C,464,3113,-18,125,Australia,,MU,Permian,,Coals,1977
+C,463,3112,-29,115,Australia,,MU,Permian,,Coals,1977
+C,462,3111,-33,116,Australia,,MU,Permian,,Coals,1977
+C,461,3110,-40.5,147,Australia,,Upper,Permian,,Coals,1987
+C,460,3109,-28,132,Australia,,MU,Permian,,Coals,1980
+C,459,3108,-28,140,Australia,,MU,Permian,,Coals,1977
+C,458,3107,-16,140,Australia,,Upper,Permian,,Coals,1993
+C,457,3106,-12,142,Australia,,Upper,Permian,,Coals,1993
+C,456,3105.1,-25,150,Australia,,MU,Permian,,Coals,1976
+C,452,3102,-23,149,Australia,,Upper,Permian,,Coals,1985
+C,451,3101,-22,146,Australia,,Upper,Permian,,Coals,1977
+C,450,3100,-16,144,Australia,,Upper,Permian,,Coals,1977
+C,449,3099,-20,132,Australia,,MU,Permian,,Coals,1980
+C,447,3098,-32.5,149.5,Australia,,Upper,Permian,,Coals,1978
+C,446,3097,-31,150,Australia,,,Permian,,Coals,1977
+C,445,3096,-34,150,Australia,,,Permian,,Coals,1985
+C,442,3093,18,106,Asia,Vietnam Laos,Upper,Permian,,Coals,1986
+C,441,3092,19,102,Asia,Vietnam Laos,Upper,Permian,,Coals,1986
+C,440,3091,38,41,Asia,Turkey,Upper,Permian,,Coals,1977
+C,439,3090,17,103.5,Asia,Thailand,Upper,Permian,,Coals,1994
+C,438,3089.1,32.8,72.5,Asia,Pakistan,Middle,Permian,Artinskian,Coals,1997
+C,436,3089,29,84,Asia,Nepal,Upper,Permian,,Coals,1971
+C,435,3088,43,107,Asia,Mongolia,MU,Permian,,Coals,1977
+C,434,3087,43,102,Asia,Mongolia,MU,Permian,,Coals,1977
+C,433,3086,47,109,Asia,Mongolia,MU,Permian,,Coals,1977
+C,432,3085,49,98,Asia,Mongolia,MU,Permian,,Coals,1977
+C,431,3084,50,91,Asia,Mongolia,MU,Permian,,Coals,1977
+C,429,3082,35,51,Asia,Iran,MU,Permian,,Coals,1969
+C,428,3081,-1,133,Asia,Indonesia,MU,Permian,,Coals,1962
+C,427,3080,28,95,Asia,India,MU,Permian,,Coals,1977
+C,426,3079,27,93,Asia,India,MU,Permian,,Coals,1977
+C,425,3078,27,88,Asia,India,MU,Permian,,Coals,1977
+C,424,3077,25,87,Asia,India,MU,Permian,,Coals,1977
+C,423,3076,24,86,Asia,India,MU,Permian,,Coals,1977
+C,422,3075,24,84,Asia,India,MU,Permian,,Coals,1977
+C,421,3074,22,84,Asia,India,MU,Permian,,Coals,1977
+C,420,3073,23,82,Asia,India,MU,Permian,,Coals,1977
+C,419,3072,22,78,Asia,India,MU,Permian,,Coals,1977
+C,418,3071,20,81,Asia,India,MU,Permian,,Coals,1977
+C,417,3070,27.5,93,Asia,India,Lower,Permian,,Coals,1988
+C,416,3069,26,92,Asia,India,MU,Permian,,Coals,1971
+C,413,3066,64,129,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,412,3065,76,100,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,411,3064,72,108,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,410,3063,58,100.5,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,409,3062,69.5,88,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,408,3061,64,102,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,407,3060,53,91,Asia,CIS(USSR),Middle,Permian,Artinskian,Coals,1982
+C,406,3059,54,91,Asia,CIS(USSR),Middle,Permian,Artinskian,Coals,1982
+C,405,3058,53,91,Asia,CIS(USSR),Middle,Permian,Artinskian,Coals,1982
+C,402,3055,45.5,85.5,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,401,3054,50,79,Asia,CIS(USSR),Upper,Permian,,Coals,1982
+C,400,3053,66,95,Asia,CIS(USSR),,Permian,,Coals,1977
+C,399,3052,62,88,Asia,CIS(USSR),,Permian,,Coals,1977
+C,398,3051,55,86,Asia,CIS(USSR),,Permian,,Coals,1977
+C,397,3050,55,83,Asia,CIS(USSR),,Permian,,Coals,1977
+C,396,3049,49,75,Asia,CIS(USSR),,Permian,,Coals,1977
+C,395,3048,50,76,Asia,CIS(USSR),,Permian,,Coals,1977
+C,394,3047,48,85,Asia,CIS(USSR),,Permian,,Coals,1977
+C,393,3046,51,75,Asia,CIS(USSR),,Permian,,Coals,1977
+C,392,3045,51,78,Asia,CIS(USSR),,Permian,,Coals,1977
+C,391,3044,74,100,Asia,CIS(USSR),,Permian,,Coals,1977
+C,388,3042,26.1,106.6,Asia,China,Upper,Permian,,Coals,1994
+C,387,3041,27.4,106.2,Asia,China,Upper,Permian,,Coals,1994
+C,386,3040,25.1,104.8,Asia,China,Upper,Permian,,Coals,1994
+C,385,3039,26.6,105.7,Asia,China,Upper,Permian,,Coals,1994
+C,384,3038,25.9,105.6,Asia,China,Upper,Permian,,Coals,1994
+C,383,3037,26.2,105.9,Asia,China,Upper,Permian,,Coals,1994
+C,382,3036,28.3,106.2,Asia,China,Upper,Permian,,Coals,1994
+C,381,3035,27.1,106.7,Asia,China,Upper,Permian,,Coals,1994
+C,380,3034,27.1,105.5,Asia,China,Upper,Permian,,Coals,1994
+C,379,3033,27.3,105.3,Asia,China,Upper,Permian,,Coals,1994
+C,378,3032,25.8,105.2,Asia,China,Upper,Permian,,Coals,1994
+C,369,3023,27.4,101.4,Asia,China,Upper,Permian,,Coals,1991
+C,368,3022,28.2,105.4,Asia,China,Upper,Permian,,Coals,1991
+C,367,3021,29,106.6,Asia,China,Upper,Permian,,Coals,1994
+C,366,3020,29.5,106.5,Asia,China,Upper,Permian,,Coals,1991
+C,351,3005,26.7,100.7,Asia,China,Upper,Permian,,Coals,1990
+C,350,3004,23.5,105.6,Asia,China,Upper,Permian,,Coals,1990
+C,349,3003,23.3,103.1,Asia,China,Upper,Permian,,Coals,1990
+C,348,3002,25.6,104.2,Asia,China,Upper,Permian,,Coals,1994
+C,340,2994,26.7,113.5,Asia,China,Upper,Permian,,Coals,1994
+C,339,2993,25.4,112.9,Asia,China,Upper,Permian,,Coals,1994
+C,338,2992,25.7,113,Asia,China,Upper,Permian,,Coals,1994
+C,337,2991,26.4,112.8,Asia,China,Upper,Permian,,Coals,1994
+C,334,2988,27,113.3,Asia,China,Upper,Permian,,Coals,1988
+C,331,2985,23.1,108.2,Asia,China,Upper,Permian,,Coals,1985
+C,304,2958,34,117.1,Asia,China,Upper,Permian,,Coals,1984
+C,303,2957,34,119.8,Asia,China,Upper,Permian,,Coals,1984
+C,302,2956,31.3,120.6,Asia,China,Upper,Permian,,Coals,1984
+C,301,2955,30.9,119.4,Asia,China,Upper,Permian,,Coals,1978
+C,300,2954,30.5,117,Asia,China,Upper,Permian,,Coals,1978
+C,299,2953,30,118.4,Asia,China,Upper,Permian,,Coals,1978
+C,298,2952,33.9,116.7,Asia,China,Upper,Permian,,Coals,1978
+C,297,2951,32.6,116.9,Asia,China,Upper,Permian,,Coals,1978
+C,296,2950,26.6,106.7,Asia,China,Upper,Permian,,Coals,1996
+C,295,2949,26.4,106.2,Asia,China,Upper,Permian,,Coals,1996
+C,294,2948,27,106,Asia,China,Upper,Permian,,Coals,1991
+C,293,2947,24,114,Asia,China,Upper,Permian,,Coals,1991
+C,292,2946,24,113,Asia,China,Upper,Permian,,Coals,1991
+C,291,2945,25,112.5,Asia,China,Upper,Permian,,Coals,1991
+C,290,2944,25,114,Asia,China,Upper,Permian,,Coals,1991
+C,289,2943,24.5,116,Asia,China,Upper,Permian,,Coals,1991
+C,288,2942,26,105,Asia,China,Upper,Permian,,Coals,1976
+C,287,2941,31.5,119.25,Asia,China,Upper,Permian,,Coals,1989
+C,286,2940,25.5,117,Asia,China,MU,Permian,,Coals,1979
+C,285,2939,28.5,118,Asia,China,Upper,Permian,,Coals,1990
+C,284,2938,28.5,118,Asia,China,Upper,Permian,,Coals,1990
+C,283,2937,28.5,117.5,Asia,China,Upper,Permian,,Coals,1990
+C,282,2936,29,117.5,Asia,China,Upper,Permian,,Coals,1990
+C,281,2935,28,116.5,Asia,China,Upper,Permian,,Coals,1990
+C,280,2934,28.5,116.5,Asia,China,Upper,Permian,,Coals,1990
+C,279,2933,29,117,Asia,China,Upper,Permian,,Coals,1990
+C,278,2932,29.5,117,Asia,China,Upper,Permian,,Coals,1990
+C,277,2931,25.5,115,Asia,China,Upper,Permian,,Coals,1980
+C,276,2930,27,115,Asia,China,Upper,Permian,,Coals,1980
+C,275,2929,26,115.5,Asia,China,Upper,Permian,,Coals,1980
+C,274,2928,28,118,Asia,China,Upper,Permian,,Coals,1980
+C,273,2927,28,114.5,Asia,China,Upper,Permian,,Coals,1980
+C,272,2926,29.5,115.5,Asia,China,Upper,Permian,,Coals,1980
+C,271,2925,29.5,116,Asia,China,Upper,Permian,,Coals,1980
+C,270,2924,23,107,Asia,China,Upper,Permian,,Coals,1974
+C,269,2923,23,109.5,Asia,China,Upper,Permian,,Coals,1974
+C,268,2922,23.5,108.5,Asia,China,Upper,Permian,,Coals,1974
+C,267,2921,24,109,Asia,China,Upper,Permian,,Coals,1974
+C,266,2920,25,111,Asia,China,Upper,Permian,,Coals,1974
+C,265,2919,24.5,108.5,Asia,China,Upper,Permian,,Coals,1974
+C,264,2918,25,107.5,Asia,China,Upper,Permian,,Coals,1974
+C,263,2917,25,106,Asia,China,Upper,Permian,,Coals,1974
+C,262,2916,25,116,Asia,China,MU,Permian,,Coals,1974
+C,261,2915,22,113,Asia,China,MU,Permian,,Coals,1974
+C,260,2914,24,114,Asia,China,MU,Permian,,Coals,1974
+C,259,2913,25,114,Asia,China,MU,Permian,,Coals,1974
+C,258,2912,26,113.5,Asia,China,MU,Permian,,Coals,1974
+C,257,2911,25,112.5,Asia,China,MU,Permian,,Coals,1974
+C,256,2910,28,112.5,Asia,China,MU,Permian,,Coals,1974
+C,255,2909,27.5,111.5,Asia,China,MU,Permian,,Coals,1974
+C,254,2908,28,114,Asia,China,MU,Permian,,Coals,1974
+C,253,2907,30,115,Asia,China,MU,Permian,,Coals,1974
+C,252,2906,28,110,Asia,China,MU,Permian,,Coals,1974
+C,251,2905,29.5,111,Asia,China,MU,Permian,,Coals,1974
+C,250,2904,29.5,111,Asia,China,MU,Permian,,Coals,1974
+C,249,2903,30.5,111,Asia,China,MU,Permian,,Coals,1974
+C,248,2902,31,110.5,Asia,China,MU,Permian,,Coals,1974
+C,247,2901,31.5,113.5,Asia,China,MU,Permian,,Coals,1974
+C,246,2900,32,112,Asia,China,MU,Permian,,Coals,1974
+C,245,2899,32,111,Asia,China,MU,Permian,,Coals,1974
+C,229,2884,31,120,Asia,China,MU,Permian,,Coals,1982
+C,228,2883,32,119,Asia,China,Upper,Permian,,Coals,1982
+C,226,2881,25,100,Asia,China,Upper,Permian,,Coals,1987
+C,221,2876,30,104,Asia,China,MU,Permian,,Coals,1977
+C,220,2875,30,104,Asia,China,MU,Permian,,Coals,1977
+C,216,2871,24,108,Asia,China,MU,Permian,,Coals,1981
+C,215,2870,27,107,Asia,China,Upper,Permian,,Coals,1992
+C,211,2866,33.8,95.8,Asia,China,Upper,Permian,,Coals,1991
+C,210,2865,34,110.1,Asia,China,Upper,Permian,,Coals,1989
+C,209,2864,31,112,Asia,China,Upper,Permian,,Coals,1987
+C,208,2863,34,117,Asia,China,Upper,Permian,,Coals,1982
+C,207,2862,34,113.5,Asia,China,Upper,Permian,,Coals,1982
+C,203,2858,30,90,Asia,China,Upper,Permian,,Coals,1990
+C,202,2857,36,96,Asia,China,MU,Permian,,Coals,1977
+C,201,2856,42.9,89.1,Asia,China,Upper,Permian,,Coals,1991
+C,200,2855,42.9,89.1,Asia,China,Upper,Permian,,Coals,1991
+C,199,2854,44,89.5,Asia,China,Upper,Permian,,Coals,1991
+C,198,2853,47,89.4,Asia,China,Upper,Permian,,Coals,1991
+C,197,2852,45.9,83.6,Asia,China,Upper,Permian,,Coals,1991
+C,196,2851,34,87,Asia,China,Upper,Permian,,Coals,1984
+C,195,2850,32,96,Asia,China,Upper,Permian,,Coals,1982
+C,194,2849,40,80,Asia,China,Upper,Permian,,Coals,1990
+C,193,2848,44,88,Asia,China,Upper,Permian,,Coals,1982
+C,192,2847,25,89,Asia,Bangladesh,MU,Permian,,Coals,1977
+C,190,2845,-77,160,Antarctica,,Middle,Permian,,Coals,1993
+C,177,2832,-85,-100,Antarctica,,MU,Permian,,Coals,1975
+C,175,2831,-22,30,Africa,Zimbabwe,Middle,Permian,,Coals,1977
+C,168,2827,0,32,Africa,Uganda,Middle,Permian,,Coals,1966
+C,166,2826.1,-11.5,38,Africa,Tanzania,Middle,Permian,Kungurian,Coals,1997
+C,165,2825,-8,36,Africa,Tanzania,Middle,Permian,,Coals,1957
+C,163,2824,-27,32,Africa,Swaziland,Middle,Permian,,Coals,1977
+C,161,2823,-28,27,Africa,South Africa,MU,Permian,,Coals,1977
+C,160,2822,-30,30,Africa,South Africa,MU,Permian,,Coals,1977
+C,159,2821,-22,29,Africa,South Africa,MU,Permian,,Coals,1977
+C,155,2820,-26,29,Africa,South Africa,Upper,Permian,,Coals,1968
+C,142,2819.1,-16,33.5,Africa,Mozambique,Lower,Permian,,Coals,1989
+C,141,2819,-13,36,Africa,Mozambique,,Permian,,Coals,1977
+C,140,2818,-18,34,Africa,Mozambique,,Permian,,Coals,1977
+C,154,2816,-16,35,Africa,Malawi,Upper,Permian,Tartarian,Coals,1977
+C,153,2815.1,-20,45,Africa,Madagascar,Upper,Permian,,Coals,1972
+C,434,2611,-43,-70,South America,Argentina,Lower,Permian,,Coals,1969
+C,433,2610,-32,-68,South America,Argentina,Lower,Permian,,Coals,1969
+C,432,2609,39.6,-80,North America,United States,Lower,Permian,,Coals,1979
+C,431,2608,34,-100,North America,United States,Lower,Permian,,Coals,1995
+C,430,2607,40,-79,North America,United States,Lower,Permian,,Coals,1985
+C,429,2606,40,-81,North America,United States,Lower,Permian,,Coals,1960
+C,428,2605,39,-79,North America,United States,Lower,Permian,,Coals,1922
+C,427,2604,38,-97,North America,United States,Lower,Permian,,Coals,1951
+C,425,2602,80,-90,North America,Canada,Lower,Permian,,Coals,1984
+C,424,2601,44,16,Europe,Former Yugoslavia,Lower,Permian,,Coals,1976
+C,418,2596.2,43.5,11.3,Europe,Italy,Lower,Permian,,Coals,1922
+C,417,2596.1,42.5,10.3,Europe,Italy,Lower,Permian,,Coals,1922
+C,416,2596,44,10,Europe,Italy,Lower,Permian,,Coals,1922
+C,413,2593,51,11,Europe,Germany,Lower,Permian,,Coals,1977
+C,412,2592,52,11,Europe,Germany,Lower,Permian,,Coals,1977
+C,411,2591,50,12,Europe,Germany,Lower,Permian,,Coals,1977
+C,409,2589,51,13,Europe,Germany,Lower,Permian,,Coals,1964
+C,408,2588,43,6,Europe,France,Lower,Permian,,Coals,1982
+C,402,2582,47,5,Europe,France,Lower,Permian,,Coals,1964
+C,398,2579,-34,115,Australia,,Lower,Permian,Sakmarian,Coals,1990
+C,397,2578,-29.5,115.5,Australia,,Lower,Permian,Sakmarian,Coals,1994
+C,396,2577,-22,114,Australia,,Lower,Permian,,Coals,1988
+C,394,2576,-29,134,Australia,,Lower,Permian,,Coals,1977
+C,393,2575,-25,150,Australia,Queenland,Lower,Permian,,Coals,1976
+C,392,2574,-27,142,Australia,Queenland,Lower,Permian,,Coals,1976
+C,391,2573,-28,150,Australia,Queenland,Lower,Permian,,Coals,1983
+C,390,2572,-23,146,Australia,Queenland,Lower,Permian,,Coals,1983
+C,389,2571,-23,149,Australia,Queenland,Lower,Permian,,Coals,1977
+C,388,2570,-31,150,Australia,New South Wales,Lower,Permian,,Coals,1977
+C,387,2569,-34,150,Australia,New South Wales,Lower,Permian,,Coals,1985
+C,386,2568,18,74.3,Asia,Thailand,Lower,Permian,,Coals,1988
+C,385,2567.3,36,74.3,Asia,Pakistan,Lower,Permian,,Coals,1997
+C,384,2567.2,32.8,72.5,Asia,Pakistan,Lower,Permian,,Coals,1997
+C,383,2567.1,34,77.5,Asia,Pakistan,Lower,Permian,,Coals,1991
+C,381,2566,16,106,Asia,Laos,Lower,Permian,,Coals,1986
+C,380,2565,18,103,Asia,Laos,Lower,Permian,,Coals,1986
+C,379,2564,39,127,Asia,Korea,Lower,Permian,,Coals,1977
+C,378,2563,35,127,Asia,Korea,Lower,Permian,,Coals,1977
+C,377,2562,37,129,Asia,Korea,Lower,Permian,,Coals,1977
+C,375,2560.1,36,51.3,Asia,Iran,Lower,Permian,,Coals,1964
+C,374,2560,36,52,Asia,Iran,Lower,Permian,,Coals,1971
+C,373,2559,-1,131.5,Asia,Indonesia,,Permian,,Coals,1962
+C,372,2558,-2,103,Asia,Indonesia,Lower,Permian,,Coals,1986
+C,371,2557.1,24,86,Asia,India,Lower,Permian,,Coals,1984
+C,370,2557,22,85,Asia,India,Lower,Permian,,Coals,1985
+C,356,2543,50.2,79.2,Asia,CIS(USSR),Lower,Permian,,Coals,1982
+C,355,2542,50,78,Asia,CIS(USSR),Lower,Permian,,Coals,1982
+C,354,2541,50.5,71,Asia,CIS(USSR),Lower,Permian,,,1982
+C,353,2540,66,95,Asia,CIS(USSR),Lower,Permian,,Coals,1977
+C,352,2539,48,85,Asia,CIS(USSR),Lower,Permian,,Coals,1977
+C,351,2538,74,100,Asia,CIS(USSR),Lower,Permian,,Coals,1977
+C,350,2537,26.9,107.9,Asia,China,Lower,Permian,,Coals,1991
+C,349,2536,25.8,100.5,Asia,China,Lower,Permian,,Coals,1990
+C,348,2535,27.8,105,Asia,China,Lower,Permian,,Coals,1990
+C,347,2534,24.9,102.8,Asia,China,Lower,Permian,,Coals,1990
+C,346,2533,25,102.7,Asia,China,Lower,Permian,,Coals,1990
+C,345,2532,28,110.1,Asia,China,Lower,Permian,,Coals,1988
+C,344,2531,25.1,116,Asia,China,Lower,Permian,,Coals,1985
+C,343,2530,25.7,116.7,Asia,China,Lower,Permian,,Coals,1985
+C,342,2529,26.2,116.6,Asia,China,Lower,Permian,,Coals,1985
+C,341,2528,26.7,117.4,Asia,China,Lower,Permian,,Coals,1985
+C,340,2527,25.9,117.3,Asia,China,Lower,Permian,,Coals,1985
+C,339,2526,25.1,117,Asia,China,Lower,Permian,,Coals,1985
+C,338,2525,32.2,110.2,Asia,China,Lower,Permian,,Coals,1990
+C,337,2524,32,111.7,Asia,China,Lower,Permian,,Coals,1990
+C,336,2523,29.7,115.2,Asia,China,Lower,Permian,,Coals,1990
+C,335,2522,29.5,114.5,Asia,China,Lower,Permian,,Coals,1990
+C,334,2521,29.5,114.5,Asia,China,Lower,Permian,,Coals,1990
+C,333,2520,31.6,113.3,Asia,China,Lower,Permian,,Coals,1990
+C,332,2519,29.6,113.8,Asia,China,Lower,Permian,,Coals,1990
+C,331,2518,31.8,111.2,Asia,China,Lower,Permian,,Coals,1990
+C,330,2517,30.7,111.3,Asia,China,Lower,Permian,,Coals,1990
+C,329,2516,30.5,109.7,Asia,China,Lower,Permian,,Coals,1990
+C,328,2515,31,110.3,Asia,China,Lower,Permian,,Coals,1990
+C,327,2514,30,111.4,Asia,China,Lower,Permian,,Coals,1990
+C,326,2513,30.1,111.7,Asia,China,Lower,Permian,,Coals,1990
+C,325,2512,30,114.9,Asia,China,Lower,Permian,,Coals,1990
+C,324,2511,29.3,110.1,Asia,China,Lower,Permian,,Coals,1988
+C,323,2510,22.2,112.7,Asia,China,Lower,Permian,,Coals,1988
+C,322,2509,23,112.4,Asia,China,Lower,Permian,,Coals,1988
+C,321,2508,22.1,111.7,Asia,China,Lower,Permian,,Coals,1988
+C,320,2507,24.6,113.5,Asia,China,Lower,Permian,,Coals,1988
+C,319,2506,24.8,113.6,Asia,China,Lower,Permian,,Coals,1988
+C,318,2505,25.1,113.7,Asia,China,Lower,Permian,,Coals,1988
+C,317,2504,24.3,114.4,Asia,China,Lower,Permian,,Coals,1988
+C,316,2503,23.7,114.6,Asia,China,Lower,Permian,,Coals,1988
+C,315,2502,23.9,115.7,Asia,China,Lower,Permian,,Coals,1988
+C,314,2501,24.3,116.1,Asia,China,Lower,Permian,,Coals,1988
+C,313,2500,24.1,115.7,Asia,China,Lower,Permian,,Coals,1988
+C,312,2499,24.7,112.3,Asia,China,Lower,Permian,,Coals,1988
+C,311,2498,24.6,110.6,Asia,China,Lower,Permian,,Coals,1994
+C,310,2497,24.5,110.4,Asia,China,Lower,Permian,,Coals,1994
+C,309,2496,24.9,107.5,Asia,China,Lower,Permian,,Coals,1994
+C,308,2495,28.1,114.4,Asia,China,Lower,Permian,,Coals,1994
+C,307,2494,28.2,114.9,Asia,China,Lower,Permian,,Coals,1994
+C,306,2493,27.1,113.9,Asia,China,Lower,Permian,,Coals,1994
+C,305,2492,29.3,115.7,Asia,China,Lower,Permian,,Coals,1984
+C,304,2491,28.7,118.6,Asia,China,Lower,Permian,,Coals,1994
+C,303,2490,30.1,119.2,Asia,China,Lower,Permian,,Coals,1987
+C,302,2489,31.5,120.3,Asia,China,Lower,Permian,,Coals,1994
+C,301,2488,31.3,120.6,Asia,China,Lower,Permian,,Coals,1994
+C,300,2487,34.2,117.1,Asia,China,Lower,Permian,,Coals,1984
+C,299,2486,33.9,116.7,Asia,China,Lower,Permian,,Coals,1994
+C,298,2485,31.7,118.1,Asia,China,Lower,Permian,,Coals,1987
+C,297,2484,31.7,118.3,Asia,China,Lower,Permian,,Coals,1987
+C,296,2483,30.9,117.8,Asia,China,Lower,Permian,,Coals,1987
+C,295,2482,32.6,116.9,Asia,China,Lower,Permian,,Coals,1987
+C,294,2481,34.1,116.9,Asia,China,Lower,Permian,,Coals,1987
+C,292,2479,23.5,102,Asia,China,Lower,Permian,,Coals,1991
+C,279,2467,23.5,117,Asia,China,Lower,Permian,,,1982
+C,278,2466,23,116,Asia,China,Lower,Permian,,Coals,1982
+C,277,2465,29.5,119.5,Asia,China,Lower,Permian,,Coals,1982
+C,271,2459,39.9,119.5,Asia,China,Lower,Permian,,Coals,1990
+C,270,2458,36.4,114.2,Asia,China,Lower,Permian,,Coals,1990
+C,269,2457,40.4,117,Asia,China,Lower,Permian,,Coals,1990
+C,268,2456,41.8,118.6,Asia,China,Lower,Permian,,Coals,1990
+C,247,2434,35.3,111.2,Asia,China,Lower,Permian,,Coals,1989
+C,246,2433,35.3,111.7,Asia,China,Lower,Permian,,Coals,1989
+C,245,2432,39.8,113,Asia,China,Lower,Permian,,Coals,1989
+C,244,2431,38.7,112.7,Asia,China,Lower,Permian,,Coals,1989
+C,243,2430,35.5,112.4,Asia,China,Lower,Permian,,Coals,1989
+C,242,2429,37.1,113.3,Asia,China,Lower,Permian,,Coals,1989
+C,241,2428,36.1,113.1,Asia,China,Lower,Permian,,Coals,1989
+C,240,2427,39.6,113.7,Asia,China,Lower,Permian,,Coals,1989
+C,239,2426,35.6,112.4,Asia,China,Lower,Permian,,Coals,1989
+C,238,2425,39.5,112.4,Asia,China,Lower,Permian,,Coals,1989
+C,237,2424,37.4,110.8,Asia,China,Lower,Permian,,Coals,1989
+C,236,2423,38.4,111.1,Asia,China,Lower,Permian,,Coals,1989
+C,235,2422,39.3,111.1,Asia,China,Lower,Permian,,Coals,1989
+C,234,2421,39,112.2,Asia,China,Lower,Permian,,Coals,1989
+C,233,2420,38.7,113.2,Asia,China,Lower,Permian,,Coals,1989
+C,232,2419,37.8,112.5,Asia,China,Lower,Permian,,Coals,1989
+C,169,2356,33.5,117,Asia,China,Lower,Permian,,Coals,1987
+C,168,2355,34,113.5,Asia,China,Lower,Permian,,Coals,1987
+C,167,2354,35,110,Asia,China,Lower,Permian,,Coals,1987
+C,166,2353,35.5,118,Asia,China,Lower,Permian,,Coals,1987
+C,165,2352,38,112,Asia,China,Lower,Permian,,Coals,1987
+C,158,2345,39,88.1,Asia,China,Lower,Permian,,Coals,1994
+C,157,2344,37,82.6,Asia,China,Lower,Permian,,Coals,1994
+C,156,2343,44.9,82,Asia,China,,Permian,,Coals,1991
+C,155,2342,44.2,93.7,Asia,China,,Permian,,Coals,1994
+C,154,2341,47.7,86.7,Asia,China,,Permian,,Coals,1991
+C,153,2340,47.1,87.5,Asia,China,,Permian,,Coals,1991
+C,152,2339,47.5,85.6,Asia,China,,Permian,,Coals,1994
+C,151,2338,42.8,93.4,Asia,China,,Permian,,Coals,1994
+C,150,2337,41.3,80.2,Asia,China,,Permian,,Coals,1991
+C,149,2336,41,79,Asia,China,Lower,Permian,,Coals,1990
+C,176,2335.2,-17,27,Africa,Zimbabwe,Middle,Permian,Artinskian,Coals,2001
+C,172,2335,-10.5,35,Africa,Zambia,LM,Permian,,Coals,1963
+C,147,2333.1,-11.5,38,Africa,Tanzania,,Permian,,Coals,1997
+C,145,2332.6,-18,17,Africa,Namibia,Lower,Permian,Artinskian,Coals,1997
+C,139,2332.4,-17,35,Africa,Mozambique,Lower,Permian,Artinskian,Coals,2001
+C,162,2332.4,-26,30,Africa,South Africa,Middle,Permian,Artinskian,Coals,2001
+C,144,2332.3,-20,13,Africa,Namibia,Lower,Permian,Artinskian,Coals,2001
+C,143,2332.2,-27,17,Africa,Namibia,Lower,Permian,Artinskian,Coals,2001
+C,136,2331.1,-10,36,Africa,Malawi,Lower,Permian,Artinskian,Coals,2001
+C,134,2316.1,-24,26,Africa,Botswana,,Permian,,Coals,2001
+C,341,2168,-14,-76,South America,Peru,,Pennsylvanian,,Coals,1977
+C,340,2167,-15,-75,South America,Peru,,Pennsylvanian,,Coals,1978
+C,337,2164,-28,-70,South America,Argentinia,,Pennsylvanian,,Coals,1977
+C,336,2163,-45,-70,South America,Argentinia,,Pennsylvanian,,Coals,1978
+C,335,2162,-33,-68,South America,Argentinia,,Pennsylvanian,,Coals,1978
+C,334,2161,39,-81,North America,United States,,Pennsylvanian,,Coals,1995
+C,333,2160,37,-81,North America,United States,,Pennsylvanian,,Coals,1952
+C,332,2159,33,-99,North America,United States,Upper,Pennsylvanian,Gzelian,Coals,1969
+C,331,2158,33,-98.75,North America,United States,Upper,Pennsylvanian,Gzelian,Coals,1980
+C,328,2155,42,-78,North America,United States,,Pennsylvanian,,Coals,1928
+C,327,2154,35,-97,North America,United States,,Pennsylvanian,,Coals,1957
+C,326,2153,40,-82,North America,United States,,Pennsylvanian,,Coals,1960
+C,325,2152.1,33,-106,North America,United States,Upper,Pennsylvanian,,Coals,2003
+C,324,2152,35,-106,North America,United States,Upper,Pennsylvanian,Gzelian,Coals,1971
+C,323,2151,40,-95,North America,United States,Upper,Pennsylvanian,Gzelian,Coals,1994
+C,322,2150,42,-97,North America,United States,,Pennsylvanian,,Coals,1910
+C,321,2149,39,-94,North America,United States,,Pennsylvanian,,Coals,1913
+C,320,2148,34,-89,North America,United States,,Pennsylvanian,,Coals,1970
+C,319,2147,39,-79,North America,United States,,Pennsylvanian,,Coals,1922
+C,318,2146,37,-85,North America,United States,,Pennsylvanian,,Coals,1944
+C,317,2145,38,-96,North America,United States,,Pennsylvanian,,Coals,1947
+C,316,2144,42,-92,North America,United States,,Pennsylvanian,,Coals,1949
+C,315,2143,39,-87,North America,United States,,Pennsylvanian,,Coals,1953
+C,314,2142,38,-90,North America,United States,,Pennsylvanian,,Coals,1952
+C,313,2141,34,-85,North America,United States,,Pennsylvanian,,Coals,1948
+C,312,2140,36,-94,North America,United States,,Pennsylvanian,,Coals,1960
+C,311,2139,34,-114,North America,United States,Upper,Pennsylvanian,Gzelian,Coals,1971
+C,310,2138,46,-60,North America,Canada,,Pennsylvanian,,Coals,1968
+C,309,2137,47,-62,North America,Canada,Upper,Pennsylvanian,Stephanian,Coals,1994
+C,308,2136,44.5,21.5,Europe,Former Yugoslavia,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,307,2135,44,17,Europe,Former Yugoslavia,,Pennsylvanian,,Coals,1976
+C,305,2133.1,43,-6,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1991
+C,304,2133,39,-7,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1986
+C,302,2131,42.5,1,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1969
+C,300,2129.1,43,-1,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,299,2129,40,-2,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,298,2128,41,3,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,297,2127,43,-2,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,296,2126,42,1,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,295,2125,40,-2,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,294,2124,42,-3,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,293,2123,38,-6,Europe,Spain,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,291,2121,43,-4,Europe,Spain,,Pennsylvanian,,Coals,1967
+C,290,2120,43,-7,Europe,Spain,,Pennsylvanian,,Coals,1967
+C,289,2119,43,-5,Europe,Spain,,Pennsylvanian,,Coals,1955
+C,288,2118,48,22,Europe,Slovakia,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,287,2117,45,22,Europe,Rumania,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,283,2114,41,-8,Europe,Portugal,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,276,2107,38,16,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,275,2106,37,23,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,274,2105,38,24,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,273,2104,49,12.5,Europe,Germany,Upper,Pennsylvanian,Stephanian,Coals,1991
+C,271,2102,51.5,12,Europe,Germany,Upper,Pennsylvanian,Stephanian,Coals,1991
+C,270,2101,51,6,Europe,Germany,,Pennsylvanian,,Coals,1977
+C,266,2097,48,7,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,265,2096,45.5,6.5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,263,2094,45,6,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,262,2093,44,6,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,261,2092,46,5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,260,2091,46,5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,259,2090,43,6.5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,258,2089,43,6,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,257,2088,43,6,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,256,2087,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,255,2086,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,254,2085,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,253,2084,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1983
+C,252,2083,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,251,2082,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,249,2080,47,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,248,2079,47,5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,247,2078,46,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,246,2077,46,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,245,2076,45,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,244,2075,46,5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,243,2074,45,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,242,2073,45,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,241,2072,44,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,240,2071,44,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,239,2070,44,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,238,2069,44,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,237,2068,44,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,236,2067,43,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,235,2066,43,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,234,2065,44,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,233,2064,44,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,232,2063,44,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,231,2062,45,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,230,2061,46,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,229,2060,46,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,228,2059,46,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,227,2058,46,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,226,2057,46,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,225,2056,46,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,224,2055,47,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,223,2054,47,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,221,2052,47,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,220,2051,48,5,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,219,2050,48,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,218,2049,49,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,217,2048,46.5,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,216,2047,46,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,215,2046,45,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,214,2045,45,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,213,2044,45,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,212,2043,45,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,211,2042,45,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,210,2041,44.5,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,209,2040,44,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,208,2039,45,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,207,2038,43,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1960
+C,206,2037,47,0,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,203,2034,43,6,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,202,2033,43,3,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,201,2032,47,4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,200,2031,46,2,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,199,2030,45,1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,198,2029,49,-1,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,196,2027,48,-4,Europe,France,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,194,2025,50,14,Europe,Czech Republic,,Pennsylvanian,,Coals,1977
+C,186,2018,47,11,Europe,Austria,,Pennsylvanian,,Coals,1977
+C,184,2016.2,-32,152,Australia,New South Wales,Upper,Pennsylvanian,Stephanian,Coals,
+C,182,2016,38,127,Asia,Korea,Middle,Pennsylvanian,Moscovian,Coals,1983
+C,176,2009,23.5,99.4,Asia,China,,Pennsylvanian,,Coals,1990
+C,175,2008,21.4,101.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,174,2007,25.9,99.3,Asia,China,,Pennsylvanian,,Coals,1990
+C,173,2006,34.4,108.9,Asia,China,,Pennsylvanian,,Coals,1987
+C,172,2005,34.1,118.9,Asia,China,,Pennsylvanian,,Coals,1984
+C,171,2004,34.7,116.5,Asia,China,,Pennsylvanian,,Coals,1984
+C,170,2003,39.2,106.2,Asia,China,,Pennsylvanian,,Coals,1994
+C,169,2002,39.5,106.7,Asia,China,,Pennsylvanian,,Coals,1994
+C,168,2001,40.4,110,Asia,China,,Pennsylvanian,,Coals,1991
+C,167,2000,41.2,119.3,Asia,China,,Pennsylvanian,,Coals,1989
+C,166,1999,41.1,120.7,Asia,China,,Pennsylvanian,,Coals,1994
+C,165,1998,46.3,132.2,Asia,China,,Pennsylvanian,,Coals,1993
+C,164,1997,45.5,131.8,Asia,China,,Pennsylvanian,,Coals,1993
+C,163,1996,41.4,128.1,Asia,China,,Pennsylvanian,,Coals,1994
+C,162,1995,38.3,117.3,Asia,China,,Pennsylvanian,,Coals,1989
+C,161,1994,39.9,119.5,Asia,China,,Pennsylvanian,,Coals,1989
+C,160,1993,37.4,114.5,Asia,China,,Pennsylvanian,,Coals,1989
+C,159,1992,39.6,118.2,Asia,China,,Pennsylvanian,,Coals,1994
+C,158,1991,41,118.6,Asia,China,,Pennsylvanian,,Coals,1994
+C,157,1990,40.4,117.5,Asia,China,,Pennsylvanian,,Coals,1994
+C,156,1989,37.8,116.1,Asia,China,,Pennsylvanian,,Coals,1994
+C,155,1988,36.4,114.2,Asia,China,,Pennsylvanian,,Coals,1994
+C,154,1987,33.9,116.3,Asia,China,,Pennsylvanian,,Coals,1989
+C,153,1986,33,114.3,Asia,China,,Pennsylvanian,,Coals,1994
+C,152,1985,35.2,113.4,Asia,China,,Pennsylvanian,,Coals,1989
+C,151,1984,31.7,115.4,Asia,China,,Pennsylvanian,,Coals,1989
+C,150,1983,36.2,116.7,Asia,China,,Pennsylvanian,,Coals,1991
+C,149,1982,36.4,115.9,Asia,China,,Pennsylvanian,,Coals,1991
+C,148,1981,35.6,110.7,Asia,China,,Pennsylvanian,,Coals,1991
+C,147,1980,35.9,110,Asia,China,,Pennsylvanian,,Coals,1991
+C,146,1979,35.1,111.2,Asia,China,,Pennsylvanian,,Coals,1991
+C,145,1978,35.5,112.4,Asia,China,,Pennsylvanian,,Coals,1991
+C,144,1977,36.1,113.2,Asia,China,,Pennsylvanian,,Coals,1991
+C,143,1976,39.3,111.1,Asia,China,,Pennsylvanian,,Coals,1991
+C,142,1975,39,111,Asia,China,,Pennsylvanian,,Coals,1991
+C,141,1974,39.8,113.1,Asia,China,,Pennsylvanian,,Coals,1991
+C,140,1973,39.5,112.8,Asia,China,,Pennsylvanian,,Coals,1991
+C,139,1972,39.5,112.5,Asia,China,,Pennsylvanian,,Coals,1991
+C,138,1971,37.8,113.5,Asia,China,,Pennsylvanian,,Coals,1991
+C,137,1970,37.3,113.5,Asia,China,,Pennsylvanian,,Coals,1991
+C,136,1969,39.3,112.4,Asia,China,,Pennsylvanian,,Coals,1991
+C,135,1968,35,109.1,Asia,China,,Pennsylvanian,,Coals,1994
+C,134,1967,37.4,110.7,Asia,China,,Pennsylvanian,,Coals,1991
+C,133,1966,36,106.2,Asia,China,,Pennsylvanian,,Coals,1994
+C,132,1965,39,106.3,Asia,China,,Pennsylvanian,,Coals,1994
+C,131,1964,37.2,106.4,Asia,China,,Pennsylvanian,,Coals,1994
+C,130,1963,37.4,105.6,Asia,China,,Pennsylvanian,,Coals,1994
+C,129,1962,36.9,98.4,Asia,China,,Pennsylvanian,,Coals,1991
+C,128,1961,37.8,95.3,Asia,China,,Pennsylvanian,,Coals,1990
+C,127,1960,37.3,101.6,Asia,China,,Pennsylvanian,,Coals,1994
+C,126,1959,38.9,100.4,Asia,China,,Pennsylvanian,,Coals,1994
+C,125,1958,39.7,98.4,Asia,China,,Pennsylvanian,,Coals,1994
+C,124,1957,38.8,101.1,Asia,China,,Pennsylvanian,,Coals,1994
+C,123,1956,37.9,102.6,Asia,China,,Pennsylvanian,,Coals,1994
+C,122,1955,37.1,104,Asia,China,,Pennsylvanian,,Coals,1994
+C,121,1954,40.5,95.7,Asia,China,,Pennsylvanian,,Coals,1987
+C,120,1953,35,117,Asia,China,,Pennsylvanian,,Coals,1959
+C,119,1952,35,118,Asia,China,,Pennsylvanian,,Coals,1959
+C,118,1951,42,126,Asia,China,,Pennsylvanian,,Coals,1959
+C,117,1950,34,113,Asia,China,,Pennsylvanian,,Coals,1959
+C,116,1949,33,117,Asia,China,,Pennsylvanian,,Coals,1959
+C,115,1948,34,117,Asia,China,,Pennsylvanian,,Coals,1990
+C,114,1947,35,113,Asia,China,,Pennsylvanian,,Coals,1959
+C,113,1946,34,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,112,1945,34.5,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,111,1944,35,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,110,1943,34,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,109,1942,35,117,Asia,China,,Pennsylvanian,,Coals,1990
+C,108,1941,35,117.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,107,1940,35.5,117,Asia,China,,Pennsylvanian,,Coals,1990
+C,106,1939,37,118,Asia,China,,Pennsylvanian,,Coals,1990
+C,105,1938,41,123,Asia,China,,Pennsylvanian,,Coals,1990
+C,104,1937,39.5,122,Asia,China,,Pennsylvanian,,Coals,1990
+C,103,1936,42,126.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,102,1935,41,124,Asia,China,,Pennsylvanian,,Coals,1990
+C,101,1934,40,116,Asia,China,,Pennsylvanian,,Coals,1990
+C,100,1933,35,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,99,1932,39,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,98,1931,40,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,97,1930,35.5,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,96,1929,35,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,95,1928,36,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,94,1927,36.5,112.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,93,1926,38,114,Asia,China,,Pennsylvanian,,Coals,1990
+C,92,1925,38,113.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,91,1924,38,112.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,90,1923,35.75,110.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,89,1922,40,111,Asia,China,,Pennsylvanian,,Coals,1990
+C,88,1921,35.5,110.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,87,1920,42.5,109.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,86,1918,42,109,Asia,China,,Pennsylvanian,,Coals,1990
+C,85,1917,41.5,108.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,84,1916,38.5,106,Asia,China,Upper,Pennsylvanian,,Coals,1990
+C,83,1915,39,105,Asia,China,Upper,Pennsylvanian,,Coals,1990
+C,82,1914,35,106,Asia,China,Upper,Pennsylvanian,,Coals,1990
+C,81,1913,40,97,Asia,China,,Pennsylvanian,,Coals,1990
+C,80,1912,38,102,Asia,China,,Pennsylvanian,,Coals,1990
+C,79,1911,39,100,Asia,China,,Pennsylvanian,,Coals,1990
+C,78,1910,39,94,Asia,China,,Pennsylvanian,,Coals,1990
+C,77,1909,38,102,Asia,China,,Pennsylvanian,,Coals,1990
+C,76,1908,37.1,79.9,Asia,China,,Pennsylvanian,,Coals,1991
+C,75,1907,39.7,101.6,Asia,China,,Pennsylvanian,,Coals,1994
+C,74,1906,41,79,Asia,China,,Pennsylvanian,,Coals,1990
+C,73,1905,46,85,Asia,China,Upper,Pennsylvanian,,Coals,1990
+C,72,1904.1,31.5,-7.5,Africa,Morocco,Upper,Pennsylvanian,Stephanian,Coals,1998
+C,71,1904,31,-8,Africa,Morocco,Upper,Pennsylvanian,Stephanian,Coals,1967
+C,70,1903,33,-7,Africa,Morocco,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,69,1902,31,-9,Africa,Morocco,Upper,Pennsylvanian,Stephanian,Coals,1977
+C,66,1899,35,-1,Africa,Algeria,,Pennsylvanian,,Coals,1945
+C,413,1690.1,-14,-76,South America,Peru,,Pennsylvanian,,Coals,1977
+C,412,1690,-15,-75,South America,Peru,,Pennsylvanian,,Coals,1978
+C,409,1687,-28,-70,South America,Argentina,,Pennsylvanian,,Coals,1977
+C,408,1686,-45,-70,South America,Argentina,,Pennsylvanian,,Coals,1978
+C,407,1685,-33,-68,South America,Argentina,,Pennsylvanian,,Coals,1978
+C,405,1683,37,-81,North America,United States,,Pennsylvanian,,Coals,1952
+C,404,1682,33,-98,North America,United States,,Pennsylvanian,,Coals,1946
+C,396,1675,42,-97,North America,United States,,Pennsylvanian,,Coals,1910
+C,395,1674,39,-94,North America,United States,,Pennsylvanian,,Coals,1913
+C,394,1673,34,-89,North America,United States,,Pennsylvanian,,Coals,1970
+C,393,1672,44,-85,North America,United States,,Pennsylvanian,,Coals,1950
+C,386,1665,34,-85,North America,United States,,Pennsylvanian,,Coals,1948
+C,383,1662,36,-94,North America,United States,,Pennsylvanian,,Coals,1960
+C,379,1658,46,-62,North America,Nova Scotia,,Pennsylvanian,,Coals,1968
+C,377,1657,52,-55,North America,Newfoundland,Middle,Pennsylvanian,Westphalian,Coals,1992
+C,376,1656,49,-57,North America,Newfoundland,,Pennsylvanian,,Coals,
+C,375,1655,48,-58,North America,Newfoundland,,Pennsylvanian,,Coals,1934
+C,374,1654,46,-73,North America,New Brunswick,,Pennsylvanian,,Coals,1947
+C,373,1653,47,-62,North America,Canada,Middle,Pennsylvanian,Westphalian,Coals,1994
+C,372,1652,44,22,Europe,Former Yugoslavia,Middle,Pennsylvanian,Westphalian,Coals,1961
+C,371,1651,44,17,Europe,Former Yugoslavia,,Pennsylvanian,,Coals,1976
+C,369,1650,51,1,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,368,1649,51.5,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,367,1648,51.5,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,366,1647,52,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,365,1646,52,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,364,1645,52,-1.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,363,1644,51.75,-4.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,361,1642,52.5,-1.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,360,1641,52.5,-1.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,359,1640,52.5,-3,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,358,1639,52.5,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,357,1638,52.5,2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,355,1636,52.5,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,354,1635,52.5,-2,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,351,1632,53,-2,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,350,1631,53,-3,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,349,1630,53,-3,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,348,1629,53,-4.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,345,1626,54,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,344,1625,54.5,0.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,343,1624,54.5,-2.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,342,1623,55,-2,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,341,1622,55.5,-5.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,340,1621,55.5,-5.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,339,1620,56,-3.5,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,338,1619,56,-3,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1977
+C,337,1618,51,1,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,336,1617,53,-3,United Kingdom,Wales,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,335,1616,53,-1,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,334,1615,56,-4,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,333,1614,53,-4,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,330,1611,54,-1,United Kingdom,England,Middle,Pennsylvanian,Westphalian,Coals,1988
+C,329,1610,52,-3,United Kingdom,Wales,Middle,Pennsylvanian,Westphalian,Coals,1992
+C,328,1609,47,9,Europe,Switzerland,,Pennsylvanian,,Coals,1966
+C,324,1606,39.5,-6,Europe,Spain,Middle,Pennsylvanian,Westphalian,Coals,1983
+C,323,1604,38,-5,Europe,Spain,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,321,1603,43,-4,Europe,Spain,,Pennsylvanian,,Coals,1967
+C,320,1602,43,-7,Europe,Spain,,Pennsylvanian,,Coals,1967
+C,319,1601,43,-5,Europe,Spain,,Pennsylvanian,,Coals,1955
+C,318,1600,41.5,-8.5,Europe,Portugal,Middle,Pennsylvanian,Westphalian,Coals,1983
+C,316,1598,40,-8.5,Europe,Portugal,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,315,1597,50,19,Europe,Poland,,Pennsylvanian,,Coals,1977
+C,313,1595,51,16,Europe,Poland,,Pennsylvanian,,Coals,1987
+C,305,1588,53,8,Europe,Netherlands,Middle,Pennsylvanian,Westphalian,Coals,1977
+C,298,1581,52.5,-8,Europe,Ireland,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,297,1580,52.5,-8,Europe,Ireland,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,295,1578,54,-7,Europe,Ireland,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,294,1577,52,-9,Europe,Ireland,Middle,Pennsylvanian,Westphalian,Coals,1977
+C,293,1576,38,26,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,292,1575,37,23,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,291,1574.2,38,24,Europe,Greece,,Pennsylvanian,,Coals,1977
+C,289,1574,49,12,Europe,Germany,Middle,Pennsylvanian,Westphalian,Coals,1991
+C,288,1573,49,7,Europe,Germany,Upper,Pennsylvanian,Stephanian,Coals,1982
+C,285,1567,51,12,Europe,Germany,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,284,1566,52,7,Europe,Germany,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,283,1564,52,8,Europe,Germany,Middle,Pennsylvanian,Westphalian,Coals,1967
+C,281,1562,51,13,Europe,Germany,,Pennsylvanian,,Coals,1964
+C,275,1555,46,7,Europe,France,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,269,1549,42,9,Europe,France,Middle,Pennsylvanian,Westphalian,Coals,1977
+C,257,1539,52,29,Europe,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Coals,1982
+C,256,1538,52,30,Europe,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Coals,1982
+C,253,1535,51,24,Europe,CIS(USSR),Lower,Pennsylvanian,Bashkirian,Coals,1982
+C,250,1532,43,23,Europe,Bulgaria,Middle,Pennsylvanian,Westphalian,Coals,1982
+C,249,1531,43.5,22.5,Europe,Bulgaria,,Pennsylvanian,,Coals,1977
+C,247,1529,51,4,Europe,Belgium,,Pennsylvanian,,Coals,1982
+C,246,1528.1,46.5,13,Europe,Austria,Lower,Pennsylvanian,Namurian,Coals,1976
+C,245,1528,47,11,Europe,Austria,,Pennsylvanian,,Coals,1977
+C,243,1527,47,13,Europe,Austria,,Pennsylvanian,,Coals,1964
+C,242,1526,-31.5,152.5,Australia,New South Wales,Lower,Pennsylvanian,Namurian,Coals,1995
+C,240,1524,37,32,Asia,Turkey,,Pennsylvanian,,Coals,1977
+C,238,1522,15.5,103,Asia,Thiland,,Pennsylvanian,,Coals,1990
+C,237,1521,18,103,Asia,Laos,,Pennsylvanian,,Coals,1978
+C,236,1520,38,127,Asia,Korea,Middle,Pennsylvanian,Moscovian,Coals,1983
+C,235,1519,38,128,Asia,Korea,,Pennsylvanian,,Coals,1957
+C,234,1518.1,33.5,57.3,Asia,Iran,,Pennsylvanian,,Coals,1965
+C,220,1505,45.5,85.5,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,219,1504,50,79,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,218,1503,52,75,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,217,1502,50,73,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,216,1501,50,72,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,215,1500,50,72,Asia,CIS(USSR),,Pennsylvanian,,Coals,1982
+C,214,1499,50.2,79.2,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,213,1498,50,73,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,212,1497,53,91,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,211,1496,66,95,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,210,1495,55,86,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,209,1494,55,83,Asia,CIS(USSR),,Pennsylvanian,,Coals,1977
+C,208,1493,69,87,Asia,CIS(USSR),,Pennsylvanian,,Coals,1959
+C,207,1492,75,100,Asia,CIS(USSR),,Pennsylvanian,,Coals,1959
+C,206,1491,30.3,107.4,Asia,China,,Pennsylvanian,,Coals,1978
+C,205,1490,34,116,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1987
+C,204,1489,26,115,Asia,China,,Pennsylvanian,,Coals,1980
+C,203,1488,26,114,Asia,China,,Pennsylvanian,,Coals,1980
+C,202,1487,27,115,Asia,China,,Pennsylvanian,,Coals,1980
+C,201,1486,26,117,Asia,China,,Pennsylvanian,,Coals,1980
+C,200,1485,28,114.5,Asia,China,,Pennsylvanian,,Coals,1980
+C,199,1484,28,117,Asia,China,,Pennsylvanian,,Coals,1980
+C,198,1483,39,110,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,197,1482,37.4,110.7,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,196,1481,35.1,109.9,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,195,1480,36.5,109.4,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,194,1479,35.4,110.4,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,193,1478,34.1,108.6,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1989
+C,192,1477,33.9,106.5,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,191,1476,34.7,104.8,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,190,1475,35.3,103.6,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,189,1474,34.5,105.9,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,188,1473,34.8,104.4,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1987
+C,187,1472,35.3,103.8,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1987
+C,186,1471,39.7,98.4,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,185,1470,37.9,102.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,183,1468,36.7,104.7,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,182,1467,37,97.6,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1991
+C,181,1466,37.8,95.3,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1991
+C,180,1465,38.4,105.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1990
+C,179,1464,39.2,106.3,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,178,1463,41,118.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,177,1462,35.8,114.1,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,176,1461,35.4,116.5,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,175,1460,35.5,116.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,174,1459,35.5,118.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,173,1458,35,118.3,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,172,1457,35.1,117.1,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,171,1456,35.4,116.9,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,170,1455,37.7,118.1,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,169,1454,35.8,117.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,168,1453,36.2,116.7,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,167,1452,36.2,117.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,166,1451,35.4,115.9,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,165,1450,36.8,118,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,164,1449,35.6,110.7,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,163,1448,35.5,112.4,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,162,1447,35.9,112.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,161,1446,35.1,111.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,160,1445,36.8,111.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,159,1444,36.2,111.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,158,1443,35.7,113.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,157,1442,35.9,110.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,156,1441,41.3,119.4,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1989
+C,155,1440,41.4,128.1,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,154,1439,45.5,131.8,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,153,1438,39.2,106.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,152,1437,39.8,111.6,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,151,1436.1,38.8,105.7,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,150,1436,39.3,106.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1990
+C,149,1435,40.7,113.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1991
+C,148,1434,41.2,109.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1990
+C,146,1432,35,117,Asia,China,,Pennsylvanian,,Coals,1959
+C,145,1431,39,109,Asia,China,,Pennsylvanian,,Coals,1987
+C,144,1430,41,110,Asia,China,,Pennsylvanian,,Coals,1987
+C,143,1429,42,126,Asia,China,,Pennsylvanian,,Coals,1959
+C,142,1428,34,113,Asia,China,,Pennsylvanian,,Coals,1959
+C,141,1427,42,126.3,Asia,China,,Pennsylvanian,,Coals,1990
+C,140,1426,41,124,Asia,China,,Pennsylvanian,,Coals,1990
+C,139,1425,40,119.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,138,1424,40.5,117.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,137,1423,39.5,118,Asia,China,,Pennsylvanian,,Coals,1990
+C,136,1422,40,116,Asia,China,,Pennsylvanian,,Coals,1990
+C,135,1421,35,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,134,1420,39,118,Asia,China,,Pennsylvanian,,Coals,1990
+C,133,1419,40,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,132,1418,35.5,113,Asia,China,,Pennsylvanian,,Coals,1990
+C,131,1417,35,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,130,1416,36,112,Asia,China,,Pennsylvanian,,Coals,1990
+C,129,1415,36.5,112.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,128,1414,38,114,Asia,China,,Pennsylvanian,,Coals,1990
+C,127,1413,38,113.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,126,1412,38,112.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,125,1411,35.5,110.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,124,1410,42.5,109.5,Asia,China,,Pennsylvanian,,Coals,1990
+C,123,1409,42,109,Asia,China,,Pennsylvanian,,Coals,1990
+C,122,1408,41.5,108.1,Asia,China,,Pennsylvanian,,Coals,1990
+C,121,1407,39,101,Asia,China,Middle,Pennsylvanian,Westphalian,Coals,1924
+C,120,1406,38,105,Asia,China,,Pennsylvanian,,Coals,1982
+C,119,1405,36,105,Asia,China,,Pennsylvanian,,Coals,1982
+C,118,1404,40,97,Asia,China,,Pennsylvanian,,Coals,1990
+C,117,1403,38,102,Asia,China,,Pennsylvanian,,Coals,1990
+C,116,1402,39,100,Asia,China,,Pennsylvanian,,Coals,1990
+C,115,1401,39,94,Asia,China,,Pennsylvanian,,Coals,1990
+C,114,1400,38,102,Asia,China,,Pennsylvanian,,Coals,1990
+C,113,1399,38.4,80.8,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1981
+C,112,1398,41.2,79.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,111,1397,41.1,80.2,Asia,China,Middle,Pennsylvanian,Moscovian,Coals,1994
+C,110,1396,44,89.5,Asia,China,Lower,Pennsylvanian,Bashkirian,Coals,1994
+C,109,1395,41,79,Asia,China,,Pennsylvanian,,Coals,1990
+C,108,1394,32,96,Asia,China,,Pennsylvanian,,Coals,1990
+C,107,1393,30,90,Asia,China,,Pennsylvanian,,Coals,1990
+C,106,1392,13,104,Asia,China,,Pennsylvanian,,Coals,1994
+C,104,1391,31,-5,Africa,Morocco,Lower,Pennsylvanian,Namurian,Coals,1977
+C,102,1389,30,32,Africa,Egypt,,Pennsylvanian,,Coals,1977
+C,98,1385,35,-1,Africa,Algeria,,Pennsylvanian,,Coals,1945
+C,153,1251,-16,-70,South America,Peru,,Mississippian,,Coals,1953
+C,152,1250,5,-75,South America,Columbia,,Mississippian,,Coals,1956
+C,151,1249,-5,43,South America,Brazil,,Mississippian,,Coals,1978
+C,147,1245,15,-67,South America,Bolivia,Upper,Mississippian,Serpukhovian,Coals,1992
+C,146,1244,-33,-70,South America,Argentina,,Mississippian,,Coals,1993
+C,145,1243,-30,-70,South America,Argentina,,Mississippian,,Coals,1977
+C,144,1242,-30,-65,South America,Argentina,,Mississippian,,Coals,1956
+C,143,1241,37,-83,North America,United States,Upper,Mississippian,,Coals,1952
+C,142,1240,41,-80,North America,United States,,Mississippian,,Coals,1979
+C,141,1239,41,-110,North America,United States,Upper,Mississippian,,Coals,1950
+C,140,1238,39,-113,North America,United States,,Mississippian,,Coals,1955
+C,137,1235,37,-113,North America,United States,Upper,Mississippian,,Coals,1992
+C,136,1234,69,-140,North America,Canada,Upper,Mississippian,,Coals,
+C,135,1233,61,-135,North America,Canada,Upper,Mississippian,,Coals,
+C,132,1231,55,-6,United Kingdom,Scotland,Upper,Mississippian,Namurian,Coals,1982
+C,129,1228,58,-2,United Kingdom,Scotland,,Mississippian,,Coals,1990
+C,128,1227,55,-2,United Kingdom,Scotland,,Mississippian,,Coals,1977
+C,127,1226,56,-4,United Kingdom,Scotland,,Mississippian,,Coals,1965
+C,125,1224,54,0,United Kingdom,England,Upper,Mississippian,Namurian,Coals,1982
+C,124,1223,55,-3,United Kingdom,England,,Mississippian,,Coals,1960
+C,122,1221,75,19,Europe,Svalbard Bear Ise.,,Mississippian,,Coals,1956
+C,121,1220,38.5,-5.5,Europe,Spain,Upper,Mississippian,Namurian,Coals,1983
+C,120,1219.1,71.5,28.5,Europe,Norway,Middle,Mississippian,Visean,Coals,1998
+C,116,1216,55,-6,Europe,Ireland,Upper,Mississippian,,Coals,
+C,112,1213,48,8,Europe,Germany,Upper,Mississippian,,Coals,1977
+C,104,1205,47,4,Europe,France,,Mississippian,,Coals,1964
+C,93,1197,-13,143,Australia,Queensland,Upper,Mississippian,,Coals,1977
+C,92,1196,-33,152,Australia,New South Wales,Upper,Mississippian,,Coals,1975
+C,89,1193,47,92,Asia,Mongolia,,Mississippian,,Coals,1969
+C,88,1192,5,102.4,Asia,Malaysia,Upper,Mississippian,,Coals,1985
+C,72,1176,53,91,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,71,1175,50,74,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,70,1174,50,73,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,69,1173,51,73,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,68,1172,52,74,Asia,CIS(USSR),Upper,Mississippian,,Coals,1977
+C,65,1169,30,90,Asia,China,,Mississippian,,Coals,1990
+C,62,1167,25.25,108,Asia,China,Upper,Mississippian,,Coals,1991
+C,61,1166,32,119,Asia,China,Middle,Mississippian,Visean,Coals,1989
+C,60,1165,23,114,Asia,China,Upper,Mississippian,,Coals,1974
+C,59,1164,23,113,Asia,China,Upper,Mississippian,,Coals,1974
+C,58,1163,24,114,Asia,China,Upper,Mississippian,,Coals,1974
+C,57,1162,22,110,Asia,China,Upper,Mississippian,,Coals,1974
+C,56,1161,23,111.5,Asia,China,,Mississippian,,Coals,1974
+C,55,1160,25.5,113,Asia,China,,Mississippian,,Coals,1974
+C,54,1159,24.5,108.5,Asia,China,Upper,Mississippian,,Coals,1974
+C,53,1158,25.5,110,Asia,China,Upper,Mississippian,,Coals,1974
+C,52,1157,28,113.5,Asia,China,Upper,Mississippian,,Coals,1974
+C,51,1156,30.5,114.5,Asia,China,,Mississippian,,Coals,1974
+C,50,1155,29,118,Asia,China,Upper,Mississippian,,Coals,1990
+C,49,1154,26,107,Asia,China,Upper,Mississippian,,Coals,1990
+C,48,1153,30,102,Asia,China,Upper,Mississippian,,Coals,1990
+C,47,1152,33.5,110,Asia,China,Upper,Mississippian,,Coals,1990
+C,46,1151,33,112,Asia,China,,Mississippian,,Coals,1989
+C,45,1150.1,26,117,Asia,China,Upper,Mississippian,,Coals,1979
+C,44,1150,25,116.5,Asia,China,Upper,Mississippian,,Coals,1979
+C,43,1149,37.3,105.2,Asia,China,Upper,Mississippian,,Coals,1990
+C,41,1147,39,109,Asia,China,Upper,Mississippian,,Coals,1990
+C,40,1146,41,95,Asia,China,Upper,Mississippian,,Coals,1990
+C,39,1145,37,96,Asia,China,Upper,Mississippian,,Coals,1958
+C,38,1144,40,82,Asia,China,Upper,Mississippian,,Coals,1969
+C,37,1143,40,82,Africa,Egypt,,Mississippian,,Coals,1996
+C,357,1031,-16,-70,South America,Peru,,Mississippian,,Coals,1953
+C,356,1030,5,-75,South America,Columbia,,Mississippian,,Coals,1956
+C,355,1029,-5,-75,South America,Brazil,,Mississippian,,Coals,1978
+C,351,1025,-33,-70,South America,Argentina,,Mississippian,,Coals,1993
+C,350,1024,-30,-70,South America,Argentina,,Mississippian,,Coals,1977
+C,349,1023,-30,-65,South America,Argentina,,Mississippian,,Coals,1956
+C,348,1022,37,-83,North America,United States,Lower,Mississippian,,Coals,1989
+C,347,1021.4,68,-155,North America,United States,,Mississippian,,Coals,1982
+C,346,1021.3,68,-162.5,North America,United States,Lower,Mississippian,,Coals,1984
+C,345,1021.2,70.5,-148,North America,United States,Lower,Mississippian,,Coals,1993
+C,344,1021.1,69,-144,North America,United States,Lower,Mississippian,,Coals,1994
+C,343,1021,71,-156,North America,United States,Lower,Mississippian,,Coals,1987
+C,342,1020,68,-165,North America,United States,Lower,Mississippian,,Coals,1965
+C,341,1019,74,-20,North America,Canada,Middle,Mississippian,,Coals,1991
+C,338,1016,53.075,-118.05,North America,Canada,,Mississippian,,Coals,1994
+C,334,1012,61,-124,North America,Canada,Middle,Mississippian,Visean,Coals,1977
+C,331,1008,56,-3.5,United Kingdom,Scotland,Middle,Mississippian,Visean,Coals,1982
+C,329,1006,56,-4,United Kingdom,Scotland,,Mississippian,,Coals,1965
+C,327,1005,56,4,United Kingdom,England,Middle,Mississippian,Visean,Coals,1988
+C,326,1004,55,-3,United Kingdom,England,,Mississippian,,Coals,1960
+C,323,1002,75,19,Europe,Svalbard,,Mississippian,,Coals,1956
+C,321,1000,51,20,Europe,Poland,Middle,Mississippian,Visean,Coals,1988
+B,402,751,31.7,112.2,Asia,China,Lower,Mississippian,,Bauxites,1991
+B,401,750,31.8,111.2,Asia,China,Lower,Mississippian,,Bauxites,1991
+B,90,75,55,88,Asia,CIS(USSR),Lower,Cambrian,,Bauxites,1982
+B,400,749.1,31.7,111.8,Asia,China,Lower,Mississippian,,Bauxites,1991
+B,396,746,32.3,104.4,Asia,China,Middle,Mississippian,Visean,Bauxites,1991
+B,395,745,31.8,104.3,Asia,China,Middle,Mississippian,Visean,Bauxites,1991
+B,88,73,52,85,Asia,CIS(USSR),Lower,Cambrian,,Bauxites,1997
+B,118,681.1,75,95,Asia,CIS(USSR),Upper,Devonian,,Bauxites,1967
+B,117,681,50,70,Asia,CIS(USSR),Upper,Devonian,,Bauxites,1975
+B,116,680,43,80,Asia,CIS(USSR),Upper,Devonian,,Bauxites,1969
+B,115,679,54,85,Asia,CIS(USSR),Upper,Devonian,,Bauxites,1974
+B,114,678,68,65,Asia,CIS(USSR),Upper,Devonian,Frasnian,Bauxites,1980
+B,112,676,31,119,Asia,China,Upper,Devonian,Famennian,Bauxites,
+B,111,675.2,34,-6,Africa,Morocco,Upper,Devonian,,Bauxites,1990
+B,64,569.1,52.5,84,Asia,CIS(USSR),Middle,Devonian,,Bauxites,1974
+B,57,569,43,80,Asia,CIS(USSR),Middle,Devonian,,Bauxites,1969
+B,63,569,43,80,Asia,CIS(USSR),Middle,Devonian,,Bauxites,1969
+B,53,565,53,60,Asia,CIS(USSR),Middle,Devonian,,Bauxites,1982
+B,69,503.1,52.5,84,Asia,Russia,Lower,Devonian,,Bauxites,1974
+B,68,503,60,60,Asia,Russia,Lower,Devonian,Emsian,Bauxites,1995
+B,172,389,50,82,Asia,CIS(USSR),Middle,Ordovician,,Bauxites,1984
+B,171,388,51,72,Asia,CIS(USSR),Upper,Ordovician,,Bauxites,1982
+B,170,387,20,28,Africa,Sudan,Lower,Silurian,,Bauxites,1993
+B,577,3215,23,105,Asia,Vietnam ,Upper,Permian,,Bauxites,1994
+B,576,3214,23,106,Asia,Vietnam ,Upper,Permian,,Bauxites,1994
+B,572,3210,38,29,Asia,Turkey,Upper,Permian,,Bauxites,1982
+B,569,3208.1,36.5,47.25,Asia,Iran,Upper,Permian,,Bauxites,1982
+B,568,3208,37.5,45,Asia,Iran,Upper,Permian,,Bauxites,1977
+B,567,3207,32,50,Asia,Iran,Upper,Permian,,Bauxites,1982
+B,566,3206,35,51,Asia,Iran,Upper,Permian,,Bauxites,1982
+B,565,3205,32,55,Asia,Iran,Upper,Permian,,Bauxites,1982
+B,562,3203,53,108,Asia,CIS(USSR),MU,Permian,,Bauxites,1978
+B,561,3202,55,106,Asia,CIS(USSR),MU,Permian,,Bauxites,1978
+B,560,3201,50,90,Asia,CIS(USSR),MU,Permian,,Bauxites,1978
+B,559,3200,40,75,Asia,CIS(USSR),MU,Permian,,Bauxites,1978
+B,558,3199,41,48,Asia,CIS(USSR),Middle,Permian,,Bauxites,1972
+B,557,3198,33,107,Asia,China,Upper,Permian,,Bauxites,1989
+B,551,3192,28,110.1,Asia,China,Upper,Permian,,Bauxites,1988
+B,550,3191,31,109.8,Asia,China,Upper,Permian,,Bauxites,1994
+B,549,3190,32.2,106.3,Asia,China,Upper,Permian,,Bauxites,1994
+B,548,3189,32.4,105.8,Asia,China,Upper,Permian,,Bauxites,1994
+B,547,3188,28.3,104.8,Asia,China,Upper,Permian,,Bauxites,1994
+B,546,3187,30.1,102.9,Asia,China,Upper,Permian,,Bauxites,1991
+B,544,3185,24,109.2,Asia,China,Upper,Permian,,Bauxites,1985
+B,543,3184,23.7,108.1,Asia,China,Upper,Permian,,Bauxites,1985
+B,542,3183,24.6,109.2,Asia,China,Upper,Permian,,Bauxites,1985
+B,541,3182,24.7,108,Asia,China,Upper,Permian,,Bauxites,1985
+B,540,3181,23.9,108,Asia,China,Upper,Permian,,Bauxites,1994
+B,539,3180,23.6,109.6,Asia,China,Upper,Permian,,Bauxites,1994
+B,538,3179,23.1,108.2,Asia,China,Upper,Permian,,Bauxites,1991
+B,537,3178,22.3,106.8,Asia,China,Upper,Permian,,Bauxites,1991
+B,536,3177,23.1,106.4,Asia,China,Upper,Permian,,Bauxites,1991
+B,535,3176,23.7,106.9,Asia,China,Upper,Permian,,Bauxites,1991
+B,534,3175,23.3,106.6,Asia,China,Upper,Permian,,Bauxites,1994
+B,533,3174,23.1,109.6,Asia,China,Upper,Permian,,Bauxites,1994
+B,532,3173,25.1,104.8,Asia,China,Upper,Permian,,Bauxites,1994
+B,531,3172,25.8,104.6,Asia,China,Upper,Permian,,Bauxites,1994
+B,530,3171,26.8,104.2,Asia,China,Upper,Permian,,Bauxites,1994
+B,529,3170,27.8,105,Asia,China,Upper,Permian,,Bauxites,1994
+B,528,3169,27.3,103.7,Asia,China,Upper,Permian,,Bauxites,1994
+B,527,3168,26.2,104.1,Asia,China,Upper,Permian,,Bauxites,1994
+B,526,3167,36.8,118,Asia,China,Upper,Permian,,Bauxites,1991
+B,525,3166,23.1,104.7,Asia,China,Upper,Permian,,Bauxites,1991
+B,524,3165,23.4,104.8,Asia,China,Upper,Permian,,Bauxites,1991
+B,523,3164,24,104.1,Asia,China,Upper,Permian,,Bauxites,1991
+B,522,3163,31.3,104.2,Asia,China,Upper,Permian,,Bauxites,1991
+B,521,3162,31,103.6,Asia,China,Upper,Permian,,Bauxites,1991
+B,520,3161,29.6,103.7,Asia,China,Upper,Permian,,Bauxites,1991
+B,518,3159,42,126.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,517,3158,36.5,114,Asia,China,Upper,Permian,,Bauxites,1979
+B,516,3157,37,112,Asia,China,Upper,Permian,,Bauxites,1979
+B,515,3156,35.5,112,Asia,China,Upper,Permian,,Bauxites,1979
+B,514,3155,38,118.5,Asia,China,Upper,Permian,,Bauxites,1979
+B,513,3154,40,113,Asia,China,Upper,Permian,,Bauxites,1979
+B,512,3153,23,110,Asia,China,Upper,Permian,,Bauxites,1978
+B,511,3152,23,107.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,510,3151,24,109,Asia,China,Upper,Permian,,Bauxites,1978
+B,509,3150,24.5,108.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,508,3149,25,107.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,507,3148,23,107.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,506,3147,25,105,Asia,China,Upper,Permian,,Bauxites,1978
+B,505,3146,28,110.5,Asia,China,Upper,Permian,,Bauxites,1978
+B,504,3145,31,111,Asia,China,Upper,Permian,,Bauxites,1978
+B,503,3144,30,103,Asia,China,MU,Permian,,Bauxites,1978
+B,502,3143,31,104,Asia,China,Upper,Permian,,Bauxites,1978
+B,501,3142,30,108,Asia,China,Upper,Permian,,Bauxites,1978
+B,500,3141,34,113,Asia,China,MU,Permian,,Bauxites,1967
+B,499,3140,25,103,Asia,China,MU,Permian,,Bauxites,1967
+B,498,3139,33,117,Asia,China,MU,Permian,,Bauxites,1967
+B,497,3138,33,120,Asia,China,MU,Permian,,Bauxites,1967
+B,496,3137,30,105,Asia,China,MU,Permian,,Bauxites,1967
+B,495,3136,13,105,Asia,Cambodia,Upper,Permian,,Bauxites,1982
+B,493,3135,31,64,Asia,Afghanistan,Middle,Permian,,Bauxites,1972
+B,494,3134.1,34,63,Asia,Afghanistan,Upper,Permian,,Bauxites,1997
+B,492,3134,-26,28,Africa,South Africa,MU,Permian,,Bauxites,1965
+B,490,2669,37,128,Asia,Korea,Lower,Permian,,Bauxites,1978
+B,489,2668,25.8,100.5,Asia,China,Lower,Permian,,Bauxites,1990
+B,488,2667,27.8,105,Asia,China,Lower,Permian,,Bauxites,1990
+B,487,2666,24.9,102.8,Asia,China,Lower,Permian,,Bauxites,1991
+B,486,2665,25.5,103.2,Asia,China,Lower,Permian,,Bauxites,1991
+B,485,2664,25.3,103,Asia,China,Lower,Permian,,Bauxites,1991
+B,484,2663,25,102.7,Asia,China,Lower,Permian,,Bauxites,1991
+B,483,2662,24.9,102.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,482,2661,25.2,102.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,481,2660,24.6,106.5,Asia,China,Lower,Permian,,Bauxites,1991
+B,480,2659,24,105,Asia,China,Lower,Permian,,Bauxites,1991
+B,479,2658,28,110.1,Asia,China,Lower,Permian,,Bauxites,1988
+B,478,2657,30,114.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,477,2656,29.9,113.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,476,2655,31.7,112.2,Asia,China,Lower,Permian,,Bauxites,1991
+B,475,2654,31.7,111.8,Asia,China,Lower,Permian,,Bauxites,1991
+B,474,2653,31.6,113.3,Asia,China,Lower,Permian,,Bauxites,1991
+B,473,2652,30.4,111.1,Asia,China,Lower,Permian,,Bauxites,1991
+B,472,2651,29.6,109.1,Asia,China,Lower,Permian,,Bauxites,1991
+B,471,2650,30.3,108.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,470,2649,30,99.1,Asia,China,Lower,Permian,,Bauxites,1991
+B,469,2648,26.6,101.7,Asia,China,Lower,Permian,,Bauxites,1991
+B,468,2647,26.8,101.5,Asia,China,Lower,Permian,,Bauxites,1991
+B,467,2646,32.4,105.8,Asia,China,Lower,Permian,,Bauxites,1991
+B,466,2645,30.1,102.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,465,2644,31.6,104.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,464,2643,28.2,105.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,463,2642,28,105.7,Asia,China,Lower,Permian,,Bauxites,1991
+B,462,2641,29.1,107,Asia,China,Lower,Permian,,Bauxites,1991
+B,461,2640,29,106.6,Asia,China,Lower,Permian,,Bauxites,1991
+B,460,2639,31,103.6,Asia,China,Lower,Permian,,Bauxites,1991
+B,459,2638,29.5,104.6,Asia,China,Lower,Permian,,Bauxites,1991
+B,458,2637,28.8,105.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,457,2636,31.3,104.2,Asia,China,Lower,Permian,,Bauxites,1991
+B,456,2635,27,106,Asia,China,Lower,Permian,,Bauxites,1991
+B,455,2634,27.3,105.3,Asia,China,Lower,Permian,,Bauxites,1991
+B,454,2633,27.1,105.6,Asia,China,Lower,Permian,,Bauxites,1991
+B,453,2632,27.7,106.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,452,2631,26.8,107.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,451,2630,22.2,111.7,Asia,China,Lower,Permian,,Bauxites,1985
+B,450,2629,23.1,113.2,Asia,China,Lower,Permian,,Bauxites,1985
+B,449,2628,24.6,110.6,Asia,China,Lower,Permian,,Bauxites,1985
+B,448,2627,24.5,110.4,Asia,China,Lower,Permian,,Bauxites,1985
+B,447,2626,41.3,124.1,Asia,China,Lower,Permian,,Bauxites,1991
+B,446,2625,24,105,Asia,China,Lower,Permian,,Bauxites,1991
+B,445,2624,32.4,105.8,Asia,China,Lower,Permian,,Bauxites,1991
+B,444,2623,31.6,104.4,Asia,China,Lower,Permian,,Bauxites,1991
+B,443,2622,30.1,102.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,442,2621,26.8,107.9,Asia,China,Lower,Permian,,Bauxites,1991
+B,441,2620,27.5,108.2,Asia,China,Lower,Permian,,Bauxites,1991
+B,440,2619,26,108,Asia,China,Lower,Permian,,Bauxites,1982
+B,439,2618,39.6,110.8,Asia,China,Lower,Permian,,Bauxites,1991
+B,437,2616,41.9,126.4,Asia,China,Lower,Permian,,Bauxites,1988
+B,436,2615,41,124,Asia,China,Lower,Permian,,Bauxites,1982
+B,435,2614,38,112.5,Asia,China,Lower,Permian,,Bauxites,1982
+B,358,2185,43,-4,Europe,Spain,Upper,Pennsylvanian,Stephanian,Bauxites,1986
+B,357,2184,44.5,2,Europe,France,Upper,Pennsylvanian,Stephanian,Bauxites,1990
+B,356,2183,45,3,Europe,France,,Pennsylvanian,,Bauxites,1964
+B,355,2182,41.2,119.3,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,354,2181,40.7,120.8,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,353,2180,39.7,121.7,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,352,2179,41.3,124,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,351,2178,40.4,110,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,350,2177,39.3,106.7,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,349,2176,35.5,106.6,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,348,2175,36.5,107.3,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,347,2174,35,113,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,346,2173,38,113.5,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,345,2172,41.2,79.2,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,344,2171,40,85,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,343,2170,39,78,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,342,2169,41,79,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,507,1785,41,-78,North America,United States,,Pennsylvanian,,Bauxites,1986
+B,506,1784,38,-92,North America,United States,,Pennsylvanian,,Bauxites,1986
+B,504,1782,52,16,Europe,Poland,Middle,Pennsylvanian,,Bauxites,1968
+B,503,1781,51,7,Europe,Germany,Middle,Pennsylvanian,Westphalian,Bauxites,1966
+B,502,1780,55,-4,Europe,Britain,,Pennsylvanian,,Bauxites,1983
+B,501,1779,40,70,Asia,CIS(USSR),,Pennsylvanian,,Bauxites,1982
+B,500,1778,25.2,102.4,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,499,1777,39.6,110.8,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,498,1776,40.7,120.8,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,497,1775,41.2,119.3,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,496,1774,39.4,121.6,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,495,1773,34,116,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,494,1772,34.4,116.3,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,493,1771,33.8,113,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,492,1770,34.7,112.7,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,491,1769,34.5,113.3,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,490,1768,34.1,113.4,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,489,1767,35.5,113,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,488,1766,34.1,112.8,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,487,1765,36.8,118.5,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,486,1764,35.3,111.6,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,485,1763,36.6,111.7,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,484,1762,38.4,111.1,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,483,1761,37.3,113.5,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,482,1760,37.6,113.7,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,481,1759,36.9,111.1,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,480,1758,38.9,112.4,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,479,1757,36.6,111.5,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,478,1756,36.5,112.3,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,477,1755,34.8,111.2,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,476,1754,38.7,112.7,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,475,1753,39.3,111.1,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,474,1752,35.5,111.7,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,473,1751,36.8,111.8,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,472,1750,39.5,112.3,Asia,China,,Pennsylvanian,,Bauxites,1989
+B,471,1748,35.4,110.4,Asia,China,Middle,Pennsylvanian,Moscovian,Bauxites,1990
+B,470,1747,24.9,102.8,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,469,1746,25.5,103.2,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,468,1745,25.3,103,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,467,1744,25.2,102.4,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,466,1743,24.9,102.4,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,465,1742,25,102.7,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,464,1741,37.8,113.5,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,463,1740,37.4,111.9,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,462,1739,39,111,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,461,1738,38.4,111.1,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,460,1737,34.7,111.7,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,459,1736,31.8,116.4,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,458,1735,34.4,113,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,457,1734,34.7,117,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,456,1733,34.7,112.9,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,451,1728,38,113.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,450,1727,38,114,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,449,1726,37,120,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,448,1725,37,112,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,447,1724,35,117.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,446,1723,36,117,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,445,1722,37,118,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,444,1721,35,113,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,443,1720,35,112,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,442,1719,35.5,110.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,441,1718,35,109.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,440,1717,35,107,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,439,1716,35.5,106.5,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,438,1715,36.5,107,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,437,1714,40,107,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,436,1713,39,111,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,435,1712,39,112,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,434,1711,40,119,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,433,1710,37,118,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,432,1709,41.5,124,Asia,China,,Pennsylvanian,,Bauxites,1984
+B,431,1708,35.5,117,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,430,1707,37,118,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,429,1706,39.25,122,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,428,1705,41,124,Asia,China,,Pennsylvanian,,Bauxites,1954
+B,427,1704,39.5,118,Asia,China,Lower,Pennsylvanian,Namurian,Bauxites,1990
+B,418,1695,41.2,79.2,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,417,1694,40.7,77,Asia,China,,Pennsylvanian,,Bauxites,1991
+B,416,1693,40,85,Asia,China,,Pennsylvanian,,Bauxites,1987
+B,415,1692,39,78,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,414,1691,41,79,Asia,China,,Pennsylvanian,,Bauxites,1990
+B,188,1284,40,74,Asia,CIS(USSR),,Mississippian,,Bauxites,1969
+B,187,1283,28.2,110.1,Asia,China,,Mississippian,,Bauxites,1991
+B,186,1282,29.3,107.7,Asia,China,,Mississippian,,Bauxites,1991
+B,185,1281,29.1,107,Asia,China,,Mississippian,,Bauxites,1991
+B,184,1280,27,106,Asia,China,,Mississippian,,Bauxites,1991
+B,183,1279,26.6,105.7,Asia,China,,Mississippian,,Bauxites,1991
+B,182,1278,26.5,106.4,Asia,China,,Mississippian,,Bauxites,1991
+B,181,1277,26.6,106.7,Asia,China,,Mississippian,,Bauxites,1991
+B,180,1276,26.8,106.5,Asia,China,,Mississippian,,Bauxites,1991
+B,179,1275,27,106.9,Asia,China,,Mississippian,,Bauxites,1991
+B,178,1274,27.1,106.7,Asia,China,,Mississippian,,Bauxites,1991
+B,177,1273,28.8,107.5,Asia,China,,Mississippian,,Bauxites,1991
+B,176,1272,28.5,107.4,Asia,China,,Mississippian,,Bauxites,1991
+B,175,1271,27,107.4,Asia,China,,Mississippian,,Bauxites,1991
+B,174,1270,27.8,106.9,Asia,China,,Mississippian,,Bauxites,1991
+B,170,1266,25,103,Asia,China,,Mississippian,,Bauxites,1984
+B,168,1264.1,27,107,Asia,China,,Mississippian,,Bauxites,1989
+B,167,1264,28,116,Asia,China,,Mississippian,,Bauxites,1980
+B,166,1263,25,107,Asia,China,Lower,Mississippian,,Bauxites,1967
+B,165,1262,25,102,Asia,China,,Mississippian,,Bauxites,1984
+B,158,1255,29.5,111,Asia,China,,Mississippian,,Bauxites,1974
+B,157,1254,30,105,Asia,China,,Mississippian,,Bauxites,1987
+B,156,1253,31,112,Asia,China,,Mississippian,,Bauxites,1987
+B,154,1252,40,85,Asia,China,,Mississippian,,Bauxites,1987
+B,417,1081,51,17,Europe,Poland,,Mississippian,,Bauxites,1984
+B,416,1080,52,23,Europe,Poland,,Mississippian,,Bauxites,1984
+B,415,1079,51,36,Europe,CIS(USSR),Middle,Mississippian,Visean,Bauxites,1989
+B,414,1078,57,57,Europe,CIS(USSR),,Mississippian,,Bauxites,1982
+B,412,1076,53,27,Europe,CIS(USSR),,Mississippian,,Bauxites,1975
+B,411,1075,67,50,Europe,CIS(USSR),Upper,Mississippian,,Bauxites,1970
+B,410,1074,56,38,Europe,CIS(USSR),,Mississippian,,Bauxites,1958
+B,409,1073,60,31,Europe,CIS(USSR),Upper,Mississippian,,Bauxites,1967
+B,408,1072,62,36,Europe,CIS(USSR),,Mississippian,,Bauxites,1958
+B,406,1070,40,70,Asia,CIS(USSR),Lower,Mississippian,,Bauxites,1982
+B,405,1069,50,70,Asia,CIS(USSR),Middle,Mississippian,Visean,Bauxites,1973
+B,403,1067,40,74,Asia,CIS(USSR),,Mississippian,,Bauxites,1969
+B,375,1049,28,116,Asia,China,Lower,Mississippian,,Bauxites,1980
+B,374,1048,25,107,Asia,China,Lower,Mississippian,,Bauxites,1967
+B,373,1047,25,102,Asia,China,,Mississippian,,Bauxites,1984
+B,372,1046,29,119,Asia,China,Lower,Mississippian,,Bauxites,1970
+B,371,1045,24,117.5,Asia,China,Lower,Mississippian,,Bauxites,1990
+B,370,1044,27,106.5,Asia,China,Lower,Mississippian,,Bauxites,1990
+B,369,1043,22.5,111.5,Asia,China,Lower,Mississippian,,Bauxites,1990
+B,368,1042,36.5,106.5,Asia,China,Lower,Mississippian,,Bauxites,1990
+B,367,1041,27.5,107,Asia,China,Lower,Mississippian,,Bauxites,1990
+B,366,1040,29.5,111,Asia,China,Middle,Mississippian,,Bauxites,1974
+B,365,1039,30,105,Asia,China,Middle,Mississippian,,Bauxites,1987
+B,364,1038,31,112,Asia,China,Middle,Mississippian,,Bauxites,1987
+B,363,1037,27,107,Asia,China,Middle,Mississippian,Visean,Bauxites,1987
+B,362,1036,33,104.6,Asia,China,Middle,Mississippian,,Bauxites,1987
+B,361,1035,33,104.3,Asia,China,Middle,Mississippian,,Bauxites,1987
+B,360,1034,33.3,100.6,Asia,China,Middle,Mississippian,Visean,Bauxites,1991
+B,359,1033,39,97.1,Asia,China,Middle,Mississippian,Visean,Bauxites,1991
+B,358,1032,40,85,Asia,China,,Mississippian,,Bauxites,1987
