@@ -27,6 +27,20 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+        /* 添加加载动画样式 */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            display: none;
+         }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
         .gallery {
             display: grid;
@@ -143,6 +157,52 @@
             <li>Data sources and references</li>
         </ul>
     </div>
+   //加载KG
+    <div id="graph"></div>
+    <div id="loading" class="loader"></div>
+    <button onclick="loadNextPage()">Load More</button>
+
+    <script>
+        let currentPage = 1;
+        let fullData = { nodes: [], links: [] };
+        let simulation;
+
+    async function loadChunk(page) {
+      document.getElementById('loading').style.display = 'block';
+      try {
+        const res = await fetch(`data_${page}.json`);
+        return await res.json();
+      } finally {
+        document.getElementById('loading').style.display = 'none';
+      }
+    }
+      async function init() {
+      const firstChunk = await loadChunk(1);
+      fullData = firstChunk;
+      renderGraph(fullData);
+    }
+
+    async function loadNextPage() {
+      currentPage++;
+      const newData = await loadChunk(currentPage);
+      fullData.nodes.push(...newData.nodes);
+      fullData.links.push(...newData.links);
+      updateGraph();
+    }
+
+    function renderGraph(data) {
+      // 原有的 D3 渲染逻辑
+        const svg = d3.select("#graph").append("svg")...;
+      simulation = d3.forceSimulation(data.nodes)...;
+    }
+
+    function updateGraph() {
+      // 更新力导向图数据
+      simulation.nodes(fullData.nodes);
+      simulation.force("link").links(fullData.links);
+      simulation.alpha(1).restart();
+    }
+      init();
 
     <!-- 知识图谱可视化容器 -->
     <div class="section">
