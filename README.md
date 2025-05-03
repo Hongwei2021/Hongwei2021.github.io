@@ -39,7 +39,7 @@ Python Application Example
 A Python script demonstrates how to assign boundary ages to geological units lacking such data.
 
 Workflow:
-Input: Geological data without boundary ages (e.g., test dataset from [Source]).
+Input: Geological data without boundary ages (e.g., test dataset from Boucot et al., 2013[[Source](https://www.researchgate.net/publication/268209252_Boucot_et_al_2013_Lithology_Data_Tables_Excel_Spreadsheets/stats)]).
 
 Matching: Align units with the JOL knowledge graph.
 
@@ -51,7 +51,7 @@ Python应用案例
 演示如何为不含边界年龄的地质单元自动赋值。
 
 流程：
-输入: 无边界年龄的地质数据（测试数据集来自[来源]）。
+输入: 无边界年龄的地质数据（测试数据集来自[[来源](https://www.researchgate.net/publication/268209252_Boucot_et_al_2013_Lithology_Data_Tables_Excel_Spreadsheets/stats)]）。
 
 匹配: 与GTSKG对齐地质时间单元。
 
