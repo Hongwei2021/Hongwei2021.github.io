@@ -390,101 +390,93 @@
             document.querySelectorAll('[id$="-en"]').forEach(el => 
             el.style.display = lang === 'en' ? 'block' : 'none');
             }
-
-        // 加载D3.js可视化库
         function renderGraph() {
-           // 渲染函数修正
-          const width = container.clientWidth;
-          const height = 600;
-          container.querySelector('.loading').remove();
-
+              const container = document.getElementById('kg-visualization');
+              const width = container.clientWidth;
+              const height = 800;
+            
+              // 清空容器
+              container.innerHTML = '';
+            
+              // 创建SVG画布
               const svg = d3.select("#kg-visualization")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
-
-              // 新增缩放容器层
+            
+              // 创建可缩放容器
               const g = svg.append("g");
-
-              // 初始化缩放
+            
+              // 初始化缩放行为
               const zoom = d3.zoom()
-                .scaleExtent([0.5, 8])
+                .scaleExtent([0.3, 5])
                 .on("zoom", (event) => {
-                  g.attr("transform", event.transform);  // 作用于容器层
-                    });
+                  g.attr("transform", event.transform);
+                });
               svg.call(zoom);
             
-          
-            const simulation = d3.forceSimulation(data.nodes)
-                .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
-                .force("charge", d3.forceManyBody().strength(-120))
-                .force("center", d3.forceCenter(width / 2, height / 2))
-                .force("collide", d3.forceCollide(20));
-
-            const links = svg.append("g")
+              // 力导向模拟配置
+              const simulation = d3.forceSimulation(data.nodes)
+                .force("link", d3.forceLink(data.links).id(d => d.id).distance(200))
+                .force("charge", d3.forceManyBody().strength(-300))
+                .force("center", d3.forceCenter(width/2, height/2))
+                .force("collide", d3.forceCollide(40))
+                .alphaDecay(0.02);
+            
+              // 绘制连线
+              const links = g.append("g")
                 .selectAll("line")
                 .data(data.links)
-                .enter()
-                .append("line")
-                .style("stroke", "#aaa");
-
-            const nodes = svg.append("g")
+                .enter().append("line")
+                .style("stroke", "#999");
+            
+              // 绘制节点
+              const nodes = g.append("g")
                 .selectAll("circle")
                 .data(data.nodes)
-                .enter()
-                .append("circle")
-                .attr("r", 6)
-                .style("fill", d => d.group === 1 ? "#69b3a2" : "#4C9F70")
+                .enter().append("circle")
+                .attr("r", 8)
                 .call(d3.drag()
-                    .on("start", dragStarted)
-                    .on("drag", dragged)
-                    .on("end", dragEnded));
-
-           
-            const labels = svg.append("g")
-                  .selectAll("text")
-                  .data(data.nodes)
-                  .enter()
-                  .append("text")
-                  .text(d => d.id)
-                  .attr("font-size", "10px")
-                  .attr("dx", d => d.x > width/2 ? -10 : 10) // 根据位置动态调整偏移
-                  .attr("dy", 4)
-                    .attr("text-anchor", d => d.x > width/2 ? "end" : "start"); // 动态对齐
-
-            simulation.on("tick", () => {
-                links
-                    .attr("x1", d => d.source.x)
-                    .attr("y1", d => d.source.y)
-                    .attr("x2", d => d.target.x)
-                    .attr("y2", d => d.target.y);
-
-                nodes
-                    .attr("cx", d => d.x)
-                    .attr("cy", d => d.y);
-
-                labels
-                    .attr("x", d => d.x)
-                    .attr("y", d => d.y);
-            });
-
-            function dragStarted(event, d) {
-                if (!event.active) simulation.alphaTarget(0.3).restart();
-                d.fx = d.x;
-                d.fy = d.y;
+                  .on("start", dragStarted)
+                  .on("drag", dragged)
+                  .on("end", dragEnded));
+            
+              // 绘制标签
+              const labels = g.append("g")
+                .selectAll("text")
+                .data(data.nodes)
+                .enter().append("text")
+                .text(d => d.id)
+                .attr("dx", d => d.x > width*0.7 ? -10 : 10)
+                .attr("text-anchor", d => d.x > width*0.7 ? "end" : "start");
+            
+              // 物理模拟更新
+              simulation.on("tick", () => {
+                links.attr("x1", d => d.source.x)
+                     .attr("y1", d => d.source.y)
+                     .attr("x2", d => d.target.x)
+                     .attr("y2", d => d.target.y);
+                
+                nodes.attr("cx", d => d.x)
+                     .attr("cy", d => d.y);
+                
+                labels.attr("x", d => d.x)
+                      .attr("y", d => d.y);
+              });
+            
+              // 自动缩放适配
+              simulation.on("end", () => {
+                const bounds = svg.node().getBBox();
+                const hScale = height / bounds.height;
+                const wScale = width / bounds.width;
+                const scale = Math.min(hScale, wScale) * 0.9;
+                
+                g.attr("transform", `translate(${width/2 - bounds.width*scale/2}, 
+                                              ${height/2 - bounds.height*scale/2}) 
+                                           scale(${scale})`);
+              });
             }
-
-            function dragged(event, d) {
-                d.fx = event.x;
-                d.fy = event.y;
-            }
-
-            function dragEnded(event, d) {
-                if (!event.active) simulation.alphaTarget(0);
-                d.fx = null;
-                d.fy = null;
-            }
-        }
+ 
         // 在脚本末尾添加
         window.addEventListener('DOMContentLoaded', function() {
           renderGraph(); // 手动触发渲染
