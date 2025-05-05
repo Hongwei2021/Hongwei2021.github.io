@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knowledge Graph Hub</title>
+    <title>Geologic Time Scale Knowledge Graph</title>
+
+
     <style>
         /* 基础样式 */
         body {
@@ -16,7 +18,7 @@
 
         .banner {
             width: 100%;
-            max-height: 400px;
+            max-height: 250px;
             object-fit: cover;
         }
 
@@ -35,13 +37,25 @@
             gap: 20px;
             margin-top: 20px;
         }
+         .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #666;
+            font-size: 1.2em;
+            z-index: 10;
+          }
+
 
         .graph-container {
+            position: relative;
             width: 100%;
             height: 600px;
             border: 1px solid #ddd;
             margin: 20px 0;
         }
+
 
         .language-toggle {
             text-align: right;
@@ -56,10 +70,6 @@
          cursor: zoom-in;
          transition: transform 0.3s ease;
          box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-       }
-
-     .gallery img:hover {
-        transform: scale(1.05);
        }
 
        /* 灯箱样式 */
@@ -84,13 +94,11 @@
         }
 
     .close-btn {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: white;
-        font-size: 40px;
-        cursor: pointer;
-       }
+    position: fixed; /* 改为fixed定位 */
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+     }
          /* 图片样式页脚引用 */
         .gallery img {
             width: 100%;
@@ -148,7 +156,9 @@
     <!-- 知识图谱可视化容器 -->
     <div class="section">
         <h2>GTSKG可视化展示 | GTSKG visual presentation</h2>
-        <div id="kg-visualization" class="graph-container"></div>
+        <div id="kg-visualization" class="graph-container">
+        <div class="loading">Loading...</div> <!-- 初始加载提示 -->
+     </div>
     </div>
 
     <!-- 图片展示区 -->
@@ -175,26 +185,19 @@
         </ul>
     </div>
     <footer class="site-footer">
-        <div class="section">
-            <p id="lastModified" class="footer-info"></p>
-            <div class="citation">
-                <h3>内容引用 | Citation</h3>
-            </div>
-    
-  
-            
-            <div class="copyright">
-                    <p class="cn-version">Use authorization please contact 
-                        <a id="wanghw2021@126.com" href="#"></a>
-                    </p>
-                    <p class="en-version" style="display:none">Contact 
-                        <a id="wanghw2021@126.com" href="#"></a>
-                    </p>
-                </div>
-                <p>Powered by GitHub Pages</p>
-            </div>
+    <div class="section">
+        <!-- 修正后的版权部分 -->
+        <div class="copyright">
+            <p class="cn-version">使用授权请联系 
+                <a class="email-link" href="#"></a>
+            </p>
+            <p class="en-version" style="display:none">Contact 
+                <a class="email-link" href="#"></a>
+            </p>
         </div>
-    </footer>
+        <p>Powered by GitHub Pages</p>
+    </div>
+</footer>
     
     <script>
         // 知识图谱可视化代码（使用D3.js）
@@ -364,6 +367,7 @@
         }
 
         // 加载D3.js可视化库
+        const container = document.getElementById('kg-visualization'); 
         const script = document.createElement('script');
         script.src = 'https://d3js.org/d3.v7.min.js';
         document.head.appendChild(script);
@@ -374,12 +378,15 @@
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
+                container.querySelector('.loading').remove();
+              };
 
             // 创建力导向图布局
-            const simulation = d3.forceSimulation(data.nodes)
-                .force("link", d3.forceLink(data.links).id(d => d.id))
-                .force("charge", d3.forceManyBody())
-                .force("center", d3.forceCenter(width / 2, height / 2));
+             const simulation = d3.forceSimulation(data.nodes)
+                 .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+                 .force("charge", d3.forceManyBody().strength(-50))
+                 .force("center", d3.forceCenter(width / 2, height / 2))
+                 .force("collide", d3.forceCollide(20));
 
             // 绘制连线
             const links = svg.append("g")
@@ -460,6 +467,13 @@
                 el.textContent = email;
             });
         }
+        // 数据一致性检查（示例）
+         const validNodes = data.nodes.map(n => n.id);
+         data.links.forEach(link => {
+              if (!validNodes.includes(link.source) || !validNodes.includes(link.target)) {
+                 console.warn('Invalid link:', link);
+             }
+        });
         // 新增时间功能
          document.getElementById('lastModified').textContent = 
             "Last updated time：" + new Date(document.lastModified).toLocaleDateString('zh-CN', {
@@ -468,5 +482,6 @@
                 day: 'numeric'
             });
     </script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
 </html>
