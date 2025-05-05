@@ -392,43 +392,43 @@
             }
 
         // 加载D3.js可视化库
-        function renderGraph() {
-           // 渲染函数修正
-          const width = container.clientWidth;
-          const height = 600;
-          container.querySelector('.loading').remove();
 
+
+            function renderGraph() {
+              const container = document.getElementById('kg-visualization');
+              const width = container.clientWidth;
+              const height = 600;
+              container.querySelector('.loading')?.remove(); // 防止报错
+            
               const svg = d3.select("#kg-visualization")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
-
-              // 新增缩放容器层
+            
               const g = svg.append("g");
-
-              // 初始化缩放
+            
               const zoom = d3.zoom()
                 .scaleExtent([0.5, 8])
                 .on("zoom", (event) => {
-                  g.attr("transform", event.transform);  // 作用于容器层
-                    });
+                  g.attr("transform", event.transform);
+                });
+            
               svg.call(zoom);
             
-          
-            const simulation = d3.forceSimulation(data.nodes)
+              const simulation = d3.forceSimulation(data.nodes)
                 .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
                 .force("charge", d3.forceManyBody().strength(-120))
                 .force("center", d3.forceCenter(width / 2, height / 2))
                 .force("collide", d3.forceCollide(20));
-
-            const links = svg.append("g")
+            
+              const links = g.append("g")
                 .selectAll("line")
                 .data(data.links)
                 .enter()
                 .append("line")
                 .style("stroke", "#aaa");
-
-            const nodes = svg.append("g")
+            
+              const nodes = g.append("g")
                 .selectAll("circle")
                 .data(data.nodes)
                 .enter()
@@ -436,93 +436,62 @@
                 .attr("r", 6)
                 .style("fill", d => d.group === 1 ? "#69b3a2" : "#4C9F70")
                 .call(d3.drag()
-                    .on("start", dragStarted)
-                    .on("drag", dragged)
-                    .on("end", dragEnded));
-
-           
-            const labels = svg.append("g")
-                  .selectAll("text")
-                  .data(data.nodes)
-                  .enter()
-                  .append("text")
-                  .text(d => d.id)
-                  .attr("font-size", "10px")
-                  .attr("dx", d => d.x > width/2 ? -10 : 10) // 根据位置动态调整偏移
-                  .attr("dy", 4)
-                    .attr("text-anchor", d => d.x > width/2 ? "end" : "start"); // 动态对齐
-
-            simulation.on("tick", () => {
+                  .on("start", dragStarted)
+                  .on("drag", dragged)
+                  .on("end", dragEnded)
+                );
+            
+              const labels = g.append("g")
+                .selectAll("text")
+                .data(data.nodes)
+                .enter()
+                .append("text")
+                .text(d => d.id)
+                .attr("font-size", "10px")
+                .attr("dx", 10)
+                .attr("dy", 4)
+                .attr("text-anchor", "start");
+            
+              simulation.on("tick", () => {
                 links
-                    .attr("x1", d => d.source.x)
-                    .attr("y1", d => d.source.y)
-                    .attr("x2", d => d.target.x)
-                    .attr("y2", d => d.target.y);
-
+                  .attr("x1", d => d.source.x)
+                  .attr("y1", d => d.source.y)
+                  .attr("x2", d => d.target.x)
+                  .attr("y2", d => d.target.y);
+            
                 nodes
-                    .attr("cx", d => d.x)
-                    .attr("cy", d => d.y);
-
+                  .attr("cx", d => d.x)
+                  .attr("cy", d => d.y);
+            
                 labels
-                    .attr("x", d => d.x)
-                    .attr("y", d => d.y);
+                  .attr("x", d => d.x)
+                  .attr("y", d => d.y);
+              });
+            
+              function dragStarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+              }
+            
+              function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+              }
+            
+              function dragEnded(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+              }
+            }
+            
+            // 加载完成后触发渲染
+            window.addEventListener('DOMContentLoaded', function () {
+              renderGraph();
             });
 
-
-
-
-  function dragStarted(event, d) {
-    if (!event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
-  }
-
-  function dragged(event, d) {
-    d.fx = event.x;
-    d.fy = event.y;
-  }
-
-  function dragEnded(event, d) {
-    if (!event.active) simulation.alphaTarget(0);
-    d.fx = null;
-    d.fy = null;
-  }
-
-  // 2. 创建SVG和力导向图
-  const container = document.getElementById('kg-visualization');
-  const width = container.clientWidth;
-  const height = 800;
-
-  const svg = d3.select("#kg-visualization")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height);
-
-  const g = svg.append("g");
-  const zoom = d3.zoom().on("zoom", (event) => g.attr("transform", event.transform));
-  svg.call(zoom);
-
-  const simulation = d3.forceSimulation(data.nodes)
-    .force("link", d3.forceLink(data.links).id(d => d.id).distance(200))
-    .force("charge", d3.forceManyBody().strength(-300))
-    .force("collide", d3.forceCollide(40));
-
-  // 3. 创建节点并绑定拖拽
-  const nodes = g.append("g")
-    .selectAll("circle")
-    .data(data.nodes)
-    .enter().append("circle")
-    .attr("r", 8)
-    .call(d3.drag()
-      .on("start", dragStarted)
-      .on("drag", dragged)
-      .on("end", dragEnded)
-    );
- 
-        // 在脚本末尾添加
-        window.addEventListener('DOMContentLoaded', function() {
-          renderGraph(); // 手动触发渲染
-        });
+        
         
     // 动态填充邮箱（反爬虫）
     window.addEventListener('DOMContentLoaded', function() {
