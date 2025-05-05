@@ -234,12 +234,12 @@
 
         // 语言切换功能
        function toggleLanguage(lang) {
-    // 切换所有语言相关区块
-    document.querySelectorAll('[id$="-cn"]').forEach(el => 
-        el.style.display = lang === 'cn' ? 'block' : 'none');
-    document.querySelectorAll('[id$="-en"]').forEach(el => 
-        el.style.display = lang === 'en' ? 'block' : 'none');
-}
+            // 切换所有语言相关区块
+            document.querySelectorAll('[id$="-cn"]').forEach(el => 
+            el.style.display = lang === 'cn' ? 'block' : 'none');
+            document.querySelectorAll('[id$="-en"]').forEach(el => 
+            el.style.display = lang === 'en' ? 'block' : 'none');
+            }
 
         // 加载D3.js可视化库
         function renderGraph() {
