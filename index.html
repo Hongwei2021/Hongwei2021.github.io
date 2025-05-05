@@ -182,6 +182,8 @@
         <ul>
             <li><a href="https://github.com/Hongwei2021">Dataset repository</a></li>
             <li><a href="https://stratigraphy.org/chart">International Commission on Stratigraphy</a></li>
+            <li>Harland, W.B., 1982. A Geologic Time Scale</li>
+            <li>Gradstein, F.M., 2004. A Geologic Time Scale 2004</li>
         </ul>
     </div>
     <footer class="site-footer">
@@ -353,18 +355,19 @@
         };
 
         // 语言切换功能
-        function toggleLanguage(lang) {
-           // 原始切换逻辑
-            document.getElementById('intro-cn').style.display = 
-                lang === 'cn' ? 'block' : 'none';
-            document.getElementById('intro-en').style.display = 
-                lang === 'en' ? 'block' : 'none';
-            // 控制邮箱显示
-            document.querySelector('.content-license .cn-version').style.display = 
-                lang === 'cn' ? 'block' : 'none';
-            document.querySelector('.content-license .en-version').style.display = 
-                lang === 'en' ? 'block' : 'none';
-        }
+       function toggleLanguage(lang) {
+    // 切换所有语言相关区块
+    document.querySelectorAll('[id$="-cn"]').forEach(el => 
+        el.style.display = lang === 'cn' ? 'block' : 'none');
+    document.querySelectorAll('[id$="-en"]').forEach(el => 
+        el.style.display = lang === 'en' ? 'block' : 'none');
+    
+    // 切换页脚语言
+    document.querySelector('.cn-version').style.display = 
+        lang === 'cn' ? 'block' : 'none';
+    document.querySelector('.en-version').style.display = 
+        lang === 'en' ? 'block' : 'none';
+}
 
         // 加载D3.js可视化库
         const container = document.getElementById('kg-visualization'); 
