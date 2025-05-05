@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geologic Time Scale Knowledge Graph</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
         /* 基础样式 */
         body {
@@ -250,7 +251,13 @@
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
+            const zoom = d3.zoom()
+                  .scaleExtent([0.5, 8])
+                  .on("zoom", (event) => {
+                  svg.attr("transform", event.transform);
+                  });
 
+            svg.call(zoom);
             const simulation = d3.forceSimulation(data.nodes)
                 .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
                 .force("charge", d3.forceManyBody().strength(-120))
@@ -319,7 +326,10 @@
                 d.fy = null;
             }
         }
-
+        // 在脚本末尾添加
+        window.addEventListener('DOMContentLoaded', function() {
+          renderGraph(); // 手动触发渲染
+        });
         
     // 动态填充邮箱（反爬虫）
     window.addEventListener('DOMContentLoaded', function() {
