@@ -102,7 +102,12 @@
             color: #2c82c9;
             border-bottom: 1px dotted currentColor;
         }
-    </style>
+      </style>
+    
+       <title>Contact us</title>
+      <style>
+      .email-link { color: blue; text-decoration: underline; }
+      </style>
 </head>
 <body>
     <!-- Banner 图片 -->
@@ -170,16 +175,18 @@
     <footer class="site-footer">
     <div class="section">
         <!-- 修正后的版权部分 -->
-        <div class="copyright">
-            <p class="cn-version">使用授权请联系 
-                <a class="email-link" href="#"></a>
-            </p>
-            <p class="en-version" style="display:none">Contact 
-                <a class="email-link" href="#"></a>
-            </p>
-        </div>
-        <p>Powered by GitHub Pages</p>
-    </div>
+        <!-- 邮件链接 -->
+  <div class="contact">
+    <a id="emaillink" class="email-link"></a>
+  </div>
+
+  <!-- 邮件表单 -->
+  <form id="contact-form">
+    <input type="email" name="email" placeholder="你的邮箱" required>
+    <textarea name="message" placeholder="留言内容" required></textarea>
+    <button type="submit">发送</button>
+   </form>
+        
 </footer>
     
     <script>
@@ -425,16 +432,23 @@
             }
         }
 
-        window.onload = function () {
-            // 邮箱反爬虫填充
-            const email = 'wanghw2021' + '@' + '126.com';
-            document.getElementById('emailLink').href = 'mailto:' + email;
-            document.getElementById('emailLink').textContent = email;
-            document.getElementById('emailLinkEn').href = 'mailto:' + email;
-            document.getElementById('emailLinkEn').textContent = email;
+        
+    // 动态填充邮箱（反爬虫）
+    window.addEventListener('DOMContentLoaded', function() {
+      const email = 'wanghw2021' + '@' + '126.com';
+      document.getElementById('emaillink').href = 'mailto:' + email;
+      document.getElementById('emaillink').textContent = email;
+    });
 
-            renderGraph();
-        };
+    // 表单提交处理
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      fetch('/send-email', { method: 'POST', body: formData })
+        .then(() => alert('发送成功！'))
+        .catch(() => alert('发送失败'));
+    });
+
 
         function toggleLanguage(lang) {
             document.querySelectorAll('[id$="-cn"]').forEach(el =>
