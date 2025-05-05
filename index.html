@@ -206,13 +206,6 @@
     <a id="emaillink" class="email-link"></a>
   </div>
 
-  <!-- 邮件表单 -->
-  <form id="contact-form">
-    <input type="email" name="email" placeholder="你的邮箱" required>
-    <textarea name="message" placeholder="留言内容" required></textarea>
-    <button type="submit">发送</button>
-   </form>
-        
 </footer>
     
     <script>
@@ -464,15 +457,6 @@
       const email = 'wanghw2021' + '@' + '126.com';
       document.getElementById('emaillink').href = 'mailto:' + email;
       document.getElementById('emaillink').textContent = email;
-    });
-
-    // 表单提交处理
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(this);
-      fetch('/send-email', { method: 'POST', body: formData })
-        .then(() => alert('发送成功！'))
-        .catch(() => alert('发送失败'));
     });
 
 
