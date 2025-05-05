@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geologic Time Scale Knowledge Graph</title>
-
-
     <style>
         /* 基础样式 */
         body {
@@ -29,8 +27,6 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-       
-
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -46,8 +42,6 @@
             font-size: 1.2em;
             z-index: 10;
           }
-
-
         .graph-container {
             position: relative;
             width: 100%;
@@ -55,8 +49,6 @@
             border: 1px solid #ddd;
             margin: 20px 0;
         }
-
-
         .language-toggle {
             text-align: right;
             margin-bottom: 20px;
@@ -92,23 +84,13 @@
          left: 50%;
          transform: translate(-50%, -50%);
         }
-
-    .close-btn {
-    position: fixed; /* 改为fixed定位 */
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-     }
+       .close-btn {
+        position: fixed; /* 改为fixed定位 */
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+         }
          /* 图片样式页脚引用 */
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            cursor: zoom-in;
-            transition: transform 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
         /* 新增页脚样式 */
         .site-footer {
             margin-top: 50px;
@@ -125,7 +107,6 @@
 <body>
     <!-- Banner 图片 -->
     <img src="Deep time diagram.png" alt="Knowledge Graph Banner" class="banner">
-
     <!-- 语言切换 -->
     <div class="language-toggle">
         <button onclick="toggleLanguage('cn')">中文</button>
@@ -157,7 +138,7 @@
     <div class="section">
         <h2>GTSKG可视化展示 | GTSKG visual presentation</h2>
         <div id="kg-visualization" class="graph-container">
-        <div class="loading">Loading...</div> <!-- 初始加载提示 -->
+        <div class="loading">Loading...</div>
      </div>
     </div>
 
@@ -203,6 +184,7 @@
     
     <script>
         // 知识图谱可视化代码（使用D3.js）
+        const container = document.getElementById('kg-visualization');
         const data = {
             nodes: [
                 { id: "Barrell1917", group: 1 },
@@ -361,63 +343,54 @@
         el.style.display = lang === 'cn' ? 'block' : 'none');
     document.querySelectorAll('[id$="-en"]').forEach(el => 
         el.style.display = lang === 'en' ? 'block' : 'none');
-    
-    // 切换页脚语言
-    document.querySelector('.cn-version').style.display = 
-        lang === 'cn' ? 'block' : 'none';
-    document.querySelector('.en-version').style.display = 
-        lang === 'en' ? 'block' : 'none';
 }
 
         // 加载D3.js可视化库
-        const container = document.getElementById('kg-visualization'); 
-        const script = document.createElement('script');
-        script.src = 'https://d3js.org/d3.v7.min.js';
-        document.head.appendChild(script);
+        function renderGraph() {
+            const width = container.clientWidth;
+            const height = 600;
+            container.querySelector('.loading').remove();
 
-        script.onload = () => {
-            const width = 800, height = 400;
             const svg = d3.select("#kg-visualization")
                 .append("svg")
                 .attr("width", width)
                 .attr("height", height);
-                container.querySelector('.loading').remove();
-              };
 
-            // 创建力导向图布局
-             const simulation = d3.forceSimulation(data.nodes)
-                 .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
-                 .force("charge", d3.forceManyBody().strength(-50))
-                 .force("center", d3.forceCenter(width / 2, height / 2))
-                 .force("collide", d3.forceCollide(20));
+            const simulation = d3.forceSimulation(data.nodes)
+                .force("link", d3.forceLink(data.links).id(d => d.id).distance(100))
+                .force("charge", d3.forceManyBody().strength(-120))
+                .force("center", d3.forceCenter(width / 2, height / 2))
+                .force("collide", d3.forceCollide(20));
 
-            // 绘制连线
             const links = svg.append("g")
                 .selectAll("line")
                 .data(data.links)
                 .enter()
                 .append("line")
-                .style("stroke", "#999");
+                .style("stroke", "#aaa");
 
-            // 绘制节点
             const nodes = svg.append("g")
                 .selectAll("circle")
                 .data(data.nodes)
                 .enter()
                 .append("circle")
-                .attr("r", 10)
-                .style("fill", "#69b3a2");
+                .attr("r", 6)
+                .style("fill", d => d.group === 1 ? "#69b3a2" : "#4C9F70")
+                .call(d3.drag()
+                    .on("start", dragStarted)
+                    .on("drag", dragged)
+                    .on("end", dragEnded));
 
-            // 添加节点标签
             const labels = svg.append("g")
                 .selectAll("text")
                 .data(data.nodes)
                 .enter()
                 .append("text")
                 .text(d => d.id)
-                .style("font-size", "12px");
+                .attr("font-size", "10px")
+                .attr("dx", 10)
+                .attr("dy", 4);
 
-            // 更新位置
             simulation.on("tick", () => {
                 links
                     .attr("x1", d => d.source.x)
@@ -430,61 +403,74 @@
                     .attr("cy", d => d.y);
 
                 labels
-                    .attr("x", d => d.x + 12)
-                    .attr("y", d => d.y + 3);
+                    .attr("x", d => d.x)
+                    .attr("y", d => d.y);
             });
-        };
-        // 灯箱功能
-          function openLightbox(imgElement) {
-           const lightbox = document.getElementById('lightbox');
-           const lightboxImg = document.getElementById('lightbox-img');
-    
-                lightbox.style.display = 'block';
-                lightboxImg.src = imgElement.src;
-                document.body.style.overflow = 'hidden';
-         }
 
-          function closeLightbox() {
-               document.getElementById('lightbox').style.display = 'none';
-               document.body.style.overflow = 'auto';
-         }
+            function dragStarted(event, d) {
+                if (!event.active) simulation.alphaTarget(0.3).restart();
+                d.fx = d.x;
+                d.fy = d.y;
+            }
 
-        // 点击背景关闭
-        document.getElementById('lightbox').onclick = function(e) {
-              if(e.target !== document.getElementById('lightbox-img')) {
-                closeLightbox();
-          }
+            function dragged(event, d) {
+                d.fx = event.x;
+                d.fy = event.y;
+            }
+
+            function dragEnded(event, d) {
+                if (!event.active) simulation.alphaTarget(0);
+                d.fx = null;
+                d.fy = null;
+            }
         }
 
-       // ESC键关闭
-        document.addEventListener('keydown', (e) => {
-             if(e.key === 'Escape') {
-               closeLightbox();
-         }
-        });
-        // 新增邮箱防爬虫代码
-         window.onload = function() {
+        window.onload = function () {
+            // 邮箱反爬虫填充
             const email = 'wanghw2021' + '@' + '126.com';
-            document.querySelectorAll('#emailLink, #emailLinkEn').forEach(el => {
-                el.href = 'mailto:' + email;
-                el.textContent = email;
-            });
+            document.getElementById('emailLink').href = 'mailto:' + email;
+            document.getElementById('emailLink').textContent = email;
+            document.getElementById('emailLinkEn').href = 'mailto:' + email;
+            document.getElementById('emailLinkEn').textContent = email;
+
+            renderGraph();
+        };
+
+        function toggleLanguage(lang) {
+            document.querySelectorAll('[id$="-cn"]').forEach(el =>
+                el.style.display = lang === 'cn' ? 'block' : 'none');
+            document.querySelectorAll('[id$="-en"]').forEach(el =>
+                el.style.display = lang === 'en' ? 'block' : 'none');
+            document.querySelector('.cn-version').style.display =
+                lang === 'cn' ? 'block' : 'none';
+            document.querySelector('.en-version').style.display =
+                lang === 'en' ? 'block' : 'none';
         }
-        // 数据一致性检查（示例）
-         const validNodes = data.nodes.map(n => n.id);
-         data.links.forEach(link => {
-              if (!validNodes.includes(link.source) || !validNodes.includes(link.target)) {
-                 console.warn('Invalid link:', link);
-             }
+
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = imgElement.src;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('lightbox').onclick = function (e) {
+            if (e.target !== document.getElementById('lightbox-img')) {
+                closeLightbox();
+            }
+        };
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
         });
-        // 新增时间功能
-         document.getElementById('lastModified').textContent = 
-            "Last updated time：" + new Date(document.lastModified).toLocaleDateString('zh-CN', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
     </script>
-<script src="https://d3js.org/d3.v7.min.js"></script>
 </body>
 </html>
