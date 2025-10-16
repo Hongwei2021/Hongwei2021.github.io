@@ -3,7 +3,7 @@ import essential as es
 import content as con
 class Judgment(object):
 
-    #确定最适配的版本名称
+    #Determine the most suitable version name
     def condition_of_notgiven(v_list,reference):
         version_dic={}
         gap_list=[]
@@ -22,7 +22,7 @@ class Judgment(object):
                         version_year = re.findall(pattern, str(item))
                         gap = (int(reference_year[0]) - int(version_year[0]))
 
-                        if int(gap) >= -2 and int(gap) <= 20: # 参考文献中的年份与版本的年份的差值的阈值在20到-2之间
+                        if int(gap) >= -2 and int(gap) <= 20: # The threshold for the difference between the year in the reference list and the year of the version is between 20 and -2.
                             gap_list.append(gap)
                             version_dic[gap] = item
                     print(gap_list)
@@ -33,6 +33,7 @@ class Judgment(object):
                             return version_dic[min(gap_list)]
                     else:
                         return None
+
 
 
 
