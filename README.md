@@ -24,6 +24,8 @@ Provides a static website showcasing version comparisons, timeline charts, and s
 
 Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei2021/Hongwei2021.github.io/edit/main))
 
+Dataset：data in excel ([GTSDataWhole.csv])
+
 Static Website: Version summaries and visualizations ([Website Link](https://hongwei2021.github.io/))
 
 Knowledge Graph: RDF/OWL files available upon request.
