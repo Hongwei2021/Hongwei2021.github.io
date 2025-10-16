@@ -4,10 +4,10 @@ import math
 import re
 import content as con
 class Version(object):
-    #获取地质年代版本合集
+    #Obtain the complete collection of geological age versions
     def get_version_list(self): #
         s = []
-        for file in self:  # 遍历文件夹
+        for file in self:  #Traverse the folder
             graph = Graph()
             graph.parse(file, format='ttl')
             version_URL = graph.value(predicate=rdflib.term.URIRef('http://www.w3.org/1999/02/22-rdf-syntax-ns#type'),
@@ -17,12 +17,12 @@ class Version(object):
             version_URL_string = str(version_URL)
             searchObj = re.search(r'utf#(.*)', version_URL_string, re.M | re.I)
             version_value = searchObj.group(1)
-            s.append(version_value)  # 每个文件的文本存到list中
+            s.append(version_value)  # Store the text of each file in the list.
             # print(version_value)
         # print(s)
         return s
 
-    # 获得地质年代版本
+    # Obtain the geological age version
     def get_version(self):  #self is the file path
         graph = Graph()
         graph_path = 'H:/test/' + (str(self) + '.ttl')
@@ -37,10 +37,10 @@ class Version(object):
         #print(version_value)
         return version_value
 
-   #将LMU与period/stage进行组合
+   #Combine LMU with period/stage
     def combined_word(LUM,period,stage):
         label_list = []
-        if stage is not None:#如果有stage，对stage进行判别
+        if stage is not None:#If there is a stage, make a judgment on the stage.
             if period is None and LUM is not None:
                 lum = Version.search_label(LUM)
                 if lum == None:
@@ -61,7 +61,7 @@ class Version(object):
             if LUM is None:
                 label = stage
                 return label.lower()
-        if stage is None:#如果没有stage，对period进行判别
+        if stage is None:#If there is no stage, make a judgment on the period
             if period is not None and LUM is not None:
                 lum = Version.search_label(LUM)
                 if lum == None:
@@ -85,7 +85,7 @@ class Version(object):
                 return None
 
 
-    #获得包含有目标stage/period的地质年代版本名称
+    #Obtain the name of the geological era version that includes the target stage/period
     def detect_version_list(path,LUM,period,stage):
         v_list=[]
         get=Version.combined_word(LUM,period,stage)
@@ -104,7 +104,7 @@ class Version(object):
                 return v_list,get
         else: return None
 
-    #将原始数据中的LMU进行全称的替换与校正
+    #Replace and correct the full names of the LMUs in the original data
     def search_label(LUM):
             value = re.findall(r'[A-Z]', LUM)
             if len(value) >= 2:
@@ -126,7 +126,7 @@ class Version(object):
                 if value == ["U"]:
                     return "late"
 
-    #对于包含有两个阶段（例如middle——permain，late——permian）的period/stage，进行数值的叠加计算
+    #For periods/stages that consist of two phases (for example, middle - permain, late - permian), perform the calculation of adding up the values.
     def add_value(version,self):
             end={}
             start={}
@@ -144,6 +144,7 @@ class Version(object):
             final_start_uncertainty = start_uncertainty[self[0]]
             print(final_end,final_start,final_end_uncertainty,final_start_uncertainty)
             return final_end,final_end_uncertainty,final_start,final_start_uncertainty
+
 
 
 
