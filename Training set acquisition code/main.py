@@ -10,7 +10,7 @@ import re
 import csv
 
 
-#根据period/stage确定最后所采用的版本，并获取对应的起始值及不确定度
+#Determine the final version to be adopted based on the period/stage, and obtain the corresponding initial value and uncertainty
 def main (file,LMU,period,stage,reference):
     file_list = path.Direction.get_dic_list(file)
     version_list = es.Version.detect_version_list(file_list,LMU,period,stage)
@@ -31,7 +31,7 @@ def main (file,LMU,period,stage,reference):
         else:None
     else: None
 
-#读取原始数据，ttl数据库，并写入输出文件中
+#Read the original data from the TTL database and write it into the output file.
 def out(rawdata,output,ttlpath):
     data= pandas.read_excel(rawdata,engine='openpyxl',sheet_name="Sheet1")
     df = data.where(data.notnull(), None)
@@ -55,4 +55,5 @@ def out(rawdata,output,ttlpath):
                 continue
 
 if __name__ == "__main__":
+
     out('H:/competition/senlling.xlsx','H:/competition/final/senlling_test_result.csv',"H:/competition/database")
