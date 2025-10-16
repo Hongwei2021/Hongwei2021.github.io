@@ -7,7 +7,7 @@ import difflib
 import Levenshtein
 # get the distinct list
 class Context (object):
-    # 获得版本中不重复的period/stage名称
+    # Obtain the unique names of periods/stages in the version
     def get_distinct_label(self):
         s_list = []
         graph = Graph()
@@ -25,14 +25,14 @@ class Context (object):
         return distinct_s_list
 
 
-    #判别与LMU组合后的period/stage是否包含两个阶段，并进行值的叠加
+    #Obtain the determination of whether the period/stage after combining with LMU includes two stages, and perform the value addition.
     def calculate_the_value(LMU,period,stage):
         get=es.Version.combined_word(LMU,period,stage)
         # version=cond.Judgment.condition_of_notgiven()
         if len(get)==2:
                 es.Version.add_value(get)
 
-    # 适配ttl中的period/stage与原始数据中的大小写
+    # Adjust the "period/stage" in the TTL to match the case (uppercase/lowercase) of the original data.
     def detect_captial_letter(self):
         s_list = []
         graph = Graph()
@@ -48,7 +48,7 @@ class Context (object):
         else:
             return True
 
-    #获取period/stage的起始边界值和边界值不确定值
+    #Obtain the starting boundary value and the uncertain value of the period/stage
     def get_boundary_value(version_value,label):
         #version_value=es.Version.get_version(self)
         graph = Graph()
@@ -87,6 +87,7 @@ class Context (object):
                     end_uncertainty_value = None
                     return start_value, start_uncertainty_value, end_value, end_uncertainty_value
         else: return None
+
 
 
 
