@@ -29,7 +29,7 @@ Static Website: Version summaries and visualizations ([Website Link](https://hon
 Knowledge Graph: RDF/OWL files available upon request.
 
 
-**🛠️ Technical Implementation/案例 **
+**🛠️ Technical Implementation **
 Python Application Example
 A Python script demonstrates how to assign boundary ages to geological units lacking such data.
 
