@@ -22,7 +22,7 @@ Provides a static website showcasing version comparisons, timeline charts, and s
 
 **📊 Data & Resources **
 
-Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei2021/Hongwei2021.github.io/edit/main))
+Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei2021/Hongwei2021.github.io/blob/main/20GTSData.zip))
 
 Dataset：data in excel ([https://github.com/Hongwei2021/Hongwei2021.github.io/blob/main/GTSDataWhole.csv])
 
