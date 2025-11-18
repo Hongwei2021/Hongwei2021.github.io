@@ -26,7 +26,7 @@ Dataset: Boundary ages in RDF format ([GitHub Link](https://github.com/Hongwei20
 
 Dataset：data in excel ([https://github.com/Hongwei2021/Hongwei2021.github.io/blob/main/GTSDataWhole.csv])
 
-Static Website: Version summaries and visualizations ([Website Link](https://hongwei2021.github.io/))
+Static Website: Version summaries and visualizations ([Website Link](https://hongwei2021.github.io/Webindex.html))
 
 Knowledge Graph: RDF/OWL files available upon request.
 
