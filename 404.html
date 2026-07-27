@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Page not found — GTSKB">
+<meta name="robots" content="noindex, nofollow">
+<title>404 — Page Not Found | GTSKB</title>
+<style>
+:root {
+  --bg: #0a0e14;
+  --bg-card: #12171f;
+  --bg-elevated: #1a1f2b;
+  --border: #1e2733;
+  --text: #c5ccd6;
+  --text-dim: #6b7280;
+  --text-bright: #e6edf3;
+  --accent: #4493f8;
+  --accent-dim: #1f3a5f;
+  --radius: 8px;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.container {
+  text-align: center;
+  max-width: 480px;
+}
+.error-code {
+  font-size: 8rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.04em;
+}
+.error-code span { color: var(--text-dim); }
+h1 {
+  font-size: 1.5rem;
+  color: var(--text-bright);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.links a:hover {
+  border-color: var(--accent);
+  color: var(--text-bright);
+  background: var(--accent-dim);
+}
+.links a.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.links a.primary:hover {
+  background: #3b82f6;
+  border-color: #3b82f6;
+}
+.footer {
+  margin-top: 3rem;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="error-code">4<span>0</span>4</div>
+  <h1>Page Not Found</h1>
+  <p>The page you are looking for may have been moved, deleted, or possibly never existed. Let's get you back on track.</p>
+  <div class="links">
+    <a href="index.html" class="primary">Home</a>
+    <a href="query.html">Query</a>
+    <a href="gts_describe.html">Describe</a>
+    <a href="regional.html">Regional</a>
+    <a href="references.html">References</a>
+  </div>
+  <div class="footer">
+    GTSKB — Geologic Time Scale Knowledge Base<br>
+    <a href="https://github.com/Hongwei2021/gtsdb">GitHub Repository</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<!-- SEO Meta Tags -->
+<meta name="description" content="References and data sources for GTSKB — the Geologic Time Scale Knowledge Base.">
+<meta name="keywords" content="Geologic Time Scale, GTS, ICS, references, stratigraphy, chronostratigraphy">
+<meta name="author" content="Hongwei Wang">
+<meta name="robots" content="index, follow">
+<!-- Open Graph -->
+<meta property="og:title" content="GTSKB — References">
+<meta property="og:description" content="References and data sources for GTSKB.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hongwei2021.github.io/gtsdb/references.html">
+<meta property="og:image" content="https://hongwei2021.github.io/gtsdb/assets/favicon-512.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GTSKB — References">
+<meta name="twitter:description" content="References and data sources for GTSKB.">
+<title>GTSKB — References</title>
+<style>
+:root {
+  --bg: #0a0e14;
+  --bg-card: #12171f;
+  --bg-elevated: #1a1f2b;
+  --border: #1e2733;
+  --text: #c5ccd6;
+  --text-dim: #6b7280;
+  --text-bright: #e6edf3;
+  --accent: #4493f8;
+  --green: #3fb950;
+  --orange: #d29922;
+  --red: #f85149;
+  --purple: #a371f7;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font); background: var(--bg); color: var(--text);
+  line-height: 1.6; overflow-x: hidden;
+}
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(10,14,20,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px; height: 56px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+nav .logo { font-weight: 700; font-size: 18px; color: var(--text-bright); letter-spacing: -0.3px; }
+nav .logo span { color: var(--accent); }
+nav .links { display: flex; gap: 24px; list-style: none; }
+nav .links a {
+  color: var(--text-dim); text-decoration: none; font-size: 14px;
+  transition: color 0.2s; font-weight: 500;
+}
+nav .links a:hover { color: var(--text-bright); }
+nav .links a.active { color: var(--accent); }
+.lang-btn {
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  color: var(--text-dim); padding: 5px 10px; border-radius: 6px;
+  cursor: pointer; font-size: 12px; font-weight: 600;
+  font-family: var(--font); transition: all 0.2s; margin-left: 8px;
+}
+.lang-btn:hover { color: var(--text-bright); border-color: var(--accent); }
+.hamburger {
+  display: flex; flex-direction: column; gap: 5px; cursor: pointer;
+  background: none; border: none; padding: 4px; z-index: 10001; position: relative;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--text-bright);
+  border-radius: 2px; transition: all 0.25s;
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); background: var(--accent); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); background: var(--accent); }
+[data-i18n] { transition: opacity 0.2s; }
+
+/* Section layout */
+.page { padding: 88px 24px 80px; max-width: 1100px; margin: 0 auto; }
+.section { margin-bottom: 64px; }
+.section-header { margin-bottom: 32px; }
+.section-header h2 {
+  font-size: 28px; font-weight: 700; color: var(--text-bright);
+  display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+}
+.section-header p { color: var(--text-dim); font-size: 14px; }
+
+/* Stats row */
+.ref-stats {
+  display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap;
+}
+.ref-stat {
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: 8px; padding: 12px 18px; text-align: center; min-width: 90px;
+}
+.ref-stat .stat-num { font-size: 22px; font-weight: 700; color: var(--accent); }
+.ref-stat .stat-label { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+
+/* Reference table */
+.ref-table-wrap {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden;
+}
+.ref-table {
+  width: 100%; border-collapse: collapse;
+}
+.ref-table th {
+  padding: 12px 14px; text-align: left; font-size: 12px; font-weight: 600;
+  color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.5px;
+  background: var(--bg-elevated); border-bottom: 1px solid var(--border);
+}
+.ref-table th:nth-child(1) { width: 60px; text-align: center; }
+.ref-table th:nth-child(2) { width: 180px; }
+.ref-table td {
+  padding: 12px 14px; border-bottom: 1px solid var(--border);
+  font-size: 13px; vertical-align: top;
+}
+.ref-table td:first-child {
+  text-align: center; color: var(--text-dim); font-family: 'SF Mono', 'Cascadia Code', monospace;
+}
+.ref-table td:nth-child(2) {
+  font-family: 'SF Mono', 'Cascadia Code', monospace;
+  font-size: 12px; color: var(--accent); font-weight: 600;
+}
+.ref-table td:last-child {
+  color: var(--text); line-height: 1.7;
+}
+.ref-table tbody tr { transition: background 0.15s; }
+.ref-table tbody tr:hover { background: var(--bg-elevated); }
+.ref-table tbody tr:last-child td { border-bottom: none; }
+
+/* Part 2: Publications placeholder */
+.pub-placeholder {
+  background: var(--bg-card); border: 2px dashed var(--border);
+  border-radius: 12px; padding: 60px 40px; text-align: center;
+}
+.pub-placeholder .icon { font-size: 48px; margin-bottom: 16px; opacity: 0.6; }
+.pub-placeholder h3 { font-size: 20px; color: var(--text-bright); margin-bottom: 8px; }
+.pub-placeholder p { color: var(--text-dim); font-size: 14px; max-width: 480px; margin: 0 auto 24px; }
+.pub-placeholder .code-hint {
+  display: inline-block; background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: 6px; padding: 8px 16px; font-size: 13px;
+  font-family: 'SF Mono', 'Cascadia Code', monospace;
+  color: var(--orange);
+}
+.pub-entry {
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: 8px; padding: 16px; margin-bottom: 12px; text-align: left;
+}
+.pub-entry .pub-title { font-size: 16px; font-weight: 600; color: var(--text-bright); margin-bottom: 4px; }
+.pub-entry .pub-meta { font-size: 13px; color: var(--text-dim); }
+.pub-entry .pub-year {
+  display: inline-block; padding: 2px 10px; border-radius: 4px;
+  font-size: 11px; font-weight: 600; color: #fff; margin-right: 8px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav { padding: 0 12px; }
+  .mobile-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(10,14,20,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    z-index: 10000; overflow-y: auto; }
+  .mobile-links { list-style: none; padding: 72px 0 24px; margin: 0; }
+  .mobile-links li { margin: 0; }
+  .mobile-links li a { display: block; padding: 16px 32px; font-size: 18px;
+    font-weight: 600; color: var(--text-bright); border-bottom: 1px solid rgba(255,255,255,0.06);
+    text-decoration: none; }
+  .mobile-links li a:hover { background: rgba(68,147,248,0.12); color: var(--accent); }
+  .hamburger { display: flex !important; }
+  nav .links { display: none !important; }
+  .page { padding: 80px 12px 40px; }
+  .ref-table th:nth-child(2), .ref-table td:nth-child(2) { display: none; }
+}
+
+/* Footer */
+footer { text-align: center; padding: 28px 16px; border-top: 1px solid var(--border); margin-top: 40px; }
+footer p { margin: 0 0 6px; font-size: 12px; color: var(--text-dim); }
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+</style>
+<script>
+window.toggleMenu = function() {
+  var btn = document.getElementById('hamburger');
+  if (!btn) return;
+  var isOpen = btn.classList.contains('open');
+  if (isOpen) {
+    btn.classList.remove('open');
+    var overlay = document.getElementById('mobileOverlay');
+    if (overlay) overlay.remove();
+    document.body.style.overflow = '';
+  } else {
+    btn.classList.add('open');
+    var overlay = document.createElement('div');
+    overlay.id = 'mobileOverlay';
+    overlay.className = 'mobile-overlay';
+    var pages = [
+      ['index.html', '\u{1F3E0} Home'],
+      ['gts_describe.html', '\u{1F4D6} Describe'],
+      ['query.html', '\u{1F50D} Query'],
+      ['regional.html', '\u{1F5FA}\uFE0F Regional'],
+      ['references.html', '\u{1F4DA} References']
+    ];
+    var current = window.location.pathname.split('/').pop() || 'index.html';
+    var html = pages.map(function(p) {
+      var active = p[0] === current ? ' style="color:var(--accent)"' : '';
+      return '<li><a href="' + p[0] + '"' + active + '>' + p[1] + '</a></li>';
+    }).join('');
+    overlay.innerHTML = '<ul class="mobile-links">' + html + '</ul>';
+    overlay.onclick = function(e) {
+      if (e.target === overlay) toggleMenu();
+    };
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+  }
+};
+</script>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">🌍 <span>GTSKB</span></a>
+  <ul class="links">
+    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+    <li><a href="gts_describe.html" data-i18n="nav.describe">Describe</a></li>
+    <li><a href="query.html" data-i18n="nav.query">Query</a></li>
+    <li><a href="regional.html" data-i18n="nav.regional">Regional</a></li>
+    <li><a href="references.html" class="active" data-i18n="nav.references">References</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="lang-btn" id="lang-btn" onclick="toggleLang()" title="切换中文">中</button>
+</nav>
+
+<div class="page">
+
+<!-- ==================== Part 1: References ==================== -->
+<section class="section" id="refs">
+  <div class="section-header">
+    <h2 data-i18n="refs.title">📚 References</h2>
+    <p data-i18n="refs.sub">Key publications supporting the GTSKB, spanning the development of the geologic time scale</p>
+  </div>
+  <div class="ref-stats" id="ref-stats"></div>
+  <div class="ref-table-wrap">
+    <table class="ref-table">
+      <thead>
+        <tr><th>#</th><th>ID</th><th>Citation</th></tr>
+      </thead>
+      <tbody id="ref-tbody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ==================== Part 2: Publications & Achievements ==================== -->
+<section class="section" id="pubs">
+  <div class="section-header">
+    <h2 data-i18n="pubs.title">📝 Publications</h2>
+    <p data-i18n="pubs.sub">Research articles and outputs related to this database</p>
+  </div>
+  <!--
+    ╔══════════════════════════════════════════════════════════════════════╗
+    ║  ADD PUBLICATIONS HERE                                                ║
+    ║                                                                       ║
+    ║  Each publication entry uses this HTML template:                      ║
+    ║                                                                       ║
+    ║  <div class="pub-entry">                                              ║
+    ║    <span class="pub-year" style="background:#4493f8">202X</span>       ║
+    ║    <div class="pub-title">Paper / Article Title</div>                  ║
+    ║    <div class="pub-meta">Author Names · Journal Name · DOI / URL</div> ║
+    ║  </div>                                                                ║
+    ║                                                                       ║
+    ║  Style colours for pub-year backgrounds:                              ║
+    ║    Journal article → #4493f8 (blue)    Conference → #3fb950 (green)    ║
+    ║    Preprint       → #d29922 (orange)   Book/Chapter → #a371f7 (purple) ║
+    ║    Other          → #6b7280 (grey)                                    ║
+    ║                                                                       ║
+    ║  LOCATION IN CODE:                                                    ║
+    ║    Replace the placeholder <div class="pub-placeholder"> block        ║
+    ║    (immediately below) with your pub-entry divs.                       ║
+    ║    The container div with id="pub-list" should remain.                ║
+    ╚══════════════════════════════════════════════════════════════════════╝
+  -->
+  <div id="pub-list">
+    <div class="pub-entry">
+      <span class="pub-year" style="background:#4493f8">2025</span>
+      <div class="pub-title">Why knowledge graphs are essential for harmonizing heterogeneous geologic time scales</div>
+      <div class="pub-meta">Wang H, Ma C, Ma X, Ogg JG, Wang C · <em>Episodes</em> 2025; 48: 565–577 · <a href="https://doi.org/10.18814/epiiugs/2025/025016" target="_blank" rel="noopener" style="color:var(--accent);">https://doi.org/10.18814/epiiugs/2025/025016</a></div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<script>
+// ===== REFERENCE DATA =====
+// To add a new entry, append at the end of the array. Numbers auto-assign.
+var REFERENCES = [
+  {id:"Walcott1893", cite:"Walcott C D. Geologic time, as indicated by the sedimentary rocks of North America[J]. The Journal of Geology, 1893, 1(7): 639-676."},
+  {id:"Barrell1917", cite:"Barrell J. Rhythms and the measurements of geologic time[J]. Bulletin of the Geological Society of America, 1917, 28(1): 745-904."},
+  {id:"Holmes1933", cite:"Holmes A. The thermal history of the earth[J]. Journal of the Washington Academy of Sciences, 1933, 23(4): 169-195."},
+  {id:"Elias1945", cite:"Elias M K. Geological Calendar (Indications of Periodicity in Nature and Succession of Geological Periods)[J]. AAPG Bulletin, 1945, 29(7): 1035-1043."},
+  {id:"Holmes1947", cite:"Holmes A. VII.—The Construction of a Geological Time-Scale[J]. Transactions of the Geological Society of Glasgow, 1947, 21(1): 117-152."},
+  {id:"Holmes1959", cite:"Holmes A. A revised geological time-scale[J]. Transactions of the Edinburgh Geological Society, 1959, 17(3): 183-216."},
+  {id:"Holmes-Marble1960", cite:"Faul H. Geologic time scale[J]. Geological Society of America Bulletin, 1960, 71(5): 637-644."},
+  {id:"Kulp1961", cite:"Kulp J L. Geologic Time Scale: Isotopic age determinations on rocks of known stratigraphic age define an absolute time scale for earth history[J]. Science, 1961, 133(3459): 1105-1114."},
+  {id:"GSL1964old", cite:"Smith A G, Wilcock B, Francis E H, et al. The Phanerozoic time-scale[M]. Geological Society Publishing House, 1971."},
+  {id:"GSL1964new", cite:"Smith A G. Potassium—argon decay constants and age tables[J]. Geological Society, London, Special Publications, 1964, 1(1): 129-141."},
+  {id:"GSL1971", cite:"Lambert R S J. The pre-Pleistocene Phanerozoic time-scale—a review[J]. Geological Society, London, Special Publications, 1971, 5(1): 9-31."},
+  {id:"Vanhinte1976", cite:"Van Hinte J E. A Cretaceous time scale[J]. AAPG Bulletin, 1976, 60(4): 498-516."},
+  {id:"Odin1982", cite:"Odin G S. The Phanerozoic time scale revisited[J]. Episodes Journal of International Geoscience, 1982, 5(3): 3-9."},
+  {id:"DNAG83", cite:"Palmer A R. The decade of North American geology 1983 geologic time scale[J]. Geology, 1983, 11(9): 503-504."},
+  {id:"Carr1984", cite:"Carr P F, Jones B G, Quinn B G, et al. Toward an objective Phanerozoic time scale[J]. Geology, 1984, 12(5): 274-277."},
+  {id:"KG1985", cite:"Kent D V, Gradstein F M. A Cretaceous and Jurassic geochronology[J]. Geological Society of America Bulletin, 1985, 96(11): 1419-1427."},
+  {id:"Snelling1985", cite:"Snelling N J. An interim time-scale[J]. Geological Society, London, Memoirs, 1985, 10(1): 261-265."},
+  {id:"EX88", cite:"Haq B U, Hardenbol J A N, Vail P R. Chronology of fluctuating sea levels since the Triassic[J]. Science, 1987, 235(4793): 1156-1167."},
+  {id:"Květ1991", cite:"Květ R. Complete periodical geological time table[J]. GeoJournal, 1991, 24(4): 417-420."},
+  {id:"Berggren2001", cite:"Berggren W A. International Time Scale[J]. eLS, 2001."},
+  {id:"GSA1983", cite:"Palmer A R. The decade of North American geology 1983 geologic time scale[J]. Geology, 1983, 11(9): 503-504."},
+  {id:"ICS2004", cite:"International Chronostratigraphic Chart 2004. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2005", cite:"International Chronostratigraphic Chart 2005. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2006", cite:"International Chronostratigraphic Chart 2006. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2007", cite:"International Chronostratigraphic Chart 2007. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2008", cite:"International Chronostratigraphic Chart 2008. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2009", cite:"International Chronostratigraphic Chart 2009. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2010", cite:"International Chronostratigraphic Chart 2010. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS2012", cite:"International Chronostratigraphic Chart 2012. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201301", cite:"International Chronostratigraphic Chart 2013/01. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201402", cite:"International Chronostratigraphic Chart 2014/02. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201410", cite:"International Chronostratigraphic Chart 2014/10. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201501", cite:"International Chronostratigraphic Chart 2015/01. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201604", cite:"International Chronostratigraphic Chart 2016/04. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201610", cite:"International Chronostratigraphic Chart 2016/10. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201702", cite:"International Chronostratigraphic Chart 2017/02. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201807", cite:"International Chronostratigraphic Chart 2018/07. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201808", cite:"International Chronostratigraphic Chart 2018/08. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS201905", cite:"International Chronostratigraphic Chart 2019/05. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202001", cite:"International Chronostratigraphic Chart 2020/01. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202003", cite:"International Chronostratigraphic Chart 2020/03. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202105", cite:"International Chronostratigraphic Chart 2021/05. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202107", cite:"International Chronostratigraphic Chart 2021/07. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202202", cite:"International Chronostratigraphic Chart 2022/02. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202210", cite:"International Chronostratigraphic Chart 2022/10. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202304", cite:"International Chronostratigraphic Chart 2023/04. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202306", cite:"International Chronostratigraphic Chart 2023/06. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202412", cite:"International Chronostratigraphic Chart 2024/12. International Commission on Stratigraphy. https://stratigraphy.org"},
+  {id:"ICS202606", cite:"International Chronostratigraphic Chart 2026/06. International Commission on Stratigraphy. https://stratigraphy.org. Cite: Cohen K, Harper D, Gibbard P, Car N. The ICS international chronostratigraphic chart this decade. Episodes 2025;48:105-115."},
+  {id:"GTS2016", cite:"Ogg J G, Ogg G, Gradstein F M. A concise geologic time scale: 2016[M]. Elsevier, 2016."},
+  {id:"GTS2012", cite:"The geologic time scale 2012[M]. elsevier, 2012."},
+  {id:"GTS2008_1", cite:"Ogg J G, Ogg G, Gradstein F M. A concise geologic time scale: 2016[M]. Elsevier, 2016."},
+  {id:"GTS2004", cite:"Ogg J G, Gradstein F M, Smith A G. A geologic time scale 2004[M]. Cambridge University Press, 2004."},
+  {id:"GTS1989", cite:"Harland W B, Armstrong R L, Cox A V, et al. A geologic time scale 1989[M]. Cambridge University Press, 1990."}
+];
+
+// Auto-assign sequential numbers
+REFERENCES.forEach((r, i) => r.num = i + 1);
+
+// Stats
+document.getElementById("ref-stats").innerHTML =
+  `<div class="ref-stat"><div class="stat-num">49</div><div class="stat-label" data-i18n="refs.total">Total References</div></div>`;
+
+// Render table
+document.getElementById("ref-tbody").innerHTML = REFERENCES.map(r => {
+  return `<tr>
+    <td>${r.num}</td>
+    <td>${r.id}</td>
+    <td>${r.cite}</td>
+  </tr>`;
+}).join("");
+</script>
+
+<script>
+// ====== I18N: English-Chinese title toggle ======
+var I18N_DICT = {
+  en: {
+    "nav.home": "Home",
+    "nav.describe": "Describe",
+    "nav.query": "Query",
+    "nav.regional": "Regional",
+    "nav.references": "References",
+    "refs.title": "📚 References",
+    "refs.sub": "Key publications supporting the GTSKB, spanning the development of the geologic time scale",
+    "refs.total": "Total References",
+    "pubs.title": "📝 Publications",
+    "pubs.sub": "Research articles and outputs related to this database"
+  },
+  zh: {
+    "nav.home": "首页",
+    "nav.describe": "描述",
+    "nav.query": "查询",
+    "nav.regional": "区域",
+    "nav.references": "参考文献",
+    "refs.title": "📚 参考文献 · References",
+    "refs.sub": "网站数据支持所参考的文献资料，涵盖地质年代表研究发展历程中的关键著作",
+    "refs.total": "参考文献总数",
+    "pubs.title": "📝 论文发表",
+    "pubs.sub": "与本数据库相关的研究论文与成果"
+  }
+};
+
+window.currentLang = 'en';
+window.toggleLang = function() {
+  var btn = document.getElementById('lang-btn');
+  if (window.currentLang === 'en') {
+    window.currentLang = 'zh';
+    btn.textContent = 'EN';
+    btn.title = 'Switch to English';
+    applyLang('zh');
+    localStorage.setItem('gtskg_lang', 'zh');
+  } else {
+    window.currentLang = 'en';
+    btn.textContent = '中';
+    btn.title = '切换中文';
+    applyLang('en');
+    localStorage.setItem('gtskg_lang', 'en');
+  }
+};
+
+function applyLang(lang) {
+  var dict = I18N_DICT[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (dict[key]) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key]) el.placeholder = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-title');
+    if (dict[key]) el.title = dict[key];
+  });
+}
+
+(function() {
+  var saved = localStorage.getItem('gtskg_lang');
+  if (saved === 'zh') {
+    window.currentLang = 'en';
+    toggleLang();
+  }
+})();
+</script>
+
+<footer>
+  <p style="margin:0 0 6px; font-size:13px; color:var(--text-dim);">
+    <strong>GTSKB</strong> &nbsp;·&nbsp; Built with <a href="https://d3js.org">D3.js</a>
+  </p>
+  <p style="margin:0 0 6px; font-size:13px; color:var(--text-dim);">
+    Data &amp; Source: <a href="https://github.com/Hongwei2021/gtsdb" target="_blank">GitHub</a> &nbsp;(hongwei2021/gtsdb)
+  </p>
+  <hr style="margin: 18px auto 14px; border: none; border-top: 1px solid var(--border); max-width: 360px;">
+  <p style="font-size:13px; color:var(--text-dim);">
+    Reference Sites:
+    <a href="https://stratigraphy.org" target="_blank">ICS</a> ·
+    <a href="https://timescalecreator.org" target="_blank">TSCreator</a> ·
+    <a href="https://deeptimeexplorer.com" target="_blank">Deep Time Explorer</a> ·
+    <a href="https://deeptime.voyage/resources/deeptime/" target="_blank">Deep Time Voyage</a> ·
+    <a href="https://spacetimemesh.com/deep-time-visualizer/" target="_blank">Deep Time Visualizer</a>
+  </p>
+</footer>
+
+</body>
+</html>

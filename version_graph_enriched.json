@@ -1,0 +1,1451 @@
+{
+ "nodes": [
+  {
+   "id": "Afanas'yev and Zykov1975",
+   "name": "Afanas'yev and Zykov1975",
+   "year": 1975,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Afanas'yev1964",
+   "name": "Afanas'yev1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Afanasev1964",
+   "name": "Afanasev1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Afanasev1972",
+   "name": "Afanasev1972",
+   "year": 1972,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Afanassyef1964",
+   "name": "Afanassyef1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Armstrong1978",
+   "name": "Armstrong1978",
+   "year": 1978,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Armstrong1982",
+   "name": "Armstrong1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Average from Six Estimates 1945",
+   "name": "Average from Six Estimates 1945",
+   "year": 1945,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "BP1980",
+   "name": "BP1980",
+   "year": 1980,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Barrell1917",
+   "name": "Barrell1917",
+   "year": 1917,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Berggren1969",
+   "name": "Berggren1969",
+   "year": 1969,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Berggren1985",
+   "name": "Berggren1985",
+   "year": 1985,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Berggren2001",
+   "name": "Berggren2001",
+   "year": 2001,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Berrell1917",
+   "name": "Berrell1917",
+   "year": 1917,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Bullard1944",
+   "name": "Bullard1944",
+   "year": 1944,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Bullard1945",
+   "name": "Bullard1945",
+   "year": 1945,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "CGR(GSL)1986",
+   "name": "CGR(GSL)1986",
+   "year": 1986,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Carr1984",
+   "name": "Carr1984",
+   "year": 1984,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Casey1964",
+   "name": "Casey1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Croneis&Krumbein 1936",
+   "name": "Croneis&Krumbein 1936",
+   "year": 1936,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Curry&Odin1982",
+   "name": "Curry&Odin1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "DNAG1983",
+   "name": "DNAG1983",
+   "year": 1983,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "DNAG83",
+   "name": "DNAG83",
+   "year": null,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Dana1869",
+   "name": "Dana1869",
+   "year": 1869,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Dickinson&Rich1972",
+   "name": "Dickinson&Rich1972",
+   "year": 1972,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "EX88",
+   "name": "EX88",
+   "year": null,
+   "count": 74,
+   "has_file": true
+  },
+  {
+   "id": "Elias1945",
+   "name": "Elias1945",
+   "year": 1945,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Evernden&Kistler1970",
+   "name": "Evernden&Kistler1970",
+   "year": 1970,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Evernden1959",
+   "name": "Evernden1959",
+   "year": 1959,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSA",
+   "name": "GSA",
+   "year": null,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSA1983",
+   "name": "GSA1983",
+   "year": 1983,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSA1999",
+   "name": "GSA1999",
+   "year": 1999,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSA2009",
+   "name": "GSA2009",
+   "year": 2009,
+   "count": 178,
+   "has_file": true
+  },
+  {
+   "id": "GSA2012",
+   "name": "GSA2012",
+   "year": 2012,
+   "count": 173,
+   "has_file": true
+  },
+  {
+   "id": "GSA2018",
+   "name": "GSA2018",
+   "year": 2018,
+   "count": 91,
+   "has_file": true
+  },
+  {
+   "id": "GSL1964",
+   "name": "GSL1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSL1964old",
+   "name": "GSL1964old",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSL1971",
+   "name": "GSL1971",
+   "year": 1971,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GSL1982",
+   "name": "GSL1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GTS",
+   "name": "GTS",
+   "year": null,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GTS1982",
+   "name": "GTS1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "GTS1989",
+   "name": "GTS1989",
+   "year": 1989,
+   "count": 76,
+   "has_file": true
+  },
+  {
+   "id": "GTS2004",
+   "name": "GTS2004",
+   "year": 2004,
+   "count": 167,
+   "has_file": true
+  },
+  {
+   "id": "GTS2008",
+   "name": "GTS2008",
+   "year": 2008,
+   "count": 183,
+   "has_file": true
+  },
+  {
+   "id": "GTS2012",
+   "name": "GTS2012",
+   "year": 2012,
+   "count": 172,
+   "has_file": true
+  },
+  {
+   "id": "GTS2016",
+   "name": "GTS2016",
+   "year": 2016,
+   "count": 161,
+   "has_file": true
+  },
+  {
+   "id": "GTS2020",
+   "name": "GTS2020",
+   "year": 2020,
+   "count": 348,
+   "has_file": true
+  },
+  {
+   "id": "Geological Society1964",
+   "name": "Geological Society1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Gill and Cobban1966",
+   "name": "Gill and Cobban1966",
+   "year": 1966,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Goodchild1896",
+   "name": "Goodchild1896",
+   "year": 1896,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Goodchild1897",
+   "name": "Goodchild1897",
+   "year": 1897,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Hardenbol and Berggren1978",
+   "name": "Hardenbol and Berggren1978",
+   "year": 1978,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Harland1964",
+   "name": "Harland1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Harland1981",
+   "name": "Harland1981",
+   "year": 1981,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Harland1982",
+   "name": "Harland1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Helsley&Steiner1969",
+   "name": "Helsley&Steiner1969",
+   "year": 1969,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes&Lawson1927",
+   "name": "Holmes&Lawson1927",
+   "year": 1927,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes&Marble1960",
+   "name": "Holmes&Marble1960",
+   "year": 1960,
+   "count": 11,
+   "has_file": true
+  },
+  {
+   "id": "Holmes'Symposium1964",
+   "name": "Holmes'Symposium1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes1933",
+   "name": "Holmes1933",
+   "year": 1933,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes1937",
+   "name": "Holmes1937",
+   "year": 1937,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes1939",
+   "name": "Holmes1939",
+   "year": 1939,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes1947",
+   "name": "Holmes1947",
+   "year": 1947,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Holmes1947B",
+   "name": "Holmes1947B",
+   "year": 1947,
+   "count": 14,
+   "has_file": true
+  },
+  {
+   "id": "Holmes1959",
+   "name": "Holmes1959",
+   "year": 1959,
+   "count": 15,
+   "has_file": true
+  },
+  {
+   "id": "Holmes1960",
+   "name": "Holmes1960",
+   "year": 1960,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "ICS",
+   "name": "ICS",
+   "year": null,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "ICS2004",
+   "name": "ICS2004",
+   "year": 2004,
+   "count": 161,
+   "has_file": true
+  },
+  {
+   "id": "ICS2005",
+   "name": "ICS2005",
+   "year": 2005,
+   "count": 157,
+   "has_file": true
+  },
+  {
+   "id": "ICS2006",
+   "name": "ICS2006",
+   "year": 2006,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "ICS2007",
+   "name": "ICS2007",
+   "year": 2007,
+   "count": 159,
+   "has_file": true
+  },
+  {
+   "id": "ICS2008",
+   "name": "ICS2008",
+   "year": 2008,
+   "count": 145,
+   "has_file": true
+  },
+  {
+   "id": "ICS2009",
+   "name": "ICS2009",
+   "year": 2009,
+   "count": 144,
+   "has_file": true
+  },
+  {
+   "id": "ICS2010",
+   "name": "ICS2010",
+   "year": 2010,
+   "count": 143,
+   "has_file": true
+  },
+  {
+   "id": "ICS2012",
+   "name": "ICS2012",
+   "year": 2012,
+   "count": 142,
+   "has_file": true
+  },
+  {
+   "id": "ICS201301",
+   "name": "ICS201301",
+   "year": 2013,
+   "count": 142,
+   "has_file": true
+  },
+  {
+   "id": "ICS201402",
+   "name": "ICS201402",
+   "year": 2014,
+   "count": 141,
+   "has_file": true
+  },
+  {
+   "id": "ICS201410",
+   "name": "ICS201410",
+   "year": 2014,
+   "count": 142,
+   "has_file": true
+  },
+  {
+   "id": "ICS201501",
+   "name": "ICS201501",
+   "year": 2015,
+   "count": 136,
+   "has_file": true
+  },
+  {
+   "id": "ICS201604",
+   "name": "ICS201604",
+   "year": 2016,
+   "count": 140,
+   "has_file": true
+  },
+  {
+   "id": "ICS201610",
+   "name": "ICS201610",
+   "year": 2016,
+   "count": 139,
+   "has_file": true
+  },
+  {
+   "id": "ICS201702",
+   "name": "ICS201702",
+   "year": 2017,
+   "count": 142,
+   "has_file": true
+  },
+  {
+   "id": "ICS201807",
+   "name": "ICS201807",
+   "year": 2018,
+   "count": 140,
+   "has_file": true
+  },
+  {
+   "id": "ICS201808",
+   "name": "ICS201808",
+   "year": 2018,
+   "count": 143,
+   "has_file": true
+  },
+  {
+   "id": "ICS201905",
+   "name": "ICS201905",
+   "year": 2019,
+   "count": 145,
+   "has_file": true
+  },
+  {
+   "id": "ICS202001",
+   "name": "ICS202001",
+   "year": 2020,
+   "count": 284,
+   "has_file": true
+  },
+  {
+   "id": "ICS202003",
+   "name": "ICS202003",
+   "year": 2020,
+   "count": 142,
+   "has_file": true
+  },
+  {
+   "id": "ICS202105",
+   "name": "ICS202105",
+   "year": 2021,
+   "count": 141,
+   "has_file": true
+  },
+  {
+   "id": "ICS202107",
+   "name": "ICS202107",
+   "year": 2021,
+   "count": 141,
+   "has_file": true
+  },
+  {
+   "id": "ICS202202",
+   "name": "ICS202202",
+   "year": 2022,
+   "count": 282,
+   "has_file": true
+  },
+  {
+   "id": "KG1985",
+   "name": "KG1985",
+   "year": 1985,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Kauffman1970",
+   "name": "Kauffman1970",
+   "year": 1970,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Kulp1959",
+   "name": "Kulp1959",
+   "year": 1959,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Kulp1960",
+   "name": "Kulp1960",
+   "year": 1960,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Kulp1961",
+   "name": "Kulp1961",
+   "year": 1961,
+   "count": 42,
+   "has_file": true
+  },
+  {
+   "id": "Kve\u030ct1991",
+   "name": "Kve\u030ct1991",
+   "year": 1991,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Kv\u011bt1989",
+   "name": "Kv\u011bt1989",
+   "year": 1989,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Lambert1971",
+   "name": "Lambert1971",
+   "year": 1971,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Matthew1914",
+   "name": "Matthew1914",
+   "year": 1914,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Moore1933",
+   "name": "Moore1933",
+   "year": 1933,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "NDS1982",
+   "name": "NDS1982",
+   "year": 1982,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Obra Dovich&Cobban1973",
+   "name": "Obra Dovich&Cobban1973",
+   "year": 1973,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Obradovich&Cobban1975",
+   "name": "Obradovich&Cobban1975",
+   "year": 1975,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Odin1982",
+   "name": "Odin1982",
+   "year": 1982,
+   "count": 54,
+   "has_file": true
+  },
+  {
+   "id": "PTS1964",
+   "name": "PTS1964",
+   "year": 1964,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "PTS1971",
+   "name": "PTS1971",
+   "year": 1971,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Pergament1967",
+   "name": "Pergament1967",
+   "year": 1967,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Reade1879",
+   "name": "Reade1879",
+   "year": 1879,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Reeds1931",
+   "name": "Reeds1931",
+   "year": 1931,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Schuchert&Dunbar 1933",
+   "name": "Schuchert&Dunbar 1933",
+   "year": 1933,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Schuchert&Dunbar 1941",
+   "name": "Schuchert&Dunbar 1941",
+   "year": 1941,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Schuchert1910",
+   "name": "Schuchert1910",
+   "year": 1910,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Schuchert1931",
+   "name": "Schuchert1931",
+   "year": 1931,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Snelling1985",
+   "name": "Snelling1985",
+   "year": 1985,
+   "count": 48,
+   "has_file": true
+  },
+  {
+   "id": "Sollas1900",
+   "name": "Sollas1900",
+   "year": 1900,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Sollas1909",
+   "name": "Sollas1909",
+   "year": 1909,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Suppe1969",
+   "name": "Suppe1969",
+   "year": 1969,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Twenhofel1935",
+   "name": "Twenhofel1935",
+   "year": 1935,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "USGS1980",
+   "name": "USGS1980",
+   "year": 1980,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Van Eysinga1975",
+   "name": "Van Eysinga1975",
+   "year": 1975,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "VanEysinga1975",
+   "name": "VanEysinga1975",
+   "year": 1975,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "VanHinte1976",
+   "name": "VanHinte1976",
+   "year": 1976,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Vanhinte1976",
+   "name": "Vanhinte1976",
+   "year": 1976,
+   "count": 0,
+   "has_file": false
+  },
+  {
+   "id": "Walcott1893",
+   "name": "Walcott1893",
+   "year": 1893,
+   "count": 4,
+   "has_file": true
+  },
+  {
+   "id": "Williams1893",
+   "name": "Williams1893",
+   "year": 1893,
+   "count": 0,
+   "has_file": false
+  }
+ ],
+ "edges": [
+  [
+   "Berrell1917",
+   "Williams1893"
+  ],
+  [
+   "Berrell1917",
+   "Schuchert1910"
+  ],
+  [
+   "Berrell1917",
+   "Sollas1909"
+  ],
+  [
+   "Berrell1917",
+   "Matthew1914"
+  ],
+  [
+   "Berrell1917",
+   "Goodchild1896"
+  ],
+  [
+   "Carr1984",
+   "Harland1982"
+  ],
+  [
+   "Carr1984",
+   "Odin1982"
+  ],
+  [
+   "Carr1984",
+   "Armstrong1978"
+  ],
+  [
+   "Carr1984",
+   "Afanas'yev and Zykov1975"
+  ],
+  [
+   "Carr1984",
+   "Lambert1971"
+  ],
+  [
+   "Carr1984",
+   "Harland1964"
+  ],
+  [
+   "Carr1984",
+   "Kulp1961"
+  ],
+  [
+   "Carr1984",
+   "Hardenbol and Berggren1978"
+  ],
+  [
+   "Elias1945",
+   "Berrell1917"
+  ],
+  [
+   "Elias1945",
+   "Schuchert&Dunbar 1933"
+  ],
+  [
+   "Elias1945",
+   "Schuchert&Dunbar 1941"
+  ],
+  [
+   "Elias1945",
+   "Moore1933"
+  ],
+  [
+   "Elias1945",
+   "Twenhofel1935"
+  ],
+  [
+   "Elias1945",
+   "Croneis&Krumbein 1936"
+  ],
+  [
+   "Elias1945",
+   "Average from Six Estimates 1945"
+  ],
+  [
+   "GSA",
+   "GSA1983"
+  ],
+  [
+   "GSA",
+   "GSA1999"
+  ],
+  [
+   "GSA",
+   "GSA2009"
+  ],
+  [
+   "GSA",
+   "GSA2012"
+  ],
+  [
+   "GSA",
+   "GSA2018"
+  ],
+  [
+   "GSL1964old",
+   "Holmes1959"
+  ],
+  [
+   "GSL1964old",
+   "Dana1869"
+  ],
+  [
+   "GSL1964old",
+   "Walcott1893"
+  ],
+  [
+   "GSL1964old",
+   "Goodchild1896"
+  ],
+  [
+   "GSL1964old",
+   "Sollas1909"
+  ],
+  [
+   "GSL1964old",
+   "Schuchert1910"
+  ],
+  [
+   "GSL1964old",
+   "Barrell1917"
+  ],
+  [
+   "GSL1964old",
+   "Holmes&Lawson1927"
+  ],
+  [
+   "GSL1964old",
+   "Schuchert1931"
+  ],
+  [
+   "GSL1964old",
+   "Holmes1933"
+  ],
+  [
+   "GSL1964old",
+   "Bullard1945"
+  ],
+  [
+   "GSL1964old",
+   "Holmes1947"
+  ],
+  [
+   "GSL1964old",
+   "Holmes1959"
+  ],
+  [
+   "GSL1964old",
+   "Kulp1961"
+  ],
+  [
+   "GSL1964old",
+   "Holmes1937"
+  ],
+  [
+   "GSL1971",
+   "Holmes1937"
+  ],
+  [
+   "GSL1971",
+   "Holmes1939"
+  ],
+  [
+   "GSL1971",
+   "Kulp1960"
+  ],
+  [
+   "GSL1971",
+   "Afanassyef1964"
+  ],
+  [
+   "GSL1971",
+   "Holmes'Symposium1964"
+  ],
+  [
+   "GSL1971",
+   "Holmes1959"
+  ],
+  [
+   "GSL1971",
+   "Afanas'yev1964"
+  ],
+  [
+   "GSL1971",
+   "Geological Society1964"
+  ],
+  [
+   "GTS",
+   "GTS2020"
+  ],
+  [
+   "GTS",
+   "GTS2016"
+  ],
+  [
+   "GTS",
+   "GTS2012"
+  ],
+  [
+   "GTS",
+   "GTS2008"
+  ],
+  [
+   "GTS",
+   "GTS2004"
+  ],
+  [
+   "GTS",
+   "GTS1982"
+  ],
+  [
+   "GTS",
+   "GTS1989"
+  ],
+  [
+   "GTS1982",
+   "Holmes1937"
+  ],
+  [
+   "GTS1982",
+   "Holmes1947B"
+  ],
+  [
+   "GTS1982",
+   "Holmes1959"
+  ],
+  [
+   "GTS1982",
+   "Kulp1961"
+  ],
+  [
+   "GTS1982",
+   "GSL1964"
+  ],
+  [
+   "GTS1982",
+   "GSL1971"
+  ],
+  [
+   "GTS1982",
+   "Van Eysinga1975"
+  ],
+  [
+   "GTS1982",
+   "Armstrong1978"
+  ],
+  [
+   "GTS1982",
+   "BP1980"
+  ],
+  [
+   "GTS1982",
+   "Harland1981"
+  ],
+  [
+   "GTS1989",
+   "Holmes1937"
+  ],
+  [
+   "GTS1989",
+   "Holmes1947"
+  ],
+  [
+   "GTS1989",
+   "Holmes1960"
+  ],
+  [
+   "GTS1989",
+   "Kulp1961"
+  ],
+  [
+   "GTS1989",
+   "PTS1964"
+  ],
+  [
+   "GTS1989",
+   "Berggren1969"
+  ],
+  [
+   "GTS1989",
+   "PTS1971"
+  ],
+  [
+   "GTS1989",
+   "VanEysinga1975"
+  ],
+  [
+   "GTS1989",
+   "Armstrong1978"
+  ],
+  [
+   "GTS1989",
+   "USGS1980"
+  ],
+  [
+   "GTS1989",
+   "GSL1982"
+  ],
+  [
+   "GTS1989",
+   "NDS1982"
+  ],
+  [
+   "GTS1989",
+   "GTS1982"
+  ],
+  [
+   "GTS1989",
+   "DNAG1983"
+  ],
+  [
+   "GTS1989",
+   "CGR(GSL)1986"
+  ],
+  [
+   "Holmes1947",
+   "Reade1879"
+  ],
+  [
+   "Holmes1947",
+   "Walcott1893"
+  ],
+  [
+   "Holmes1947",
+   "Goodchild1897"
+  ],
+  [
+   "Holmes1947",
+   "Sollas1900"
+  ],
+  [
+   "Holmes1947",
+   "Barrell1917"
+  ],
+  [
+   "Holmes1947",
+   "Reeds1931"
+  ],
+  [
+   "Holmes1947",
+   "Holmes1933"
+  ],
+  [
+   "Holmes1947",
+   "Moore1933"
+  ],
+  [
+   "Holmes1947",
+   "Bullard1944"
+  ],
+  [
+   "Holmes1959",
+   "Evernden1959"
+  ],
+  [
+   "Holmes1959",
+   "Kulp1959"
+  ],
+  [
+   "ICS",
+   "ICS2004"
+  ],
+  [
+   "ICS",
+   "ICS2005"
+  ],
+  [
+   "ICS",
+   "ICS2006"
+  ],
+  [
+   "ICS",
+   "ICS2007"
+  ],
+  [
+   "ICS",
+   "ICS2008"
+  ],
+  [
+   "ICS",
+   "ICS2009"
+  ],
+  [
+   "ICS",
+   "ICS2010"
+  ],
+  [
+   "ICS",
+   "ICS2012"
+  ],
+  [
+   "ICS",
+   "ICS201301"
+  ],
+  [
+   "ICS",
+   "ICS201402"
+  ],
+  [
+   "ICS",
+   "ICS201410"
+  ],
+  [
+   "ICS",
+   "ICS201501"
+  ],
+  [
+   "ICS",
+   "ICS201604"
+  ],
+  [
+   "ICS",
+   "ICS201610"
+  ],
+  [
+   "ICS",
+   "ICS201702"
+  ],
+  [
+   "ICS",
+   "ICS201807"
+  ],
+  [
+   "ICS",
+   "ICS201808"
+  ],
+  [
+   "ICS",
+   "ICS201905"
+  ],
+  [
+   "ICS",
+   "ICS202001"
+  ],
+  [
+   "ICS",
+   "ICS202003"
+  ],
+  [
+   "ICS",
+   "ICS202105"
+  ],
+  [
+   "ICS",
+   "ICS202107"
+  ],
+  [
+   "ICS",
+   "ICS202202"
+  ],
+  [
+   "KG1985",
+   "Berggren1985"
+  ],
+  [
+   "KG1985",
+   "Obradovich&Cobban1975"
+  ],
+  [
+   "KG1985",
+   "Harland1982"
+  ],
+  [
+   "KG1985",
+   "Armstrong1978"
+  ],
+  [
+   "KG1985",
+   "Armstrong1982"
+  ],
+  [
+   "KG1985",
+   "VanHinte1976"
+  ],
+  [
+   "KG1985",
+   "Odin1982"
+  ],
+  [
+   "KG1985",
+   "Harland1982"
+  ],
+  [
+   "Kulp1961",
+   "Barrell1917"
+  ],
+  [
+   "Kulp1961",
+   "Holmes1933"
+  ],
+  [
+   "Kulp1961",
+   "Holmes1947"
+  ],
+  [
+   "Kve\u030ct1991",
+   "Kv\u011bt1989"
+  ],
+  [
+   "Snelling1985",
+   "Curry&Odin1982"
+  ],
+  [
+   "Vanhinte1976",
+   "Holmes1959"
+  ],
+  [
+   "Vanhinte1976",
+   "Kulp1960"
+  ],
+  [
+   "Vanhinte1976",
+   "Afanasev1964"
+  ],
+  [
+   "Vanhinte1976",
+   "Kulp1961"
+  ],
+  [
+   "Vanhinte1976",
+   "Casey1964"
+  ],
+  [
+   "Vanhinte1976",
+   "Gill and Cobban1966"
+  ],
+  [
+   "Vanhinte1976",
+   "Pergament1967"
+  ],
+  [
+   "Vanhinte1976",
+   "Helsley&Steiner1969"
+  ],
+  [
+   "Vanhinte1976",
+   "Suppe1969"
+  ],
+  [
+   "Vanhinte1976",
+   "Kauffman1970"
+  ],
+  [
+   "Vanhinte1976",
+   "Evernden&Kistler1970"
+  ],
+  [
+   "Vanhinte1976",
+   "Afanasev1972"
+  ],
+  [
+   "Vanhinte1976",
+   "Dickinson&Rich1972"
+  ],
+  [
+   "Vanhinte1976",
+   "Lambert1971"
+  ],
+  [
+   "Vanhinte1976",
+   "Obra Dovich&Cobban1973"
+  ]
+ ],
+ "total_nodes": 125,
+ "total_edges": 142
+}

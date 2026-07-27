@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Explore the etymology of geological period names and an interactive timeline of Earth's history in GTSKB.">
+<meta name="keywords" content="Geologic Time Scale, etymology, geological periods, Earth history, chronostratigraphy, deep time">
+<meta name="author" content="Hongwei Wang">
+<meta name="robots" content="index, follow">
+<!-- Open Graph -->
+<meta property="og:title" content="GTSKB — Etymology &amp; Earth Timeline">
+<meta property="og:description" content="Explore etymology of geological period names and an interactive Earth timeline.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hongwei2021.github.io/gtsdb/gts_describe.html">
+<meta property="og:image" content="https://hongwei2021.github.io/gtsdb/assets/favicon-512.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GTSKB — Etymology &amp; Earth Timeline">
+<meta name="twitter:description" content="Explore etymology of geological period names and an interactive Earth timeline.">
+<title>GTSKB — Etymology &amp; Earth Timeline</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+:root {
+  --bg: #0f1419;
+  --bg-card: #1a1f2b;
+  --bg-elevated: #242b38;
+  --border: #2e3a4a;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --text-bright: #f0f6fc;
+  --accent: #63b3ed;
+  --accent2: #ed8936;
+  --green: #48bb78;
+  --red: #fc8181;
+  --purple: #9f7aea;
+  --pink: #f687b3;
+  --yellow: #ecc94b;
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; overflow-x: hidden; }
+
+/* Header */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15,20,25,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border); padding: 12px 24px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.header h1 { font-size: 20px; color: var(--text-bright); }
+.header h1 span { color: var(--accent); }
+.header nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.header nav a {
+  color: var(--text-dim); text-decoration: none; padding: 6px 14px;
+  border-radius: 6px; font-size: 13px; transition: all 0.2s;
+}
+.header nav a:hover, .header nav a.active { color: var(--text-bright); background: var(--bg-elevated); }
+.lang-btn {
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  color: var(--text-dim); padding: 5px 10px; border-radius: 6px;
+  cursor: pointer; font-size: 12px; font-weight: 600;
+  font-family: var(--font); transition: all 0.2s; margin-left: 8px;
+}
+.lang-btn:hover { color: var(--text-bright); border-color: var(--accent); }
+.hamburger {
+  display: flex; flex-direction: column; gap: 5px; cursor: pointer;
+  background: none; border: none; padding: 4px; z-index: 10001; position: relative;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px; background: var(--text-bright);
+  border-radius: 2px; transition: all 0.25s;
+}
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); background: var(--accent); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); background: var(--accent); }
+[data-i18n] { transition: opacity 0.2s; }
+
+/* Section headers */
+.section {
+  padding: 40px 24px; max-width: 1400px; margin: 0 auto;
+}
+.section-header { margin-bottom: 28px; }
+.section-header h2 { font-size: 26px; color: var(--text-bright); margin-bottom: 6px; }
+.section-header p { font-size: 14px; color: var(--text-dim); }
+
+/* ========== Etymology Cards ========== */
+.etymology-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+.etymology-filter {
+  padding: 6px 16px; border-radius: 20px; border: 1px solid var(--border);
+  background: var(--bg-card); color: var(--text-dim); cursor: pointer;
+  font-size: 13px; font-family: var(--font); transition: all 0.2s;
+}
+.etymology-filter:hover { border-color: var(--accent); color: var(--text-bright); }
+.etymology-filter.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.etymology-filter .count { opacity: 0.6; font-size: 11px; margin-left: 4px; }
+
+.etymology-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px;
+}
+.etymology-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  padding: 20px; transition: transform 0.2s, border-color 0.2s; cursor: pointer;
+  position: relative; overflow: hidden;
+}
+.etymology-card:hover { transform: translateY(-2px); border-color: var(--accent); }
+.etymology-card.expanded { grid-column: 1 / -1; }
+.etymology-card .card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.etymology-card .card-name { font-size: 17px; font-weight: 700; color: var(--text-bright); }
+.etymology-card .card-level {
+  font-size: 11px; padding: 2px 10px; border-radius: 10px; font-weight: 600;
+}
+.level-Eon { background: rgba(99,179,237,0.2); color: #63b3ed; }
+.level-Era { background: rgba(237,137,54,0.2); color: #ed8936; }
+.level-Period { background: rgba(72,187,120,0.2); color: #48bb78; }
+.level-Epoch { background: rgba(159,122,234,0.2); color: #9f7aea; }
+.level-Age { background: rgba(246,135,179,0.2); color: #f687b3; }
+
+.etymology-card .card-time { font-size: 12px; color: var(--text-dim); margin-bottom: 8px; }
+.etymology-card .card-duration {
+  height: 6px; background: var(--bg-elevated); border-radius: 3px; margin-bottom: 12px; overflow: hidden;
+}
+.etymology-card .card-duration-bar {
+  height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--purple));
+  transition: width 0.4s;
+}
+.etymology-card .card-etymology {
+  font-size: 13px; color: var(--text-dim); line-height: 1.55;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.etymology-card.expanded .card-etymology { -webkit-line-clamp: unset; }
+.etymology-card .card-greek {
+  color: #ecc94b; font-style: italic;
+}
+.etymology-card .card-expand {
+  font-size: 12px; color: var(--accent); margin-top: 8px; cursor: pointer; display: inline-block;
+}
+.etymology-stats {
+  display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap;
+}
+.etymology-stat {
+  background: var(--bg-elevated); border: 1px solid var(--border);
+  border-radius: 8px; padding: 14px 20px; text-align: center; min-width: 100px;
+}
+.etymology-stat .stat-num { font-size: 24px; font-weight: 700; color: var(--accent); }
+.etymology-stat .stat-label { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+
+/* ========== Timeline Section ========== */
+.timeline-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
+.timeline-search {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 14px; color: var(--text-bright); font-size: 14px; width: 280px;
+  font-family: var(--font);
+}
+.timeline-search::placeholder { color: var(--text-dim); }
+.timeline-zoom { display: flex; gap: 4px; }
+.timeline-zoom button {
+  background: var(--bg-elevated); border: 1px solid var(--border); border-radius: 6px;
+  color: var(--text-dim); padding: 6px 12px; cursor: pointer; font-size: 14px; font-family: var(--font);
+}
+.timeline-zoom button:hover { color: var(--text-bright); border-color: var(--accent); }
+.timeline-info { font-size: 12px; color: var(--text-dim); margin-left: auto; }
+
+/* Timeline detail modal */
+.tl-modal-overlay {
+  display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7); z-index: 1000; justify-content: center; align-items: center;
+}
+.tl-modal-overlay.show { display: flex; }
+.tl-modal {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  padding: 28px 32px; max-width: 560px; width: 90%; max-height: 80vh; overflow-y: auto;
+  position: relative; box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+}
+.tl-modal-close {
+  position: absolute; top: 12px; right: 16px;
+  background: none; border: none; color: var(--text-dim); font-size: 24px;
+  cursor: pointer; line-height: 1; padding: 0;
+}
+.tl-modal-close:hover { color: var(--text-bright); }
+.tl-modal-date {
+  font-size: 28px; font-weight: 800; color: var(--accent); margin-bottom: 8px;
+}
+.tl-modal-age {
+  font-size: 14px; color: var(--text-dim); margin-bottom: 20px;
+}
+.tl-modal-body {
+  font-size: 15px; color: var(--text); line-height: 1.75;
+}
+.tl-modal-body a { color: var(--accent); }
+
+.timeline-svg-wrap {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+  overflow: hidden; position: relative;
+}
+.timeline-svg { width: 100%; }
+.timeline-node { cursor: pointer; }
+.timeline-node:hover { filter: brightness(1.3); }
+.timeline-label { font-size: 12px; fill: var(--text-bright); }
+.timeline-era-band { opacity: 0.06; }
+
+/* Scroll timeline */
+.scroll-timeline { position: relative; padding: 0; }
+.timeline-era-label {
+  position: sticky; left: 0; padding: 8px 16px; font-size: 14px; font-weight: 700;
+  color: var(--text-bright); border-radius: 0 8px 8px 0; display: inline-block;
+  z-index: 5;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .header { padding: 10px 16px; }
+  .header h1 { font-size: 17px; }
+  .section { padding: 24px 12px; }
+  .etymology-grid { grid-template-columns: 1fr; }
+  .mobile-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(15,20,25,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    z-index: 10000; overflow-y: auto; }
+  .mobile-links { padding: 72px 0 24px; margin: 0; }
+  .mobile-links a:hover { background: rgba(99,179,237,0.12) !important; color: var(--accent) !important; }
+  .hamburger { display: flex !important; }
+  .header nav { display: none !important; }
+}
+
+/* Footer */
+footer { text-align: center; padding: 28px 16px; border-top: 1px solid var(--border); margin-top: 40px; }
+footer p { margin: 0 0 6px; font-size: 12px; color: var(--text-dim); }
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+</style>
+<script>
+window.toggleMenu = function() {
+  var btn = document.getElementById('hamburger');
+  if (!btn) return;
+  var isOpen = btn.classList.contains('open');
+  if (isOpen) {
+    btn.classList.remove('open');
+    var overlay = document.getElementById('mobileOverlay');
+    if (overlay) overlay.remove();
+    document.body.style.overflow = '';
+  } else {
+    btn.classList.add('open');
+    var overlay = document.createElement('div');
+    overlay.id = 'mobileOverlay';
+    overlay.className = 'mobile-overlay';
+    var pages = [
+      ['index.html', '\u{1F3E0} Home'],
+      ['gts_describe.html', '\u{1F4D6} Describe'],
+      ['query.html', '\u{1F50D} Query'],
+      ['regional.html', '\u{1F5FA}\uFE0F Regional'],
+      ['references.html', '\u{1F4DA} References']
+    ];
+    var current = window.location.pathname.split('/').pop() || 'index.html';
+    var html = pages.map(function(p) {
+      var active = p[0] === current ? ' style="color:var(--accent)"' : '';
+      return '<a href="' + p[0] + '"' + active + ' style="display:block;padding:16px 32px;font-size:18px;font-weight:600;color:var(--text-bright);border-bottom:1px solid rgba(255,255,255,0.06);text-decoration:none">' + p[1] + '</a>';
+    }).join('');
+    overlay.innerHTML = '<div class="mobile-links" style="display:flex;flex-direction:column;padding-top:72px">' + html + '</div>';
+    overlay.onclick = function(e) {
+      if (e.target === overlay) toggleMenu();
+    };
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+  }
+};
+</script>
+</head>
+<body>
+
+<header class="header">
+  <h1 data-i18n="header.title">🌍 <span>GTS</span> Describe</h1>
+  <nav>
+    <a href="index.html" data-i18n="nav.home">🌍 GTSKB</a>
+    <a href="query.html" data-i18n="nav.query">🔍 Query</a>
+    <a href="regional.html" data-i18n="nav.regional">🗺️ Regional</a>
+    <a href="references.html" data-i18n="nav.refs">📚 References</a>
+    <a href="#etymology" class="active" data-i18n="nav.etymology">📖 Etymology</a>
+    <a href="#timeline" data-i18n="nav.timeline">⏳ Earth Timeline</a>
+  </nav>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <button class="lang-btn" id="lang-btn" onclick="toggleLang()" title="切换中文">中</button>
+</header>
+
+<!-- ==================== SECTION 1: Etymology ==================== -->
+<section id="etymology" class="section">
+  <div class="section-header">
+    <h2 data-i18n="etymology.title">📖 Etymology Explorer</h2>
+    <p data-i18n="etymology.sub">ICS International Chronostratigraphic Nomenclature — each geologic name has a story rooted in Greek, Latin, or regional toponyms</p>
+  </div>
+  <div class="etymology-stats" id="etymology-stats"></div>
+  <div class="etymology-filters" id="etymology-filters"></div>
+  <div class="etymology-grid" id="etymology-grid"></div>
+</section>
+
+<!-- ==================== SECTION 2: Earth History Timeline ==================== -->
+<section id="timeline" class="section scroll-timeline">
+  <div class="section-header">
+    <h2 data-i18n="timeline.title">⏳ Earth History Timeline</h2>
+    <p data-i18n="timeline.sub">135 key events from Earth's formation (4540 Ma) to the Holocene (8 ka) — click nodes for details, drag or scroll to zoom</p>
+  </div>
+  <div class="timeline-controls">
+    <input type="text" class="timeline-search" id="timeline-search" data-i18n-placeholder="timeline.search" placeholder="🔍 Search events... (e.g. 'extinction', 'Moon', 'dinosaur')" oninput="filterTimeline()">
+    <div class="timeline-zoom">
+      <button onclick="zoomTimeline(1.3)" data-i18n-title="timeline.zoom.in" title="Zoom In">🔍+</button>
+      <button onclick="zoomTimeline(0.7)" data-i18n-title="timeline.zoom.out" title="Zoom Out">🔍−</button>
+      <button onclick="resetTimelineZoom()" data-i18n-title="timeline.zoom.reset" title="Reset">↺</button>
+    </div>
+    <span class="timeline-info" id="timeline-info"></span>
+  </div>
+  <div class="timeline-svg-wrap" id="timeline-svg-wrap">
+    <svg class="timeline-svg" id="timeline-svg"></svg>
+  </div>
+</section>
+
+<script>
+// ===== DATA =====
+var GTS_DESCRIBE = {"etymology": [{"name": "Phanerozoic", "time_span": "538.8 to 0 million years ago", "duration_myr": "538.8", "etymology": "From the Greek words φανερός (phanerós) meaning 'visible' or 'abundant', and ζωή (zoē) meaning 'life'.", "level": "Eon"}, {"name": "Proterozoic", "time_span": "2,500 to 538.8 million years ago", "duration_myr": "1961.2", "etymology": "From the Greek words πρότερος (próteros) meaning 'former' or 'earlier', and ζωή (zoē) meaning 'life'.", "level": "Eon"}, {"name": "Archean", "time_span": "4,031 to 2,500 million years ago", "duration_myr": "1531", "etymology": "From the Greek word αρχή (archē), meaning 'beginning, origin'.", "level": "Eon"}, {"name": "Hadean", "time_span": "4,567.3 to 4,031 million years ago", "duration_myr": "536.3", "etymology": "From Hades, Greek: ᾍδης, translit. Háidēs, the god of the underworld (hell, the inferno) in Greek mythology.", "level": "Eon"}, {"name": "Name", "time_span": "Time span", "duration_myr": "Duration (million years)", "etymology": "Etymology of name", "level": "Age"}, {"name": "Cenozoic", "time_span": "66 to 0 million years ago", "duration_myr": "66", "etymology": "From the Greek words καινός (kainós) meaning 'new', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Mesozoic", "time_span": "251.9 to 66 million years ago", "duration_myr": "185.902", "etymology": "From the Greek words μέσο (méso) meaning 'middle', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Paleozoic", "time_span": "538.8 to 251.9 million years ago", "duration_myr": "286.898", "etymology": "From the Greek words παλιός (palaiós) meaning 'old', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Neoproterozoic", "time_span": "1,000 to 538.8 million years ago", "duration_myr": "461.2", "etymology": "From the Greek words νέος (néos) meaning 'new' or 'young', πρότερος (próteros) meaning 'former' or 'earlier', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Mesoproterozoic", "time_span": "1,600 to 1,000 million years ago", "duration_myr": "600", "etymology": "From the Greek words μέσο (méso) meaning 'middle', πρότερος (próteros) meaning 'former' or 'earlier', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Paleoproterozoic", "time_span": "2,500 to 1,600 million years ago", "duration_myr": "900", "etymology": "From the Greek words παλιός (palaiós) meaning 'old', πρότερος (próteros) meaning 'former' or 'earlier', and ζωή (zōḗ) meaning 'life'.", "level": "Era"}, {"name": "Neoarchean", "time_span": "2,800 to 2,500 million years ago", "duration_myr": "300", "etymology": "From the Greek words νέος (néos) meaning 'new' or 'young', and ἀρχαῖος (arkhaîos) meaning 'ancient'.", "level": "Era"}, {"name": "Mesoarchean", "time_span": "3,200 to 2,800 million years ago", "duration_myr": "400", "etymology": "From the Greek words μέσο (méso) meaning 'middle', and ἀρχαῖος (arkhaîos) meaning 'ancient'.", "level": "Era"}, {"name": "Paleoarchean", "time_span": "3,600 to 3,200 million years ago", "duration_myr": "400", "etymology": "From the Greek words παλιός (palaiós) meaning 'old', and ἀρχαῖος (arkhaîos) meaning 'ancient'.", "level": "Era"}, {"name": "Eoarchean", "time_span": "4,031 to 3,600 million years ago", "duration_myr": "431", "etymology": "From the Greek words Ηώς (Ēṓs) meaning 'dawn', and ἀρχαῖος (arkhaîos) meaning 'ancient'.", "level": "Era"}, {"name": "Name", "time_span": "Time span", "duration_myr": "Duration (million years)", "etymology": "Etymology of name", "level": "Age"}, {"name": "Quaternary[note 4]", "time_span": "2.6 to 0 million years ago", "duration_myr": "2.58", "etymology": "First introduced by Jules Desnoyers in 1829 for sediments in France's Seine Basin that appeared to be younger than Tertiary[note 5] rocks.[14]", "level": "Age"}, {"name": "Neogene", "time_span": "23 to 2.6 million years ago", "duration_myr": "20.45", "etymology": "Derived from the Greek words νέος (néos) meaning 'new', and γενεά (geneá) meaning 'genesis' or 'birth'.", "level": "Period"}, {"name": "Paleogene", "time_span": "66 to 23 million years ago", "duration_myr": "42.97", "etymology": "Derived from the Greek words παλιός (palaiós) meaning 'old', and γενεά (geneá) meaning 'genesis' or 'birth'.", "level": "Period"}, {"name": "Cretaceous", "time_span": "~145 to 66 million years ago", "duration_myr": "~79", "etymology": "Derived from Terrain Crétacé used in 1822 by Jean d'Omalius d'Halloy in reference to extensive beds of chalk within the Paris Basin.[15] Ultimately derived from the Latin crēta meaning chalk.", "level": "Period"}, {"name": "Jurassic", "time_span": "201.4 to 145 million years ago", "duration_myr": "~56.4", "etymology": "Named after the Jura Mountains. Originally used by Alexander von Humboldt as 'Jura Kalkstein' (Jura limestone) in 1799.[16] Alexandre Brongniart was the first to publish the term Jurassic in 1829.[17][18]", "level": "Period"}, {"name": "Triassic", "time_span": "251.9 to 201.4 million years ago", "duration_myr": "50.502", "etymology": "From the Trias of Friedrich August von Alberti in reference to a trio of formations widespread in southern Germany", "level": "Period"}, {"name": "Permian", "time_span": "298.9 to 251.9 million years ago", "duration_myr": "46.998", "etymology": "Named after the historical region of Perm, Russian Empire.[19]", "level": "Period"}, {"name": "Carboniferous", "time_span": "358.9 to 298.9 million years ago", "duration_myr": "60", "etymology": "Means 'coal-bearing', from the Latin carbō (coal) and ferō (to bear, carry).[20]", "level": "Period"}, {"name": "Devonian", "time_span": "419.2 to 358.9 million years ago", "duration_myr": "60.3", "etymology": "Named after Devon, England.[21]", "level": "Period"}, {"name": "Silurian", "time_span": "443.8 to 419.2 million years ago", "duration_myr": "24.6", "etymology": "Named after the Celtic tribe, the Silures.[22]", "level": "Period"}, {"name": "Ordovician", "time_span": "485.4 to 443.8 million years ago", "duration_myr": "41.6", "etymology": "Named after the Celtic tribe, Ordovices.[23][24]", "level": "Period"}, {"name": "Cambrian", "time_span": "538.8 to 485.4 million years ago", "duration_myr": "53.4", "etymology": "Named for Cambria, a latinised form of the Welsh name for Wales, Cymru.[25]", "level": "Period"}, {"name": "Ediacaran", "time_span": "635 to 538.8 million years ago", "duration_myr": "~96.2", "etymology": "Named for the Ediacara Hills. Ediacara is possibly a corruption of the Kuyani words 'Yata Takarra' meaning hard or stony ground.[26][27]", "level": "Period"}, {"name": "Cryogenian", "time_span": "720 to 635 million years ago", "duration_myr": "~85", "etymology": "From the Greek words κρύος (krýos) meaning 'cold', and, γένεσις (génesis) meaning 'birth'.[3]", "level": "Period"}, {"name": "Tonian", "time_span": "1,000 to 720 million years ago", "duration_myr": "~280", "etymology": "From the Greek word τόνος (tónos) meaning 'stretch'.[3]", "level": "Period"}, {"name": "Stenian", "time_span": "1,200 to 1,000 million years ago", "duration_myr": "200", "etymology": "From the Greek word στενός (stenós) meaning 'narrow'.[3]", "level": "Period"}, {"name": "Ectasian", "time_span": "1,400 to 1,200 million years ago", "duration_myr": "200", "etymology": "From the Greek word ἔκτᾰσῐς (éktasis) meaning 'extension'.[3]", "level": "Period"}, {"name": "Calymmian", "time_span": "1,600 to 1,400 million years ago", "duration_myr": "200", "etymology": "From the Greek word κάλυμμᾰ (kálumma) meaning 'cover'.[3]", "level": "Period"}, {"name": "Statherian", "time_span": "1,800 to 1,600 million years ago", "duration_myr": "200", "etymology": "From the Greek word σταθερός (statherós) meaning 'stable'.[3]", "level": "Period"}, {"name": "Orosirian", "time_span": "2,050 to 1,800 million years ago", "duration_myr": "250", "etymology": "From the Greek word ὀροσειρά (oroseirá) meaning 'mountain range'.[3]", "level": "Period"}, {"name": "Rhyacian", "time_span": "2,300 to 2,050 million years ago", "duration_myr": "250", "etymology": "From the Greek word ῥύαξ (rhýax) meaning 'stream of lava'.[3]", "level": "Period"}, {"name": "Siderian", "time_span": "2,500 to 2,300 million years ago", "duration_myr": "200", "etymology": "From the Greek word σίδηρος (sídēros) meaning 'iron'.[3]", "level": "Period"}, {"name": "Name", "time_span": "Time span", "duration_myr": "Duration (million years)", "etymology": "Etymology of name", "level": "Age"}, {"name": "Holocene", "time_span": "0.012 to 0 million years ago", "duration_myr": "0.0117", "etymology": "From the Greek words ὅλος (hólos) meaning 'whole', and καινός (kainós) meaning 'new' via French", "level": "Epoch"}, {"name": "Pleistocene", "time_span": "2.58 to 0.012 million years ago", "duration_myr": "2.5683", "etymology": "Coined in the early 1830s from the Greek words πλεῖστος (pleîstos) meaning 'most', and καινός (kainós) meaning 'new'", "level": "Epoch"}, {"name": "Pliocene", "time_span": "5.33 to 2.58 million years ago", "duration_myr": "2.753", "etymology": "Coined in the early 1830s from the Greek words πλείων (pleíōn) meaning 'more', and καινός (kainós) meaning 'new'", "level": "Epoch"}, {"name": "Miocene", "time_span": "23.03 to 5.33 million years ago", "duration_myr": "17.697", "etymology": "Coined in the early 1830s from the Greek words μείων (meíōn) meaning 'less', and καινός (kainós) meaning 'new'", "level": "Epoch"}, {"name": "Oligocene", "time_span": "33.9 to 23.03 million years ago", "duration_myr": "10.87", "etymology": "Coined in the 1850s from the Greek words ὀλίγος (olígos) meaning 'few', and καινός (kainós) meaning 'new' via German", "level": "Epoch"}, {"name": "Eocene", "time_span": "56 to 33.9 million years ago", "duration_myr": "22.1", "etymology": "Coined in the early 1830s from the Greek words ἠώς (ēōs) meaning 'dawn', and καινός (kainós) meaning 'new', referring to the dawn of modern life during this epoch", "level": "Epoch"}, {"name": "Paleocene", "time_span": "66 to 56 million years ago", "duration_myr": "10", "etymology": "Coined by Wilhelm Philippe Schimper in 1874 as a portmanteau of paleo- + Eocene, but on the surface from the Greek words παλαιός (palaios) meaning 'old', and καινός (kainós) meaning 'new' via French", "level": "Epoch"}, {"name": "Upper Cretaceous", "time_span": "100.5 to 66 million years ago", "duration_myr": "34.5", "etymology": "See Cretaceous", "level": "Epoch"}, {"name": "Lower Cretaceous", "time_span": "145 to 100.5 million years ago", "duration_myr": "44.5", "etymology": "See Cretaceous", "level": "Epoch"}, {"name": "Upper Jurassic", "time_span": "161.5 to 145 million years ago", "duration_myr": "16.5", "etymology": "See Jurassic", "level": "Epoch"}, {"name": "Middle Jurassic", "time_span": "174.7 to 161.5 million years ago", "duration_myr": "13.2", "etymology": "See Jurassic", "level": "Epoch"}, {"name": "Lower Jurassic", "time_span": "201.4 to 174.7 million years ago", "duration_myr": "26.7", "etymology": "See Jurassic", "level": "Epoch"}, {"name": "Upper Triassic", "time_span": "237 to 201.4 million years ago", "duration_myr": "35.6", "etymology": "See Triassic", "level": "Epoch"}, {"name": "Middle Triassic", "time_span": "247.2 to 237 million years ago", "duration_myr": "10.2", "etymology": "See Triassic", "level": "Epoch"}, {"name": "Lower Triassic", "time_span": "251.9 to 247.2 million years ago", "duration_myr": "4.702", "etymology": "See Triassic", "level": "Epoch"}, {"name": "Lopingian", "time_span": "259.51 to 251.9 million years ago", "duration_myr": "7.608", "etymology": "Named for Loping, China, an anglicization of the Mandarin word 乐平 (lèpíng) meaning 'peaceful music'", "level": "Epoch"}, {"name": "Guadalupian", "time_span": "273.01 to 259.51 million years ago", "duration_myr": "13.5", "etymology": "Named for the Guadalupe Mountains of the American Southwest, ultimately from Arabic وَادِي ٱل (wādī al) meaning 'valley of the', and Latin lupus meaning 'wolf' via Spanish", "level": "Epoch"}, {"name": "Cisuralian", "time_span": "298.9 to 273.01 million years ago", "duration_myr": "25.89", "etymology": "From Latin cis- (before) + Russian Урал (Ural), referring to the western slopes of the Ural Mountains", "level": "Epoch"}, {"name": "Upper Pennsylvanian", "time_span": "307 to 298.9 million years ago", "duration_myr": "8.1", "etymology": "Named for the US state of Pennsylvania, from William Penn + Latin silvanus (forest) + -ia by analogy to Transylvania", "level": "Age"}, {"name": "Middle Pennsylvanian", "time_span": "315.2 to 307 million years ago", "duration_myr": "8.2", "etymology": "Named for the US state of Pennsylvania, from William Penn + Latin silvanus (forest) + -ia by analogy to Transylvania", "level": "Age"}, {"name": "Lower Pennsylvanian", "time_span": "323.2 to 315.2 million years ago", "duration_myr": "8", "etymology": "Named for the US state of Pennsylvania, from William Penn + Latin silvanus (forest) + -ia by analogy to Transylvania", "level": "Age"}, {"name": "Upper Mississippian", "time_span": "330.9 to 323.2 million years ago", "duration_myr": "7.7", "etymology": "Named for the Mississippi River, from the Ojibwe word ᒥᐦᓯᓰᐱ (misi-ziibi) meaning 'great river'", "level": "Age"}, {"name": "Middle Mississippian", "time_span": "346.7 to 330.9 million years ago", "duration_myr": "15.8", "etymology": "Named for the Mississippi River, from the Ojibwe word ᒥᐦᓯᓰᐱ (misi-ziibi) meaning 'great river'", "level": "Age"}, {"name": "Lower Mississippian", "time_span": "358.9 to 346.7 million years ago", "duration_myr": "12.2", "etymology": "Named for the Mississippi River, from the Ojibwe word ᒥᐦᓯᓰᐱ (misi-ziibi) meaning 'great river'", "level": "Age"}, {"name": "Upper Devonian", "time_span": "382.7 to 358.9 million years ago", "duration_myr": "23.8", "etymology": "See Devonian", "level": "Epoch"}, {"name": "Middle Devonian", "time_span": "393.3 to 382.7 million years ago", "duration_myr": "10.6", "etymology": "See Devonian", "level": "Epoch"}, {"name": "Lower Devonian", "time_span": "419.2 to 393.3 million years ago", "duration_myr": "25.9", "etymology": "See Devonian", "level": "Epoch"}, {"name": "Pridoli", "time_span": "423 to 419.2 million years ago", "duration_myr": "3.8", "etymology": "Named for the Homolka a Přídolí nature reserve near Prague, Czechia", "level": "Epoch"}, {"name": "Ludlow", "time_span": "427.4 to 423 million years ago", "duration_myr": "4.4", "etymology": "Named after Ludlow, England", "level": "Epoch"}, {"name": "Wenlock", "time_span": "433.4 to 427.4 million years ago", "duration_myr": "6", "etymology": "Named for the Wenlock Edge in Shropshire, England", "level": "Epoch"}, {"name": "Llandovery", "time_span": "443.8 to 433.4 million years ago", "duration_myr": "10.4", "etymology": "Named after Llandovery, Wales", "level": "Epoch"}, {"name": "Upper Ordovician", "time_span": "458.4 to 443.8 million years ago", "duration_myr": "14.6", "etymology": "See Ordovician", "level": "Epoch"}, {"name": "Middle Ordovician", "time_span": "470 to 458.4 million years ago", "duration_myr": "11.6", "etymology": "See Ordovician", "level": "Epoch"}, {"name": "Lower Ordovician", "time_span": "485.4 to 470 million years ago", "duration_myr": "15.4", "etymology": "See Ordovician", "level": "Epoch"}, {"name": "Furongian", "time_span": "497 to 485.4 million years ago", "duration_myr": "11.6", "etymology": "From the Mandarin word 芙蓉 (fúróng) meaning 'lotus', referring to the state symbol of Hunan", "level": "Epoch"}, {"name": "Miaolingian", "time_span": "509 to 497 million years ago", "duration_myr": "12", "etymology": "Named for the Miao Ling [zh] mountains of Guizhou, Mandarin for 'sprouting peaks'", "level": "Epoch"}, {"name": "Cambrian Series 2 (informal)", "time_span": "521 to 509 million years ago", "duration_myr": "12", "etymology": "See Cambrian", "level": "Age"}, {"name": "Terreneuvian", "time_span": "538.8 to 521 million years ago", "duration_myr": "17.8", "etymology": "Named for Terre-Neuve, a French calque of Newfoundland", "level": "Epoch"}], "timescale_events": [{"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Holocene", "age": "Meghalayan", "start_ma": 0.0042, "major_events": "4.2-kiloyear event, Austronesian expansion, increasing industrial CO2."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Holocene", "age": "Northgrippian", "start_ma": 0.0082, "major_events": "8.2-kiloyear event, Holocene climatic optimum. Sea level flooding of Doggerland and Sundaland. Sahara becomes a desert. End of Stone Age and start of recorded history. Humans finally expand into the Arctic Archipelago and Greenland."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Holocene", "age": "Greenlandian", "start_ma": 0.0117, "major_events": "Climate stabilises. Current interglacial and Holocene extinction begins. Agriculture begins. Humans spread across the wet Sahara and Arabia, the Extreme North, and the Americas (mainland and the Caribbean)."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Pleistocene", "age": "Upper/Late ('Tarantian')", "start_ma": 0.129, "major_events": "Eemian interglacial, last glacial period, ending with Younger Dryas. Toba eruption. Pleistocene megafauna (including the last terror birds) extinction. Humans expand into Near Oceania and the Americas."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Pleistocene", "age": "Chibanian", "start_ma": 0.774, "major_events": "Mid-Pleistocene Transition occurs, high amplitude 100 ka glacial cycles. Rise of Homo sapiens."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Pleistocene", "age": "Calabrian", "start_ma": 1.8, "major_events": "Further cooling of the climate. Giant terror birds go extinct. Spread of Homo erectus across Afro-Eurasia."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Quaternary", "epoch": "Pleistocene", "age": "Gelasian", "start_ma": 2.58, "major_events": "Start of Quaternary glaciations and unstable climate.[78] Rise of the Pleistocene megafauna and Homo habilis."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Pliocene", "age": "Piacenzian", "start_ma": 3.6, "major_events": "Greenland ice sheet develops[79] as the cold slowly intensifies towards the Pleistocene. Atmospheric O2 and CO2 content reaches present-day levels while landmasses also reach their current locations (e.g. the Isthmus of Panama joins the North and South Americas, while allowing a faunal interchange). The last non-marsupial metatherians go extinct. Australopithecus common in East Africa; Stone Age begins.[80]"}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Pliocene", "age": "Zanclean", "start_ma": 5.333, "major_events": "Zanclean flooding of the Mediterranean Basin. Cooling climate continues from the Miocene. First equines and elephantines. Ardipithecus in Africa.[80]"}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Messinian", "start_ma": 7.246, "major_events": "Messinian Event with hypersaline lakes in empty Mediterranean Basin. Sahara desert formation begins. Moderate icehouse climate, punctuated by ice ages and re-establishment of East Antarctic Ice Sheet. Choristoderes, the last non-crocodilian crocodylomorphs and creodonts go extinct. After separating from gorilla ancestors, chimpanzee and human ancestors gradually separate; Sahelanthropus and Orrorin in Africa."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Tortonian", "start_ma": 11.63, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Serravallian", "start_ma": 13.82, "major_events": "Middle Miocene climate optimum temporarily provides a warm climate.[81] Extinctions in middle Miocene disruption, decreasing shark diversity. First hippos. Ancestor of great apes."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Langhian", "start_ma": 15.98, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Burdigalian", "start_ma": 20.44, "major_events": "Orogeny in Northern Hemisphere. Start of Kaikoura Orogeny forming Southern Alps in New Zealand. Widespread forests slowly draw in massive amounts of CO2, gradually lowering the level of atmospheric CO2 from 650 ppmv down to around 100 ppmv during the Miocene.[82][note 9] Modern bird and mammal families become recognizable. The last of the primitive whales go extinct. Grasses become ubiquitous. Ancestor of apes, including humans.[83][84] Afro-Arabia collides with Eurasia, fully forming the Alpide Belt and closing the Tethys Ocean, while allowing a faunal interchange. At the same time, Afro-Arabia splits into Africa and West Asia."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Neogene", "epoch": "Miocene", "age": "Aquitanian", "start_ma": 23.03, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Oligocene", "age": "Chattian", "start_ma": 27.82, "major_events": "Grande Coupure extinction. Start of widespread Antarctic glaciation.[85] Rapid evolution and diversification of fauna, especially mammals (e.g. first macropods and seals). Major evolution and dispersal of modern types of flowering plants. Cimolestans, miacoids and condylarths go extinct. First neocetes (modern, fully aquatic whales) appear."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Oligocene", "age": "Rupelian", "start_ma": 33.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Eocene", "age": "Priabonian", "start_ma": 37.71, "major_events": "Moderate, cooling climate. Archaic mammals (e.g. creodonts, miacoids, \"condylarths\" etc.) flourish and continue to develop during the epoch. Appearance of several \"modern\" mammal families. Primitive whales and sea cows diversify after returning to water. Birds continue to diversify. First kelp, diprotodonts, bears and simians. The multituberculates and leptictidans go extinct by the end of the epoch. Reglaciation of Antarctica and formation of its ice cap; End of Laramide and Sevier Orogenies of the Rocky Mountains in North America. Hellenic Orogeny begins in Greece and Aegean Sea."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Eocene", "age": "Bartonian", "start_ma": 41.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Eocene", "age": "Lutetian", "start_ma": 47.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Eocene", "age": "Ypresian", "start_ma": 56.0, "major_events": "Two transient events of global warming (PETM and ETM-2) and warming climate until the Eocene Climatic Optimum. The Azolla event decreased CO2 levels from 3500 ppm to 650 ppm, setting the stage for a long period of cooling.[82][note 9] Greater India collides with Eurasia and starts Himalayan Orogeny (allowing a biotic interchange) while Eurasia completely separates from North America, creating the North Atlantic Ocean. Maritime Southeast Asia diverges from the rest of Eurasia. First passerines, ruminants, pangolins, bats and true primates."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Paleocene", "age": "Thanetian", "start_ma": 59.2, "major_events": "Starts with Chicxulub impact and the K–Pg extinction event, wiping out all non-avian dinosaurs and pterosaurs, most marine reptiles, many other vertebrates (e.g. many Laurasian metatherians), most cephalopods (only Nautilidae and Coleoidea survived) and many other invertebrates. Climate tropical. Mammals and birds (avians) diversify rapidly into a number of lineages following the extinction event (while the marine revolution stops). Multituberculates and the first rodents widespread. First large birds (e.g. ratites and terror birds) and mammals (up to bear or small hippo size). Alpine orogeny in Europe and Asia begins. First proboscideans and plesiadapiformes (stem primates) appear. Some marsupials migrate to Australia."}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Paleocene", "age": "Selandian", "start_ma": 61.6, "major_events": null}, {"eon": "Phanerozoic", "era": "Cenozoic", "period": "Paleogene", "epoch": "Paleocene", "age": "Danian", "start_ma": 66.0, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Maastrichtian", "start_ma": 72.1, "major_events": "Flowering plants proliferate (after developing many features since the Carboniferous), along with new types of insects, while other seed plants (gymnosperms and seed ferns) decline. More modern teleost fish begin to appear. Ammonoids, belemnites, rudist bivalves, sea urchins and sponges all common. Many new types of dinosaurs (e.g. tyrannosaurs, titanosaurs, hadrosaurs, and ceratopsids) evolve on land, while crocodilians appear in water and probably cause the last temnospondyls to die out; and mosasaurs and modern types of sharks appear in the sea. The revolution started by marine reptiles and sharks reaches its peak, though ichthyosaurs vanish a few million years after being heavily reduced at the Bonarelli Event. Toothed and toothless avian birds coexist with pterosaurs. Modern monotremes, metatherian (including marsupials, who migrate to South America) and eutherian (including placentals, leptictidans and cimolestans) mammals appear while the last non-mammalian cynodonts die out. First terrestrial crabs. Many snails become terrestrial. Further breakup of Gondwana creates South America, Afro-Arabia, Antarctica, Oceania, Madagascar, Greater India, and the South Atlantic, Indian and Antarctic Oceans and the islands of the Indian (and some of the Atlantic) Ocean. Beginning of Laramide and Sevier Orogenies of the Rocky Mountains. Atmospheric oxygen and carbon dioxide levels similar to present day. Acritarchs disappear. Climate initially warm, but later it cools."}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Campanian", "start_ma": 83.6, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Santonian", "start_ma": 86.3, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Coniacian", "start_ma": 89.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Turonian", "start_ma": 93.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Upper/Late", "age": "Cenomanian", "start_ma": 100.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Albian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Aptian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Barremian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Hauterivian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Valanginian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Cretaceous", "epoch": "Lower/Early", "age": "Berriasian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Upper/Late", "age": "Tithonian", "start_ma": 149.2, "major_events": "Climate becomes humid again. Gymnosperms (especially conifers, cycads and cycadeoids) and ferns common. Dinosaurs, including sauropods, carnosaurs, stegosaurs and coelurosaurs, become the dominant land vertebrates. Mammals diversify into shuotheriids, australosphenidans, eutriconodonts, multituberculates, symmetrodonts, dryolestids and boreosphenidans but mostly remain small. First birds, lizards, snakes and turtles. First brown algae, rays, shrimps, crabs and lobsters. Parvipelvian ichthyosaurs and plesiosaurs diverse. Rhynchocephalians throughout the world. Bivalves, ammonoids and belemnites abundant. Sea urchins very common, along with crinoids, starfish, sponges, and terebratulid and rhynchonellid brachiopods. Breakup of Pangaea into Laurasia and Gondwana, with the latter also breaking into two main parts; the Pacific and Arctic Oceans form. Tethys Ocean forms. Nevadan orogeny in North America. Rangitata and Cimmerian orogenies taper off. Atmospheric CO2 levels 3–4 times the present-day levels (1200–1500 ppmv, compared to today's 400 ppmv[82][note 9]). Crocodylomorphs (last pseudosuchians) seek out an aquatic lifestyle. Mesozoic marine revolution continues from late Triassic. Tentaculitans disappear."}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Upper/Late", "age": "Kimmeridgian", "start_ma": 154.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Upper/Late", "age": "Oxfordian", "start_ma": 161.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Middle", "age": "Callovian", "start_ma": 165.3, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Middle", "age": "Bathonian", "start_ma": 168.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Middle", "age": "Bajocian", "start_ma": 170.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Middle", "age": "Aalenian", "start_ma": 174.7, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Lower/Early", "age": "Toarcian", "start_ma": 184.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Lower/Early", "age": "Pliensbachian", "start_ma": 192.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Lower/Early", "age": "Sinemurian", "start_ma": 199.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Jurassic", "epoch": "Lower/Early", "age": "Hettangian", "start_ma": 201.4, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Upper/Late", "age": "Rhaetian", "start_ma": null, "major_events": "Archosaurs dominant on land as pseudosuchians and in the air as pterosaurs. Dinosaurs also arise from bipedal archosaurs. Ichthyosaurs and nothosaurs (a group of sauropterygians) dominate large marine fauna. Cynodonts become smaller and nocturnal, eventually becoming the first true mammals, while other remaining synapsids die out. Rhynchosaurs (archosaur relatives) also common. Seed ferns called Dicroidium remained common in Gondwana, before being replaced by advanced gymnosperms. Many large aquatic temnospondyl amphibians. Ceratitidan ammonoids extremely common. Modern corals and teleost fish appear, as do many modern insect orders and suborders. First starfish. Andean Orogeny in South America. Cimmerian Orogeny in Asia. Rangitata Orogeny begins in New Zealand. Hunter-Bowen Orogeny in Northern Australia, Queensland and New South Wales ends, (c. 260–225 Ma). Carnian pluvial event occurs around 234–232 Ma, allowing the first dinosaurs and lepidosaurs (including rhynchocephalians) to radiate. Triassic–Jurassic extinction event occurs 201 Ma, wiping out all conodonts and the last parareptiles, many marine reptiles (e.g. all sauropterygians except plesiosaurs and all ichthyosaurs except parvipelvians), all crocopodans except crocodylomorphs, pterosaurs, and dinosaurs, and many ammonoids (including the whole Ceratitida), bivalves, brachiopods, corals and sponges. First diatoms.[86]"}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Upper/Late", "age": "Norian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Upper/Late", "age": "Carnian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Middle", "age": "Ladinian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Middle", "age": "Anisian", "start_ma": 247.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Lower/Early", "age": "Olenekian", "start_ma": 251.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Mesozoic", "period": "Triassic", "epoch": "Lower/Early", "age": "Induan", "start_ma": 251.902, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Lopingian", "age": "Changhsingian", "start_ma": 254.14, "major_events": "Landmasses unite into supercontinent Pangaea, creating the Urals, Ouachitas and Appalachians, among other mountain ranges (the superocean Panthalassa or Proto-Pacific also forms). End of Permo-Carboniferous glaciation. Hot and dry climate. A possible drop in oxygen levels. Synapsids (pelycosaurs and therapsids) become widespread and dominant, while parareptiles and temnospondyl amphibians remain common, with the latter probably giving rise to modern amphibians in this period. In the mid-Permian, lycophytes are heavily replaced by ferns and seed plants. Beetles and flies evolve. The very large arthropods and non-tetrapod tetrapodomorphs go extinct. Marine life flourishes in warm shallow reefs; productid and spiriferid brachiopods, bivalves, forams, ammonoids (including goniatites), and orthoceridans all abundant. Crown reptiles arise from earlier diapsids, and split into the ancestors of lepidosaurs, kuehneosaurids, choristoderes, archosaurs, testudinatans, ichthyosaurs, thalattosaurs, and sauropterygians. Cynodonts evolve from larger therapsids. Olson's Extinction (273 Ma), End-Capitanian extinction (260 Ma), and Permian–Triassic extinction event (252 Ma) occur one after another: more than 80% of life on Earth becomes extinct in the lattermost, including most retarian plankton, corals (Tabulata and Rugosa die out fully), brachiopods, bryozoans, gastropods, ammonoids (the goniatites die off fully), insects, parareptiles, synapsids, amphibians, and crinoids (only articulates survived), and all eurypterids, trilobites, graptolites, hyoliths, edrioasteroid crinozoans, blastoids and acanthodians. Ouachita and Innuitian orogenies in North America. Uralian orogeny in Europe/Asia tapers off. Altaid orogeny in Asia. Hunter-Bowen Orogeny on Australian continent begins (c. 260–225 Ma), forming the New England Fold Belt."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Lopingian", "age": "Wuchiapingian", "start_ma": 259.51, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Guadalupian", "age": "Capitanian", "start_ma": 264.28, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Guadalupian", "age": "Wordian", "start_ma": 266.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Guadalupian", "age": "Roadian", "start_ma": 273.01, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Cisuralian", "age": "Kungurian", "start_ma": 283.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Cisuralian", "age": "Artinskian", "start_ma": 290.1, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Cisuralian", "age": "Sakmarian", "start_ma": 293.52, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Permian", "epoch": "Cisuralian", "age": "Asselian", "start_ma": 298.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Carboniferous", "epoch": "Pennsylvanian", "age": "Gzhelian", "start_ma": 303.7, "major_events": "Winged insects radiate suddenly; some (esp. Protodonata and Palaeodictyoptera) of them as well as some millipedes and scorpions become very large. First coal forests (scale trees, ferns, club trees, giant horsetails, Cordaites, etc.). Higher atmospheric oxygen levels. Ice Age continues to the Early Permian. Goniatites, brachiopods, bryozoa, bivalves, and corals plentiful in the seas and oceans. First woodlice. Testate forams proliferate. Euramerica collides with Gondwana and Siberia-Kazakhstania, the latter of which forms Laurasia and the Uralian orogeny. Variscan orogeny continues (these collisions created orogenies, and ultimately Pangaea). Amphibians (e.g. temnospondyls) spread in Euramerica, with some becoming the first amniotes. Carboniferous Rainforest Collapse occurs, initiating a dry climate which favors amniotes over amphibians. Amniotes diversify rapidly into synapsids, parareptiles, cotylosaurs, protorothyridids and diapsids. Rhizodonts remained common before they died out by the end of the period. First sharks."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "[note 11]", "age": "Kasimovian", "start_ma": 307.0, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "[note 11]", "age": "Moscovian", "start_ma": 315.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "[note 11]", "age": "Bashkirian", "start_ma": 323.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "Mississippian", "age": "Serpukhovian", "start_ma": 330.9, "major_events": "Large lycopodian primitive trees flourish and amphibious eurypterids live amid coal-forming coastal swamps, radiating significantly one last time. First gymnosperms. First holometabolous, paraneopteran, polyneopteran, odonatopteran and ephemeropteran insects and first barnacles. First five-digited tetrapods (amphibians) and land snails. In the oceans, bony and cartilaginous fishes are dominant and diverse; echinoderms (especially crinoids and blastoids) abundant. Corals, bryozoans, orthoceridans, goniatites and brachiopods (Productida, Spiriferida, etc.) recover and become very common again, but trilobites and nautiloids decline. Glaciation in East Gondwana continues from Late Devonian. Tuhua Orogeny in New Zealand tapers off. Some lobe finned fish called rhizodonts become abundant and dominant in freshwaters. Siberia collides with a different small continent, Kazakhstania."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "[note 11]", "age": "Viséan", "start_ma": 346.7, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "[note 10]", "epoch": "[note 11]", "age": "Tournaisian", "start_ma": 358.9, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Upper/Late", "age": "Famennian", "start_ma": 372.2, "major_events": "First lycopods, ferns, seed plants (seed ferns, from earlier progymnosperms), first trees (the progymnosperm Archaeopteris), and first winged insects (palaeoptera and neoptera). Strophomenid and atrypid brachiopods, rugose and tabulate corals, and crinoids are all abundant in the oceans. First fully coiled cephalopods (Ammonoidea and Nautilida, independently) with the former group very abundant (especially goniatites). Trilobites and ostracoderms decline, while jawed fishes (placoderms, lobe-finned and ray-finned bony fish, and acanthodians and early cartilaginous fish) proliferate. Some lobe finned fish transform into digited fishapods, slowly becoming amphibious. The last non-trilobite artiopods die off. First decapods (like prawns) and isopods. Pressure from jawed fishes cause eurypterids to decline and some cephalopods to lose their shells while anomalocarids vanish. \"Old Red Continent\" of Euramerica persists after forming in the Caledonian orogeny. Beginning of Acadian Orogeny for Anti-Atlas Mountains of North Africa, and Appalachian Mountains of North America, also the Antler, Variscan, and Tuhua orogenies in New Zealand. A series of extinction events, including the massive Kellwasser and Hangenberg ones, wipe out many acritarchs, corals, sponges, molluscs, trilobites, eurypterids, graptolites, brachiopods, crinozoans (e.g. all cystoids), and fish, including all placoderms and ostracoderms."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Upper/Late", "age": "Frasnian", "start_ma": 382.7, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Middle", "age": "Givetian", "start_ma": 387.7, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Middle", "age": "Eifelian", "start_ma": 393.3, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Lower/Early", "age": "Emsian", "start_ma": 407.6, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Lower/Early", "age": "Pragian", "start_ma": 410.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Devonian", "epoch": "Lower/Early", "age": "Lochkovian", "start_ma": 419.2, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Ludlow", "age": "Ludfordian", "start_ma": 425.6, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Ludlow", "age": "Gorstian", "start_ma": 427.4, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Wenlock", "age": "Homerian", "start_ma": 430.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Wenlock", "age": "Sheinwoodian", "start_ma": 433.4, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Llandovery", "age": "Telychian", "start_ma": 438.5, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Llandovery", "age": "Aeronian", "start_ma": 440.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Silurian", "epoch": "Llandovery", "age": "Rhuddanian", "start_ma": 443.8, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Upper/Late", "age": "Hirnantian", "start_ma": 445.2, "major_events": "The Great Ordovician Biodiversification Event occurs as plankton increase in number: invertebrates diversify into many new types (especially brachiopods and molluscs; e.g. long straight-shelled cephalopods like the long lasting and diverse Orthocerida). Early corals, articulate brachiopods (Orthida, Strophomenida, etc.), bivalves, cephalopods (nautiloids), trilobites, ostracods, bryozoans, many types of echinoderms (blastoids, cystoids, crinoids, sea urchins, sea cucumbers, and star-like forms, etc.), branched graptolites, and other taxa all common. Acritarchs still persist and common. Cephalopods become dominant and common, with some trending toward a coiled shell. Anomalocarids decline. Mysterious tentaculitans appear. First eurypterids and ostracoderm fish appear, the latter probably giving rise to the jawed fish at the end of the period. First uncontroversial terrestrial fungi and fully terrestrialised plants. Ice age at the end of this period, as well as a series of mass extinction events, killing off some cephalopods and many brachiopods, bryozoans, echinoderms, graptolites, trilobites, bivalves, corals and conodonts."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Upper/Late", "age": "Katian", "start_ma": 453.0, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Upper/Late", "age": "Sandbian", "start_ma": 458.4, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Middle", "age": "Darriwilian", "start_ma": 467.3, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Middle", "age": "Dapingian", "start_ma": 470.0, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Lower/Early", "age": "Floian", "start_ma": 477.7, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Lower/Early", "age": "(formerly Arenig)", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Ordovician", "epoch": "Lower/Early", "age": "Tremadocian", "start_ma": 485.4, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Furongian", "age": "Stage 10", "start_ma": null, "major_events": "Major diversification of (fossils mainly show bilaterian) life in the Cambrian Explosion as oxygen levels increase. Numerous fossils; most modern animal phyla (including arthropods, molluscs, annelids, echinoderms, hemichordates and chordates) appear. Reef-building archaeocyathan sponges initially abundant, then vanish. Stromatolites replace them, but quickly fall prey to the Agronomic revolution, when some animals started burrowing through the microbial mats (affecting some other animals as well). First artiopods (including trilobites), priapulid worms, inarticulate brachiopods (unhinged lampshells), hyoliths, bryozoans, graptolites, pentaradial echinoderms (e.g. blastozoans, crinozoans and eleutherozoans), and numerous other animals. Anomalocarids are dominant and giant predators, while many Ediacaran fauna die out. Crustaceans and molluscs diversify rapidly. Prokaryotes, protists (e.g., forams), algae and fungi continue to present day. First vertebrates from earlier chordates. Petermann Orogeny on the Australian continent tapers off (550–535 Ma). Ross Orogeny in Antarctica. Delamerian Orogeny (c. 514–490 Ma) on Australian continent. Some small terranes split off from Gondwana. Atmospheric CO2 content roughly 15 times present-day (Holocene) levels (6000 ppm compared to today's 400 ppm)[82][note 9] Arthropods and streptophyta start colonising land. 3 extinction events occur 517, 502 & 488 Ma, the first and last of which wipe out many of the anomalocarids, artiopods, hyoliths, brachiopods, molluscs, and conodonts (early jawless vertebrates)."}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Furongian", "age": "Jiangshanian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Furongian", "age": "Paibian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Miaolingian", "age": "Guzhangian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Miaolingian", "age": "Drumian", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Miaolingian", "age": "Wuliuan", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Series 2", "age": "Stage 4", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Series 2", "age": "Stage 3", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Terreneuvian", "age": "Stage 2", "start_ma": null, "major_events": null}, {"eon": "Phanerozoic", "era": "Paleozoic", "period": "Cambrian", "epoch": "Terreneuvian", "age": "Fortunian", "start_ma": 538.8, "major_events": null}], "earth_timeline": [{"date_original": "4540 Ma", "event": "Planet Earth forms from the accretion disc revolving around the young Sun, perhaps preceded by formation of organic compounds necessary for life in the surrounding protoplanetary disk of cosmic dust.[13][14]", "ma": 4540.0}, {"date_original": "4510 Ma", "event": "According to the giant-impact hypothesis, the Moon originated when Earth and the hypothesized planet Theia collided, sending into orbit myriad moonlets which eventually coalesced into our single Moon.[15][16] The Moon's gravitational pull stabilised Earth's fluctuating axis of rotation, setting up regular climatic conditions favoring abiogenesis.[17]", "ma": 4510.0}, {"date_original": "4404 Ma", "event": "Evidence of the first liquid water on Earth which were found in the oldest known zircon crystals.[18]", "ma": 4404.0}, {"date_original": "4100 Ma", "event": "Earliest possible preservation of biogenic carbon.[23][24]", "ma": 4100.0}, {"date_original": "4280–3770 Ma", "event": "Earliest possible appearance of life on Earth.[19][20][21][22]", "ma": 4025.0}, {"date_original": "4000 Ma", "event": "Formation of a greenstone belt of the Acasta Gneiss of the Slave craton in northwest Canada - the oldest known rock belt.[28]", "ma": 4000.0}, {"date_original": "4100–3800 Ma", "event": "Late Heavy Bombardment (LHB): extended barrage by meteoroids impacting the inner planets. Thermal flux from widespread hydrothermal activity during the LHB may have aided abiogenesis and life's early diversification.[25] Possible remains of biotic life were found in 4.1 billion-year-old rocks in Western Australia.[26][27] Probable origin of life.", "ma": 3950.0}, {"date_original": "3800 Ma", "event": "Formation of a greenstone belt of the Isua complex in western Greenland, whose isotope frequencies suggest the presence of life.[28] The earliest evidence for life on Earth includes: 3.8 billion-year-old biogenic hematite in a banded iron formation of the Nuvvuagittuq Greenstone Belt in Canada;[30] graphite in 3.7 billion-year-old metasedimentary rocks in western Greenland;[31] and microbial mat fossils in 3.48 billion-year-old sandstone in Western Australia.[32][33]", "ma": 3800.0}, {"date_original": "3800–3500 Ma", "event": "Last universal common ancestor (LUCA):[34][35] split between bacteria and archaea.[36]", "ma": 3650.0}, {"date_original": "3900–2500 Ma", "event": "Cells resembling prokaryotes appear.[29] These first organisms are believed[by whom?] to have been chemoautotrophs, using carbon dioxide as a carbon source and oxidizing inorganic materials to extract energy.", "ma": 3200.0}, {"date_original": "3000 Ma", "event": "Photosynthesizing cyanobacteria using water as a reducing agent and producing oxygen as a waste product.[41] Free oxygen initially oxidizes dissolved iron in the oceans, creating iron ore. Oxygen concentration in the atmosphere slowly rises, poisoning many bacteria and eventually triggering the Great Oxygenation Event.", "ma": 3000.0}, {"date_original": "2800 Ma", "event": "Oldest evidence for microbial life on land in the form of organic matter-rich paleosols, ephemeral ponds and alluvial sequences, some bearing microfossils.[42]", "ma": 2800.0}, {"date_original": "2500 Ma", "event": "Great Oxidation Event led by cyanobacteria's oxygenic photosynthesis.[41] Commencement of plate tectonics with old marine crust dense enough to subduct.[28]", "ma": 2500.0}, {"date_original": "2023 Ma", "event": "Formation of the Vredefort impact structure, one of the largest and oldest verified impact structures on Earth. The crater is estimated to have been between 170–300 kilometres (110–190 mi) across when it first formed.[43]", "ma": 2023.0}, {"date_original": "1500 Ma", "event": "Volyn biota, a collection of exceptionally well-preserved microfossils with varying morphologies.[48]", "ma": 1500.0}, {"date_original": "1300 Ma", "event": "Earliest land fungi.[49]", "ma": 1300.0}, {"date_original": "750 Ma", "event": "Beginning of animal evolution.[54][55]", "ma": 750.0}, {"date_original": "720–630 Ma", "event": "Possible global glaciation[56][57] which increased the atmospheric oxygen and decreased carbon dioxide, and was either caused by land plant evolution[58] or resulted in it.[59] Opinion is divided on whether it increased or decreased biodiversity or the rate of evolution.[60][61][62]", "ma": 675.0}, {"date_original": "600 Ma", "event": "Accumulation of atmospheric oxygen allows the formation of an ozone layer.[63] Previous land-based life would probably have required other chemicals to attenuate ultraviolet radiation.[42]", "ma": 600.0}, {"date_original": "580–542 Ma", "event": "Ediacaran biota, the first large, complex aquatic multicellular organisms.[64]", "ma": 561.0}, {"date_original": "550–540 Ma", "event": "Ctenophora (comb jellies),[67] Porifera (sponges),[68] Anthozoa (corals and sea anemones),[69] Ikaria wariootia (an early Bilaterian).[70]", "ma": 545.0}, {"date_original": "580–500 Ma", "event": "Cambrian explosion: most modern animal phyla appear.[65][66]", "ma": 540.0}, {"date_original": "535 Ma", "event": "Major diversification of living things in the oceans: arthropods (e.g. trilobites, crustaceans), chordates, echinoderms, molluscs, brachiopods, foraminifers and radiolarians, etc.", "ma": 535.0}, {"date_original": "530 Ma", "event": "The first known footprints on land date to 530 Ma.[74]", "ma": 530.0}, {"date_original": "520 Ma", "event": "Earliest graptolites.[75]", "ma": 520.0}, {"date_original": "511 Ma", "event": "Earliest crustaceans.[76]", "ma": 511.0}, {"date_original": "505 Ma", "event": "Fossilization of the Burgess Shale", "ma": 505.0}, {"date_original": "500 Ma", "event": "Jellyfish have existed since at least this time.", "ma": 500.0}, {"date_original": "485 Ma", "event": "First vertebrates with true bones (jawless fishes).", "ma": 485.0}, {"date_original": "450 Ma", "event": "First complete conodonts and echinoids appear.", "ma": 450.0}, {"date_original": "488–400 Ma", "event": "First cephalopods (nautiloids)[78] and chitons.[79]", "ma": 444.0}, {"date_original": "440 Ma", "event": "First agnathan fishes: Heterostraci, Galeaspida, and Pituriaspida.", "ma": 440.0}, {"date_original": "420 Ma", "event": "Earliest ray-finned fishes, trigonotarbid arachnids, and land scorpions.[77]", "ma": 420.0}, {"date_original": "410 Ma", "event": "First signs of teeth in fish. Earliest Nautilida, lycophytes, and trimerophytes.", "ma": 410.0}, {"date_original": "395 Ma", "event": "First lichens, stoneworts. Earliest harvestmen, mites, hexapods (springtails) and ammonoids. The earliest known tracks on land named the Zachelmie trackways which are possibly related to icthyostegalians.[80]", "ma": 395.0}, {"date_original": "375 Ma", "event": "Tiktaalik, a lobe-finned fish with some anatomical features similar to early tetrapods. It has been suggested to be a transitional species between fish and tetrapods.[81]", "ma": 375.0}, {"date_original": "365 Ma", "event": "Acanthostega is one of the earliest vertebrates capable of walking.[82]", "ma": 365.0}, {"date_original": "363 Ma", "event": "By the start of the Carboniferous Period, the Earth begins to resemble its present state. Insects roamed the land and would soon take to the skies; sharks swam the oceans as top predators,[83] and vegetation covered the land, with seed-bearing plants and forests soon to flourish.", "ma": 363.0}, {"date_original": "360 Ma", "event": "First crabs and ferns. Land flora dominated by seed ferns. The Xinhang forest grows around this time.[84]", "ma": 360.0}, {"date_original": "350 Ma", "event": "First large sharks, ratfishes, and hagfish; first crown tetrapods (with five digits and no fins and scales).", "ma": 350.0}, {"date_original": "350 Ma", "event": "Diversification of amphibians.[85]", "ma": 350.0}, {"date_original": "325-335 Ma", "event": "First Reptiliomorpha.[86]", "ma": 330.0}, {"date_original": "330-320 Ma", "event": "First amniote vertebrates (Paleothyris).[87]", "ma": 325.0}, {"date_original": "320 Ma", "event": "Synapsids (precursors to mammals) separate from sauropsids (reptiles) in late Carboniferous.[88]", "ma": 320.0}, {"date_original": "305 Ma", "event": "The Carboniferous rainforest collapse occurs, causing a minor extinction event, as well as paving the way for amniotes to become dominant over amphibians and seed plants over ferns and lycophytes.", "ma": 305.0}, {"date_original": "280 Ma", "event": "Earliest beetles, seed plants and conifers diversify while lepidodendrids and sphenopsids decrease. Terrestrial temnospondyl amphibians and pelycosaurs (e.g. Dimetrodon) diversify in species.", "ma": 280.0}, {"date_original": "275 Ma", "event": "Therapsid synapsids separate from pelycosaur synapsids.", "ma": 275.0}, {"date_original": "265 Ma", "event": "Gorgonopsians appear in the fossil record.[89]", "ma": 265.0}, {"date_original": "250 Ma", "event": "Mesozoic marine revolution begins: increasingly well adapted and diverse predators stress sessile marine groups; the \"balance of power\" in the oceans shifts dramatically as some groups of prey adapt more rapidly and effectively than others.", "ma": 250.0}, {"date_original": "250 Ma", "event": "Triadobatrachus massinoti is the earliest known frog.", "ma": 250.0}, {"date_original": "248 Ma", "event": "Sturgeon and paddlefish (Acipenseridae) first appear.", "ma": 248.0}, {"date_original": "245 Ma", "event": "Earliest ichthyosaurs", "ma": 245.0}, {"date_original": "240 Ma", "event": "Increase in diversity of cynodonts and rhynchosaurs", "ma": 240.0}, {"date_original": "225 Ma", "event": "Earliest dinosaurs (prosauropods), first cardiid bivalves, diversity in cycads, bennettitaleans, and conifers. First teleost fishes. First mammals (Adelobasileus).", "ma": 225.0}, {"date_original": "220 Ma", "event": "Seed-producing Gymnosperm forests dominate the land; herbivores grow to huge sizes to accommodate the large guts necessary to digest the nutrient-poor plants.[citation needed] First flies and turtles (Odontochelys). First coelophysoid dinosaurs. First mammals from small-sized cynodonts, which transitioned towards a nocturnal, insectivorous, and endothermic lifestyle.", "ma": 220.0}, {"date_original": "205 Ma", "event": "Massive Triassic/Jurassic extinction. It wipes out all pseudosuchians except crocodylomorphs, who transitioned to an aquatic habitat, while dinosaurs took over the land and pterosaurs filled the air.", "ma": 205.0}, {"date_original": "200 Ma", "event": "First accepted evidence for viruses infecting eukaryotic cells (the group Geminiviridae).[91] However, viruses are still poorly understood and may have arisen before \"life\" itself, or may be a more recent phenomenon.", "ma": 200.0}, {"date_original": "195 Ma", "event": "First pterosaurs with specialized feeding (Dorygnathus). First sauropod dinosaurs. Diversification in small, ornithischian dinosaurs: heterodontosaurids, fabrosaurids, and scelidosaurids.", "ma": 195.0}, {"date_original": "190 Ma", "event": "Pliosauroids appear in the fossil record. First lepidopteran insects (Archaeolepis), hermit crabs, modern starfish, irregular echinoids, corbulid bivalves, and tubulipore bryozoans. Extensive development of sponge reefs.", "ma": 190.0}, {"date_original": "176 Ma", "event": "First Stegosaurian dinosaurs.", "ma": 176.0}, {"date_original": "170 Ma", "event": "Earliest salamanders, newts, cryptoclidids, elasmosaurid plesiosaurs, and cladotherian mammals. Sauropod dinosaurs diversify.", "ma": 170.0}, {"date_original": "168 Ma", "event": "First lizards.", "ma": 168.0}, {"date_original": "165 Ma", "event": "First rays and glycymeridid bivalves. First vampire squids.[92]", "ma": 165.0}, {"date_original": "163 Ma", "event": "Pterodactyloid pterosaurs first appear.[93]", "ma": 163.0}, {"date_original": "161 Ma", "event": "Ceratopsian dinosaurs appear in the fossil record (Yinlong) and the oldest known eutherian mammal: Juramaia.", "ma": 161.0}, {"date_original": "160 Ma", "event": "Multituberculate mammals (genus Rugosodon) appear in eastern China.", "ma": 160.0}, {"date_original": "155 Ma", "event": "First blood-sucking insects (ceratopogonids), rudist bivalves, and cheilostome bryozoans. Archaeopteryx, a possible ancestor to the birds, appears in the fossil record, along with triconodontid and symmetrodont mammals. Diversity in stegosaurian and theropod dinosaurs.", "ma": 155.0}, {"date_original": "140 Ma", "event": "Orb-weaver spiders appear.", "ma": 140.0}, {"date_original": "135 Ma", "event": "Rise of the angiosperms. Some of these flowering plants bear structures that attract insects and other animals to spread pollen; other angiosperms are pollinated by wind or water. This innovation causes a major burst of animal coevolution. First freshwater pelomedusid turtles. Earliest krill.", "ma": 135.0}, {"date_original": "131 Ma", "event": "First pine trees.", "ma": 131.0}, {"date_original": "120 Ma", "event": "Oldest fossils of heterokonts, including both marine diatoms and silicoflagellates.", "ma": 120.0}, {"date_original": "115 Ma", "event": "First monotreme mammals.", "ma": 115.0}, {"date_original": "114 Ma", "event": "Earliest bees.[94]", "ma": 114.0}, {"date_original": "112 Ma", "event": "Xiphactinus, a large predatory fish, appears in the fossil record.", "ma": 112.0}, {"date_original": "110 Ma", "event": "First hesperornithes, toothed diving birds. Earliest limopsid, verticordiid, and thyasirid bivalves.", "ma": 110.0}, {"date_original": "100 Ma", "event": "First ants.[95]", "ma": 100.0}, {"date_original": "100–95 Ma", "event": "Spinosaurus, the largest theropod dinosaur, appears in the fossil record.[96]", "ma": 97.5}, {"date_original": "95 Ma", "event": "First crocodilians evolve.[97]", "ma": 95.0}, {"date_original": "90 Ma", "event": "Extinction of ichthyosaurs. Earliest snakes and nuculanid bivalves. Large diversification in angiosperms: magnoliids, rosids, hamamelidids, monocots, and ginger. Earliest examples of ticks. Probable origins of placental mammals (earliest undisputed fossil evidence is 66 Ma).", "ma": 90.0}, {"date_original": "86–76 Ma", "event": "Diversification of therian mammals.[98][99]", "ma": 81.0}, {"date_original": "70 Ma", "event": "Multituberculate mammals increase in diversity. First yoldiid bivalves. First possible ungulates (Protungulatum).", "ma": 70.0}, {"date_original": "68–66 Ma", "event": "Tyrannosaurus, the largest terrestrial predator of western North America, appears in the fossil record. First species of Triceratops.[100]", "ma": 67.0}, {"date_original": "66 Ma", "event": "The Cretaceous–Paleogene extinction event eradicates about half of all animal species, including mosasaurs, pterosaurs, plesiosaurs, ammonites, belemnites, rudist and inoceramid bivalves, most planktic foraminifers, and all of the dinosaurs excluding the birds.[101]", "ma": 66.0}, {"date_original": "66 Ma-", "event": "Rapid dominance of conifers and ginkgos in high latitudes, along with mammals becoming the dominant species. First psammobiid bivalves. Earliest rodents. Rapid diversification in ants.", "ma": 66.0}, {"date_original": "63 Ma", "event": "Evolution of the creodonts, an important group of meat-eating (carnivorous) mammals.", "ma": 63.0}, {"date_original": "62 Ma", "event": "Evolution of the first penguins.", "ma": 62.0}, {"date_original": "60 Ma", "event": "Diversification of large, flightless birds. Earliest true primates,[who?] along with the first semelid bivalves, edentate, carnivoran and lipotyphlan mammals, and owls. The ancestors of the carnivorous mammals (miacids) were alive.[citation needed]", "ma": 60.0}, {"date_original": "59 Ma", "event": "Earliest sailfish appear.", "ma": 59.0}, {"date_original": "56 Ma", "event": "Gastornis, a large flightless bird, appears in the fossil record.", "ma": 56.0}, {"date_original": "55 Ma", "event": "Modern bird groups diversify (first song birds, parrots, loons, swifts, woodpeckers), first whale (Himalayacetus), earliest lagomorphs, armadillos, appearance of sirenian, proboscidean mammals in the fossil record. Flowering plants continue to diversify. The ancestor (according to theory) of the species in the genus Carcharodon, the early mako shark Isurus hastalis, is alive. Ungulates split into artiodactyla and perissodactyla, with some members of the former returning to the sea.", "ma": 55.0}, {"date_original": "52 Ma", "event": "First bats appear (Onychonycteris).", "ma": 52.0}, {"date_original": "50 Ma", "event": "Peak diversity of dinoflagellates and nannofossils, increase in diversity of anomalodesmatan and heteroconch bivalves, brontotheres, tapirs, rhinoceroses, and camels appear in the fossil record, diversification of primates.", "ma": 50.0}, {"date_original": "40 Ma", "event": "Modern-type butterflies and moths appear. Extinction of Gastornis. Basilosaurus, one of the first of the giant whales, appeared in the fossil record.", "ma": 40.0}, {"date_original": "38 Ma", "event": "Earliest bears.", "ma": 38.0}, {"date_original": "37 Ma", "event": "First nimravid (\"false saber-toothed cats\") carnivores — these species are unrelated to modern-type felines. First alligators and ruminants.", "ma": 37.0}, {"date_original": "35 Ma", "event": "Grasses diversify from among the monocot angiosperms; grasslands begin to expand. Slight increase in diversity of cold-tolerant ostracods and foraminifers, along with major extinctions of gastropods, reptiles, amphibians, and multituberculate mammals. Many modern mammal groups begin to appear: first glyptodonts, ground sloths, canids, peccaries, and the first eagles and hawks. Diversity in toothed and baleen whales.", "ma": 35.0}, {"date_original": "33 Ma", "event": "Evolution of the thylacinid marsupials (Badjcinus).", "ma": 33.0}, {"date_original": "30 Ma", "event": "First balanids and eucalypts, extinction of embrithopod and brontothere mammals, earliest pigs and cats.", "ma": 30.0}, {"date_original": "28 Ma", "event": "Paraceratherium appears in the fossil record, the largest terrestrial mammal that ever lived. First pelicans.", "ma": 28.0}, {"date_original": "25 Ma", "event": "Pelagornis sandersi appears in the fossil record, the largest flying bird that ever lived.", "ma": 25.0}, {"date_original": "25 Ma", "event": "First deer.", "ma": 25.0}, {"date_original": "24 Ma", "event": "First pinnipeds.", "ma": 24.0}, {"date_original": "23 Ma", "event": "Earliest ostriches, trees representative of most major groups of oaks have appeared by now.[102]", "ma": 23.0}, {"date_original": "20 Ma", "event": "First giraffes, hyenas, and giant anteaters, increase in bird diversity.", "ma": 20.0}, {"date_original": "17 Ma", "event": "First birds of the genus Corvus (crows).", "ma": 17.0}, {"date_original": "15 Ma", "event": "Genus Mammut appears in the fossil record, first bovids and kangaroos, diversity in Australian megafauna.", "ma": 15.0}, {"date_original": "10 Ma", "event": "Grasslands and savannas are established, diversity in insects, especially ants and termites, horses increase in body size and develop high-crowned teeth, major diversification in grassland mammals and snakes.", "ma": 10.0}, {"date_original": "9.5 Ma[dubious – discuss]", "event": "Great American Interchange, where various land and freshwater faunas migrated between North and South America. Armadillos, opossums, hummingbirds Phorusrhacids, Ground Sloths, Glyptodonts, and Meridiungulates traveled to North America, while horses, tapirs, saber-toothed cats, jaguars, bears, coaties, ferrets, otters, skunks and deer entered South America.", "ma": 9.5}, {"date_original": "9 Ma", "event": "First platypuses.", "ma": 9.0}, {"date_original": "6.5 Ma", "event": "First hominins (Sahelanthropus).", "ma": 6.5}, {"date_original": "6 Ma", "event": "Australopithecines diversify (Orrorin, Ardipithecus).", "ma": 6.0}, {"date_original": "5 Ma", "event": "First tree sloths and hippopotami, diversification of grazing herbivores like zebras and elephants, large carnivorous mammals like lions and the genus Canis, burrowing rodents, kangaroos, birds, and small carnivores, vultures increase in size, decrease in the number of perissodactyl mammals. Extinction of nimravid carnivores. First leopard seals.", "ma": 5.0}, {"date_original": "4.8 Ma", "event": "Mammoths appear in the fossil record.", "ma": 4.8}, {"date_original": "4.5 Ma", "event": "Marine iguanas diverge from land iguanas.", "ma": 4.5}, {"date_original": "4 Ma", "event": "Australopithecus evolves. Stupendemys appears in the fossil record as the largest freshwater turtle, first modern elephants, giraffes, zebras, lions, rhinoceros and gazelles appear in the fossil record", "ma": 4.0}, {"date_original": "3.6 Ma", "event": "Blue whales grow to modern size.", "ma": 3.6}, {"date_original": "3 Ma", "event": "Earliest swordfish.", "ma": 3.0}, {"date_original": "2.7 Ma", "event": "Paranthropus evolves.", "ma": 2.7}, {"date_original": "2.5 Ma", "event": "Earliest species of Arctodus and Smilodon evolve.", "ma": 2.5}, {"date_original": "2 Ma", "event": "First members of genus Homo, Homo Habilis, appear in the fossil record. Diversification of conifers in high latitudes. The eventual ancestor of cattle, aurochs (Bos primigenus), evolves in India.", "ma": 2.0}, {"date_original": "1.7 Ma", "event": "Australopithecines go extinct.", "ma": 1.7}, {"date_original": "1.2 Ma", "event": "Evolution of Homo antecessor. The last members of Paranthropus die out.", "ma": 1.2}, {"date_original": "1 Ma", "event": "First coyotes.", "ma": 1.0}, {"date_original": "600 ka", "event": "Evolution of Homo heidelbergensis.", "ma": 0.6}, {"date_original": "400 ka", "event": "First polar bears.", "ma": 0.4}, {"date_original": "350 ka", "event": "Evolution of Neanderthals.", "ma": 0.35}, {"date_original": "300 ka", "event": "Gigantopithecus, a giant relative of the orangutan from Asia dies out.", "ma": 0.3}, {"date_original": "250 ka", "event": "Anatomically modern humans appear in Africa.[103][104][105] Around 50 ka they start colonising the other continents, replacing Neanderthals in Europe and other hominins in Asia.", "ma": 0.25}, {"date_original": "70 ka", "event": "Genetic bottleneck in humans (Toba catastrophe theory).", "ma": 0.07}, {"date_original": "40 ka", "event": "Last giant monitor lizards (Varanus priscus) die out.", "ma": 0.04}, {"date_original": "35-25 ka", "event": "Extinction of Neanderthals. Domestication of dogs.", "ma": 0.03}, {"date_original": "15 ka", "event": "Last woolly rhinoceros (Coelodonta antiquitatis) are believed to have gone extinct.", "ma": 0.015}, {"date_original": "11 ka", "event": "Short-faced bears vanish from North America, with the last giant ground sloths dying out. All Equidae become extinct in North America. Domestication of various ungulates.", "ma": 0.011}, {"date_original": "10 ka", "event": "Holocene epoch starts[106] after the Last Glacial Maximum. Last mainland species of woolly mammoth (Mammuthus primigenus) die out, as does the last Smilodon species.", "ma": 0.01}, {"date_original": "8 ka", "event": "The Giant Lemur dies out.", "ma": 0.008}]};
+
+// ===== COMMON UTILS =====
+const ERA_COLORS = {
+  'Cenozoic': '#f6e05e', 'Mesozoic': '#48bb78', 'Paleozoic': '#63b3ed',
+  'Neoproterozoic': '#ed8936', 'Mesoproterozoic': '#f687b3', 'Paleoproterozoic': '#e53e3e',
+  'Neoarchean': '#9f7aea', 'Mesoarchean': '#805ad5', 'Paleoarchean': '#6b46c1',
+  'Eoarchean': '#553c9a', 'Hadean': '#718096'
+};
+const LEVEL_COLORS = {Eon:'#63b3ed',Era:'#ed8936',Period:'#48bb78',Epoch:'#9f7aea',Age:'#f687b3'};
+const LEVEL_ORDER = ['Eon','Era','Period','Epoch','Age'];
+
+// Determine era for a timeline event based on its Ma value
+function getEraForMa(ma) {
+  if (ma <= 0) return 'Cenozoic';
+  if (ma <= 66) return 'Cenozoic';
+  if (ma <= 252) return 'Mesozoic';
+  if (ma <= 539) return 'Paleozoic';
+  if (ma <= 1000) return 'Neoproterozoic';
+  if (ma <= 1600) return 'Mesoproterozoic';
+  if (ma <= 2500) return 'Paleoproterozoic';
+  if (ma <= 2800) return 'Neoarchean';
+  if (ma <= 3200) return 'Mesoarchean';
+  if (ma <= 3600) return 'Paleoarchean';
+  if (ma <= 4000) return 'Eoarchean';
+  return 'Hadean';
+}
+
+// ==================== SECTION 1: Etymology ====================
+(function() {
+  const records = GTS_DESCRIBE.etymology;
+  const grid = document.getElementById('etymology-grid');
+  const filtersEl = document.getElementById('etymology-filters');
+  const statsEl = document.getElementById('etymology-stats');
+  let activeLevel = 'all';
+
+  // Stats
+  const counts = {};
+  LEVEL_ORDER.forEach(l => counts[l] = 0);
+  records.forEach(r => { counts[r.level] = (counts[r.level]||0) + 1; });
+  let totalWithEty = records.filter(r => r.etymology && r.etymology.length > 5).length;
+
+  statsEl.innerHTML = `
+    <div class="etymology-stat"><div class="stat-num">${records.length}</div><div class="stat-label">Total Names</div></div>
+    <div class="etymology-stat"><div class="stat-num">${totalWithEty}</div><div class="stat-label">With Etymology</div></div>
+    ${LEVEL_ORDER.map(l => `<div class="etymology-stat"><div class="stat-num" style="color:${LEVEL_COLORS[l]}">${counts[l]||0}</div><div class="stat-label">${l}s</div></div>`).join('')}
+  `;
+
+  // Filters
+  filtersEl.innerHTML = `<button class="etymology-filter active" data-level="all">All <span class="count">(${records.length})</span></button>` +
+    LEVEL_ORDER.map(l => `<button class="etymology-filter" data-level="${l}">${l} <span class="count">(${counts[l]||0})</span></button>`).join('');
+
+  filtersEl.addEventListener('click', e => {
+    const btn = e.target.closest('.etymology-filter');
+    if (!btn) return;
+    filtersEl.querySelectorAll('.etymology-filter').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeLevel = btn.dataset.level;
+    renderCards();
+  });
+
+  function parseDuration(dur) {
+    const m = String(dur).match(/([\d.]+)/);
+    return m ? parseFloat(m[1]) : 0;
+  }
+  const maxDur = Math.max(...records.map(r => parseDuration(r.duration_myr)));
+
+  function highlightGreek(text) {
+    // Highlight Greek words/characters
+    return text.replace(/([Α-ωἀ-ῷφζ]+)/g, '<span class="card-greek">$1</span>');
+  }
+
+  function renderCards() {
+    const filtered = activeLevel === 'all' ? records : records.filter(r => r.level === activeLevel);
+    grid.innerHTML = filtered.map((r, i) => {
+      const dur = parseDuration(r.duration_myr);
+      const durPct = maxDur > 0 ? (dur / maxDur * 100) : 0;
+      const et = r.etymology || 'Etymology not available';
+      const hasLongEty = et.length > 120;
+      return `
+        <div class="etymology-card" data-index="${i}" onclick="this.classList.toggle('expanded')">
+          <div class="card-header">
+            <span class="card-name">${r.name}</span>
+            <span class="card-level level-${r.level}">${r.level}</span>
+          </div>
+          <div class="card-time">${r.time_span || ''}</div>
+          <div class="card-duration" title="Duration: ${r.duration_myr} Myr">
+            <div class="card-duration-bar" style="width:${durPct}%"></div>
+          </div>
+          <div class="card-etymology">${highlightGreek(et)}</div>
+          ${hasLongEty ? '<span class="card-expand">Click to expand/collapse ▼</span>' : ''}
+        </div>
+      `;
+    }).join('');
+    if (filtered.length === 0) {
+      grid.innerHTML = '<p style="color:var(--text-dim);grid-column:1/-1;text-align:center;padding:40px;">No entries found for this level.</p>';
+    }
+  }
+
+  renderCards();
+})();
+
+// ==================== SECTION 2: Earth History Timeline ====================
+(function() {
+  const events = GTS_DESCRIBE.earth_timeline;
+  let filteredEvents = [...events];
+  let zoomLevel = 6;
+  const svg = document.getElementById('timeline-svg');
+  const wrap = document.getElementById('timeline-svg-wrap');
+
+  const margin = {left: 160, right: 40, top: 40, bottom: 40};
+  const baseH = events.length * 50;
+
+  function draw() {
+    const totalH = Math.max(baseH * zoomLevel, 600);
+    const svgW = 960;
+    svg.setAttribute('viewBox', `0 0 ${svgW} ${totalH + margin.top + margin.bottom}`);
+    svg.innerHTML = '';
+    wrap.style.maxHeight = (totalH + margin.top + margin.bottom) + 'px';
+    wrap.style.overflowY = 'auto';
+
+    const g = d3.select(svg).append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+    const innerW = svgW - margin.left - margin.right;
+    const innerH = totalH;
+    const n = filteredEvents.length;
+    const rowH = innerH / n;  // equal spacing per event — no overlap
+    const xCenter = innerW / 2;
+
+    // Era background bands (by event index, not Ma)
+    const eraBreaks = [0, 66, 252, 539, 1000, 1600, 2500, 2800, 3200, 3600, 4000, 4568];
+    // Build era → index range map
+    const eraSpans = [];
+    let curEra = null, startIdx = 0;
+    filteredEvents.forEach((e, i) => {
+      const era = getEraForMa(e.ma);
+      if (era !== curEra) {
+        if (curEra && i > startIdx) eraSpans.push({era: curEra, y0: startIdx * rowH, y1: i * rowH});
+        curEra = era;
+        startIdx = i;
+      }
+    });
+    if (curEra && n > startIdx) eraSpans.push({era: curEra, y0: startIdx * rowH, y1: n * rowH});
+
+    eraSpans.forEach(es => {
+      g.append('rect')
+        .attr('x', -margin.left).attr('y', es.y0)
+        .attr('width', innerW + margin.left).attr('height', es.y1 - es.y0)
+        .attr('fill', ERA_COLORS[es.era] || '#718096')
+        .attr('class', 'timeline-era-band');
+      
+      g.append('text')
+        .attr('x', -margin.left + 8).attr('y', es.y0 + 16)
+        .attr('fill', ERA_COLORS[es.era] || '#718096')
+        .attr('font-size', 12).attr('font-weight', 700)
+        .text(es.era);
+    });
+
+    // Central spine
+    g.append('line')
+      .attr('x1', xCenter).attr('x2', xCenter)
+      .attr('y1', 0).attr('y2', innerH)
+      .attr('stroke', 'var(--border)').attr('stroke-width', 2);
+
+    // Nodes — equal spacing, no overlap
+    filteredEvents.forEach((e, i) => {
+      const y = i * rowH + rowH / 2;
+      const era = getEraForMa(e.ma);
+      const color = ERA_COLORS[era] || '#718096';
+      const isLeft = i % 2 === 0;
+
+      // Connecting line
+      g.append('line')
+        .attr('x1', xCenter).attr('y1', y)
+        .attr('x2', isLeft ? xCenter - 60 : xCenter + 60).attr('y2', y)
+        .attr('stroke', color).attr('stroke-width', 1).attr('opacity', 0.5);
+
+      // Node dot
+      g.append('circle')
+        .attr('cx', xCenter).attr('cy', y).attr('r', 4)
+        .attr('fill', color).attr('stroke', 'var(--bg)').attr('stroke-width', 2)
+        .attr('class', 'timeline-node')
+        .append('title').text(e.event);
+
+      // Label
+      const labelX = isLeft ? xCenter - 64 : xCenter + 64;
+      const labelAnchor = isLeft ? 'end' : 'start';
+      const label = g.append('text')
+        .attr('x', labelX).attr('y', y + 4)
+        .attr('text-anchor', labelAnchor)
+        .attr('fill', 'var(--text)').attr('font-size', 11)
+        .attr('class', 'timeline-label');
+
+      // Date
+      label.append('tspan')
+        .attr('fill', color).attr('font-weight', 600)
+        .text(e.date_original + ' ');
+      
+      // Truncated event
+      const shortEvent = e.event.length > 50 ? e.event.substring(0, 47) + '...' : e.event;
+      label.append('tspan')
+        .attr('fill', 'var(--text-dim)')
+        .text(shortEvent);
+
+      // Hover area
+      g.append('rect')
+        .attr('x', isLeft ? labelX - 280 : labelX).attr('y', y - 12)
+        .attr('width', 280).attr('height', 24)
+        .attr('fill', 'transparent')
+        .attr('style', 'cursor:pointer')
+        .on('mouseenter', function() {
+          d3.select(this).attr('fill', 'rgba(99,179,237,0.1)');
+        })
+        .on('mouseleave', function() {
+          d3.select(this).attr('fill', 'transparent');
+        })
+        .on('click', function() {
+          showTimelineModal(e);
+        })
+        .append('title').text(e.date_original + ': ' + e.event);
+    });
+
+    // Update info
+    updateTimelineInfo();
+    // Scroll to top
+    wrap.scrollTop = 0;
+  }
+
+  window.filterTimeline = function() {
+    const q = document.getElementById('timeline-search').value.toLowerCase();
+    filteredEvents = q ? events.filter(e => e.event.toLowerCase().includes(q) || e.date_original.toLowerCase().includes(q)) : [...events];
+    draw();
+  };
+
+  window.zoomTimeline = function(factor) {
+    zoomLevel = Math.max(1, Math.min(20, zoomLevel * factor));
+    draw();
+  };
+
+  window.resetTimelineZoom = function() {
+    zoomLevel = 6;
+    document.getElementById('timeline-search').value = '';
+    filteredEvents = [...events];
+    draw();
+  };
+
+  window.updateTimelineInfo = function() {
+    var dict = I18N_DICT[window.currentLang] || I18N_DICT['en'];
+    var tpl = dict['timeline.info'] || 'Showing {n} / {total} events \u00b7 Zoom {z}x';
+    document.getElementById('timeline-info').textContent =
+      tpl.replace('{n}', filteredEvents.length).replace('{total}', events.length).replace('{z}', zoomLevel.toFixed(1));
+  };
+
+  draw();
+
+  // Scroll navigation highlight
+  const navLinks = document.querySelectorAll('.header nav a');
+  const sections = document.querySelectorAll('.section');
+  window.addEventListener('scroll', () => {
+    let current = 'etymology';
+    sections.forEach(sec => {
+      const top = sec.getBoundingClientRect().top;
+      if (top < 200) current = sec.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  });
+})();
+</script>
+
+<script>
+// ====== I18N: English-Chinese title toggle ======
+var I18N_DICT = {
+  en: {
+    "header.title": '🌍 <span>GTS</span> Describe',
+    "nav.home": "🌍 GTSKB",
+    "nav.query": "🔍 Query",
+    "nav.regional": "🗺️ Regional",
+    "nav.refs": "📚 References",
+    "nav.etymology": "📖 Etymology",
+    "nav.timeline": "⏳ Earth Timeline",
+    "etymology.title": "📖 Etymology Explorer",
+    "etymology.sub": "ICS International Chronostratigraphic Nomenclature — each geologic name has a story rooted in Greek, Latin, or regional toponyms",
+    "timeline.title": "⏳ Earth History Timeline",
+    "timeline.sub": "135 key events from Earth's formation (4540 Ma) to the Holocene (8 ka) — click nodes for details, drag or scroll to zoom",
+    "timeline.search": "🔍 Search events... (e.g. 'extinction', 'Moon', 'dinosaur')",
+    "timeline.info": "Showing {n} / {total} events · Zoom {z}x",
+    "timeline.zoom.in": "Zoom In",
+    "timeline.zoom.out": "Zoom Out",
+    "timeline.zoom.reset": "Reset"
+  },
+  zh: {
+    "header.title": '🌍 <span>GTS</span> 描述',
+    "nav.home": "🌍 GTSKB",
+    "nav.query": "🔍 查询",
+    "nav.regional": "🗺️ 区域",
+    "nav.refs": "📚 参考文献",
+    "nav.etymology": "📖 词源",
+    "nav.timeline": "⏳ 地球时间线",
+    "etymology.title": "📖 地质年代词源 · Etymology Explorer",
+    "etymology.sub": "ICS 国际年代地层命名溯源 — 每个地质年代名称背后都有一段来自希腊语、拉丁语或地域名称的故事",
+    "timeline.title": "⏳ 地球历史时间线 · Earth History Timeline",
+    "timeline.sub": "从地球诞生 (4540 Ma) 到全新世 (8 ka) 的 135 个关键事件 — 点击节点查看详情，拖动或滚轮缩放",
+    "timeline.search": "🔍 搜索事件... (e.g. 'extinction', 'Moon', 'dinosaur')",
+    "timeline.zoom.in": "放大",
+    "timeline.zoom.out": "缩小",
+    "timeline.zoom.reset": "重置"
+  }
+};
+
+window.currentLang = 'en';
+window.toggleLang = function() {
+  var btn = document.getElementById('lang-btn');
+  if (window.currentLang === 'en') {
+    window.currentLang = 'zh';
+    btn.textContent = 'EN';
+    btn.title = 'Switch to English';
+    applyLang('zh');
+    localStorage.setItem('gtskg_lang', 'zh');
+  } else {
+    window.currentLang = 'en';
+    btn.textContent = '中';
+    btn.title = '切换中文';
+    applyLang('en');
+    localStorage.setItem('gtskg_lang', 'en');
+  }
+};
+
+function applyLang(lang) {
+  var dict = I18N_DICT[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (dict[key]) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key]) el.placeholder = dict[key];
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-title');
+    if (dict[key]) el.title = dict[key];
+  });
+  if (typeof updateTimelineInfo === 'function') updateTimelineInfo();
+}
+
+(function() {
+  var saved = localStorage.getItem('gtskg_lang');
+  if (saved === 'zh') {
+    window.currentLang = 'en';
+    toggleLang();
+  }
+})();
+
+window.showTimelineModal = function(eventData) {
+  document.getElementById('tl-modal-date').textContent = eventData.date_original;
+  document.getElementById('tl-modal-age').textContent = eventData.ma + ' Ma';
+  document.getElementById('tl-modal-body').innerHTML = eventData.event;
+  document.getElementById('tl-modal-overlay').classList.add('show');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeTimelineModal = function(e) {
+  if (e && e.target !== document.getElementById('tl-modal-overlay')) return;
+  document.getElementById('tl-modal-overlay').classList.remove('show');
+  document.body.style.overflow = '';
+};
+</script>
+
+<div class="tl-modal-overlay" id="tl-modal-overlay" onclick="closeTimelineModal(event)">
+  <div class="tl-modal" id="tl-modal" onclick="event.stopPropagation()">
+    <button class="tl-modal-close" onclick="closeTimelineModal()">&times;</button>
+    <div class="tl-modal-date" id="tl-modal-date"></div>
+    <div class="tl-modal-age" id="tl-modal-age"></div>
+    <div class="tl-modal-body" id="tl-modal-body"></div>
+  </div>
+</div>
+
+<footer>
+  <p style="margin:0 0 6px; font-size:13px; color:var(--text-dim);">
+    <strong>GTSKB</strong> &nbsp;·&nbsp; Built with <a href="https://d3js.org">D3.js</a>
+  </p>
+  <p style="margin:0 0 6px; font-size:13px; color:var(--text-dim);">
+    Data &amp; Source: <a href="https://github.com/Hongwei2021/gtsdb" target="_blank">GitHub</a> &nbsp;(hongwei2021/gtsdb)
+  </p>
+  <hr style="margin: 18px auto 14px; border: none; border-top: 1px solid var(--border); max-width: 360px;">
+  <p style="font-size:13px; color:var(--text-dim);">
+    Reference Sites:
+    <a href="https://stratigraphy.org" target="_blank">ICS</a> ·
+    <a href="https://timescalecreator.org" target="_blank">TSCreator</a> ·
+    <a href="https://deeptimeexplorer.com" target="_blank">Deep Time Explorer</a> ·
+    <a href="https://deeptime.voyage/resources/deeptime/" target="_blank">Deep Time Voyage</a> ·
+    <a href="https://spacetimemesh.com/deep-time-visualizer/" target="_blank">Deep Time Visualizer</a>
+  </p>
+</footer>
+
+</body>
+</html>

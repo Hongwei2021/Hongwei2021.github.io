@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Query boundary ages across 105 versions of the Geologic Time Scale in GTSKB. Compare age assignments between versions and view temporal relationships.">
+<meta name="keywords" content="Geologic Time Scale, GTS, boundary age query, chronostratigraphy, age comparison, ICS">
+<meta name="author" content="Hongwei Wang">
+<meta name="robots" content="index, follow">
+<!-- Open Graph -->
+<meta property="og:title" content="GTSKB — Boundary Age Query">
+<meta property="og:description" content="Query boundary ages across 105 versions of the Geologic Time Scale.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hongwei2021.github.io/gtsdb/query.html">
+<meta property="og:image" content="https://hongwei2021.github.io/gtsdb/assets/favicon-512.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GTSKB — Boundary Age Query">
+<meta name="twitter:description" content="Query boundary ages across 105 versions of the Geologic Time Scale.">
+<title>GTSKB - Boundary Age Query</title>
+<style>
+:root {
+  --bg: #0d1117;
+  --bg2: #161b22;
+  --bg3: #21262d;
+  --border: #30363d;
+  --text: #c9d1d9;
+  --text-dim: #8b949e;
+  --accent: #58a6ff;
+  --accent2: #1f6feb;
+  --green: #3fb950;
+  --red: #f85149;
+  --yellow: #d29922;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header */
+.header { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; height: 60px; position: sticky; top: 0; z-index: 100; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.logo { font-size: 20px; font-weight: 700; color: var(--accent); }
+.nav { display: flex; gap: 8px; margin-left: 32px; }
+.nav a { color: var(--text-dim); padding: 6px 14px; border-radius: 6px; font-size: 14px; transition: all 0.2s; }
+.nav a:hover, .nav a.active { color: #fff; background: var(--bg3); text-decoration: none; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; z-index: 101; position: relative; margin-left: 8px; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.25s; }
+.hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); background: var(--accent); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); background: var(--accent); }
+.mobile-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(10,14,20,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 99; overflow-y: auto; }
+.mobile-links { list-style: none; padding: 72px 0 24px; margin: 0; }
+.mobile-links li { margin: 0; }
+.mobile-links li a { display: block; padding: 16px 32px; font-size: 18px; font-weight: 600; color: var(--text); border-bottom: 1px solid rgba(255,255,255,0.06); text-decoration: none; }
+.mobile-links li a:hover { background: rgba(68,147,248,0.12); color: var(--accent); }
+
+/* Language button */
+.lang-btn { background: var(--bg3); border: 1px solid var(--border); color: var(--text-dim); padding: 5px 10px; border-radius: 6px; cursor: pointer; font-size: 12px; font-weight: 600; transition: all 0.2s; margin-left: auto; }
+.lang-btn:hover { color: #fff; border-color: var(--accent); }
+
+/* Main */
+.main { max-width: 1200px; margin: 0 auto; padding: 32px 24px; width: 100%; flex: 1; }
+.page-title { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+.page-desc { color: var(--text-dim); margin-bottom: 32px; font-size: 15px; }
+
+/* Search */
+.search-section { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.section-title { font-size: 16px; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.search-box { position: relative; margin-bottom: 16px; }
+.search-input { width: 100%; padding: 10px 16px 10px 40px; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-size: 15px; outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: var(--accent); }
+.search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-dim); font-size: 16px; }
+.dropdown-list { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; max-height: 300px; overflow-y: auto; display: none; position: relative; z-index: 10; }
+.dropdown-list.open { display: block; }
+.dropdown-item { padding: 10px 16px; cursor: pointer; font-size: 14px; border-bottom: 1px solid var(--border); transition: background 0.15s; }
+.dropdown-item:hover { background: var(--bg3); }
+.dropdown-item:last-child { border-bottom: none; }
+.dropdown-item .match { color: var(--accent); font-weight: 600; }
+.selected-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.tag { background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; font-size: 13px; display: flex; align-items: center; gap: 6px; }
+.tag-remove { cursor: pointer; color: var(--text-dim); font-size: 15px; line-height: 1; }
+.tag-remove:hover { color: var(--red); }
+
+/* Version Selector */
+.version-section { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.version-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+.version-actions { display: flex; gap: 8px; }
+.btn-sm { padding: 4px 12px; font-size: 13px; border-radius: 6px; border: 1px solid var(--border); background: var(--bg); color: var(--text); cursor: pointer; transition: all 0.15s; }
+.btn-sm:hover { border-color: var(--accent); color: var(--accent); }
+.version-grid { display: flex; flex-wrap: wrap; gap: 6px; max-height: 200px; overflow-y: auto; padding: 8px; background: var(--bg); border-radius: 8px; }
+.version-chip { padding: 4px 12px; border-radius: 20px; font-size: 13px; border: 1px solid var(--border); background: var(--bg2); color: var(--text-dim); cursor: pointer; transition: all 0.15s; user-select: none; }
+.version-chip:hover { border-color: var(--accent); }
+.version-chip.selected { background: var(--accent2); color: #fff; border-color: var(--accent); }
+
+/* Buttons */
+.btn-primary { background: var(--accent2); color: #fff; border: none; padding: 10px 28px; border-radius: 8px; font-size: 15px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+.btn-primary:hover { background: var(--accent); }
+.btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* Chart */
+.chart-section { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 24px; }
+.chart-container { width: 100%; min-height: 400px; position: relative; }
+.chart-container svg { width: 100%; height: auto; }
+.no-data { text-align: center; padding: 80px 20px; color: var(--text-dim); font-size: 15px; }
+
+/* Tooltip */
+.chart-tooltip { position: absolute; background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 12px; font-size: 13px; pointer-events: none; z-index: 50; box-shadow: 0 4px 24px rgba(0,0,0,0.5); max-width: 320px; }
+.chart-tooltip .tt-title { font-weight: 600; margin-bottom: 6px; font-size: 14px; }
+.chart-tooltip .tt-row { display: flex; justify-content: space-between; gap: 16px; padding: 2px 0; }
+.chart-tooltip .tt-label { color: var(--text-dim); }
+.chart-tooltip .tt-value { font-weight: 500; font-variant-numeric: tabular-nums; }
+
+/* Legend */
+.chart-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; cursor: pointer; }
+.legend-color { width: 14px; height: 3px; border-radius: 2px; }
+.legend-item.inactive { opacity: 0.3; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .hamburger { display: flex; }
+  .page-title { font-size: 22px; }
+  .main { padding: 20px 16px; }
+}
+footer {
+  border-top: 1px solid var(--border); padding: 40px 24px;
+  text-align: center; color: var(--text-dim); font-size: 13px;
+}
+footer a { color: var(--accent); text-decoration: none; }
+footer hr { margin: 18px auto 14px; border: none; border-top: 1px solid var(--border); max-width: 360px; }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <div class="header-left">
+    <a href="index.html" class="logo">GTSKB</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="gts_describe.html">Describe</a>
+      <a href="query.html" class="active">Query</a>
+      <a href="regional.html">Regional</a>
+      <a href="references.html">References</a>
+    </nav>
+  </div>
+  <button class="lang-btn" id="lang-btn" onclick="toggleLang()" title="切换中文">中</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</div>
+
+<!-- Main -->
+<div class="main">
+  <h1 class="page-title" data-i18n="page_title">Boundary Age Query</h1>
+  <p class="page-desc" data-i18n="page_desc">Query and compare boundary ages across different GTS/ICS versions. Select boundaries and versions to visualize changes in a line chart.</p>
+
+  <!-- Search Section -->
+  <div class="search-section">
+    <div class="section-title">
+      <span data-i18n="search_title">&#128269; Select Boundaries</span>
+      <span style="font-size:13px;color:var(--text-dim);font-weight:400;" id="selectedCount">0 selected</span>
+    </div>
+    <div class="search-box">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search boundaries (e.g., Cretaceous, Paleogene, Permian...)" data-i18n-placeholder="search_placeholder">
+      <div class="dropdown-list" id="dropdownList"></div>
+    </div>
+    <div class="selected-tags" id="selectedTags"></div>
+  </div>
+
+  <!-- Version Selector -->
+  <div class="version-section">
+    <div class="version-header">
+      <div class="section-title" style="margin-bottom:0" data-i18n="version_title">&#128197; Select Versions</div>
+      <div class="version-actions">
+        <button class="btn-sm" onclick="selectAllVersions()" data-i18n="select_all">Select All</button>
+        <button class="btn-sm" onclick="clearVersions()" data-i18n="clear">Clear</button>
+      </div>
+    </div>
+    <div class="version-grid" id="versionGrid"></div>
+  </div>
+
+  <!-- Query Button -->
+  <div style="margin-bottom:24px">
+    <button class="btn-primary" id="queryBtn" onclick="runQuery()" data-i18n="query_btn">&#128202; Run Query</button>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-section">
+    <div class="section-title" data-i18n="chart_title">&#128200; Age Comparison Chart</div>
+    <div class="chart-container" id="chartContainer">
+      <div class="no-data" data-i18n="no_data">Select boundaries and versions, then click "Run Query" to see the chart.</div>
+    </div>
+    <div class="chart-legend" id="chartLegend" style="display:none"></div>
+  </div>
+</div>
+
+<footer>
+  <p><strong>GTSKB</strong> — Geologic Time Scale Knowledge Base &nbsp;·&nbsp; Built with <a href="https://d3js.org">D3.js</a></p>
+  <p style="margin-top:4px; font-size:13px;">
+    Data &amp; Source: <a href="https://github.com/Hongwei2021/gtsdb" target="_blank">GitHub</a> &nbsp;(hongwei2021/gtsdb)
+  </p>
+  <hr>
+  <p style="font-size:13px; color:var(--text-dim);">
+    Reference Sites:
+    <a href="https://stratigraphy.org" target="_blank">ICS</a> ·
+    <a href="https://timescalecreator.org" target="_blank">TSCreator</a> ·
+    <a href="https://deeptimeexplorer.com" target="_blank">Deep Time Explorer</a> ·
+    <a href="https://deeptime.voyage/resources/deeptime/" target="_blank">Deep Time Voyage</a> ·
+    <a href="https://spacetimemesh.com/deep-time-visualizer/" target="_blank">Deep Time Visualizer</a>
+  </p>
+  <p style="margin-top:4px; font-size:12px; color:var(--text-dim);">
+    Visualization adapted from <a href="https://pyrolite.readthedocs.io/">pyrolite</a>
+  </p>
+</footer>
+
+<!-- Load D3 from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<!-- Load data -->
+<script src="data/boundary_ages.js"></script>
+
+<script>
+// ============ State ============
+let selectedBoundaries = [];  // array of boundary id strings
+let selectedVersions = [];    // array of version id strings
+let chartDrawn = false;
+
+// ============ Initialize ============
+function init() {
+  if (typeof window.__GTSKG_DATA__ === 'undefined') {
+    document.getElementById('versionGrid').innerHTML = '<div style="color:var(--red);padding:12px">Data loading failed. Please refresh the page.</div>';
+    return;
+  }
+  renderVersionGrid();
+  setupSearch();
+  updateQueryButton();
+}
+
+// ============ Version Grid ============
+function renderVersionGrid() {
+  const grid = document.getElementById('versionGrid');
+  if (!grid || !window.__GTSKG_DATA__) return;
+  const versions = window.__GTSKG_DATA__.versions;
+  grid.innerHTML = '';
+  versions.forEach(function(v) {
+    const chip = document.createElement('div');
+    chip.className = 'version-chip' + (selectedVersions.indexOf(v.id) >= 0 ? ' selected' : '');
+    chip.textContent = v.label;
+    chip.onclick = function() { toggleVersion(v.id); };
+    grid.appendChild(chip);
+  });
+}
+
+function toggleVersion(vid) {
+  const idx = selectedVersions.indexOf(vid);
+  if (idx >= 0) {
+    selectedVersions.splice(idx, 1);
+  } else {
+    selectedVersions.push(vid);
+  }
+  renderVersionGrid();
+  updateQueryButton();
+}
+
+function selectAllVersions() {
+  if (!window.__GTSKG_DATA__) return;
+  selectedVersions = window.__GTSKG_DATA__.versions.map(function(v) { return v.id; });
+  renderVersionGrid();
+  updateQueryButton();
+}
+
+function clearVersions() {
+  selectedVersions = [];
+  renderVersionGrid();
+  updateQueryButton();
+}
+
+// ============ Search / Boundary Selection ============
+function setupSearch() {
+  const input = document.getElementById('searchInput');
+  const dropdown = document.getElementById('dropdownList');
+  if (!input || !dropdown || !window.__GTSKG_DATA__) return;
+
+  input.addEventListener('focus', function() { showDropdown(''); });
+  input.addEventListener('input', function() { showDropdown(this.value); });
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!input.contains(e.target) && !dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+}
+
+function showDropdown(query) {
+  const dropdown = document.getElementById('dropdownList');
+  if (!dropdown || !window.__GTSKG_DATA__) return;
+  const boundaries = window.__GTSKG_DATA__.boundaries;
+  const q = (query || '').toLowerCase();
+  const filtered = q === '' ? boundaries.slice(0, 50) : boundaries.filter(function(b) {
+    return b.id.toLowerCase().indexOf(q) >= 0 || b.concept.toLowerCase().indexOf(q) >= 0 || b.label.toLowerCase().indexOf(q) >= 0;
+  });
+  dropdown.innerHTML = '';
+  if (filtered.length === 0) {
+    dropdown.innerHTML = '<div class="dropdown-item" style="color:var(--text-dim)">No matches found</div>';
+  }
+  filtered.forEach(function(b) {
+    const item = document.createElement('div');
+    item.className = 'dropdown-item';
+    let labelHtml = highlightMatch(b.label, q);
+    item.innerHTML = labelHtml + '<span style="color:var(--text-dim);font-size:12px;margin-left:8px">' + b.level + '</span>';
+    item.onclick = function(e) {
+      e.stopPropagation();
+      addBoundary(b.id);
+      document.getElementById('dropdownList').classList.remove('open');
+      document.getElementById('searchInput').value = '';
+    };
+    dropdown.appendChild(item);
+  });
+  dropdown.classList.add('open');
+}
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const idx = text.toLowerCase().indexOf(query.toLowerCase());
+  if (idx < 0) return text;
+  return text.substring(0, idx) + '<span class="match">' + text.substring(idx, idx + query.length) + '</span>' + text.substring(idx + query.length);
+}
+
+function addBoundary(bid) {
+  if (selectedBoundaries.indexOf(bid) >= 0) return;
+  selectedBoundaries.push(bid);
+  renderSelectedTags();
+  updateQueryButton();
+}
+
+function removeBoundary(bid) {
+  selectedBoundaries = selectedBoundaries.filter(function(b) { return b !== bid; });
+  renderSelectedTags();
+  updateQueryButton();
+}
+
+function renderSelectedTags() {
+  const container = document.getElementById('selectedTags');
+  const countEl = document.getElementById('selectedCount');
+  if (!container || !window.__GTSKG_DATA__) return;
+  const boundaries = window.__GTSKG_DATA__.boundaries;
+  container.innerHTML = '';
+  selectedBoundaries.forEach(function(bid) {
+    const b = boundaries.filter(function(x) { return x.id === bid; })[0];
+    const tag = document.createElement('div');
+    tag.className = 'tag';
+    tag.innerHTML = (b ? b.label : bid) + '<span class="tag-remove" onclick="removeBoundary(\'' + bid.replace(/'/g, "\\'") + '\')">&times;</span>';
+    container.appendChild(tag);
+  });
+  if (countEl) countEl.textContent = selectedBoundaries.length + ' selected';
+}
+
+function updateQueryButton() {
+  const btn = document.getElementById('queryBtn');
+  if (btn) {
+    btn.disabled = selectedBoundaries.length === 0 || selectedVersions.length === 0;
+  }
+}
+
+// ============ Run Query / Chart ============
+function runQuery() {
+  if (selectedBoundaries.length === 0 || selectedVersions.length === 0) {
+    alert('Please select at least one boundary and one version.');
+    return;
+  }
+  if (!window.__GTSKG_DATA__) {
+    document.getElementById('chartContainer').innerHTML = '<div class="no-data" style="color:var(--red)">Data not available. Please refresh the page.</div>';
+    return;
+  }
+  drawChart();
+}
+
+function drawChart() {
+  const container = document.getElementById('chartContainer');
+  const legend = document.getElementById('chartLegend');
+  if (!container || !window.__GTSKG_DATA__) return;
+
+  // Prepare data: for each boundary, get ages for each selected version
+  const DATA = window.__GTSKG_DATA__;
+  const boundaries = DATA.boundaries;
+  const versions = DATA.versions.filter(function(v) { return selectedVersions.indexOf(v.id) >= 0; });
+  // Sort versions by year
+  versions.sort(function(a, b) { return (a.year || 0) - (b.year || 0); });
+
+  // Build line data: [{boundaryId, boundaryLabel, values: [{versionId, year, age}]}]
+  const lineData = selectedBoundaries.map(function(bid) {
+    const b = boundaries.filter(function(x) { return x.id === bid; })[0];
+    const values = versions.map(function(v) {
+      const age = DATA.data[bid] ? DATA.data[bid][v.id] : undefined;
+      return { versionId: v.id, versionLabel: v.label, year: v.year, age: age };
+    }).filter(function(d) { return d.age !== undefined && d.age !== null; });
+    return { boundaryId: bid, boundaryLabel: b ? b.label : bid, values: values };
+  }).filter(function(line) { return line.values.length > 0; });
+
+  if (lineData.length === 0) {
+    container.innerHTML = '<div class="no-data">No data available for the selected boundaries and versions.</div>';
+    legend.style.display = 'none';
+    return;
+  }
+
+  // === D3 Chart ===
+  const margin = {top: 40, right: 120, bottom: 60, left: 70};
+  const totalW = container.clientWidth || 1100;
+  const w = totalW - margin.left - margin.right;
+  const h = 420 - margin.top - margin.bottom;
+
+  container.innerHTML = '';
+  const svg = d3.select('#chartContainer')
+    .append('svg')
+    .attr('viewBox', '0 0 ' + totalW + ' ' + (h + margin.top + margin.bottom))
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .append('g')
+    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+  // Scales
+  const xScale = d3.scaleLinear()
+    .domain(d3.extent(versions, function(v) { return v.year || 0; }))
+    .range([0, w]);
+
+  const allAges = [];
+  lineData.forEach(function(line) {
+    line.values.forEach(function(d) { allAges.push(d.age); });
+  });
+  const yMin = d3.min(allAges) * 0.95;
+  const yMax = d3.max(allAges) * 1.05;
+  const yScale = d3.scaleLinear().domain([yMax, yMin]).range([0, h]);
+
+  // Color scale
+  const color = d3.scaleOrdinal().domain(lineData.map(function(d) { return d.boundaryId; })).range(d3.schemeTableau10);
+
+  // Grid
+  svg.append('g').attr('class', 'grid').selectAll('line')
+    .data(yScale.ticks(8)).enter().append('line')
+    .attr('x1', 0).attr('x2', w)
+    .attr('y1', function(d) { return yScale(d); })
+    .attr('y2', function(d) { return yScale(d); })
+    .attr('stroke', 'var(--border)').attr('stroke-dasharray', '3,3').attr('opacity', 0.5);
+
+  // Axes
+  const xAxis = d3.axisBottom(xScale).tickFormat(d3.format('d'));
+  svg.append('g').attr('transform', 'translate(0,' + h + ')').call(xAxis)
+    .selectAll('text').style('fill', 'var(--text-dim)').style('font-size', '12px');
+  svg.select('.domain').style('stroke', 'var(--border)');
+  svg.selectAll('.tick line').style('stroke', 'var(--border)');
+
+  const yAxis = d3.axisLeft(yScale);
+  svg.append('g').call(yAxis)
+    .selectAll('text').style('fill', 'var(--text-dim)').style('font-size', '12px');
+  svg.select('.domain').style('stroke', 'var(--border)');
+  svg.selectAll('.tick line').style('stroke', 'var(--border)');
+
+  // Axis labels
+  svg.append('text').attr('x', w/2).attr('y', h + 45).attr('text-anchor', 'middle')
+    .style('fill', 'var(--text-dim)').style('font-size', '13px').text('Version Year');
+  svg.append('text').attr('transform', 'rotate(-90)').attr('x', -h/2).attr('y', -50).attr('text-anchor', 'middle')
+    .style('fill', 'var(--text-dim)').style('font-size', '13px').text('Age (Ma)');
+
+  // Lines
+  const line = d3.line()
+    .x(function(d) { return xScale(d.year || 0); })
+    .y(function(d) { return yScale(d.age); })
+    .curve(d3.curveMonotoneX);
+
+  lineData.forEach(function(lineInfo) {
+    // Draw line
+    svg.append('path')
+      .datum(lineInfo.values)
+      .attr('fill', 'none')
+      .attr('stroke', color(lineInfo.boundaryId))
+      .attr('stroke-width', 2.5)
+      .attr('d', line)
+      .attr('opacity', 1)
+      .attr('class', 'chart-line line-' + slugify(lineInfo.boundaryId));
+
+    // Draw dots
+    svg.selectAll('.dot-' + slugify(lineInfo.boundaryId))
+      .data(lineInfo.values).enter().append('circle')
+      .attr('cx', function(d) { return xScale(d.year || 0); })
+      .attr('cy', function(d) { return yScale(d.age); })
+      .attr('r', 4)
+      .attr('fill', color(lineInfo.boundaryId))
+      .attr('stroke', 'var(--bg)')
+      .attr('stroke-width', 2)
+      .attr('class', 'chart-dot dot-' + slugify(lineInfo.boundaryId))
+      .style('cursor', 'pointer')
+      .on('mouseenter', function(event, d) {
+        showTooltip(event, d, lineInfo);
+      })
+      .on('mousemove', function(event) { moveTooltip(event); })
+      .on('mouseleave', function() { hideTooltip(); });
+  });
+
+  // Tooltip
+  const tooltip = d3.select('body').append('div').attr('class', 'chart-tooltip').style('opacity', 0);
+
+  function showTooltip(event, d, lineInfo) {
+    let html = '<div class="tt-title">' + lineInfo.boundaryLabel + '</div>';
+    html += '<div class="tt-row"><span class="tt-label">Version:</span><span class="tt-value">' + d.versionLabel + '</span></div>';
+    html += '<div class="tt-row"><span class="tt-label">Age:</span><span class="tt-value">' + d.age + ' Ma</span></div>';
+    tooltip.html(html).style('opacity', 1);
+    moveTooltip(event);
+  }
+  function moveTooltip(event) {
+    tooltip.style('left', (event.pageX + 16) + 'px').style('top', (event.pageY - 10) + 'px');
+  }
+  function hideTooltip() {
+    tooltip.style('opacity', 0);
+  }
+
+  // Legend
+  legend.innerHTML = '';
+  legend.style.display = 'flex';
+  lineData.forEach(function(lineInfo) {
+    const item = document.createElement('div');
+    item.className = 'legend-item';
+    item.innerHTML = '<span class="legend-color" style="background:' + color(lineInfo.boundaryId) + '"></span>' + lineInfo.boundaryLabel;
+    item.onclick = function() {
+      const lineEl = container.querySelector('.line-' + slugify(lineInfo.boundaryId));
+      const dots = container.querySelectorAll('.dot-' + slugify(lineInfo.boundaryId));
+      const isActive = !item.classList.contains('inactive');
+      if (isActive) {
+        if (lineEl) lineEl.style.display = 'none';
+        dots.forEach(function(d) { d.style.display = 'none'; });
+        item.classList.add('inactive');
+      } else {
+        if (lineEl) lineEl.style.display = '';
+        dots.forEach(function(d) { d.style.display = ''; });
+        item.classList.remove('inactive');
+      }
+    };
+    legend.appendChild(item);
+  });
+
+  chartDrawn = true;
+}
+
+function slugify(str) {
+  return str.replace(/[^a-zA-Z0-9]/g, '-');
+}
+
+// ============ Mobile Nav ============
+function toggleMenu() {
+  var btn = document.getElementById('hamburger');
+  if (!btn) return;
+  var isOpen = btn.classList.contains('open');
+  if (isOpen) {
+    btn.classList.remove('open');
+    var overlay = document.getElementById('mobileOverlay');
+    if (overlay) overlay.remove();
+    document.body.style.overflow = '';
+  } else {
+    btn.classList.add('open');
+    var overlay = document.createElement('div');
+    overlay.id = 'mobileOverlay';
+    overlay.className = 'mobile-overlay';
+    var pages = [
+      ['index.html', '\u{1F3E0} Home'],
+      ['gts_describe.html', '\u{1F4D6} Describe'],
+      ['query.html', '\u{1F50D} Query'],
+      ['regional.html', '\u{1F5FA}\uFE0F Regional'],
+      ['references.html', '\u{1F4DA} References']
+    ];
+    var current = window.location.pathname.split('/').pop() || 'index.html';
+    var html = pages.map(function(p) {
+      var active = p[0] === current ? ' style="color:var(--accent)"' : '';
+      return '<li><a href="' + p[0] + '"' + active + '>' + p[1] + '</a></li>';
+    }).join('');
+    overlay.innerHTML = '<ul class="mobile-links">' + html + '</ul>';
+    overlay.onclick = function(e) { if (e.target === overlay) toggleMenu(); };
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// ============ i18n (Language Toggle) ============
+var I18N_DICT = {
+  en: {
+    "page_title": "Boundary Age Query",
+    "page_desc": "Query and compare boundary ages across different GTS/ICS versions. Select boundaries and versions to visualize changes in a line chart.",
+    "search_title": "\uD83D\uDD0D Select Boundaries",
+    "search_placeholder": "Search boundaries (e.g., Cretaceous, Paleogene, Permian...)",
+    "version_title": "\uD83D\uDCC5 Select Versions",
+    "select_all": "Select All",
+    "clear": "Clear",
+    "query_btn": "\uD83D\uDCCA Run Query",
+    "chart_title": "\uD83D\uDCC8 Age Comparison Chart",
+    "no_data": "Select boundaries and versions, then click \"Run Query\" to see the chart."
+  },
+  zh: {
+    "page_title": "\u8FB9\u754C\u5E74\u9F84\u67E5\u8BE2",
+    "page_desc": "\u67E5\u8BE2\u548C\u6BD4\u8F83\u4E0D\u540CGTS/ICS\u7248\u672C\u7684\u8FB9\u754C\u5E74\u9F84\u3002\u9009\u62E9\u8FB9\u754C\u548C\u7248\u672C\u6765\u53EF\u89C6\u5316\u53D8\u5316\u8D8B\u52BF\u3002",
+    "search_title": "\uD83D\uDD0D \u9009\u62E9\u8FB9\u754C",
+    "search_placeholder": "\u641C\u7D22\u8FB9\u754C\uFF08\u5982\uFF1ACretaceous, Paleogene, Permian...\uFF09",
+    "version_title": "\uD83D\uDCC5 \u9009\u62E9\u7248\u672C",
+    "select_all": "\u5168\u9009",
+    "clear": "\u6E05\u9664",
+    "query_btn": "\uD83D\uDCCA \u6267\u884C\u67E5\u8BE2",
+    "chart_title": "\uD83D\uDCC8 \u5E74\u9F84\u5BF9\u6BD4\u56FE",
+    "no_data": "\u9009\u62E9\u8FB9\u754C\u548C\u7248\u672C\uFF0C\u7136\u540E\u70B9\u51FB\"\u6267\u884C\u67E5\u8BE2\"\u67E5\u770B\u56FE\u8868\u3002"
+  }
+};
+
+window.currentLang = 'en';
+
+window.toggleLang = function() {
+  var btn = document.getElementById('lang-btn');
+  if (window.currentLang === 'en') {
+    window.currentLang = 'zh';
+    btn.textContent = 'EN';
+    btn.title = 'Switch to English';
+    applyLang('zh');
+    localStorage.setItem('gtskg_lang', 'zh');
+  } else {
+    window.currentLang = 'en';
+    btn.textContent = '\u4E2D';
+    btn.title = '\u5207\u6362\u4E2D\u6587';
+    applyLang('en');
+    localStorage.setItem('gtskg_lang', 'en');
+  }
+};
+
+function applyLang(lang) {
+  var dict = I18N_DICT[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (dict[key]) { el.innerHTML = dict[key]; }
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
+    if (dict[key]) { el.placeholder = dict[key]; }
+  });
+}
+
+// Restore saved language
+(function() {
+  var saved = localStorage.getItem('gtskg_lang');
+  if (saved === 'zh') {
+    window.currentLang = 'en';
+    toggleLang();
+  }
+})();
+
+// ============ Init: handle both cases ============
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  // DOM already loaded (script at bottom of body)
+  init();
+}
+</script>
+</body>
+</html>
